@@ -1,0 +1,111 @@
+{
+  "assignment_sha256": "4df4d538436583e29b1bad2530c5fc7f88e25513b18081b8f4dec1cd1d64cd4c",
+  "campaign_seed_domain": "LineageGuard-jaffle-rq2-p1-campaign-seed-v1",
+  "factor_assignment_domain": "LineageGuard-jaffle-rq2-p1-factor-assignment-v1",
+  "factorial_balance": "two_by_two_by_two_exactly_once",
+  "kind": "lineageguard_jaffle_rq2_p1_factor_seed_assignment_v1",
+  "outcomes_read": false,
+  "p1_skeleton_sha256": "c14c77fc783011013d9f46c95a0c7c848bb5b2a77697e537c9dbd47369d5426a",
+  "rows": [
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-001",
+      "campaign_seed": 5925498979273060936,
+      "factor_rank_sha256": "2a6d76f9af6c4af097e8b241b034f762cf29e3a91785cd717e6c50e299fb5004",
+      "factor_tuple": {
+        "error_type": "duplicate_row",
+        "fanout_stratum": "low",
+        "injection_locus": "intermediate"
+      },
+      "ordinal": 1,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-001"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-002",
+      "campaign_seed": 6171838620882917898,
+      "factor_rank_sha256": "763a20fc16499a4241e7f2b0f5ea3e623ffba685f52a6a6328cf00aead971259",
+      "factor_tuple": {
+        "error_type": "numeric_corruption",
+        "fanout_stratum": "low",
+        "injection_locus": "intermediate"
+      },
+      "ordinal": 2,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-002"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-003",
+      "campaign_seed": 3760129313449352672,
+      "factor_rank_sha256": "a0859d9a00d9f1965fb4ad57d281c295ce9d401a386de8c55cc7ab580f1443a2",
+      "factor_tuple": {
+        "error_type": "numeric_corruption",
+        "fanout_stratum": "high",
+        "injection_locus": "intermediate"
+      },
+      "ordinal": 3,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-003"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-004",
+      "campaign_seed": 4992242237189093019,
+      "factor_rank_sha256": "a83dffae9c78ecaf956e9e7e7bb2806d0cd60ed6c8c9f92bac3b329b2140147f",
+      "factor_tuple": {
+        "error_type": "numeric_corruption",
+        "fanout_stratum": "low",
+        "injection_locus": "source"
+      },
+      "ordinal": 4,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-004"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-005",
+      "campaign_seed": 8081919786013111865,
+      "factor_rank_sha256": "b069275f1f74c7b8cd7f9ad24e7a0c5b8d191b92b1585ec78810e8b048aa09b6",
+      "factor_tuple": {
+        "error_type": "numeric_corruption",
+        "fanout_stratum": "high",
+        "injection_locus": "source"
+      },
+      "ordinal": 5,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-005"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-006",
+      "campaign_seed": 8309861498237663553,
+      "factor_rank_sha256": "b20a7ae8a5278d78beb994bfa6eac0393d3cc77274ed659d46ff591e0e81fba5",
+      "factor_tuple": {
+        "error_type": "duplicate_row",
+        "fanout_stratum": "low",
+        "injection_locus": "source"
+      },
+      "ordinal": 6,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-006"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-007",
+      "campaign_seed": 9187591692652033914,
+      "factor_rank_sha256": "bb53dad8148916392b8d6215f5677b4fa9b3940ddb064a8d3493216ebd0fcf8d",
+      "factor_tuple": {
+        "error_type": "duplicate_row",
+        "fanout_stratum": "high",
+        "injection_locus": "intermediate"
+      },
+      "ordinal": 7,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-007"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-008",
+      "campaign_seed": 3816178437619461263,
+      "factor_rank_sha256": "ef99f6fe3a844fcd43b473d5c984a27ad99c8a52f3ca5fedfdf89bf511e18299",
+      "factor_tuple": {
+        "error_type": "duplicate_row",
+        "fanout_stratum": "high",
+        "injection_locus": "source"
+      },
+      "ordinal": 8,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-008"
+    }
+  ],
+  "schema_version": 1,
+  "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+  "target_identity_read_for_assignment": false,
+  "validation_clean_input_read_for_assignment": false
+}

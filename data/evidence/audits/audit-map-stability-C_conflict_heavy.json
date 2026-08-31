@@ -1,0 +1,230 @@
+{
+ "audit_sha256": "21d0ce5a1885b52ffce5220bdde8e14c283e7fdf282e8574630b008e25b08a04",
+ "budget_grid_us": [
+  0,
+  6388976,
+  7244520,
+  14489039,
+  28978078
+ ],
+ "development_cells": [
+  "d8p-fin-dup-k1",
+  "d8p-fin-dup-k10",
+  "d8p-fin-dup-k10-oracle",
+  "d8p-fin-dup-k100",
+  "d8p-fin-fk-k10",
+  "d8p-fin-mixed-20x20",
+  "d8p-fin-null-k10",
+  "d8p-fin-num-k1",
+  "d8p-fin-num-k10",
+  "d8p-fin-num-k100",
+  "d8p-mkt-dup-k10",
+  "d8p-mkt-num-k10"
+ ],
+ "folds": [
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-fin-dup-k1",
+   "map_entry_changes": [],
+   "selected_plan_changes": [],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-fin-dup-k10",
+   "map_entry_changes": [],
+   "selected_plan_changes": [],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-fin-dup-k10-oracle",
+   "map_entry_changes": [],
+   "selected_plan_changes": [],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-fin-dup-k100",
+   "map_entry_changes": [],
+   "selected_plan_changes": [],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-fin-fk-k10",
+   "map_entry_changes": [],
+   "selected_plan_changes": [],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-fin-mixed-20x20",
+   "map_entry_changes": [],
+   "selected_plan_changes": [],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-fin-null-k10",
+   "map_entry_changes": [
+    {
+     "full": "quarantine",
+     "held_out": "no_op",
+     "node": "stg_financial",
+     "shape": "null_shape"
+    }
+   ],
+   "selected_plan_changes": [],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-fin-num-k1",
+   "map_entry_changes": [],
+   "selected_plan_changes": [],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-fin-num-k10",
+   "map_entry_changes": [],
+   "selected_plan_changes": [],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-fin-num-k100",
+   "map_entry_changes": [],
+   "selected_plan_changes": [],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-mkt-dup-k10",
+   "map_entry_changes": [
+    {
+     "full": "dedup",
+     "held_out": "no_op",
+     "node": "stg_daily_market",
+     "shape": "duplicate_shape"
+    }
+   ],
+   "selected_plan_changes": [
+    {
+     "budget_us": 14489039,
+     "full": [
+      "fact_financials",
+      "stg_daily_market"
+     ],
+     "held_out": [
+      "fact_financials"
+     ]
+    },
+    {
+     "budget_us": 28978078,
+     "full": [
+      "fact_financials",
+      "stg_daily_market"
+     ],
+     "held_out": [
+      "fact_financials"
+     ]
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "aurd_gap_full": null,
+   "held_out_cell": "d8p-mkt-num-k10",
+   "map_entry_changes": [],
+   "selected_plan_changes": [],
+   "status": "ok"
+  }
+ ],
+ "full_data_map": {
+  "fact_financials": {
+   "duplicate_shape": "dedup",
+   "fk_shape": "no_op",
+   "null_shape": "no_op",
+   "numeric_shape": "quarantine"
+  },
+  "fact_market_history": {
+   "duplicate_shape": "no_op",
+   "fk_shape": "no_op",
+   "null_shape": "no_op",
+   "numeric_shape": "no_op"
+  },
+  "stg_daily_market": {
+   "duplicate_shape": "dedup",
+   "fk_shape": "no_op",
+   "null_shape": "no_op",
+   "numeric_shape": "no_op"
+  },
+  "stg_financial": {
+   "duplicate_shape": "dedup",
+   "fk_shape": "no_op",
+   "null_shape": "quarantine",
+   "numeric_shape": "quarantine"
+  }
+ },
+ "full_data_selection": [
+  {
+   "budget_us": 0,
+   "policy_nodes": [],
+   "policy_nrd": 1.0,
+   "policy_plan": "[]",
+   "static_nrd": 1.0
+  },
+  {
+   "budget_us": 6388976,
+   "policy_nodes": [
+    "fact_financials"
+   ],
+   "policy_nrd": 0.6222738262989336,
+   "policy_plan": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"}]",
+   "static_nrd": 0.7093304206798398
+  },
+  {
+   "budget_us": 7244520,
+   "policy_nodes": [
+    "fact_financials"
+   ],
+   "policy_nrd": 0.6222738262989336,
+   "policy_plan": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"}]",
+   "static_nrd": 0.7093304206798398
+  },
+  {
+   "budget_us": 14489039,
+   "policy_nodes": [
+    "fact_financials",
+    "stg_daily_market"
+   ],
+   "policy_nrd": 0.5667182707433781,
+   "policy_plan": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"stg_daily_market\"}]",
+   "static_nrd": 0.6537748651242842
+  },
+  {
+   "budget_us": 28978078,
+   "policy_nodes": [
+    "fact_financials",
+    "stg_daily_market"
+   ],
+   "policy_nrd": 0.5667182707433781,
+   "policy_plan": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"stg_daily_market\"}]",
+   "static_nrd": 0.6537748651242842
+  }
+ ],
+ "kind": "lineageguard_audit_map_stability_v1",
+ "review_item": "7 (policy-map derivation cross-validation)",
+ "roster": "C_conflict_heavy",
+ "summary": {
+  "cells": 12,
+  "folds_scoreable": 12,
+  "map_entries": 16,
+  "stable_map": false,
+  "stable_selection": false,
+  "total_map_entry_changes": 2,
+  "total_selected_plan_changes": 2
+ }
+}

@@ -1,0 +1,16 @@
+config-version: 2
+name: "tpcdi_lg"
+version: "1.0.0"
+profile: default
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+models:
+  tpcdi_lg:
+    +materialized: table
+    staging:
+      +schema: analytics
+    marts:
+      +schema: analytics
+flags:
+  send_anonymous_usage_stats: false

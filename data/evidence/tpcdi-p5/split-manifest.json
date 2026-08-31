@@ -1,0 +1,60 @@
+{
+ "cuts": {
+  "raw_dailymarket": {
+   "cut": "2017-02-11",
+   "expr": "dm_date",
+   "label": "market date",
+   "total_rows": 1282768,
+   "train_rows": 1025004,
+   "validation_rows": 257764
+  },
+  "raw_finwire_fin": {
+   "cut": 2010,
+   "expr": "try_cast(substr(line, 19, 4) as integer)",
+   "label": "fin_year",
+   "total_rows": 98576,
+   "train_rows": 75950,
+   "validation_rows": 22626
+  },
+  "raw_trade": {
+   "cut": "2016-08-03 10:50:59",
+   "expr": "t_dts",
+   "label": "trade timestamp",
+   "total_rows": 390978,
+   "train_rows": 312782,
+   "validation_rows": 78196
+  }
+ },
+ "kind": "lineageguard_tpcdi_temporal_split_v1",
+ "shared_dimension_sources": [
+  "raw_finwire (CMP and SEC records)",
+  "raw_customer_actions",
+  "raw_account_actions",
+  "raw_industry"
+ ],
+ "sides": {
+  "train": {
+   "raw_db": "work/split/tpcdi-train-raw.duckdb",
+   "raw_db_sha256": "8866fd7403486e70c7956b9d19414301a14e93d02a2ba18e271098a9d7382dd5",
+   "row_counts": {
+    "raw_dailymarket": 1025004,
+    "raw_finwire": 79850,
+    "raw_finwire_fin": 75950,
+    "raw_trade": 312782
+   }
+  },
+  "validation": {
+   "raw_db": "work/split/tpcdi-validation-raw.duckdb",
+   "raw_db_sha256": "cba588a187d42cfa9689d9c4fc35f2d91ec1e233d25e9a265782bdf153b8b11d",
+   "row_counts": {
+    "raw_dailymarket": 257764,
+    "raw_finwire": 26526,
+    "raw_finwire_fin": 22626,
+    "raw_trade": 78196
+   }
+  }
+ },
+ "source_build_db": "work/tpcdi-build.duckdb",
+ "source_build_sha256": "398aaec50bb5c2cf08531c31f58e29f005e94169627405fa57a622f258a1df08",
+ "train_quantile": 0.8
+}

@@ -1,0 +1,243 @@
+{
+ "composed": {
+  "fk-ord|79fb99ea6a78ba5d": {
+   "nrd": 1.0,
+   "plan_sig": "[{\"eff\":{\"fk_shape\":\"quarantine\"},\"node\":\"model:orders\"}]",
+   "src": "d11:quarantine@orders/fk"
+  },
+  "null-prod|d6b4432c2a6e6d00": {
+   "nrd": 0.5263157894736842,
+   "plan_sig": "[{\"eff\":{\"null_shape\":\"quarantine\"},\"node\":\"model:products\"}]",
+   "src": "d11:quarantine@products/null"
+  },
+  "ord-dup|8f4b10bf4c207850": {
+   "nrd": 0.0,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"dedup\"},\"node\":\"model:orders\"}]",
+   "src": "d11:dedup@orders/duplicate"
+  },
+  "ord-dup|e87c542f3d704682": {
+   "nrd": 1.0,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"quarantine\"},\"node\":\"model:orders\"}]",
+   "src": "d11:quarantine@orders/duplicate"
+  },
+  "ord-mixed|3ef4266d466bcc72": {
+   "nrd": 0.4897959183673469,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"dedup\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:orders\"}]",
+   "src": "d11:cond@orders/per-shape-routing"
+  },
+  "ord-mixed|463544564f0bca7a": {
+   "nrd": 0.7613858303376829,
+   "plan_sig": "[{\"eff\":{\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "src": "d11:composed:customers-only/mixed"
+  },
+  "ord-mixed|6d4552dc46213274": {
+   "nrd": 0.24693594497438365,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"dedup\"},\"node\":\"model:orders\"},{\"eff\":{\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "src": "d11:composed:dedup@orders+quar@customers/mixed-static-set"
+  },
+  "ord-mixed|8f4b10bf4c207850": {
+   "nrd": 0.4897959183673469,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"dedup\"},\"node\":\"model:orders\"}]",
+   "src": "d11:static-dedup@orders/mixed"
+  },
+  "ord-mixed|be1d7c04f4e449b6": {
+   "nrd": 1.0,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:orders\"}]",
+   "src": "d11:static-quarantine@orders/mixed"
+  },
+  "ord-mixed|f9169570ca7e8561": {
+   "nrd": 0.4897959183673469,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"dedup\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:orders\"},{\"eff\":{\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "src": "d11:composed:cond@orders+cond@customers/mixed"
+  },
+  "ord-num|463544564f0bca7a": {
+   "nrd": 0.5085694298705842,
+   "plan_sig": "[{\"eff\":{\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "src": "d11:composed:derived@orders+customers/ord-num"
+  },
+  "ord-num|7980f3186cd29ded": {
+   "nrd": 1.0,
+   "plan_sig": "[{\"eff\":{\"numeric_shape\":\"quarantine\"},\"node\":\"model:orders\"}]",
+   "src": "d11:composed:cond@products+cond@orders"
+  },
+  "ord-num|d436768626f0cc66": {
+   "nrd": 1.0,
+   "plan_sig": "[{\"eff\":{\"numeric_shape\":\"quarantine\"},\"node\":\"model:orders\"},{\"eff\":{\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "src": "d11:composed:cond@orders+condq@customers"
+  },
+  "ord-num|fab76688c350c91a": {
+   "nrd": 1.0,
+   "plan_sig": "[{\"eff\":{\"numeric_shape\":\"null_out\"},\"node\":\"model:orders\"}]",
+   "src": "d11:null_out@orders/numeric"
+  },
+  "prod-dup|1fd56bc234c653ed": {
+   "nrd": 1.0,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"quarantine\"},\"node\":\"model:order_items\"}]",
+   "src": "d10"
+  },
+  "prod-dup|3df455b1940a8d7d": {
+   "nrd": 0.0,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"dedup\"},\"node\":\"model:stg_products\"}]",
+   "src": "d10-cond"
+  },
+  "prod-dup|452f0249cae3a3da": {
+   "nrd": 3.0,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"null_out\"},\"node\":\"model:products\"}]",
+   "src": "d9"
+  },
+  "prod-dup|b3283bf184bb082f": {
+   "nrd": 1.0,
+   "plan_sig": "[]",
+   "src": "d10-cond"
+  },
+  "prod-dup|b84cdcbdddc67a57": {
+   "nrd": 1.105263157894737,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"quarantine\"},\"node\":\"model:products\"}]",
+   "src": "d10"
+  },
+  "prod-dup|bebd2c4339cb3114": {
+   "nrd": 0.0,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"dedup\"},\"node\":\"model:products\"}]",
+   "src": "d9"
+  },
+  "prod-dup|c9c02dee872039a7": {
+   "nrd": 1.105263157894737,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"quarantine\"},\"node\":\"model:stg_products\"}]",
+   "src": "d10"
+  },
+  "prod-dup|cec06467a314a804": {
+   "nrd": 1.0,
+   "plan_sig": "[{\"eff\":{\"duplicate_shape\":\"dedup\"},\"node\":\"model:order_items\"}]",
+   "src": "d10-cond"
+  },
+  "prod-num|22ab9bc4a8c8da29": {
+   "nrd": 1.0,
+   "plan_sig": "[{\"eff\":{\"numeric_shape\":\"null_out\"},\"node\":\"model:products\"}]",
+   "src": "d9"
+  },
+  "prod-num|71354aba837cde60": {
+   "nrd": 0.5263157894736842,
+   "plan_sig": "[{\"eff\":{\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"}]",
+   "src": "d10-cond"
+  },
+  "prod-num|b3283bf184bb082f": {
+   "nrd": 1.0,
+   "plan_sig": "[]",
+   "src": "d9"
+  },
+  "prod-num|c8b44fc0c7bde333": {
+   "nrd": 0.5263157894736842,
+   "plan_sig": "[{\"eff\":{\"numeric_shape\":\"quarantine\"},\"node\":\"model:stg_products\"}]",
+   "src": "d10-cond"
+  }
+ },
+ "kind": "lineageguard_p2_response_table_v1",
+ "single": {
+  "fk-ord|model:orders|quarantine": {
+   "nrd": 1.0,
+   "src": "d11"
+  },
+  "null-prod|model:products|quarantine": {
+   "nrd": 0.5263157894736842,
+   "src": "d11"
+  },
+  "ord-dup|model:orders|dedup": {
+   "nrd": 0.0,
+   "src": "d11"
+  },
+  "ord-dup|model:orders|quarantine": {
+   "nrd": 1.0,
+   "src": "d11"
+  },
+  "ord-num|model:customers|quarantine": {
+   "nrd": 0.5085694298705842,
+   "src": "d11"
+  },
+  "ord-num|model:orders|null_out": {
+   "nrd": 1.0,
+   "src": "d11"
+  },
+  "ord-num|model:orders|quarantine": {
+   "nrd": 1.0,
+   "src": "d11"
+  },
+  "prod-dup|model:customers|dedup": {
+   "nrd": 1.0,
+   "src": "d10-cond"
+  },
+  "prod-dup|model:customers|quarantine": {
+   "nrd": 1.0,
+   "src": "d10"
+  },
+  "prod-dup|model:order_items|dedup": {
+   "nrd": 1.0,
+   "src": "d10-cond"
+  },
+  "prod-dup|model:order_items|quarantine": {
+   "nrd": 1.0,
+   "src": "d10"
+  },
+  "prod-dup|model:orders|dedup": {
+   "nrd": 1.0,
+   "src": "d10-cond"
+  },
+  "prod-dup|model:orders|quarantine": {
+   "nrd": 1.0,
+   "src": "d10"
+  },
+  "prod-dup|model:products|dedup": {
+   "nrd": 0.0,
+   "src": "d10-cond"
+  },
+  "prod-dup|model:products|null_out": {
+   "nrd": 3.0,
+   "src": "d9"
+  },
+  "prod-dup|model:products|quarantine": {
+   "nrd": 1.105263157894737,
+   "src": "d10"
+  },
+  "prod-dup|model:stg_products|dedup": {
+   "nrd": 0.0,
+   "src": "d10-cond"
+  },
+  "prod-dup|model:stg_products|quarantine": {
+   "nrd": 1.105263157894737,
+   "src": "d10"
+  },
+  "prod-num|model:customers|quarantine": {
+   "nrd": 1.0,
+   "src": "d10"
+  },
+  "prod-num|model:order_items|quarantine": {
+   "nrd": 1.0,
+   "src": "d10"
+  },
+  "prod-num|model:orders|quarantine": {
+   "nrd": 1.0,
+   "src": "d10"
+  },
+  "prod-num|model:products|dedup": {
+   "nrd": 1.0,
+   "src": "d9"
+  },
+  "prod-num|model:products|null_out": {
+   "nrd": 1.0,
+   "src": "d9"
+  },
+  "prod-num|model:products|quarantine": {
+   "nrd": 0.5263157894736842,
+   "src": "d10"
+  },
+  "prod-num|model:stg_products|quarantine": {
+   "nrd": 0.5263157894736842,
+   "src": "d10"
+  }
+ },
+ "sources": {
+  "d10_sha256": "8cb142e0156500325dc900627bb055dccb7b2632ac951103b67a5fecf66f642d",
+  "d11_sha256": "ba9524c7902a824702121a7f83be06b989c6bd0f12da6cab587a1adc614fd5b9",
+  "d9_sha256": "5624c778ad8c05d72f810f336e06107fe06d1d47160f67112cf514710185ef4a"
+ },
+ "table_sha256": "3a925f35722105a20a9c185d82c61709fe4bfa712ee056fa527a9a5c1b2c6cc0"
+}

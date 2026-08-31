@@ -1,0 +1,201 @@
+{
+  "assignment_sha256": "4df4d538436583e29b1bad2530c5fc7f88e25513b18081b8f4dec1cd1d64cd4c",
+  "clean_input": {
+    "clean_input_binding_sha256": "257b12f8525a15d7a6b53cffc85ee6785488401e014dd11a4089e059692eea47",
+    "data_role": "validation",
+    "live_raw_snapshot": {
+      "content_closure_sha256": "b49d48c0dbfb46a93cdfb6af7a1ed04016bbef6729acd9535eedde3bd9a109a9",
+      "content_sha256": {
+        "raw_customers": "5af84fb26d080e22cf9f579f85b7c765603da9c9a9c14eaf77af53520c3cd49e",
+        "raw_items": "10bee62ed91d54168e7233d555fe64441689fb0e8bd2920f92a9a72e956d4c2c",
+        "raw_orders": "7d7b16921c9758204bb3ef6a13a3faa86941a8fc9da37359bfead31fcd0c377f",
+        "raw_products": "71ebbdde5bddd05ce2a8b6af891fe16bcafbb62cdeca79f19c3f387872721cd0",
+        "raw_stores": "99740a256f50a195482871eb36d8e4c78e3969776f175a92fda7bce72cc1cd14",
+        "raw_supplies": "24b45458663e2e7488fc77d7898906406a6b06e73c3299fbb3d14d6715dc289c"
+      },
+      "future_or_null_order_rows_after_cutoff": 0,
+      "method": "canonical_all_column_ordered_row_digest_v1",
+      "rows": {
+        "raw_customers": 3102,
+        "raw_items": 1768124,
+        "raw_orders": 1222760,
+        "raw_products": 10,
+        "raw_stores": 6,
+        "raw_supplies": 65
+      }
+    },
+    "partition": "pilot_validation",
+    "split_id": "jaffle.temporal.pilot-validation.2020.v1",
+    "validation_clean_raw_load": {
+      "file_sha256": "5b6f904b08d129595368d696309af7a64323c5bd75160b1859659b6ade7c75bb",
+      "path": "/home/u0020090017/projects/lineageguard/outputs/20260815-043100-jaffle-rolling-qualification-1cbfc2f/inner-runs/20260815-043100-jaffle-rolling-inner-1cbfc2f/clean-raw-load.json"
+    },
+    "validation_final_database": {
+      "file_sha256": "50d60961f3b9434fc12d9c29bbeb3ce61b8635fea0a01c01f50ac3b63e10353a",
+      "open_mode": "read_only",
+      "path": "/home/u0020090017/projects/lineageguard/outputs/20260815-043100-jaffle-rolling-qualification-1cbfc2f/inner-runs/20260815-043100-jaffle-rolling-inner-1cbfc2f/work/clean/jaffle-clean.duckdb"
+    },
+    "validation_logical_snapshot": {
+      "closure_orphan_counts": {
+        "customers_without_order": 0,
+        "items_without_order": 0,
+        "items_without_product": 0,
+        "items_without_supply": 0,
+        "orders_without_customer": 0,
+        "orders_without_store": 0,
+        "products_without_item": 0,
+        "stores_without_order": 0,
+        "supplies_without_item": 0
+      },
+      "cutoff_exclusive": "2021-01-01",
+      "future_roles_materialized": false,
+      "partition": "pilot_validation",
+      "policy": "orders_before_cutoff_and_referenced_dimension_closure_v1",
+      "snapshot_table_content_sha256": {
+        "raw_customers": "5af84fb26d080e22cf9f579f85b7c765603da9c9a9c14eaf77af53520c3cd49e",
+        "raw_items": "10bee62ed91d54168e7233d555fe64441689fb0e8bd2920f92a9a72e956d4c2c",
+        "raw_orders": "7d7b16921c9758204bb3ef6a13a3faa86941a8fc9da37359bfead31fcd0c377f",
+        "raw_products": "71ebbdde5bddd05ce2a8b6af891fe16bcafbb62cdeca79f19c3f387872721cd0",
+        "raw_stores": "99740a256f50a195482871eb36d8e4c78e3969776f175a92fda7bce72cc1cd14",
+        "raw_supplies": "24b45458663e2e7488fc77d7898906406a6b06e73c3299fbb3d14d6715dc289c"
+      },
+      "snapshot_table_rows": {
+        "raw_customers": 3102,
+        "raw_items": 1768124,
+        "raw_orders": 1222760,
+        "raw_products": 10,
+        "raw_stores": 6,
+        "raw_supplies": 65
+      }
+    },
+    "validation_logical_snapshot_sha256": "1f505646fab83214b355b64c9780b06abc0731d468ca222a198dfb88c1cc7e31"
+  },
+  "data_role": "validation",
+  "dirty_inputs_read": false,
+  "kind": "lineageguard_jaffle_rq2_p1_product_target_registry_v1",
+  "outcomes_read": false,
+  "partition": "pilot_validation",
+  "registry_sha256": "79ceb1d164c96a13bebbc920326f6526317c063c3f6793a4a329ba492ed1c2db",
+  "rows": [
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-001",
+      "ordinal": 1,
+      "role_namespaced_identity_sha256": "65edf7ebcce018af729839a317ddba7c99fb4afa6d496476fa92d637972b9d44",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-001",
+      "stable_key_sha256": "b2d974b12dce414903a456653f8de740f265c9904b91356920db7842778e96d2",
+      "target_ledger_file": "targets/001-jaffle-rq2-p1-fresh-slot-001.target-ledger.json",
+      "target_ledger_sha256": "752042f8cfaedd3120d7e545b5d8bef48b0d0c6b11c70b3ab758007f0df87b50"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-002",
+      "ordinal": 2,
+      "role_namespaced_identity_sha256": "815c68d4bad12be49a1bb2cb3f0b79d06de1a16aa5cc24d3a9db6174d99d8c07",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-002",
+      "stable_key_sha256": "38f390e4244122d0699472a1279dea8b3f8af568e53166aae8b60b995b2f4a8f",
+      "target_ledger_file": "targets/002-jaffle-rq2-p1-fresh-slot-002.target-ledger.json",
+      "target_ledger_sha256": "e71578d12e38daf52a97ddb2309b652a73d2f96ff5334dedbb7909a6d6495923"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-003",
+      "ordinal": 3,
+      "role_namespaced_identity_sha256": "9d9e609a334be4ce27f5a278ff4de59a568f8a5180928036d7795fdf8bdb1ff5",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-003",
+      "stable_key_sha256": "078237b19085ebf12e7e5913611a474a2b8b7a4a96cac9ecbec21f7b7b50c063",
+      "target_ledger_file": "targets/003-jaffle-rq2-p1-fresh-slot-003.target-ledger.json",
+      "target_ledger_sha256": "a1d2ba8b4ea584045add7874143a2eb01f560b86f12779f25cde0051082422c2"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-004",
+      "ordinal": 4,
+      "role_namespaced_identity_sha256": "ec2c2215e5f2683c2ab5239c2c4967bc930957b2b0763ec74511315b847d2e56",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-004",
+      "stable_key_sha256": "eb8b9446f45bbdb6cc4729d94abf37f03b102db7cffd28bd94fca8b720aa9a80",
+      "target_ledger_file": "targets/004-jaffle-rq2-p1-fresh-slot-004.target-ledger.json",
+      "target_ledger_sha256": "20382c13cffc9f9db5964c54ae055b07f714c67a178c4748e07d49fc7aa62b48"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-005",
+      "ordinal": 5,
+      "role_namespaced_identity_sha256": "8c832908a016a6d90f1d8848676777294083b06daa7e25be76b06c13235a24ec",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-005",
+      "stable_key_sha256": "8d67942266cb0d7e37acc3365f323e2c7b64fba7cc10755f805d6acb522b2f6a",
+      "target_ledger_file": "targets/005-jaffle-rq2-p1-fresh-slot-005.target-ledger.json",
+      "target_ledger_sha256": "2d83a4c5112ceea5c48d934d2fef121971e9379a1f3b76d97987c4bd99883e6d"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-006",
+      "ordinal": 6,
+      "role_namespaced_identity_sha256": "ec68c5abf07791964f423ec640ca2b61cf976bc98eadb79a8766e508716febed",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-006",
+      "stable_key_sha256": "852ff17566c181cc006cb8dab5bc189135c15ca96620cbf6c3c640f4344cf837",
+      "target_ledger_file": "targets/006-jaffle-rq2-p1-fresh-slot-006.target-ledger.json",
+      "target_ledger_sha256": "d220b5011b758bb542029e49740cd2ec2b959d27d379a614ed802e11dd57e0c3"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-007",
+      "ordinal": 7,
+      "role_namespaced_identity_sha256": "e9429fd3b3b3280098a4b6761862eb84d35630330986ef8074024f361b60b42c",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-007",
+      "stable_key_sha256": "cd24818b4526d072e954e13af15a2535e0aa212aca0aff85ca0016679fd456a6",
+      "target_ledger_file": "targets/007-jaffle-rq2-p1-fresh-slot-007.target-ledger.json",
+      "target_ledger_sha256": "1467c61a08160d8db0fba16d783707cc1bcce93edcf8b2f70891eb900b66bd31"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-008",
+      "ordinal": 8,
+      "role_namespaced_identity_sha256": "fc727c46ee7132664dfaaff20d7e763bb3e79f01f4f29ffa91906466520b2407",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-008",
+      "stable_key_sha256": "2fe43d7572c6b37c85de8416b70eeb2dbbf4e7148e5d38871c7819005e3b02fd",
+      "target_ledger_file": "targets/008-jaffle-rq2-p1-fresh-slot-008.target-ledger.json",
+      "target_ledger_sha256": "2ea356423973f943ad6159a8a55e07f2f32c73afde02ebb35a5d73508f27cbdc"
+    }
+  ],
+  "schema_version": 1,
+  "split_id": "jaffle.temporal.pilot-validation.2020.v1",
+  "target_closure": {
+    "candidate_population_count": 10,
+    "cross_role_overlap_count": 8,
+    "cross_role_overlap_stable_key_sha256": [
+      "078237b19085ebf12e7e5913611a474a2b8b7a4a96cac9ecbec21f7b7b50c063",
+      "2fe43d7572c6b37c85de8416b70eeb2dbbf4e7148e5d38871c7819005e3b02fd",
+      "38f390e4244122d0699472a1279dea8b3f8af568e53166aae8b60b995b2f4a8f",
+      "852ff17566c181cc006cb8dab5bc189135c15ca96620cbf6c3c640f4344cf837",
+      "8d67942266cb0d7e37acc3365f323e2c7b64fba7cc10755f805d6acb522b2f6a",
+      "b2d974b12dce414903a456653f8de740f265c9904b91356920db7842778e96d2",
+      "cd24818b4526d072e954e13af15a2535e0aa212aca0aff85ca0016679fd456a6",
+      "eb8b9446f45bbdb6cc4729d94abf37f03b102db7cffd28bd94fca8b720aa9a80"
+    ],
+    "cross_role_physical_key_reuse_allowed": true,
+    "freshness_unit": "validation_snapshot_and_paired_campaign_outcome_not_product_entity",
+    "high_target_count": 4,
+    "identity": [
+      "data_role",
+      "partition",
+      "split_id",
+      "clean_snapshot_sha256",
+      "node_id",
+      "stable_key_sha256"
+    ],
+    "identity_namespace": {
+      "clean_snapshot_sha256": "1f505646fab83214b355b64c9780b06abc0731d468ca222a198dfb88c1cc7e31",
+      "data_role": "validation",
+      "node_id": "source:ecom.raw_products",
+      "partition": "pilot_validation",
+      "split_id": "jaffle.temporal.pilot-validation.2020.v1"
+    },
+    "low_target_count": 4,
+    "resolver_hash_algorithm": "canonical_stable_key_sha256_v1",
+    "role_identity_hash": "canonical_json_sha256_of_declared_namespace_and_resolver_hash",
+    "selected_target_count": 8,
+    "target_allocation_sha256": "a6ecc75c63ef45194332fcb19b410de9cad711776f3bc89aabc635b93887ea1b",
+    "train_target_closure_sha256": "5d5536c478911ec4b279289d32de2626d86a43a508ec3ea532d3a96c1b12e9fe",
+    "train_target_count": 10,
+    "unseen_entity_claim_allowed": false,
+    "unused_middle_stable_key_sha256": [
+      "de10e3425799f952e5c95087b9224059712107ae2c890f07e0fc050c417aaf1f",
+      "c110c22bc6efbb8456a4791615334aa5dcafb035c89b3d79289f06094d9bbc77"
+    ],
+    "unused_middle_target_count": 2,
+    "within_p1_unique_target_count": 8
+  }
+}

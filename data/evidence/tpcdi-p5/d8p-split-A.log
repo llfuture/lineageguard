@@ -1,0 +1,28 @@
+[2026-08-29T12:00:26Z] d8p-fin-num-k1             no_validation damage=5.839075431325855e-06 (20.64s)
+[2026-08-29T12:01:08Z] d8p-fin-num-k1             quar@stg_financial               NRD=  0.838936 clean=0.0 (19.44s)
+[2026-08-29T12:01:55Z] d8p-fin-num-k1             nullout@stg_financial            NRD=  1.000000 clean=0.0 (21.35s)
+[2026-08-29T12:02:45Z] d8p-fin-num-k1             dedup@stg_financial              NRD=  1.000000 clean=0.0 (25.17s)
+[2026-08-29T12:04:15Z] d8p-fin-num-k1             quar@fact_financials             NRD=  0.838936 clean=0.0 (44.12s)
+[2026-08-29T12:05:13Z] d8p-fin-num-k1             cond@stg_financial               NRD=  0.838936 clean=0.0 (27.68s)
+[2026-08-29T12:06:09Z] d8p-fin-num-k1             quar@dim_company                 NRD=  1.000000 clean=0.0 (27.58s)
+[2026-08-29T12:07:00Z] d8p-fin-num-k1             quar@stg_daily_market            NRD=  1.000000 clean=0.0 (28.02s)
+[2026-08-29T12:07:22Z] d8p-fin-num-k10            no_validation damage=0.00018873486275955678 (20.43s)
+[2026-08-29T12:08:02Z] d8p-fin-num-k10            quar@stg_financial               NRD=  0.918723 clean=0.0 (19.45s)
+[2026-08-29T12:08:42Z] d8p-fin-num-k10            nullout@stg_financial            NRD=  1.000000 clean=0.0 (19.05s)
+[2026-08-29T12:09:19Z] d8p-fin-num-k10            dedup@stg_financial              NRD=  1.000000 clean=0.0 (17.94s)
+[2026-08-29T12:10:22Z] d8p-fin-num-k10            quar@fact_financials             NRD=  0.918723 clean=0.0 (30.92s)
+[2026-08-29T12:10:59Z] d8p-fin-num-k10            cond@stg_financial               NRD=  0.918723 clean=0.0 (17.67s)
+[2026-08-29T12:11:35Z] d8p-fin-num-k10            quar@dim_company                 NRD=  1.000000 clean=0.0 (16.87s)
+[2026-08-29T12:12:11Z] d8p-fin-num-k10            quar@stg_daily_market            NRD=  1.000000 clean=0.0 (17.42s)
+[2026-08-29T12:12:30Z] d8p-fin-num-k100           no_validation damage=0.0005839075431325856 (17.93s)
+[2026-08-29T12:13:07Z] d8p-fin-num-k100           quar@stg_financial               NRD=  0.801856 clean=0.0 (18.17s)
+[2026-08-29T12:13:43Z] d8p-fin-num-k100           nullout@stg_financial            NRD=  1.000000 clean=0.0 (17.92s)
+[2026-08-29T12:14:18Z] d8p-fin-num-k100           dedup@stg_financial              NRD=  1.000000 clean=0.0 (17.08s)
+[2026-08-29T12:15:18Z] d8p-fin-num-k100           quar@fact_financials             NRD=  0.801856 clean=0.0 (29.78s)
+[2026-08-29T12:15:53Z] d8p-fin-num-k100           cond@stg_financial               NRD=  0.801856 clean=0.0 (16.96s)
+[2026-08-29T12:16:31Z] d8p-fin-num-k100           quar@dim_company                 NRD=  1.000000 clean=0.0 (17.87s)
+[2026-08-29T12:17:07Z] d8p-fin-num-k100           quar@stg_daily_market            NRD=  1.000000 clean=0.0 (16.45s)
+
+[2026-08-29T12:17:07Z] DONE rows=24 failures=0 dbt_steps=198
+artifact: /home/u0020090017/projects/lineageguard_claude/tpcdi/out-split-A/d8p-measurement.json
+sha256  : fb9950566c51e2a098b4695b642a2aeeb74bff7f8d6cc594837e462bcffb3a0d

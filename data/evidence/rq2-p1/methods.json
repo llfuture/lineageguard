@@ -1,0 +1,141 @@
+{
+  "exclusions": {
+    "monte_carlo_marginal_gain": "excluded_because_the_existing_simulator_does_not_model_quarantine_changed_to_deleted_damage_and_lacks_a_frozen_p1_scalar_input_contract",
+    "random_cost": "excluded_to_preserve_one_plan_per_method_by_budget_without_post_seed_aggregation"
+  },
+  "kind": "lineageguard_jaffle_rq2_action_p1_method_registry_v1",
+  "method_count": 6,
+  "method_registry_sha256": "8a0cccb95bcd0bf0cdc8338afdfb7e78c21aea02b115ac1cc7b1c8f73b8dbd0d",
+  "methods": [
+    {
+      "competitive": false,
+      "eligible_budget_anchors": [
+        "zero",
+        "cheapest_action",
+        "1_percent",
+        "2_percent",
+        "5_percent",
+        "10_percent",
+        "20_percent",
+        "100_percent"
+      ],
+      "method_id": "no_validation",
+      "objective_source": "unit_no_validation_nrd_anchor",
+      "planner": "none",
+      "role": "anchor",
+      "seed_policy": {
+        "kind": "none",
+        "seeds": []
+      }
+    },
+    {
+      "competitive": false,
+      "eligible_budget_anchors": [
+        "100_percent"
+      ],
+      "method_id": "all_feasible_validation",
+      "objective_source": "observed_common_five_all_feasible_anchor",
+      "planner": "all_feasible_common_five",
+      "role": "anchor",
+      "seed_policy": {
+        "kind": "none",
+        "seeds": []
+      }
+    },
+    {
+      "competitive": true,
+      "eligible_budget_anchors": [
+        "zero",
+        "cheapest_action",
+        "1_percent",
+        "2_percent",
+        "5_percent",
+        "10_percent",
+        "20_percent",
+        "100_percent"
+      ],
+      "method_id": "lineageguard_action_d8_refit",
+      "objective_source": "all_d8_final_action_response_refit",
+      "planner": "exhaustive_shared_best_singleton_envelope",
+      "role": "primary",
+      "seed_policy": {
+        "kind": "none",
+        "seeds": []
+      }
+    },
+    {
+      "competitive": true,
+      "eligible_budget_anchors": [
+        "zero",
+        "cheapest_action",
+        "1_percent",
+        "2_percent",
+        "5_percent",
+        "10_percent",
+        "20_percent",
+        "100_percent"
+      ],
+      "method_id": "lineageguard_v4_shared_envelope",
+      "objective_source": "frozen_d8_old_surrogate_singletons",
+      "planner": "exhaustive_shared_best_singleton_envelope",
+      "role": "primary_comparator",
+      "seed_policy": {
+        "kind": "none",
+        "seeds": []
+      }
+    },
+    {
+      "competitive": true,
+      "eligible_budget_anchors": [
+        "zero",
+        "cheapest_action",
+        "1_percent",
+        "2_percent",
+        "5_percent",
+        "10_percent",
+        "20_percent",
+        "100_percent"
+      ],
+      "method_id": "weighted_min_cut",
+      "objective_source": "frozen_common_five_dag_and_measured_costs",
+      "planner": "weighted_min_cut",
+      "role": "baseline",
+      "seed_policy": {
+        "kind": "none",
+        "seeds": []
+      }
+    },
+    {
+      "competitive": false,
+      "eligible_budget_anchors": [
+        "zero",
+        "cheapest_action",
+        "1_percent",
+        "2_percent",
+        "5_percent",
+        "10_percent",
+        "20_percent",
+        "100_percent"
+      ],
+      "method_id": "exact_surrogate_oracle",
+      "objective_source": "frozen_old_path_coverage_surrogate",
+      "planner": "exact_surrogate_oracle",
+      "role": "reference",
+      "seed_policy": {
+        "kind": "none",
+        "seeds": []
+      }
+    }
+  ],
+  "pipeline_id": "jaffle_shop_6y",
+  "primary_comparator_id": "lineageguard_v4_shared_envelope",
+  "primary_method_id": "lineageguard_action_d8_refit",
+  "schema_version": 1,
+  "scope": {
+    "complete_confirmatory_baseline_coverage_claimed": false,
+    "fresh_inputs_or_outcomes_read": false,
+    "minimum_mechanism_registry": true,
+    "pilot_only": true,
+    "test_or_temporal_holdout_read": false
+  }
+}

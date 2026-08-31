@@ -1,0 +1,193 @@
+{
+  "command": [
+    "/home/u0020090017/projects/lineageguard/releases/ab34b47508fead84b5d84e22dab414ef804fc43e/scripts/run_jaffle_rq2_action_response_d8.py",
+    "--release-root",
+    "/home/u0020090017/projects/lineageguard/releases/ab34b47508fead84b5d84e22dab414ef804fc43e",
+    "--artifact-root",
+    "/home/u0020090017/projects/lineageguard",
+    "--lineageguard-release-commit",
+    "ab34b47508fead84b5d84e22dab414ef804fc43e",
+    "--jaffle-source-commit",
+    "7d0d8de2d58edae06f0724a3892da0224bbf0f4a",
+    "--design",
+    "configs/jaffle_rq2_action_response_d8_v2/design.json",
+    "--actions",
+    "configs/jaffle_rq2_action_response_d8_v2/actions.json",
+    "--placements",
+    "configs/jaffle_rq2_action_response_d8_v2/placements.json",
+    "--target-registry",
+    "artifacts/jaffle_rq2_action_response_d8_v2/targets-20260821-234932-rq2-action-d8-1cb5770/target-ledger-registry.json",
+    "--predictor-spec",
+    "artifacts/jaffle_rq2_action_response_d8_v2/predictor-20260821-235423-rq2-action-d8-1cb5770/predictor-spec.json",
+    "--prelaunch-conformance",
+    "artifacts/jaffle_rq2_action_response_d8_v2/prelaunch-20260822-010559-rq2-action-d8-ab34b47/prelaunch-conformance.json",
+    "--n1-integration-evidence",
+    "artifacts/jaffle_rq2_action_response_d8_v2/n1-integration-20260822-010149-rq2-action-d8-ab34b47/evidence.json",
+    "--clean-anchor",
+    "/home/u0020090017/projects/lineageguard/outputs/20260815-075000-jaffle-train-snapshot-actual-9b4b5c8/inner-runs/20260815-075000-jaffle-train-snapshot-actual-inner-9b4b5c8/work/clean/jaffle-clean.duckdb",
+    "--source-project",
+    "/home/u0020090017/data_benchmark/lineageguard/sources/jaffle-shop",
+    "--venv",
+    "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815",
+    "--offline-package-dir",
+    "/home/u0020090017/data_benchmark/lineageguard/dependencies/jaffle-offline-packages-v1",
+    "--output-root",
+    "outputs",
+    "--scratch-root",
+    "/home/u0020090017/hermes_run",
+    "--run-id",
+    "20260822-011043-rq2-action-d8-measure-ab34b47-inner"
+  ],
+  "exit_code": 0,
+  "finished_utc": "2026-08-22T03:47:14.789442Z",
+  "gate_evaluated_by_runner": false,
+  "jaffle_source_commit": "7d0d8de2d58edae06f0724a3892da0224bbf0f4a",
+  "kind": "lineageguard_jaffle_rq2_action_response_d8_run_v2",
+  "lineageguard_release_commit": "ab34b47508fead84b5d84e22dab414ef804fc43e",
+  "measurement_only": true,
+  "n1_integration_evidence_file_sha256": "a6ab06d4370bacb7cfdb5c74e2980966f1c90c6a496f8846adeee496d52868e1",
+  "n1_integration_evidence_sha256": "8d01d516980f9aa237f82814278452c46bafa1f4ce08b717bfd122266cda7f2e",
+  "path_binding": {
+    "actions": "/home/u0020090017/projects/lineageguard/releases/ab34b47508fead84b5d84e22dab414ef804fc43e/configs/jaffle_rq2_action_response_d8_v2/actions.json",
+    "clean_anchor": "/home/u0020090017/projects/lineageguard/outputs/20260815-075000-jaffle-train-snapshot-actual-9b4b5c8/inner-runs/20260815-075000-jaffle-train-snapshot-actual-inner-9b4b5c8/work/clean/jaffle-clean.duckdb",
+    "design": "/home/u0020090017/projects/lineageguard/releases/ab34b47508fead84b5d84e22dab414ef804fc43e/configs/jaffle_rq2_action_response_d8_v2/design.json",
+    "immutable_release_root": "/home/u0020090017/projects/lineageguard/releases/ab34b47508fead84b5d84e22dab414ef804fc43e",
+    "mutable_artifact_root": "/home/u0020090017/projects/lineageguard",
+    "n1_integration_evidence": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_response_d8_v2/n1-integration-20260822-010149-rq2-action-d8-ab34b47/evidence.json",
+    "placements": "/home/u0020090017/projects/lineageguard/releases/ab34b47508fead84b5d84e22dab414ef804fc43e/configs/jaffle_rq2_action_response_d8_v2/placements.json",
+    "predictor_spec": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_response_d8_v2/predictor-20260821-235423-rq2-action-d8-1cb5770/predictor-spec.json",
+    "prelaunch_conformance": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_response_d8_v2/prelaunch-20260822-010559-rq2-action-d8-ab34b47/prelaunch-conformance.json",
+    "target_registry": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_response_d8_v2/targets-20260821-234932-rq2-action-d8-1cb5770/target-ledger-registry.json"
+  },
+  "prelaunch_conformance_sha256": "cf1da5aab1458908b9fff597fd974c802f0d9a1e118accf06a5cec3cb1825a15",
+  "python": {
+    "executable": "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815/bin/python",
+    "version": "3.13.13"
+  },
+  "result_file_sha256": "1e0e908cd2cf394ae6674a9f57b29fe8b80d77b8d963313b36ddd0fa4fcc04bf",
+  "result_kind": "lineageguard_jaffle_rq2_action_response_d8_result_v2",
+  "result_semantic_sha256": "bc40bfe13d86af694c95adc0b4dfa434ee250abccd985db7f522480a0b1f77c8",
+  "run_id": "20260822-011043-rq2-action-d8-measure-ab34b47-inner",
+  "runner_source_set": {
+    "files": [
+      {
+        "path": "codes/lineageguard/jaffle_ground_truth.py",
+        "sha256": "5f9d025443b2ebb0afbce0a6483cb783351a45c0e21d6c5c270c226ea90d11f6"
+      },
+      {
+        "path": "codes/lineageguard/experiment_schema.py",
+        "sha256": "46ec0fb3f8ae3344b90c8a37291bf3783884f246ec51a4239a5067d38be319f0"
+      },
+      {
+        "path": "codes/lineageguard/intermediate_protected.py",
+        "sha256": "5b3e03adae92313f028f49c758da3e7f1ddbc0006298129adf3c8cb2b8f70b66"
+      },
+      {
+        "path": "codes/lineageguard/semantic_damage.py",
+        "sha256": "f10554f18170198e9fc53b3242d92b512e3e03c2426e5cf2d06c783c34f2247f"
+      },
+      {
+        "path": "codes/lineageguard/validator_catalog.py",
+        "sha256": "ec31a48c17dcea2d2524d4657f0c32e283b21528da59c9f639f68051b9e9538d"
+      },
+      {
+        "path": "codes/lineageguard/oracle_execution.py",
+        "sha256": "b795eed7acb64ff2c6a9252471754c3bfde11bb4520eac7ee6727508cd5d33fb"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_conditioned.py",
+        "sha256": "8768de679752b61d344140a1d2f8ea206f089dd1f9d4ae3fce58fd56f3327453"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_mve_artifacts.py",
+        "sha256": "e6f0cf1aacab2fbf15810f882656419fbd02c03d7754e2242f6315e136d7b890"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_mve_evidence.py",
+        "sha256": "fad4d647cf7b4ddff66217fd13347d5aa643448dfd9b3791bec3c2e5c3620fa3"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_response_mve_design.py",
+        "sha256": "769cbce3504bebed792fecba142ce025baa37218951905c500dfa31f3a14b138"
+      },
+      {
+        "path": "codes/lineageguard/rq2_product_injection.py",
+        "sha256": "19d70d7f631b1fc0a4cb772ff7027ad14e7b7f9a6bbd92b584a667f74edbc0c9"
+      },
+      {
+        "path": "codes/lineageguard/rq2_oracle_execution_v2.py",
+        "sha256": "c4647fe2a532f180caa1014fb932629fad577c5dd086a32d85fbdac8d52737da"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_mve_runner.py",
+        "sha256": "abcde0f57bf8828f29d043034ff38e4931a735fe88e4a2566e80f637a2d05f56"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_response_d8_design.py",
+        "sha256": "d4e7905d1b819036251c83bf3baae0aad4abac8cdb0a988336b7b8970606c1d5"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_d8_artifacts.py",
+        "sha256": "91fb11a884bfdfa8a21e6f5626a0a0177b7f8d175c94e83289a5f77c64d93770"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_d8_closure.py",
+        "sha256": "1287289d4e1cbb38b9fbb073f1eaaf81eb172a22191e1fd3969de8f32f80adf0"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_factorial_d8.py",
+        "sha256": "f78b16ddef9dbff03742961cdeca51e539a85f030495c13b456e221a277e7f7a"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_d8_evidence.py",
+        "sha256": "be37cb31e8b2fea6ef47f52ae623157658ab131ca721a3de7f3f000ce079666d"
+      },
+      {
+        "path": "codes/lineageguard/rq2_product_injection_d8.py",
+        "sha256": "95acdda95b2dfefaf7433706c0632655fd8fc99b06b91ad81d91bcfe33bb7f1c"
+      },
+      {
+        "path": "codes/lineageguard/rq2_action_d8_runner.py",
+        "sha256": "e266e3b68304177cb6de7d3ddcd1be982631b91298a26e36b4ec494fe3d08b49"
+      },
+      {
+        "path": "scripts/run_jaffle_mve.py",
+        "sha256": "b06a0c6a67c0a78f1de9fc2170224a5213da390aa316290cdd38442504b062d9"
+      },
+      {
+        "path": "scripts/run_jaffle_ground_truth_mve.py",
+        "sha256": "4ea3632ea4faf87eea7f62f9dea96ea6c89a332e26cfa1e79d4db9550c2bc691"
+      },
+      {
+        "path": "scripts/run_jaffle_intermediate_protected_campaign.py",
+        "sha256": "e1284830026b2e97897b742462af324f9bce9937b659d0faf299220ef274c478"
+      },
+      {
+        "path": "scripts/run_jaffle_rq2_oracle_pilot.py",
+        "sha256": "60fb3bc383fb342f366e5dd53ef7c051496088fdb1a0adedebc750e63deedc34"
+      },
+      {
+        "path": "scripts/run_jaffle_rq2_action_response_mve.py",
+        "sha256": "51470e79cc47e8ae940cf6a4d0949d82e69c615321c666c4be9bbd9b36a7666c"
+      },
+      {
+        "path": "scripts/run_jaffle_rq2_action_response_d8.py",
+        "sha256": "d7cb3d404ecd73fe582667e8d35c9049bc39776c258dbe50f144e17ad6425d98"
+      }
+    ],
+    "kind": "lineageguard_jaffle_rq2_action_response_d8_runner_source_set_v2",
+    "schema_version": 2
+  },
+  "runner_source_sha256": "3ee8b2e130603ce97094036a27210520ec0df3b2623f398290ba8d577d1e869a",
+  "schema_version": 2,
+  "scope": {
+    "data_role": "train",
+    "paper_eligible": false,
+    "repair_executed": false,
+    "study_phase": "post_hoc_development_d8",
+    "test_or_temporal_holdout_read": false
+  },
+  "started_utc": "2026-08-22T01:17:34.794606Z",
+  "status": "complete",
+  "working_directory": "/home/u0020090017/projects/lineageguard/releases/ab34b47508fead84b5d84e22dab414ef804fc43e"
+}

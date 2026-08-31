@@ -1,0 +1,5184 @@
+{
+ "counts": {
+  "campaigns": 4,
+  "distinct_physical_plans": 6,
+  "rows": 28,
+  "technical_failures": 0
+ },
+ "finished_utc": "2026-08-24T05:07:58Z",
+ "fresh_registry_sha256": "183e568ef72a320d37021218456649dea4e8f6f9e7d734059b43206925606a46",
+ "kind": "lineageguard_p2_pilot_measurement_v1",
+ "measurement_sha256": "ff5d5fe1692e1137aa7d3dc6562a7a988385d2ee52fa70f0cfac467072c3ddbb",
+ "plans_sha256": "d61a8e5211b356503be9d0aea1b8eea95eb46d6932b7909a152f003b7e33836c",
+ "protocol_sha256": "60dd0ab90134f3e6003c0b138161699c93cc5eead3e1ca3d993db8f646644558",
+ "results": [
+  {
+   "absolute_damage": 0.02,
+   "campaign_id": "p2-prod-num-source-low",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "plan": [],
+   "plan_sig": null,
+   "role": "no_validation",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 31152864,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 5624311663,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 44043218,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 374672429,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28756006,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 53644882,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 28250400,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 45286941,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 35838222,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 382142572,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27035055,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 52027850,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 39103036,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 2883648239,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27470277,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 59712491,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 39577001,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 60383609,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27086272,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 49756464,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24469585,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 2027774014,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24801007,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 53315281,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 40671006,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 402073552,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24034797,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 529895944,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26196539,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 53510746,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 56590178,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 45144475,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27406842,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 51518621,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 39169243,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 583668684,
+       "fired_shapes": [
+        "fk_shape"
+       ],
+       "node_id": "model:order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 77651,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "fk_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29939930,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 334873435,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29621505,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 54510504,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:order_items"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:order_items\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 19465269,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 39675484,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 63110938,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 387338161,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24537175,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 49538997,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 57791570,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 47220692,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26657749,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 347979842,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 30486599,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 50422478,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 32542223,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 49873065,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26315740,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 54520281,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 59732530,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 46087010,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 31578902,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 54872182,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25278564,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 104773637,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 57711853,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 43398468,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "campaign_id": "p2-prod-num-source-high",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "plan": [],
+   "plan_sig": null,
+   "role": "no_validation",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27967359,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 1560115540,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 35093116,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 297391165,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26874157,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 52274778,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 29947851,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 54103474,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 57124831,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 1444268767,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26126524,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 103137069,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 121693877,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 1821631043,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 33563987,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 56586216,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 30819715,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 46786090,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 32226984,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 46339888,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28897818,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 1627510167,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22675384,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 147018563,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 46282185,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 376860012,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 37658286,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 337572710,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25859159,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 55902167,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 59374071,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 46535719,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 31150187,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 56238999,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 39056397,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 731255492,
+       "fired_shapes": [
+        "fk_shape"
+       ],
+       "node_id": "model:order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 276150,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "fk_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29790239,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 374200357,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26682511,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 50233170,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:order_items"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:order_items\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22103117,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 39609037,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26906601,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 290275545,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26939139,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 51961597,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 58430967,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 50123450,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 32461717,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 407104267,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29998733,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 48277517,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 35098209,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 41142089,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28407036,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 54756839,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 62275759,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 60787049,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26523622,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 52899330,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-source-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 32364873,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 41097948,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "sku",
+      "mode": "numeric_add",
+      "relation": "raw.raw_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 59717639,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 52084473,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "campaign_id": "p2-prod-num-intermediate-low",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "plan": [],
+   "plan_sig": null,
+   "role": "no_validation",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 37561797,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 70303660,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25824945,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 322201321,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26297773,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 62913844,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 54961603,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 49595929,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 23494522,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 375862989,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 42342887,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 68631822,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 39259903,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 186998472,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25734430,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 59889299,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 71989102,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 44582076,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 31223596,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 45722640,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 23277385,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 42061435,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25233979,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 47492184,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 37328811,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 410989134,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27413944,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 244515693,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24791440,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 124079913,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 46220415,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 44704551,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 30257119,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 85739893,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 32969994,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 663404053,
+       "fired_shapes": [
+        "fk_shape"
+       ],
+       "node_id": "model:order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 77703,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "fk_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 23388591,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 431483400,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26647111,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 50663101,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:order_items"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:order_items\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 32518897,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 47266057,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28429995,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 1534303461,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24942967,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 48307618,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 57573375,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 49728970,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27411891,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 348167011,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22874845,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 49535398,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24501042,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 42478752,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25589092,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 88030229,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 54955956,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 44392691,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 38705099,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 49188714,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-low",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24270433,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 46608156,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 142159339,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 47680825,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "campaign_id": "p2-prod-num-intermediate-high",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "plan": [],
+   "plan_sig": null,
+   "role": "no_validation",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22782530,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 40281329,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22601901,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 550397550,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25358065,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 50374145,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 51217234,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 66346115,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 32400427,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 351301134,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29214148,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 68585738,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29259972,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 42835046,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24730494,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 50933508,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 25840065,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 43822949,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28083506,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 51880935,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 20131829,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 45654346,
+       "fired_shapes": [],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29976208,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 60867086,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28970365,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 336049539,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24299281,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 408934045,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25026606,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 111849879,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 54613053,
+       "downstream_suppressed": false,
+       "node_id": "model:stg_products"
+      },
+      "signal": {
+       "detect_runtime_ns": 43916129,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:stg_products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 44495846,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 52694642,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28738972,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 511241009,
+       "fired_shapes": [
+        "fk_shape"
+       ],
+       "node_id": "model:order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 276623,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "fk_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27692544,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 320600990,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 34583185,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 40763590,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:stg_products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:order_items"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:stg_products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:order_items\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 23058099,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 54105286,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25287928,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 404052923,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 30429572,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 56273440,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 53724400,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 42443195,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27467715,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 279060557,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25884688,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 48094518,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"model:orders\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25178217,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 45712898,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22914708,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 53428545,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 52320914,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 43529832,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26107906,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 114674437,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"},{\"map\":{\"duplicate_shape\":\"no_op\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:customers\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "availability_loss": 0.0,
+   "campaign_id": "p2-prod-num-intermediate-high",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22163472,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 40379922,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 5,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "product_id",
+      "mode": "numeric_add",
+      "relation": "analytics.stg_products",
+      "row_count_after": 10,
+      "row_count_before": 10,
+      "target_count": 1
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 55631182,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 45304028,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 1
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "family": "prod-num",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"model:products\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  }
+ ],
+ "schema_version": 1,
+ "scope": {
+  "data_role": "validation_fresh",
+  "effect_claim_allowed": false,
+  "gate_computed_by_runner": false,
+  "oracle_detector": false,
+  "paper_eligible": true,
+  "real_signal_detection_on_both_branches": true,
+  "study_phase": "pilot",
+  "summary_computed_by_runner": false
+ },
+ "started_utc": "2026-08-24T04:15:18Z"
+}

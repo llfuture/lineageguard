@@ -1,0 +1,66 @@
+[
+ {
+  "case_id": "clean-baseline",
+  "description": "No injection. Establishes what the shipped dbt suite fails on in clean data, which is the false-fire floor both sides must be read against.",
+  "injection": null,
+  "signal_nodes": ["model:stg_products", "model:products", "model:orders",
+                   "model:order_items", "model:customers"]
+ },
+ {
+  "case_id": "prod-num-out-of-band",
+  "description": "Product price raised far outside the frozen 2x band. The paper's numeric predicate should fire; dbt's suite has no range assertion on price, so this is the case where the contract is expected to be the stronger of the two.",
+  "injection": {"relation_alias": "raw_products", "mode": "numeric_add",
+                "columns": ["price"], "operand": 1000000,
+                "targets": ["JAF-001"]},
+  "signal_nodes": ["model:stg_products", "model:products"]
+ },
+ {
+  "case_id": "prod-num-in-band",
+  "description": "Product price raised by an amount that stays inside the 2x band. The contract is expected to stay silent (this is the E3 miss). Whether the shipped suite catches it through the order accounting identities is the question this audit exists to answer.",
+  "injection": {"relation_alias": "raw_products", "mode": "numeric_add",
+                "columns": ["price"], "operand": 100,
+                "targets": ["JAF-001"]},
+  "signal_nodes": ["model:stg_products", "model:products", "model:orders"]
+ },
+ {
+  "case_id": "prod-dup",
+  "description": "Duplicated product row. Both sides should fire: key multiplicity for the contract, the unique test for dbt.",
+  "injection": {"relation_alias": "raw_products",
+                "mode": "duplicate_physical_row", "targets": ["JAF-001"]},
+  "signal_nodes": ["model:stg_products", "model:products"]
+ },
+ {
+  "case_id": "prod-null",
+  "description": "Product price set to NULL. Contract null_shape vs dbt not_null.",
+  "injection": {"relation_alias": "raw_products", "mode": "null_out_column",
+                "column": "price", "targets": ["JAF-001"]},
+  "signal_nodes": ["model:stg_products", "model:products"]
+ },
+ {
+  "case_id": "ord-num-out-of-band",
+  "description": "Order subtotal and total raised far outside the band, on the million-row order fork. Both the contract's band and the accounting identity should fire.",
+  "injection": {"relation_alias": "raw_orders", "mode": "numeric_add",
+                "columns": ["subtotal", "order_total"], "operand": 10000000,
+                "targets": []},
+  "signal_nodes": ["model:orders", "model:customers"],
+  "target_rule": "first-order-by-hash"
+ },
+ {
+  "case_id": "ord-num-subtotal-only",
+  "description": "Only the subtotal is raised, leaving order_total stale. This breaks order_total = subtotal + tax_paid without necessarily leaving the band, so it separates an identity assertion from a range assertion.",
+  "injection": {"relation_alias": "raw_orders", "mode": "numeric_add",
+                "columns": ["subtotal"], "operand": 100,
+                "targets": []},
+  "signal_nodes": ["model:orders", "model:customers"],
+  "target_rule": "first-order-by-hash"
+ },
+ {
+  "case_id": "ord-fk-orphan",
+  "description": "Order customer key replaced by an orphan value. Contract fk_shape vs dbt relationships.",
+  "injection": {"relation_alias": "raw_orders", "mode": "fk_orphan",
+                "column": "customer",
+                "orphan_value": "LGAUDIT-ORPHAN-CUSTOMER", "targets": []},
+  "signal_nodes": ["model:orders", "model:order_items"],
+  "target_rule": "first-order-by-hash"
+ }
+]

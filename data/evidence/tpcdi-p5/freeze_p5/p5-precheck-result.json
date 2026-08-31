@@ -1,0 +1,4566 @@
+{
+ "criteria": {
+  "c1_response_distinguishable": true,
+  "c2_pass": true,
+  "c2_predicted_relative_improvement": 0.10961512146180728,
+  "c3_no_unmeasured_composition": true,
+  "c4_not_cost_dominated": true,
+  "c5_conflicts": [],
+  "c5_no_measurement_conflicts": true
+ },
+ "decision": "LAUNCH",
+ "kind": "lineageguard_p5_precheck_result_v1",
+ "plans_sha256": "0025e364f58cd4f45f46f4d612b37d879a72b0fbec1888bbdde3962e51340dfb",
+ "precheck_sha256": "df977df5efe0784ef5cd8415f57add59b54977a27b61ca25e8c82ee52cc45683",
+ "primary": {
+  "cost_dominated": false,
+  "derived_policy_maps": {
+   "fact_financials": {
+    "duplicate_shape": "dedup",
+    "fk_shape": "no_op",
+    "null_shape": "no_op",
+    "numeric_shape": "quarantine"
+   },
+   "fact_market_history": {
+    "duplicate_shape": "no_op",
+    "fk_shape": "no_op",
+    "null_shape": "no_op",
+    "numeric_shape": "no_op"
+   },
+   "stg_daily_market": {
+    "duplicate_shape": "dedup",
+    "fk_shape": "no_op",
+    "null_shape": "no_op",
+    "numeric_shape": "no_op"
+   },
+   "stg_financial": {
+    "duplicate_shape": "dedup",
+    "fk_shape": "no_op",
+    "null_shape": "quarantine",
+    "numeric_shape": "quarantine"
+   }
+  },
+  "distinguishable": true,
+  "n_campaigns": 18,
+  "per_budget": [
+   {
+    "budget_us": 0,
+    "no_validation": {
+     "cost_us": 0,
+     "nodes": [],
+     "per_family": {},
+     "predicted_nrd": 1.0
+    },
+    "policy_planner": {
+     "cost_us": 0,
+     "nodes": [],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 1.0
+    },
+    "static_best": {
+     "cost_us": 0,
+     "nodes": [],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 1.0
+    },
+    "static_quarantine_legacy": {
+     "cost_us": 0,
+     "nodes": [],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 1.0
+    }
+   },
+   {
+    "budget_us": 6388976,
+    "no_validation": {
+     "cost_us": 0,
+     "nodes": [],
+     "per_family": {},
+     "predicted_nrd": 1.0
+    },
+    "policy_planner": {
+     "cost_us": 6388976,
+     "nodes": [
+      "fact_financials"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=1)"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=100)"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 0.4899179339114574,
+       "provenance": "measured:conditional@conflict-node"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 0.8389364595653901,
+       "provenance": "measured:quarantine@fact_financials(k=1)"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 0.801856241479183,
+       "provenance": "measured:quarantine@fact_financials(k=100)"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 0.6222738262989336
+    },
+    "static_best": {
+     "cost_us": 6388976,
+     "nodes": [
+      "fact_financials"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=1)"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=100)"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 0.5959934465296395,
+       "provenance": "measured:static-dedup"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 0.7093304206798398
+    },
+    "static_quarantine_legacy": {
+     "cost_us": 0,
+     "nodes": [],
+     "per_family": {},
+     "predicted_nrd": 1.0
+    }
+   },
+   {
+    "budget_us": 7244520,
+    "no_validation": {
+     "cost_us": 0,
+     "nodes": [],
+     "per_family": {},
+     "predicted_nrd": 1.0
+    },
+    "policy_planner": {
+     "cost_us": 6388976,
+     "nodes": [
+      "fact_financials"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=1)"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=100)"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 0.4899179339114574,
+       "provenance": "measured:conditional@conflict-node"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 0.8389364595653901,
+       "provenance": "measured:quarantine@fact_financials(k=1)"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 0.801856241479183,
+       "provenance": "measured:quarantine@fact_financials(k=100)"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 0.6222738262989336
+    },
+    "static_best": {
+     "cost_us": 6388976,
+     "nodes": [
+      "fact_financials"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=1)"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=100)"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 0.5959934465296395,
+       "provenance": "measured:static-dedup"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 0.7093304206798398
+    },
+    "static_quarantine_legacy": {
+     "cost_us": 6541197,
+     "nodes": [
+      "stg_financial"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 0.8050613847852744,
+       "provenance": "measured:quarantine@stg_financial(k=10)"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      }
+     },
+     "predicted_nrd": 434.3118673006915
+    }
+   },
+   {
+    "budget_us": 14489039,
+    "no_validation": {
+     "cost_us": 0,
+     "nodes": [],
+     "per_family": {},
+     "predicted_nrd": 1.0
+    },
+    "policy_planner": {
+     "cost_us": 13634877,
+     "nodes": [
+      "fact_financials",
+      "stg_daily_market"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=1)"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=100)"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 0.4899179339114574,
+       "provenance": "measured:conditional@conflict-node"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 0.8389364595653901,
+       "provenance": "measured:quarantine@fact_financials(k=1)"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 0.801856241479183,
+       "provenance": "measured:quarantine@fact_financials(k=100)"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@stg_daily_market(k=10)"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 0.5667182707433781
+    },
+    "static_best": {
+     "cost_us": 13634877,
+     "nodes": [
+      "fact_financials",
+      "stg_daily_market"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=1)"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=100)"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 0.5959934465296395,
+       "provenance": "measured:static-dedup"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@stg_daily_market(k=10)"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 0.6537748651242842
+    },
+    "static_quarantine_legacy": {
+     "cost_us": 13787098,
+     "nodes": [
+      "stg_financial",
+      "stg_daily_market"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 0.8050613847852744,
+       "provenance": "measured:quarantine@stg_financial(k=10)"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      }
+     },
+     "predicted_nrd": 434.3118673006915
+    }
+   },
+   {
+    "budget_us": 28978078,
+    "no_validation": {
+     "cost_us": 0,
+     "nodes": [],
+     "per_family": {},
+     "predicted_nrd": 1.0
+    },
+    "policy_planner": {
+     "cost_us": 13634877,
+     "nodes": [
+      "fact_financials",
+      "stg_daily_market"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=1)"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=100)"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 0.4899179339114574,
+       "provenance": "measured:conditional@conflict-node"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 0.8389364595653901,
+       "provenance": "measured:quarantine@fact_financials(k=1)"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 0.801856241479183,
+       "provenance": "measured:quarantine@fact_financials(k=100)"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@stg_daily_market(k=10)"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 0.5667182707433781
+    },
+    "static_best": {
+     "cost_us": 13634877,
+     "nodes": [
+      "fact_financials",
+      "stg_daily_market"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=1)"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@fact_financials(k=100)"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 0.5959934465296395,
+       "provenance": "measured:static-dedup"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 0.0,
+       "provenance": "measured:dedup@stg_daily_market(k=10)"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 1.0,
+       "provenance": "analytic:state-inert"
+      }
+     },
+     "predicted_nrd": 0.6537748651242842
+    },
+    "static_quarantine_legacy": {
+     "cost_us": 28978078,
+     "nodes": [
+      "stg_financial",
+      "fact_financials",
+      "stg_daily_market",
+      "fact_market_history"
+     ],
+     "per_family": {
+      "fin-dup|k1": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-dup|k100": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-mixed|k40": {
+       "n": 8,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-null|k10": {
+       "n": 2,
+       "nrd": 0.8050613847852744,
+       "provenance": "measured:quarantine@stg_financial(k=10)"
+      },
+      "fin-num|k1": {
+       "n": 2,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "fin-num|k100": {
+       "n": 2,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "mkt-dup|k10": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      },
+      "mkt-num|k10": {
+       "n": 1,
+       "nrd": 488.50021804017985,
+       "provenance": "measured:blanket-quarantine-on-natural-dirt"
+      }
+     },
+     "predicted_nrd": 434.3118673006915
+    }
+   }
+  ],
+  "predicted_aurd_policy": 0.6291914168711576,
+  "predicted_aurd_static": 0.7066510584772568,
+  "predicted_relative_improvement": 0.10961512146180728,
+  "roster": [
+   [
+    "fin-num",
+    1,
+    2
+   ],
+   [
+    "fin-num",
+    100,
+    2
+   ],
+   [
+    "fin-dup",
+    1,
+    1
+   ],
+   [
+    "fin-dup",
+    100,
+    1
+   ],
+   [
+    "fin-null",
+    10,
+    2
+   ],
+   [
+    "fin-mixed",
+    40,
+    8
+   ],
+   [
+    "mkt-num",
+    10,
+    1
+   ],
+   [
+    "mkt-dup",
+    10,
+    1
+   ]
+  ],
+  "unmeasured_composition": false
+ },
+ "primary_roster": "C_conflict_heavy",
+ "protocol_sha256": "79eace176a8a9c4bf017d8037d360c176fbc504c422f0fe00303274aedb453c5",
+ "response_keying": "(family, k, node, disposition)",
+ "response_table_sizes": {
+  "composed": 67,
+  "conflicts": 0,
+  "single": 42
+ },
+ "roster_variants": {
+  "A_balanced": {
+   "cost_dominated": false,
+   "derived_policy_maps": {
+    "fact_financials": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "quarantine"
+    },
+    "fact_market_history": {
+     "duplicate_shape": "no_op",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "no_op"
+    },
+    "stg_daily_market": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "no_op"
+    },
+    "stg_financial": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "quarantine",
+     "numeric_shape": "quarantine"
+    }
+   },
+   "distinguishable": true,
+   "n_campaigns": 18,
+   "per_budget": [
+    {
+     "budget_us": 0,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     },
+     "static_best": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     }
+    },
+    {
+     "budget_us": 6388976,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 0.9187226255258474,
+        "provenance": "measured:quarantine@fact_financials(k=10)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6721592511646531
+     },
+     "static_best": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.7328881607255155
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     }
+    },
+    {
+     "budget_us": 7244520,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 0.9187226255258474,
+        "provenance": "measured:quarantine@fact_financials(k=10)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6721592511646531
+     },
+     "static_best": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.7328881607255155
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 6541197,
+      "nodes": [
+       "stg_financial"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 434.3118673006916
+     }
+    },
+    {
+     "budget_us": 14489039,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 0.9187226255258474,
+        "provenance": "measured:quarantine@fact_financials(k=10)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.5610481400535421
+     },
+     "static_best": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6217770496144044
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 13787098,
+      "nodes": [
+       "stg_financial",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 434.3118673006916
+     }
+    },
+    {
+     "budget_us": 28978078,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 0.9187226255258474,
+        "provenance": "measured:quarantine@fact_financials(k=10)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.5610481400535421
+     },
+     "static_best": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6217770496144044
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 28978078,
+      "nodes": [
+       "stg_financial",
+       "fact_financials",
+       "stg_daily_market",
+       "fact_market_history"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 434.3118673006916
+     }
+    }
+   ],
+   "predicted_aurd_policy": 0.6388553459872819,
+   "predicted_aurd_static": 0.69288961648874,
+   "predicted_relative_improvement": 0.07798395186708104,
+   "roster": [
+    [
+     "fin-num",
+     1,
+     2
+    ],
+    [
+     "fin-num",
+     10,
+     2
+    ],
+    [
+     "fin-num",
+     100,
+     2
+    ],
+    [
+     "fin-dup",
+     1,
+     2
+    ],
+    [
+     "fin-dup",
+     100,
+     2
+    ],
+    [
+     "fin-null",
+     10,
+     2
+    ],
+    [
+     "fin-mixed",
+     40,
+     2
+    ],
+    [
+     "mkt-num",
+     10,
+     2
+    ],
+    [
+     "mkt-dup",
+     10,
+     2
+    ]
+   ],
+   "unmeasured_composition": false
+  },
+  "A_balanced_with_controls": {
+   "cost_dominated": false,
+   "derived_policy_maps": {
+    "fact_financials": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "quarantine"
+    },
+    "fact_market_history": {
+     "duplicate_shape": "no_op",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "no_op"
+    },
+    "stg_daily_market": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "no_op"
+    },
+    "stg_financial": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "quarantine",
+     "numeric_shape": "quarantine"
+    }
+   },
+   "distinguishable": true,
+   "n_campaigns": 20,
+   "per_budget": [
+    {
+     "budget_us": 0,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     },
+     "static_best": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     }
+    },
+    {
+     "budget_us": 6388976,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 0.9187226255258474,
+        "provenance": "measured:quarantine@fact_financials(k=10)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.7049433260481879
+     },
+     "static_best": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.759599344652964
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     }
+    },
+    {
+     "budget_us": 7244520,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 0.9187226255258474,
+        "provenance": "measured:quarantine@fact_financials(k=10)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.7049433260481879
+     },
+     "static_best": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.759599344652964
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 6541197,
+      "nodes": [
+       "stg_financial"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 439.73070237464043
+     }
+    },
+    {
+     "budget_us": 14489039,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 0.9187226255258474,
+        "provenance": "measured:quarantine@fact_financials(k=10)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6049433260481878
+     },
+     "static_best": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.659599344652964
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 13787098,
+      "nodes": [
+       "stg_financial",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 439.73070237464043
+     }
+    },
+    {
+     "budget_us": 28978078,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 0.9187226255258474,
+        "provenance": "measured:quarantine@fact_financials(k=10)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6049433260481878
+     },
+     "static_best": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.659599344652964
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 28978078,
+      "nodes": [
+       "stg_financial",
+       "fact_financials",
+       "stg_daily_market",
+       "fact_market_history"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 439.73070237464043
+     }
+    }
+   ],
+   "predicted_aurd_policy": 0.6749698113885536,
+   "predicted_aurd_static": 0.723600654839866,
+   "predicted_relative_improvement": 0.06720674328587292,
+   "roster": [
+    [
+     "fin-num",
+     1,
+     2
+    ],
+    [
+     "fin-num",
+     10,
+     2
+    ],
+    [
+     "fin-num",
+     100,
+     2
+    ],
+    [
+     "fin-dup",
+     1,
+     2
+    ],
+    [
+     "fin-dup",
+     100,
+     2
+    ],
+    [
+     "fin-null",
+     10,
+     2
+    ],
+    [
+     "fin-mixed",
+     40,
+     2
+    ],
+    [
+     "mkt-num",
+     10,
+     2
+    ],
+    [
+     "mkt-dup",
+     10,
+     2
+    ],
+    [
+     "fin-fk",
+     10,
+     1
+    ],
+    [
+     "fin-del",
+     10,
+     1
+    ]
+   ],
+   "unmeasured_composition": false
+  },
+  "C_conflict_heavy": {
+   "cost_dominated": false,
+   "derived_policy_maps": {
+    "fact_financials": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "quarantine"
+    },
+    "fact_market_history": {
+     "duplicate_shape": "no_op",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "no_op"
+    },
+    "stg_daily_market": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "no_op"
+    },
+    "stg_financial": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "quarantine",
+     "numeric_shape": "quarantine"
+    }
+   },
+   "distinguishable": true,
+   "n_campaigns": 18,
+   "per_budget": [
+    {
+     "budget_us": 0,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     },
+     "static_best": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     }
+    },
+    {
+     "budget_us": 6388976,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6222738262989336
+     },
+     "static_best": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.7093304206798398
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     }
+    },
+    {
+     "budget_us": 7244520,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6222738262989336
+     },
+     "static_best": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.7093304206798398
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 6541197,
+      "nodes": [
+       "stg_financial"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 434.3118673006915
+     }
+    },
+    {
+     "budget_us": 14489039,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.5667182707433781
+     },
+     "static_best": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6537748651242842
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 13787098,
+      "nodes": [
+       "stg_financial",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 434.3118673006915
+     }
+    },
+    {
+     "budget_us": 28978078,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.5667182707433781
+     },
+     "static_best": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6537748651242842
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 28978078,
+      "nodes": [
+       "stg_financial",
+       "fact_financials",
+       "stg_daily_market",
+       "fact_market_history"
+      ],
+      "per_family": {
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 434.3118673006915
+     }
+    }
+   ],
+   "predicted_aurd_policy": 0.6291914168711576,
+   "predicted_aurd_static": 0.7066510584772568,
+   "predicted_relative_improvement": 0.10961512146180728,
+   "roster": [
+    [
+     "fin-num",
+     1,
+     2
+    ],
+    [
+     "fin-num",
+     100,
+     2
+    ],
+    [
+     "fin-dup",
+     1,
+     1
+    ],
+    [
+     "fin-dup",
+     100,
+     1
+    ],
+    [
+     "fin-null",
+     10,
+     2
+    ],
+    [
+     "fin-mixed",
+     40,
+     8
+    ],
+    [
+     "mkt-num",
+     10,
+     1
+    ],
+    [
+     "mkt-dup",
+     10,
+     1
+    ]
+   ],
+   "unmeasured_composition": false
+  },
+  "C_conflict_heavy_with_controls": {
+   "cost_dominated": false,
+   "derived_policy_maps": {
+    "fact_financials": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "quarantine"
+    },
+    "fact_market_history": {
+     "duplicate_shape": "no_op",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "no_op"
+    },
+    "stg_daily_market": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "no_op",
+     "numeric_shape": "no_op"
+    },
+    "stg_financial": {
+     "duplicate_shape": "dedup",
+     "fk_shape": "no_op",
+     "null_shape": "quarantine",
+     "numeric_shape": "quarantine"
+    }
+   },
+   "distinguishable": true,
+   "n_campaigns": 20,
+   "per_budget": [
+    {
+     "budget_us": 0,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     },
+     "static_best": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 1.0
+     }
+    },
+    {
+     "budget_us": 6388976,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6600464436690403
+     },
+     "static_best": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.7383973786118558
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     }
+    },
+    {
+     "budget_us": 7244520,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6600464436690403
+     },
+     "static_best": {
+      "cost_us": 6388976,
+      "nodes": [
+       "fact_financials"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.7383973786118558
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 6541197,
+      "nodes": [
+       "stg_financial"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 439.73070237464043
+     }
+    },
+    {
+     "budget_us": 14489039,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6100464436690403
+     },
+     "static_best": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6883973786118558
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 13787098,
+      "nodes": [
+       "stg_financial",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 439.73070237464043
+     }
+    },
+    {
+     "budget_us": 28978078,
+     "no_validation": {
+      "cost_us": 0,
+      "nodes": [],
+      "per_family": {},
+      "predicted_nrd": 1.0
+     },
+     "policy_planner": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.4899179339114574,
+        "provenance": "measured:conditional@conflict-node"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 0.8389364595653901,
+        "provenance": "measured:quarantine@fact_financials(k=1)"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 0.801856241479183,
+        "provenance": "measured:quarantine@fact_financials(k=100)"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6100464436690403
+     },
+     "static_best": {
+      "cost_us": 13634877,
+      "nodes": [
+       "fact_financials",
+       "stg_daily_market"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=1)"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@fact_financials(k=100)"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 0.5959934465296395,
+        "provenance": "measured:static-dedup"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 0.0,
+        "provenance": "measured:dedup@stg_daily_market(k=10)"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 1.0,
+        "provenance": "analytic:state-inert"
+       }
+      },
+      "predicted_nrd": 0.6883973786118558
+     },
+     "static_quarantine_legacy": {
+      "cost_us": 28978078,
+      "nodes": [
+       "stg_financial",
+       "fact_financials",
+       "stg_daily_market",
+       "fact_market_history"
+      ],
+      "per_family": {
+       "fin-del|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k1": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-dup|k100": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-fk|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-mixed|k40": {
+        "n": 8,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-null|k10": {
+        "n": 2,
+        "nrd": 0.8050613847852744,
+        "provenance": "measured:quarantine@stg_financial(k=10)"
+       },
+       "fin-num|k1": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "fin-num|k100": {
+        "n": 2,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-dup|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       },
+       "mkt-num|k10": {
+        "n": 1,
+        "nrd": 488.50021804017985,
+        "provenance": "measured:blanket-quarantine-on-natural-dirt"
+       }
+      },
+      "predicted_nrd": 439.73070237464043
+     }
+    }
+   ],
+   "predicted_aurd_policy": 0.6662722751840419,
+   "predicted_aurd_static": 0.7359859526295311,
+   "predicted_relative_improvement": 0.0947214783059598,
+   "roster": [
+    [
+     "fin-num",
+     1,
+     2
+    ],
+    [
+     "fin-num",
+     100,
+     2
+    ],
+    [
+     "fin-dup",
+     1,
+     1
+    ],
+    [
+     "fin-dup",
+     100,
+     1
+    ],
+    [
+     "fin-null",
+     10,
+     2
+    ],
+    [
+     "fin-mixed",
+     40,
+     8
+    ],
+    [
+     "mkt-num",
+     10,
+     1
+    ],
+    [
+     "mkt-dup",
+     10,
+     1
+    ],
+    [
+     "fin-fk",
+     10,
+     1
+    ],
+    [
+     "fin-del",
+     10,
+     1
+    ]
+   ],
+   "unmeasured_composition": false
+  }
+ },
+ "sesoi": 0.1
+}

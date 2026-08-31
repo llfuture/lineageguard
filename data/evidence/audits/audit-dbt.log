@@ -1,0 +1,28 @@
+[2026-08-29T15:27:53Z] clean-baseline                   technical_failure
+    contract fires : nothing
+    dbt suite fails: nothing (? tests)
+    FAILURE: FileExistsError: [Errno 17] File exists: '/home/u0020090017/projects/lineageguard_claude/out-audit-dbt/subprocess/clean-baseline--dbtfid--audit--00-products.stdout.log'
+[2026-08-29T15:29:00Z] prod-num-out-of-band             complete
+    contract fires : {'model:stg_products': ['numeric_shape'], 'model:products': ['numeric_shape']}
+    dbt suite fails: nothing (1 tests)
+[2026-08-29T15:29:56Z] prod-num-in-band                 complete
+    contract fires : nothing
+    dbt suite fails: nothing (1 tests)
+[2026-08-29T15:30:54Z] prod-dup                         complete
+    contract fires : {'model:stg_products': ['duplicate_shape'], 'model:products': ['duplicate_shape']}
+    dbt suite fails: nothing (3 tests)
+[2026-08-29T15:31:50Z] prod-null                        complete
+    contract fires : {'model:stg_products': ['null_shape'], 'model:products': ['null_shape']}
+    dbt suite fails: nothing (1 tests)
+[2026-08-29T15:32:53Z] ord-num-out-of-band              complete
+    contract fires : {'model:orders': ['numeric_shape'], 'model:customers': ['numeric_shape']}
+    dbt suite fails: nothing (0 tests)
+[2026-08-29T15:33:57Z] ord-num-subtotal-only            complete
+    contract fires : nothing
+    dbt suite fails: nothing (4 tests)
+[2026-08-29T15:35:00Z] ord-fk-orphan                    complete
+    contract fires : {'model:orders': ['fk_shape']}
+    dbt suite fails: nothing (1 tests)
+
+artifact: /home/u0020090017/projects/lineageguard_claude/out-audit-dbt/audit-dbt-fidelity.json
+sha256  : 896be6311294714a8c3b418ac6cb5a7b5699517e5323768ef5bd011383c82349

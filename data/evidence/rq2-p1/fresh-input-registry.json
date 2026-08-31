@@ -1,0 +1,532 @@
+{
+  "assignment_sha256": "4df4d538436583e29b1bad2530c5fc7f88e25513b18081b8f4dec1cd1d64cd4c",
+  "binder_sha256": "893bc3d810a9722f785e78b2e6f19ad7c4a06fc9f835b243a6d2c37f2791c469",
+  "campaign_count": 8,
+  "campaigns": [
+    {
+      "campaign_file": "campaigns/001-jaffle-rq2-p1-fresh-slot-001.campaign.json",
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-001",
+      "campaign_row_sha256": "8efec70e969a30c8c8dbb5b685d44ff5a639df079d0aa8e768887ecd4ff616a6",
+      "campaign_seed": 5925498979273060936,
+      "campaign_sha256": "24be7410fd9c8d818a63146905fd127893dc365209d99f2072f0353b36b9caa1",
+      "context_file": "contexts/001-jaffle-rq2-p1-fresh-slot-001.context.json",
+      "context_sha256": "8b862e2cea79daadeae87933fcb7394ebdaff737ff964bdabfbe473f2a8dcc15",
+      "execution_spec_file": "executions/001-jaffle-rq2-p1-fresh-slot-001.execution.json",
+      "execution_spec_sha256": "3444fc4d45ff29e2bfe8cc926de98a27e96f83edbaafc3d7157fc5809ca3ae68",
+      "factor_tuple": {
+        "error_type": "duplicate_row",
+        "fanout_stratum": "low",
+        "injection_locus": "intermediate"
+      },
+      "ordinal": 1,
+      "role_namespaced_identity_sha256": "65edf7ebcce018af729839a317ddba7c99fb4afa6d496476fa92d637972b9d44",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-001",
+      "target_ledger_file": "targets/001-jaffle-rq2-p1-fresh-slot-001.target-ledger.json",
+      "target_ledger_sha256": "752042f8cfaedd3120d7e545b5d8bef48b0d0c6b11c70b3ab758007f0df87b50",
+      "target_stable_key_sha256": "b2d974b12dce414903a456653f8de740f265c9904b91356920db7842778e96d2"
+    },
+    {
+      "campaign_file": "campaigns/002-jaffle-rq2-p1-fresh-slot-002.campaign.json",
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-002",
+      "campaign_row_sha256": "629aede60b83382b7cfb3823934d6d7447b42627a7da47ebc95dd64543b23aed",
+      "campaign_seed": 6171838620882917898,
+      "campaign_sha256": "2f04db60c3a89593289d2dd698a883b2c0a34482de4e7688a9eea63b95e1b5be",
+      "context_file": "contexts/002-jaffle-rq2-p1-fresh-slot-002.context.json",
+      "context_sha256": "633d23e4dc1a920a4a13066193fa39ed60d53c6d302f7e7b4e509e647228db30",
+      "execution_spec_file": "executions/002-jaffle-rq2-p1-fresh-slot-002.execution.json",
+      "execution_spec_sha256": "6b5df06f7ab7416dcdd051527fe4cc365f468c91887d67545b0a88ad2e645822",
+      "factor_tuple": {
+        "error_type": "numeric_corruption",
+        "fanout_stratum": "low",
+        "injection_locus": "intermediate"
+      },
+      "ordinal": 2,
+      "role_namespaced_identity_sha256": "815c68d4bad12be49a1bb2cb3f0b79d06de1a16aa5cc24d3a9db6174d99d8c07",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-002",
+      "target_ledger_file": "targets/002-jaffle-rq2-p1-fresh-slot-002.target-ledger.json",
+      "target_ledger_sha256": "e71578d12e38daf52a97ddb2309b652a73d2f96ff5334dedbb7909a6d6495923",
+      "target_stable_key_sha256": "38f390e4244122d0699472a1279dea8b3f8af568e53166aae8b60b995b2f4a8f"
+    },
+    {
+      "campaign_file": "campaigns/003-jaffle-rq2-p1-fresh-slot-003.campaign.json",
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-003",
+      "campaign_row_sha256": "d67089321bd32f17aeb93f5a99a12016c7321b4bc784b71a2671dcbbb2583ece",
+      "campaign_seed": 3760129313449352672,
+      "campaign_sha256": "274f85551e76fdd45e6e3b1bafe066c79adedb8a391540a6e97e7cbd2941962d",
+      "context_file": "contexts/003-jaffle-rq2-p1-fresh-slot-003.context.json",
+      "context_sha256": "2adea4afeb5e76dc0ff5eaf33699df515cf6a9635a56f870dbff3e60741afc71",
+      "execution_spec_file": "executions/003-jaffle-rq2-p1-fresh-slot-003.execution.json",
+      "execution_spec_sha256": "02a58cada8cdc1e892a7dd9ce09267aa8f0b3c4fc0d731c873e068569549c3ec",
+      "factor_tuple": {
+        "error_type": "numeric_corruption",
+        "fanout_stratum": "high",
+        "injection_locus": "intermediate"
+      },
+      "ordinal": 3,
+      "role_namespaced_identity_sha256": "9d9e609a334be4ce27f5a278ff4de59a568f8a5180928036d7795fdf8bdb1ff5",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-003",
+      "target_ledger_file": "targets/003-jaffle-rq2-p1-fresh-slot-003.target-ledger.json",
+      "target_ledger_sha256": "a1d2ba8b4ea584045add7874143a2eb01f560b86f12779f25cde0051082422c2",
+      "target_stable_key_sha256": "078237b19085ebf12e7e5913611a474a2b8b7a4a96cac9ecbec21f7b7b50c063"
+    },
+    {
+      "campaign_file": "campaigns/004-jaffle-rq2-p1-fresh-slot-004.campaign.json",
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-004",
+      "campaign_row_sha256": "213c38250cab1a9c336df20fb0085d1a751a777fc754d3d02094148ab46fb34f",
+      "campaign_seed": 4992242237189093019,
+      "campaign_sha256": "0fab77a25553e23d49dda2f3a3d27d11ba88724d64cc115f293f96288a00db3b",
+      "context_file": "contexts/004-jaffle-rq2-p1-fresh-slot-004.context.json",
+      "context_sha256": "88781df54662277498dae34e411aacd66b0c6269e13f681000924a5c707a41ba",
+      "execution_spec_file": "executions/004-jaffle-rq2-p1-fresh-slot-004.execution.json",
+      "execution_spec_sha256": "aeee732632cf38af4ea5e12748f39ac5484591a2cc49654eedc1e815535ddc62",
+      "factor_tuple": {
+        "error_type": "numeric_corruption",
+        "fanout_stratum": "low",
+        "injection_locus": "source"
+      },
+      "ordinal": 4,
+      "role_namespaced_identity_sha256": "ec2c2215e5f2683c2ab5239c2c4967bc930957b2b0763ec74511315b847d2e56",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-004",
+      "target_ledger_file": "targets/004-jaffle-rq2-p1-fresh-slot-004.target-ledger.json",
+      "target_ledger_sha256": "20382c13cffc9f9db5964c54ae055b07f714c67a178c4748e07d49fc7aa62b48",
+      "target_stable_key_sha256": "eb8b9446f45bbdb6cc4729d94abf37f03b102db7cffd28bd94fca8b720aa9a80"
+    },
+    {
+      "campaign_file": "campaigns/005-jaffle-rq2-p1-fresh-slot-005.campaign.json",
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-005",
+      "campaign_row_sha256": "f4243d489a3a85199939883a377b1a213a1e93ab9d1964e2916c104f22235545",
+      "campaign_seed": 8081919786013111865,
+      "campaign_sha256": "2ce94b6c8d2cad4bd0eb084750e7f50dced7538e2f60dfef39e421d703ed54ee",
+      "context_file": "contexts/005-jaffle-rq2-p1-fresh-slot-005.context.json",
+      "context_sha256": "42cf88e0a487e846b0544cd1b4821be80a95d4ee9b01bceb4cd6a3727fd37a91",
+      "execution_spec_file": "executions/005-jaffle-rq2-p1-fresh-slot-005.execution.json",
+      "execution_spec_sha256": "ca51ac7d830d30e2936485777ea9f94b9d1dbf21caa015ea63cb5b9ee594b1de",
+      "factor_tuple": {
+        "error_type": "numeric_corruption",
+        "fanout_stratum": "high",
+        "injection_locus": "source"
+      },
+      "ordinal": 5,
+      "role_namespaced_identity_sha256": "8c832908a016a6d90f1d8848676777294083b06daa7e25be76b06c13235a24ec",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-005",
+      "target_ledger_file": "targets/005-jaffle-rq2-p1-fresh-slot-005.target-ledger.json",
+      "target_ledger_sha256": "2d83a4c5112ceea5c48d934d2fef121971e9379a1f3b76d97987c4bd99883e6d",
+      "target_stable_key_sha256": "8d67942266cb0d7e37acc3365f323e2c7b64fba7cc10755f805d6acb522b2f6a"
+    },
+    {
+      "campaign_file": "campaigns/006-jaffle-rq2-p1-fresh-slot-006.campaign.json",
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-006",
+      "campaign_row_sha256": "dcc501ddcb3ad1ea8682b9d51b1413e09c0ac2ea5375805386836d8702105d17",
+      "campaign_seed": 8309861498237663553,
+      "campaign_sha256": "d9fdc6e39b2db1752df33ea1a91f3076cbc7fb87b8ab9f83b4edb29f7e29baa1",
+      "context_file": "contexts/006-jaffle-rq2-p1-fresh-slot-006.context.json",
+      "context_sha256": "816e6c105bd64db9a264e05ff4a400361ceec053628c962936e928cae5bd9191",
+      "execution_spec_file": "executions/006-jaffle-rq2-p1-fresh-slot-006.execution.json",
+      "execution_spec_sha256": "5b50f00845b14453cc891b56c84bbe578fc09e3799037d7e4ab6e5cfb22f9cd7",
+      "factor_tuple": {
+        "error_type": "duplicate_row",
+        "fanout_stratum": "low",
+        "injection_locus": "source"
+      },
+      "ordinal": 6,
+      "role_namespaced_identity_sha256": "ec68c5abf07791964f423ec640ca2b61cf976bc98eadb79a8766e508716febed",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-006",
+      "target_ledger_file": "targets/006-jaffle-rq2-p1-fresh-slot-006.target-ledger.json",
+      "target_ledger_sha256": "d220b5011b758bb542029e49740cd2ec2b959d27d379a614ed802e11dd57e0c3",
+      "target_stable_key_sha256": "852ff17566c181cc006cb8dab5bc189135c15ca96620cbf6c3c640f4344cf837"
+    },
+    {
+      "campaign_file": "campaigns/007-jaffle-rq2-p1-fresh-slot-007.campaign.json",
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-007",
+      "campaign_row_sha256": "3f50e35a2ee9150389da1901c44108c64d0b6fe50c149f056e18eb74df97cec3",
+      "campaign_seed": 9187591692652033914,
+      "campaign_sha256": "607e4eaa019166eac82dca9e7233ae49e69a760a33321ff082d053dca41cff07",
+      "context_file": "contexts/007-jaffle-rq2-p1-fresh-slot-007.context.json",
+      "context_sha256": "d9f73dced5b4c1a89a24f1d5af47b595dabab12aad11b5b6ccd16706da826ac8",
+      "execution_spec_file": "executions/007-jaffle-rq2-p1-fresh-slot-007.execution.json",
+      "execution_spec_sha256": "a236cc257dcd157db0b3734f7bb20a8274dc16c52b57f5dad2cb53c4f1e50338",
+      "factor_tuple": {
+        "error_type": "duplicate_row",
+        "fanout_stratum": "high",
+        "injection_locus": "intermediate"
+      },
+      "ordinal": 7,
+      "role_namespaced_identity_sha256": "e9429fd3b3b3280098a4b6761862eb84d35630330986ef8074024f361b60b42c",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-007",
+      "target_ledger_file": "targets/007-jaffle-rq2-p1-fresh-slot-007.target-ledger.json",
+      "target_ledger_sha256": "1467c61a08160d8db0fba16d783707cc1bcce93edcf8b2f70891eb900b66bd31",
+      "target_stable_key_sha256": "cd24818b4526d072e954e13af15a2535e0aa212aca0aff85ca0016679fd456a6"
+    },
+    {
+      "campaign_file": "campaigns/008-jaffle-rq2-p1-fresh-slot-008.campaign.json",
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-008",
+      "campaign_row_sha256": "05ddd11ff0547e0cca9efd986a2f4e1ed2e6534430f3059d8cbf89f60d5096dd",
+      "campaign_seed": 3816178437619461263,
+      "campaign_sha256": "e2585df6507247a33da8589539e6c1ae0f63058b7eb89d9aba11af66507a72e3",
+      "context_file": "contexts/008-jaffle-rq2-p1-fresh-slot-008.context.json",
+      "context_sha256": "4af37bca8eafe534bbaf1ac136eff81a4111bcae37dab4a89575d43f0872a2c4",
+      "execution_spec_file": "executions/008-jaffle-rq2-p1-fresh-slot-008.execution.json",
+      "execution_spec_sha256": "5bdc1e80fa9bc85a90cd14bf6ddb58fdeb82cb4905115bca55d235970f604399",
+      "factor_tuple": {
+        "error_type": "duplicate_row",
+        "fanout_stratum": "high",
+        "injection_locus": "source"
+      },
+      "ordinal": 8,
+      "role_namespaced_identity_sha256": "fc727c46ee7132664dfaaff20d7e763bb3e79f01f4f29ffa91906466520b2407",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-008",
+      "target_ledger_file": "targets/008-jaffle-rq2-p1-fresh-slot-008.target-ledger.json",
+      "target_ledger_sha256": "2ea356423973f943ad6159a8a55e07f2f32c73afde02ebb35a5d73508f27cbdc",
+      "target_stable_key_sha256": "2fe43d7572c6b37c85de8416b70eeb2dbbf4e7148e5d38871c7819005e3b02fd"
+    }
+  ],
+  "clean_input_binding_sha256": "257b12f8525a15d7a6b53cffc85ee6785488401e014dd11a4089e059692eea47",
+  "context_index_sha256": "3d5c47a6fc9ad3ba0512c690684c368e2b7ebc43e8bd977b004aa2509f25f0ce",
+  "data_role": "validation",
+  "files": [
+    {
+      "file_sha256": "02f25297e2ba1f1ac6b7094d256968841db30e46d9c7851cd3c99aa395ef4c4c",
+      "path": "factor-seed-assignment.json",
+      "semantic_sha256": "4df4d538436583e29b1bad2530c5fc7f88e25513b18081b8f4dec1cd1d64cd4c"
+    },
+    {
+      "file_sha256": "4f57c429089a5dd98b4d94ff4d4891740c149bbab596e014f0ed6c91a7699897",
+      "path": "target-ledger-registry.json",
+      "semantic_sha256": "79ceb1d164c96a13bebbc920326f6526317c063c3f6793a4a329ba492ed1c2db"
+    },
+    {
+      "file_sha256": "c980aca01d8a2cfa4e1ff690b4a05846216c1139a7c3f73ee3ad556783e483fd",
+      "path": "context-index.json",
+      "semantic_sha256": "3d5c47a6fc9ad3ba0512c690684c368e2b7ebc43e8bd977b004aa2509f25f0ce"
+    },
+    {
+      "file_sha256": "a5c02ebc4ddf914a58ecae4b864c414e289c63432f7e3bb3f802ff7e344e37aa",
+      "path": "shared-plan-binder.json",
+      "semantic_sha256": "893bc3d810a9722f785e78b2e6f19ad7c4a06fc9f835b243a6d2c37f2791c469"
+    },
+    {
+      "file_sha256": "a97e3505c8318f725c155da326f807515194d856caf4614bd28d96235edddccf",
+      "path": "campaigns/001-jaffle-rq2-p1-fresh-slot-001.campaign.json",
+      "semantic_sha256": null
+    },
+    {
+      "file_sha256": "c32d16ac54c75ee64d586fb4b455dbfcb35ae9fa3396e3f1c851f83e73136325",
+      "path": "campaigns/002-jaffle-rq2-p1-fresh-slot-002.campaign.json",
+      "semantic_sha256": null
+    },
+    {
+      "file_sha256": "1abf2d7d5a0a2c6d1b395f6332965bc74865f9adb5e525e82843ede0ebc197d4",
+      "path": "campaigns/003-jaffle-rq2-p1-fresh-slot-003.campaign.json",
+      "semantic_sha256": null
+    },
+    {
+      "file_sha256": "6cf1a956a754f47869334a5ce95338ca8a9c643688b5a5fb69f7c03618ea6c12",
+      "path": "campaigns/004-jaffle-rq2-p1-fresh-slot-004.campaign.json",
+      "semantic_sha256": null
+    },
+    {
+      "file_sha256": "459366d3e4ea350fbd3766084d4eccd9ddc98d3c2cfcd2718959c5f80a147903",
+      "path": "campaigns/005-jaffle-rq2-p1-fresh-slot-005.campaign.json",
+      "semantic_sha256": null
+    },
+    {
+      "file_sha256": "efa7c57af54222f4d73e13fb7fb5512cd7e0957a258a59d4c5d52421d06723fb",
+      "path": "campaigns/006-jaffle-rq2-p1-fresh-slot-006.campaign.json",
+      "semantic_sha256": null
+    },
+    {
+      "file_sha256": "147a193da58f9270da31c3d1fe00f24219e6dba44c5a41c725859b1484569a8e",
+      "path": "campaigns/007-jaffle-rq2-p1-fresh-slot-007.campaign.json",
+      "semantic_sha256": null
+    },
+    {
+      "file_sha256": "a129b4b8d7af01e33ce4f80d9fb2c0dba43f4150fe3a9c1da54a3d708873bcf1",
+      "path": "campaigns/008-jaffle-rq2-p1-fresh-slot-008.campaign.json",
+      "semantic_sha256": null
+    },
+    {
+      "file_sha256": "ba4db5fa686ba692e4e3d8e546081e24e179b65e6513f1bda2774534488fc098",
+      "path": "executions/001-jaffle-rq2-p1-fresh-slot-001.execution.json",
+      "semantic_sha256": "3444fc4d45ff29e2bfe8cc926de98a27e96f83edbaafc3d7157fc5809ca3ae68"
+    },
+    {
+      "file_sha256": "d1f1c8df64b34f3c96f490bda0250ec11a52104e2cf220562d127da6ae53887d",
+      "path": "executions/002-jaffle-rq2-p1-fresh-slot-002.execution.json",
+      "semantic_sha256": "6b5df06f7ab7416dcdd051527fe4cc365f468c91887d67545b0a88ad2e645822"
+    },
+    {
+      "file_sha256": "0b1d2bc60887cba5f0a70e02f13c2a486f5d3d3af2c2afeabc30a5c2074a7a8d",
+      "path": "executions/003-jaffle-rq2-p1-fresh-slot-003.execution.json",
+      "semantic_sha256": "02a58cada8cdc1e892a7dd9ce09267aa8f0b3c4fc0d731c873e068569549c3ec"
+    },
+    {
+      "file_sha256": "ca71221c0c6d4ccd4ddf76cc4516e9398fab755a8b8f0b1465d45c73f737e358",
+      "path": "executions/004-jaffle-rq2-p1-fresh-slot-004.execution.json",
+      "semantic_sha256": "aeee732632cf38af4ea5e12748f39ac5484591a2cc49654eedc1e815535ddc62"
+    },
+    {
+      "file_sha256": "dde7d70fb7b871472f848a31d247879fc4b903f5fbddbd5d107cb23902af53e4",
+      "path": "executions/005-jaffle-rq2-p1-fresh-slot-005.execution.json",
+      "semantic_sha256": "ca51ac7d830d30e2936485777ea9f94b9d1dbf21caa015ea63cb5b9ee594b1de"
+    },
+    {
+      "file_sha256": "6c20e328b54d8fb7b834c29efdea87061035ea8b193448a40f4f149f34731592",
+      "path": "executions/006-jaffle-rq2-p1-fresh-slot-006.execution.json",
+      "semantic_sha256": "5b50f00845b14453cc891b56c84bbe578fc09e3799037d7e4ab6e5cfb22f9cd7"
+    },
+    {
+      "file_sha256": "3c0f61e493b525766d27baf0c3c402de9f5c23c2509ce3dbc309c77dc0711bc2",
+      "path": "executions/007-jaffle-rq2-p1-fresh-slot-007.execution.json",
+      "semantic_sha256": "a236cc257dcd157db0b3734f7bb20a8274dc16c52b57f5dad2cb53c4f1e50338"
+    },
+    {
+      "file_sha256": "3ecaf2043a10204af39a707bce33e780e495710689aac6a2a6f0f4cb8f13a39f",
+      "path": "executions/008-jaffle-rq2-p1-fresh-slot-008.execution.json",
+      "semantic_sha256": "5bdc1e80fa9bc85a90cd14bf6ddb58fdeb82cb4905115bca55d235970f604399"
+    },
+    {
+      "file_sha256": "496d658e8818b2a642b5d5c24fd3dabe3d310514485b35a30dcfc3fc98963d11",
+      "path": "targets/001-jaffle-rq2-p1-fresh-slot-001.target-ledger.json",
+      "semantic_sha256": "752042f8cfaedd3120d7e545b5d8bef48b0d0c6b11c70b3ab758007f0df87b50"
+    },
+    {
+      "file_sha256": "ae519477ee05e2ffeea6bdecb51b3a2577ee6b81309b2be4b823b8164fb699c4",
+      "path": "targets/002-jaffle-rq2-p1-fresh-slot-002.target-ledger.json",
+      "semantic_sha256": "e71578d12e38daf52a97ddb2309b652a73d2f96ff5334dedbb7909a6d6495923"
+    },
+    {
+      "file_sha256": "8d2633154337eea1293830373f9c513b8303ad1d79fa84ad0c805ddca54b2c65",
+      "path": "targets/003-jaffle-rq2-p1-fresh-slot-003.target-ledger.json",
+      "semantic_sha256": "a1d2ba8b4ea584045add7874143a2eb01f560b86f12779f25cde0051082422c2"
+    },
+    {
+      "file_sha256": "a09fc5ea557a1720e4ec26198f363eaef8351db692764b019447aa4116690b13",
+      "path": "targets/004-jaffle-rq2-p1-fresh-slot-004.target-ledger.json",
+      "semantic_sha256": "20382c13cffc9f9db5964c54ae055b07f714c67a178c4748e07d49fc7aa62b48"
+    },
+    {
+      "file_sha256": "3fe5dc20eb5eb9e55b58e384bb233a5395cc9aa58d978a8425194ed5b9db5c40",
+      "path": "targets/005-jaffle-rq2-p1-fresh-slot-005.target-ledger.json",
+      "semantic_sha256": "2d83a4c5112ceea5c48d934d2fef121971e9379a1f3b76d97987c4bd99883e6d"
+    },
+    {
+      "file_sha256": "75660aa48f5f815a394faa2b8f6d3fe4741d2fe30dacf4a320e2663e8bfee26f",
+      "path": "targets/006-jaffle-rq2-p1-fresh-slot-006.target-ledger.json",
+      "semantic_sha256": "d220b5011b758bb542029e49740cd2ec2b959d27d379a614ed802e11dd57e0c3"
+    },
+    {
+      "file_sha256": "676b86a20d4ba247ba2c1340aea059c08383bda0b6e9f4ec8a21c0f9efa570a8",
+      "path": "targets/007-jaffle-rq2-p1-fresh-slot-007.target-ledger.json",
+      "semantic_sha256": "1467c61a08160d8db0fba16d783707cc1bcce93edcf8b2f70891eb900b66bd31"
+    },
+    {
+      "file_sha256": "aee468fab2974231ac9f6f23ad1378799b40c6ef7fd4384270541939d3556724",
+      "path": "targets/008-jaffle-rq2-p1-fresh-slot-008.target-ledger.json",
+      "semantic_sha256": "2ea356423973f943ad6159a8a55e07f2f32c73afde02ebb35a5d73508f27cbdc"
+    },
+    {
+      "file_sha256": "d4072453fed060ea7ed6d102245848a9cfc3c5690b097721d0d3dee809c3b7b4",
+      "path": "contexts/001-jaffle-rq2-p1-fresh-slot-001.context.json",
+      "semantic_sha256": "8b862e2cea79daadeae87933fcb7394ebdaff737ff964bdabfbe473f2a8dcc15"
+    },
+    {
+      "file_sha256": "384b16771d4b1a2c8fee8a2a0db559d4780eaf7feeea8d7b3aef0d0f15d5b0c5",
+      "path": "contexts/002-jaffle-rq2-p1-fresh-slot-002.context.json",
+      "semantic_sha256": "633d23e4dc1a920a4a13066193fa39ed60d53c6d302f7e7b4e509e647228db30"
+    },
+    {
+      "file_sha256": "e1cfb2a304fca42d669824a785b93b32aa0ab38af1176a501ac7105f44ef1be6",
+      "path": "contexts/003-jaffle-rq2-p1-fresh-slot-003.context.json",
+      "semantic_sha256": "2adea4afeb5e76dc0ff5eaf33699df515cf6a9635a56f870dbff3e60741afc71"
+    },
+    {
+      "file_sha256": "762623fb11ea8e2625547a968cba28d939f7ecf09b003f3eb45b2d22ac8b8f86",
+      "path": "contexts/004-jaffle-rq2-p1-fresh-slot-004.context.json",
+      "semantic_sha256": "88781df54662277498dae34e411aacd66b0c6269e13f681000924a5c707a41ba"
+    },
+    {
+      "file_sha256": "8f47d00dbe0000a6291dcf9af908c3949fdb76b2f3221eb54180e26a62976798",
+      "path": "contexts/005-jaffle-rq2-p1-fresh-slot-005.context.json",
+      "semantic_sha256": "42cf88e0a487e846b0544cd1b4821be80a95d4ee9b01bceb4cd6a3727fd37a91"
+    },
+    {
+      "file_sha256": "ea2319dff9ca44fd11faa1a5e346404f173874ff68c0038d31936f6a042f179b",
+      "path": "contexts/006-jaffle-rq2-p1-fresh-slot-006.context.json",
+      "semantic_sha256": "816e6c105bd64db9a264e05ff4a400361ceec053628c962936e928cae5bd9191"
+    },
+    {
+      "file_sha256": "097b80e68cda276bf02293f9c15473555b0c330a94e7526d48fd2fedf0197ea9",
+      "path": "contexts/007-jaffle-rq2-p1-fresh-slot-007.context.json",
+      "semantic_sha256": "d9f73dced5b4c1a89a24f1d5af47b595dabab12aad11b5b6ccd16706da826ac8"
+    },
+    {
+      "file_sha256": "bc6946bd777d9f4ffe8bc341c88e36ed259a5229ab06ef59efa90eaf6e6f9e1d",
+      "path": "contexts/008-jaffle-rq2-p1-fresh-slot-008.context.json",
+      "semantic_sha256": "4af37bca8eafe534bbaf1ac136eff81a4111bcae37dab4a89575d43f0872a2c4"
+    }
+  ],
+  "fresh_materialization_contract": {
+    "campaign_seed": {
+      "algorithm": "uint63_from_sha256_of_skeleton_phase_a_slot_and_factor_tuple",
+      "domain": "LineageGuard-jaffle-rq2-p1-campaign-seed-v1",
+      "duplicate_or_invalid_seed_policy": "fail_without_fallback"
+    },
+    "factorial": {
+      "assignment_algorithm": "sha256_sort_factor_tuples_bound_to_p1_skeleton_and_phase_a_hash",
+      "assignment_domain": "LineageGuard-jaffle-rq2-p1-factor-assignment-v1",
+      "assignment_materialized_by_protocol_builder": false,
+      "factor_tuples": [
+        [
+          "numeric_corruption",
+          "source",
+          "low"
+        ],
+        [
+          "numeric_corruption",
+          "source",
+          "high"
+        ],
+        [
+          "numeric_corruption",
+          "intermediate",
+          "low"
+        ],
+        [
+          "numeric_corruption",
+          "intermediate",
+          "high"
+        ],
+        [
+          "duplicate_row",
+          "source",
+          "low"
+        ],
+        [
+          "duplicate_row",
+          "source",
+          "high"
+        ],
+        [
+          "duplicate_row",
+          "intermediate",
+          "low"
+        ],
+        [
+          "duplicate_row",
+          "intermediate",
+          "high"
+        ]
+      ],
+      "kind": "two_by_two_by_two_exactly_once"
+    },
+    "identity_namespace": {
+      "cross_role_overlap_count_and_tokens_required": true,
+      "cross_role_physical_key_reuse_allowed": true,
+      "physical_resolver_field": "stable_key_sha256",
+      "physical_resolver_hash_input": "canonical_stable_key_object_with_sku",
+      "raw_identifier_written": false,
+      "role_namespace_creates_statistical_independence": false,
+      "role_namespaced_field": "role_namespaced_identity_sha256",
+      "role_namespaced_hash_input_fields": [
+        "data_role",
+        "partition",
+        "split_id",
+        "clean_snapshot_sha256",
+        "node_id",
+        "stable_key_sha256"
+      ],
+      "target_identity_may_enter_model_or_planner": false,
+      "unseen_entity_claim_allowed": false
+    },
+    "slot_count": 8,
+    "target_selection": {
+      "fallback": false,
+      "fanout_metric": "count_validation_raw_items_rows_joined_on_sku",
+      "high_pool_count": 4,
+      "low_pool_count": 4,
+      "node_id": "source:ecom.raw_products",
+      "outcomes_used_for_selection": false,
+      "p1_target_count": 8,
+      "pool_rule": "lowest_four_and_highest_four_by_numeric_fanout",
+      "stable_key_columns": [
+        "sku"
+      ],
+      "target_count_per_slot": 1,
+      "unused_middle_count": 2,
+      "validation_population_count": 10,
+      "within_p1_physical_key_reuse": false,
+      "within_pool_tie_break_domain": "LineageGuard-jaffle-rq2-p1-target-tie-v1"
+    },
+    "validation_anchor_expected_identity": {
+      "clean_raw_load_file_sha256": "5b6f904b08d129595368d696309af7a64323c5bd75160b1859659b6ade7c75bb",
+      "cutoff": "timestamp_strictly_before_2021-01-01",
+      "data_role": "validation",
+      "database_sha256": "50d60961f3b9434fc12d9c29bbeb3ce61b8635fea0a01c01f50ac3b63e10353a",
+      "expected_relation_rows": {
+        "customers": 3102,
+        "items": 1768124,
+        "orders": 1222760,
+        "products": 10,
+        "stores": 6,
+        "supplies": 65
+      },
+      "partition": "pilot_validation",
+      "read_allowed_only_in_phase_b": true,
+      "read_by_protocol_builder": false,
+      "split_id": "jaffle.temporal.pilot-validation.2020.v1"
+    }
+  },
+  "fresh_materialization_contract_sha256": "4b4b48a16024db67f934cab781d2503a6491b0d53217d512c0268242e6688c1b",
+  "fresh_registry_sha256": "f2e93f797a73cc22daa78387ee88f6e6f6f60f0fa86694a9ef12ee2c193bff12",
+  "kind": "lineageguard_jaffle_rq2_p1_fresh_input_registry_v1",
+  "lock": {
+    "copy_only_no_replanning": true,
+    "cross_role_physical_key_reuse_allowed": true,
+    "dirty_inputs_read": false,
+    "launch_authorized": false,
+    "outcomes_read": false,
+    "phase_a_validated_before_validation_anchor_access": true,
+    "runner_implemented_by_this_bundle": false,
+    "unseen_entity_claim_allowed": false,
+    "within_p1_targets_unique": true
+  },
+  "method_registry_file_sha256": "2fcf437991ce0d4eb5d0fd53c60016c5cb8ddf54a1c2279d9cae9e1afa2cb72c",
+  "method_registry_path": "/home/u0020090017/projects/lineageguard/releases/4a449572cfca7349ad52376ebb090aa9b91fc475/configs/jaffle_rq2_action_p1_v1/methods.json",
+  "method_registry_sha256": "8a0cccb95bcd0bf0cdc8338afdfb7e78c21aea02b115ac1cc7b1c8f73b8dbd0d",
+  "p1_skeleton_sha256": "c14c77fc783011013d9f46c95a0c7c848bb5b2a77697e537c9dbd47369d5426a",
+  "partition": "pilot_validation",
+  "phase_a_cost_catalog_file_sha256": "06277838cf491d56870169456735b8aa0a31df366ba41d1f6fab59ccc4439abf",
+  "phase_a_cost_catalog_path": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/cost-20260822-070356-rq2-p1-4a44957/action-p1-cost-catalog.json",
+  "phase_a_cost_catalog_sha256": "352555ec7824427a2b0e41fee76e0a1febca539522f4eaf734e68d4a55b0043b",
+  "phase_a_manifest_binding_sha256": "8cde195a572ec76ce8a67c8a4f550de78d6bbb1a78e7883d5f734e1134e832d8",
+  "phase_a_manifest_file_sha256": "a391b3283187bea20dad873da54c9da23f25a1e4030a6a12b20082ea993f0e02",
+  "phase_a_manifest_path": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/shared-20260822-081256-rq2-p1-4a44957/manifest.json",
+  "phase_a_model_file_sha256": "6e69c295c8bd237290347857d03368bd0a8f003f80af76675c87341cbb274c0b",
+  "phase_a_model_path": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/shared-20260822-081256-rq2-p1-4a44957/action-p1-model.json",
+  "phase_a_model_sha256": "58de8b26ee1a6333ed7f53422a46e02ecc9ef60699043fd23ea1e4e3ace638cc",
+  "phase_b_contract": {
+    "atomic_outputs": [
+      "factor_and_seed_assignment_registry",
+      "eight_campaign_and_execution_specs",
+      "eight_validation_product_target_ledgers_and_registry",
+      "product_clean_context_index",
+      "shared_plan_to_campaign_binding",
+      "fresh_input_prelaunch_closure"
+    ],
+    "binder_rule": "copy_shared_action_sets_without_replanning",
+    "campaign_specific_planning": false,
+    "may_open_validation_clean_anchor_only_after_predecessor": true,
+    "name": "post_shared_plan_fresh_input_materialization",
+    "required_predecessor": "strict_self_hashed_phase_a_shared_plan_registry"
+  },
+  "protocol_file_sha256": "4fcf92d62f717f957ff5dd784f33b54e17cfb0c36e94880d48b63a2f9797d731",
+  "protocol_path": "/home/u0020090017/projects/lineageguard/releases/4a449572cfca7349ad52376ebb090aa9b91fc475/configs/jaffle_rq2_action_p1_v1/protocol.json",
+  "protocol_sha256": "b59c9448e67ccc70bd97e147e2cc81ad977455db7373f020f65c3dad4c149621",
+  "schema_version": 1,
+  "shared_plan_registry_file_sha256": "7683d439de25429c80eac423085fefecd69e11df634377d747c9066839156204",
+  "shared_plan_registry_path": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/shared-20260822-081256-rq2-p1-4a44957/shared-plan-registry.json",
+  "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+  "split_id": "jaffle.temporal.pilot-validation.2020.v1",
+  "target_allocation_sha256": "a6ecc75c63ef45194332fcb19b410de9cad711776f3bc89aabc635b93887ea1b",
+  "target_registry_sha256": "79ceb1d164c96a13bebbc920326f6526317c063c3f6793a4a329ba492ed1c2db"
+}

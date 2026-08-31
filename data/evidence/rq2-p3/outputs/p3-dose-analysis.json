@@ -1,0 +1,72 @@
+{
+ "dose_anchors_sha256": "6fc6c0606424398c7460440adcfae0ea2990ca6803c75edff347b5a6986fc28b",
+ "f_grid": 0.9986694574128215,
+ "kind": "lineageguard_p3_dose_analysis_v1",
+ "max_abs_residual": 1.1102230246251565e-16,
+ "n_products": 10,
+ "preregistered_line": "(q(k_num)-1) * w * f_grid, q(k)=N/(2N-k)",
+ "protocol_sha256": "28cac435761222a96a9403169934bdf0bb3d15d9b7a543153662350ca0420c7d",
+ "rows": [
+  {
+   "campaign_id": "p3-prod-mixed-1x9",
+   "d_dup": 0.06206896551724138,
+   "d_mixed": 0.07586206896551724,
+   "d_num": 0.02,
+   "k_num": 1,
+   "observed_diff": -0.12471422410753422,
+   "predicted_diff": -0.1247142241075342,
+   "q_k": 0.5263157894736842,
+   "residual": -1.3877787807814457e-17,
+   "w_fresh": 0.26363636363636367
+  },
+  {
+   "campaign_id": "p3-prod-mixed-3x7",
+   "d_dup": 0.05185185185185185,
+   "d_mixed": 0.0962962962962963,
+   "d_num": 0.06,
+   "k_num": 3,
+   "observed_diff": -0.2562197205217511,
+   "predicted_diff": -0.256219720521751,
+   "q_k": 0.5882352941176471,
+   "residual": -1.1102230246251565e-16,
+   "w_fresh": 0.6230769230769231
+  },
+  {
+   "campaign_id": "p3-prod-mixed-5x5",
+   "d_dup": 0.04,
+   "d_mixed": 0.12,
+   "d_num": 0.1,
+   "k_num": 5,
+   "observed_diff": -0.2774081826146727,
+   "predicted_diff": -0.2774081826146727,
+   "q_k": 0.6666666666666666,
+   "residual": 0.0,
+   "w_fresh": 0.8333333333333334
+  },
+  {
+   "campaign_id": "p3-prod-mixed-7x3",
+   "d_dup": 0.02608695652173913,
+   "d_mixed": 0.14782608695652172,
+   "d_num": 0.13999999999999999,
+   "k_num": 7,
+   "observed_diff": -0.2182612434074176,
+   "predicted_diff": -0.21826124340741754,
+   "q_k": 0.7692307692307693,
+   "residual": -5.551115123125783e-17,
+   "w_fresh": 0.9470588235294118
+  },
+  {
+   "campaign_id": "p3-prod-mixed-9x1",
+   "d_dup": 0.009523809523809523,
+   "d_mixed": 0.18095238095238095,
+   "d_num": 0.18,
+   "k_num": 9,
+   "observed_diff": -0.09031030021580067,
+   "predicted_diff": -0.09031030021580064,
+   "q_k": 0.9090909090909091,
+   "residual": -2.7755575615628914e-17,
+   "w_fresh": 0.9947368421052631
+  }
+ ],
+ "summary_sha256": "064fb482aa561a1ce7b0931d73e6e4c59880d11fa3e445d321a19e5eb5491045"
+}

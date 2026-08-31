@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+*.duckdb
+*.duckdb.wal
+paper/
+.venv/
+venv/
+*.log.tmp

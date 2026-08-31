@@ -1,0 +1,761 @@
+{
+ "cells": [
+  "rq2-action-response-d8-duplicate-intermediate-high-v2",
+  "rq2-action-response-d8-duplicate-intermediate-low-v2",
+  "rq2-action-response-d8-duplicate-source-high-v2",
+  "rq2-action-response-d8-duplicate-source-low-v2",
+  "rq2-action-response-d8-numeric-intermediate-high-v2",
+  "rq2-action-response-d8-numeric-intermediate-low-v2",
+  "rq2-action-response-d8-numeric-source-high-v2",
+  "rq2-action-response-d8-numeric-source-low-v2"
+ ],
+ "cost_aware_view": {
+  "cost_catalog_sha256": "7b933abfcec953f52b57a408e7638e68683f1051db69c46d218448cf39ab0323",
+  "frozen_five_node_total_us": 98277124,
+  "measured_five_node_total_us": 99942686.139,
+  "per_node": [
+   {
+    "frozen_c_deploy_us": 6813,
+    "max_measured_c_disposition_us": 2351.104,
+    "measured_c_detect_us": 73777.627,
+    "node_id": "model:stg_products",
+    "policy_total_us": 82941.731,
+    "understatement_factor": 12.17
+   },
+   {
+    "frozen_c_deploy_us": 4708,
+    "max_measured_c_disposition_us": 2427.76,
+    "measured_c_detect_us": 77996.204,
+    "node_id": "model:products",
+    "policy_total_us": 85131.964,
+    "understatement_factor": 18.08
+   },
+   {
+    "frozen_c_deploy_us": 51078023,
+    "max_measured_c_disposition_us": 305942.915,
+    "measured_c_detect_us": 967902.437,
+    "node_id": "model:order_items",
+    "policy_total_us": 52351868.352,
+    "understatement_factor": 1.02
+   },
+   {
+    "frozen_c_deploy_us": 47159369,
+    "max_measured_c_disposition_us": 0.0,
+    "measured_c_detect_us": 165493.106,
+    "node_id": "model:orders",
+    "policy_total_us": 47324862.106,
+    "understatement_factor": 1.0
+   },
+   {
+    "frozen_c_deploy_us": 28211,
+    "max_measured_c_disposition_us": 0.0,
+    "measured_c_detect_us": 69670.986,
+    "node_id": "model:customers",
+    "policy_total_us": 97881.986,
+    "understatement_factor": 3.47
+   }
+  ]
+ },
+ "counts": {
+  "cells": 8,
+  "rows": 88,
+  "technical_failures": 0
+ },
+ "kind": "lineageguard_d10_summary_v1",
+ "placements": [
+  "model:stg_products",
+  "model:products",
+  "model:order_items",
+  "model:orders",
+  "model:customers"
+ ],
+ "policy_summaries": [
+  {
+   "per_placement": {
+    "model:customers": {
+     "macro_nrd": {
+      "denominator": 1,
+      "numerator": 1,
+      "value": 1.0
+     },
+     "per_cell_nrd": {
+      "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "per_error_type": {
+      "duplicate": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "numeric": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "status": "complete"
+    },
+    "model:order_items": {
+     "macro_nrd": {
+      "denominator": 1,
+      "numerator": 1,
+      "value": 1.0
+     },
+     "per_cell_nrd": {
+      "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "per_error_type": {
+      "duplicate": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "numeric": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "status": "complete"
+    },
+    "model:orders": {
+     "macro_nrd": {
+      "denominator": 1,
+      "numerator": 1,
+      "value": 1.0
+     },
+     "per_cell_nrd": {
+      "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "per_error_type": {
+      "duplicate": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "numeric": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "status": "complete"
+    },
+    "model:products": {
+     "macro_nrd": {
+      "denominator": 38,
+      "numerator": 31,
+      "value": 0.8157894736842105
+     },
+     "per_cell_nrd": {
+      "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "rq2-action-response-d8-duplicate-source-high-v2": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "rq2-action-response-d8-duplicate-source-low-v2": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "rq2-action-response-d8-numeric-intermediate-high-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-intermediate-low-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-source-high-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-source-low-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     "per_error_type": {
+      "duplicate": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "numeric": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     "status": "complete"
+    },
+    "model:stg_products": {
+     "macro_nrd": {
+      "denominator": 38,
+      "numerator": 31,
+      "value": 0.8157894736842105
+     },
+     "per_cell_nrd": {
+      "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "rq2-action-response-d8-duplicate-source-high-v2": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "rq2-action-response-d8-duplicate-source-low-v2": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "rq2-action-response-d8-numeric-intermediate-high-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-intermediate-low-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-source-high-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-source-low-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     "per_error_type": {
+      "duplicate": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "numeric": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     "status": "complete"
+    }
+   },
+   "placement_spread": {
+    "best_macro_nrd": {
+     "denominator": 38,
+     "numerator": 31,
+     "value": 0.8157894736842105
+    },
+    "best_placement": "model:stg_products",
+    "placement_is_discriminating": true,
+    "range": {
+     "denominator": 38,
+     "numerator": 7,
+     "value": 0.18421052631578946
+    },
+    "worst_macro_nrd": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "policy_class": "static",
+   "policy_id": "d10-p1-quarantine"
+  },
+  {
+   "per_placement": {
+    "model:customers": {
+     "macro_nrd": {
+      "denominator": 1,
+      "numerator": 1,
+      "value": 1.0
+     },
+     "per_cell_nrd": {
+      "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "per_error_type": {
+      "duplicate": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "numeric": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "status": "complete"
+    },
+    "model:order_items": {
+     "macro_nrd": {
+      "denominator": 1,
+      "numerator": 1,
+      "value": 1.0
+     },
+     "per_cell_nrd": {
+      "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "per_error_type": {
+      "duplicate": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "numeric": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "status": "complete"
+    },
+    "model:orders": {
+     "macro_nrd": {
+      "denominator": 1,
+      "numerator": 1,
+      "value": 1.0
+     },
+     "per_cell_nrd": {
+      "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-duplicate-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-high-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "rq2-action-response-d8-numeric-source-low-v2": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "per_error_type": {
+      "duplicate": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "numeric": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     "status": "complete"
+    },
+    "model:products": {
+     "macro_nrd": {
+      "denominator": 19,
+      "numerator": 5,
+      "value": 0.2631578947368421
+     },
+     "per_cell_nrd": {
+      "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 0,
+       "value": 0.0
+      },
+      "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 0,
+       "value": 0.0
+      },
+      "rq2-action-response-d8-duplicate-source-high-v2": {
+       "denominator": 1,
+       "numerator": 0,
+       "value": 0.0
+      },
+      "rq2-action-response-d8-duplicate-source-low-v2": {
+       "denominator": 1,
+       "numerator": 0,
+       "value": 0.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-high-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-intermediate-low-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-source-high-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-source-low-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     "per_error_type": {
+      "duplicate": {
+       "denominator": 1,
+       "numerator": 0,
+       "value": 0.0
+      },
+      "numeric": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     "status": "complete"
+    },
+    "model:stg_products": {
+     "macro_nrd": {
+      "denominator": 19,
+      "numerator": 5,
+      "value": 0.2631578947368421
+     },
+     "per_cell_nrd": {
+      "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+       "denominator": 1,
+       "numerator": 0,
+       "value": 0.0
+      },
+      "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+       "denominator": 1,
+       "numerator": 0,
+       "value": 0.0
+      },
+      "rq2-action-response-d8-duplicate-source-high-v2": {
+       "denominator": 1,
+       "numerator": 0,
+       "value": 0.0
+      },
+      "rq2-action-response-d8-duplicate-source-low-v2": {
+       "denominator": 1,
+       "numerator": 0,
+       "value": 0.0
+      },
+      "rq2-action-response-d8-numeric-intermediate-high-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-intermediate-low-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-source-high-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "rq2-action-response-d8-numeric-source-low-v2": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     "per_error_type": {
+      "duplicate": {
+       "denominator": 1,
+       "numerator": 0,
+       "value": 0.0
+      },
+      "numeric": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     "status": "complete"
+    }
+   },
+   "placement_spread": {
+    "best_macro_nrd": {
+     "denominator": 19,
+     "numerator": 5,
+     "value": 0.2631578947368421
+    },
+    "best_placement": "model:stg_products",
+    "placement_is_discriminating": true,
+    "range": {
+     "denominator": 19,
+     "numerator": 14,
+     "value": 0.7368421052631579
+    },
+    "worst_macro_nrd": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "policy_class": "conditional",
+   "policy_id": "d10-p2-cond-quar-dedup"
+  }
+ ],
+ "schema_version": 1,
+ "scope": {
+  "effect_claim_allowed": false,
+  "gate_issued": false,
+  "oracle_detector": false,
+  "paper_eligible": false,
+  "study_phase": "development"
+ },
+ "source": {
+  "measurement_sha256": [
+   "dc39c3b71a6312eb22fd054bdb00953fd703fc5aa6d9cccefc0630086dbb467f",
+   "6fc54d63b63ff134d638f3fb7194021de0bfd15e07650649cad65c490ce627b1",
+   "f519314635f4af9c8d3e2903b285f78023413194042f2f4e5841b1c2c6bcc9ff",
+   "4f729e1d4497b85bc0b67646b6e1aea408bef940806915738948109bb2b7f36f"
+  ]
+ },
+ "summary_sha256": "67180f022d109e733031357eba9836596897f37a588dbd5bac1b5757b2f314b3"
+}

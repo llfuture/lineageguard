@@ -1,0 +1,19 @@
+{
+ "criteria": {
+  "c1_plans_response_distinguishable": true,
+  "c2_pass": true,
+  "c2_predicted_relative_aurd_improvement": 0.31017299702369683,
+  "c3_no_unmeasured_composition_in_selected_plans": true,
+  "c4_primary_not_cost_dominated": true,
+  "c5_no_signature_conflicts": true
+ },
+ "decision": "LAUNCH",
+ "kind": "lineageguard_p3_identifiability_precheck_v1",
+ "plans_sha256": "e99b10d4ff646f8ef80ad7ba58705707bc93227318bd7c750e954803d1e5f1be",
+ "precheck_sha256": "d6b7b5d08fa83067f8605081648243e0def4fc1e16d529e3b8f90607398a9b34",
+ "predicted_aurd_comparator": 0.748639285992047,
+ "predicted_aurd_primary": 0.5164315949662133,
+ "protocol_sha256": "28cac435761222a96a9403169934bdf0bb3d15d9b7a543153662350ca0420c7d",
+ "signature_conflicts": [],
+ "unmeasured_compositions": []
+}

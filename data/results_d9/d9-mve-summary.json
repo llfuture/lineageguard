@@ -1,0 +1,763 @@
+{
+ "cells": [
+  "rq2-action-response-d8-duplicate-intermediate-high-v2",
+  "rq2-action-response-d8-duplicate-intermediate-low-v2",
+  "rq2-action-response-d8-duplicate-source-high-v2",
+  "rq2-action-response-d8-duplicate-source-low-v2",
+  "rq2-action-response-d8-numeric-intermediate-high-v2",
+  "rq2-action-response-d8-numeric-intermediate-low-v2",
+  "rq2-action-response-d8-numeric-source-high-v2",
+  "rq2-action-response-d8-numeric-source-low-v2"
+ ],
+ "counts": {
+  "cells": 8,
+  "policies": 8,
+  "rows": 64,
+  "technical_failures": 0
+ },
+ "d8_anchor_cross_check": {
+  "duplicate": {
+   "d8_frozen": {
+    "denominator": 19,
+    "numerator": 21,
+    "value": 1.105263157894737
+   },
+   "d9_measured": {
+    "denominator": 19,
+    "numerator": 21,
+    "value": 1.105263157894737
+   },
+   "matches": true
+  },
+  "numeric": {
+   "d8_frozen": {
+    "denominator": 19,
+    "numerator": 10,
+    "value": 0.5263157894736842
+   },
+   "d9_measured": {
+    "denominator": 19,
+    "numerator": 10,
+    "value": 0.5263157894736842
+   },
+   "matches": true
+  }
+ },
+ "kind": "lineageguard_d9_mve_summary_v1",
+ "measured_static_ceiling": {
+  "macro_nrd": {
+   "denominator": 38,
+   "numerator": 31,
+   "value": 0.8157894736842105
+  },
+  "policy_id": "pol-01-static-quarantine"
+ },
+ "policy_summaries": [
+  {
+   "action_fired_cells": 0,
+   "admissible_under_safety_caps": true,
+   "availability_preserved": true,
+   "cells_with_availability_loss": [],
+   "cells_with_clean_collateral": [],
+   "clean_collateral_free": true,
+   "clean_signal_verdicts": {},
+   "clears_sesoi": false,
+   "dirty_signal_verdicts": {},
+   "disposition_layer": "L0",
+   "macro_nrd": {
+    "denominator": 1,
+    "numerator": 1,
+    "value": 1.0
+   },
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "per_error_type_mean_nrd": {
+    "duplicate": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "numeric": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "policy_class": "anchor",
+   "policy_id": "pol-00-no-validation",
+   "policy_label": "no_validation",
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 31,
+    "numerator": -7,
+    "value": -0.22580645161290322
+   },
+   "status": "complete"
+  },
+  {
+   "action_fired_cells": 8,
+   "admissible_under_safety_caps": true,
+   "availability_preserved": true,
+   "cells_with_availability_loss": [],
+   "cells_with_clean_collateral": [],
+   "clean_collateral_free": true,
+   "clean_signal_verdicts": {
+    "clear": 8
+   },
+   "clears_sesoi": false,
+   "dirty_signal_verdicts": {
+    "duplicate_shape": 4,
+    "numeric_shape": 4
+   },
+   "disposition_layer": "L1",
+   "macro_nrd": {
+    "denominator": 38,
+    "numerator": 31,
+    "value": 0.8157894736842105
+   },
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 19,
+     "numerator": 21,
+     "value": 1.105263157894737
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 19,
+     "numerator": 21,
+     "value": 1.105263157894737
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 19,
+     "numerator": 21,
+     "value": 1.105263157894737
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 19,
+     "numerator": 21,
+     "value": 1.105263157894737
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    }
+   },
+   "per_error_type_mean_nrd": {
+    "duplicate": {
+     "denominator": 19,
+     "numerator": 21,
+     "value": 1.105263157894737
+    },
+    "numeric": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    }
+   },
+   "policy_class": "static",
+   "policy_id": "pol-01-static-quarantine",
+   "policy_label": "static.quarantine (D1, frozen legacy)",
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 1,
+    "numerator": 0,
+    "value": 0.0
+   },
+   "status": "complete"
+  },
+  {
+   "action_fired_cells": 8,
+   "admissible_under_safety_caps": true,
+   "availability_preserved": true,
+   "cells_with_availability_loss": [],
+   "cells_with_clean_collateral": [],
+   "clean_collateral_free": true,
+   "clean_signal_verdicts": {
+    "clear": 8
+   },
+   "clears_sesoi": true,
+   "dirty_signal_verdicts": {
+    "duplicate_shape": 4,
+    "numeric_shape": 4
+   },
+   "disposition_layer": "L2",
+   "macro_nrd": {
+    "denominator": 2,
+    "numerator": 1,
+    "value": 0.5
+   },
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "per_error_type_mean_nrd": {
+    "duplicate": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "numeric": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "policy_class": "static",
+   "policy_id": "pol-02-static-dedup",
+   "policy_label": "static.dedup (D2)",
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 31,
+    "numerator": 12,
+    "value": 0.3870967741935484
+   },
+   "status": "complete"
+  },
+  {
+   "action_fired_cells": 8,
+   "admissible_under_safety_caps": true,
+   "availability_preserved": true,
+   "cells_with_availability_loss": [],
+   "cells_with_clean_collateral": [],
+   "clean_collateral_free": true,
+   "clean_signal_verdicts": {
+    "clear": 8
+   },
+   "clears_sesoi": false,
+   "dirty_signal_verdicts": {
+    "duplicate_shape": 4,
+    "numeric_shape": 4
+   },
+   "disposition_layer": "L2",
+   "macro_nrd": {
+    "denominator": 1,
+    "numerator": 2,
+    "value": 2.0
+   },
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 3,
+     "value": 3.0
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 3,
+     "value": 3.0
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 1,
+     "numerator": 3,
+     "value": 3.0
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 1,
+     "numerator": 3,
+     "value": 3.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "per_error_type_mean_nrd": {
+    "duplicate": {
+     "denominator": 1,
+     "numerator": 3,
+     "value": 3.0
+    },
+    "numeric": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "policy_class": "static",
+   "policy_id": "pol-03-static-nullout",
+   "policy_label": "static.null_out (D3)",
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 31,
+    "numerator": -45,
+    "value": -1.4516129032258065
+   },
+   "status": "complete"
+  },
+  {
+   "action_fired_cells": 8,
+   "admissible_under_safety_caps": false,
+   "availability_preserved": false,
+   "cells_with_availability_loss": [
+    "rq2-action-response-d8-numeric-source-low-v2",
+    "rq2-action-response-d8-numeric-source-high-v2",
+    "rq2-action-response-d8-numeric-intermediate-low-v2",
+    "rq2-action-response-d8-numeric-intermediate-high-v2",
+    "rq2-action-response-d8-duplicate-source-low-v2",
+    "rq2-action-response-d8-duplicate-source-high-v2",
+    "rq2-action-response-d8-duplicate-intermediate-low-v2",
+    "rq2-action-response-d8-duplicate-intermediate-high-v2"
+   ],
+   "cells_with_clean_collateral": [],
+   "clean_collateral_free": true,
+   "clean_signal_verdicts": {
+    "clear": 8
+   },
+   "clears_sesoi": true,
+   "dirty_signal_verdicts": {
+    "duplicate_shape": 4,
+    "numeric_shape": 4
+   },
+   "disposition_layer": "L2",
+   "macro_nrd": {
+    "denominator": 1,
+    "numerator": 0,
+    "value": 0.0
+   },
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    }
+   },
+   "per_error_type_mean_nrd": {
+    "duplicate": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "numeric": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    }
+   },
+   "policy_class": "static",
+   "policy_id": "pol-04-static-failclosed",
+   "policy_label": "static.fail_closed (D4)",
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 1,
+    "numerator": 1,
+    "value": 1.0
+   },
+   "status": "complete"
+  },
+  {
+   "action_fired_cells": 4,
+   "admissible_under_safety_caps": true,
+   "availability_preserved": true,
+   "cells_with_availability_loss": [],
+   "cells_with_clean_collateral": [],
+   "clean_collateral_free": true,
+   "clean_signal_verdicts": {
+    "clear": 8
+   },
+   "clears_sesoi": false,
+   "dirty_signal_verdicts": {
+    "duplicate_shape": 4,
+    "numeric_shape": 4
+   },
+   "disposition_layer": "L1",
+   "macro_nrd": {
+    "denominator": 38,
+    "numerator": 29,
+    "value": 0.7631578947368421
+   },
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    }
+   },
+   "per_error_type_mean_nrd": {
+    "duplicate": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "numeric": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    }
+   },
+   "policy_class": "conditional",
+   "policy_id": "pol-05-cond-v1-minimal",
+   "policy_label": "conditional v1: numeric->quarantine, dup->no_op",
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 31,
+    "numerator": 2,
+    "value": 0.06451612903225806
+   },
+   "status": "complete"
+  },
+  {
+   "action_fired_cells": 8,
+   "admissible_under_safety_caps": true,
+   "availability_preserved": true,
+   "cells_with_availability_loss": [],
+   "cells_with_clean_collateral": [],
+   "clean_collateral_free": true,
+   "clean_signal_verdicts": {
+    "clear": 8
+   },
+   "clears_sesoi": true,
+   "dirty_signal_verdicts": {
+    "duplicate_shape": 4,
+    "numeric_shape": 4
+   },
+   "disposition_layer": "L2",
+   "macro_nrd": {
+    "denominator": 19,
+    "numerator": 5,
+    "value": 0.2631578947368421
+   },
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    }
+   },
+   "per_error_type_mean_nrd": {
+    "duplicate": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "numeric": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    }
+   },
+   "policy_class": "conditional",
+   "policy_id": "pol-06-cond-v2-dedup",
+   "policy_label": "conditional v2: numeric->quarantine, dup->dedup",
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 31,
+    "numerator": 21,
+    "value": 0.6774193548387096
+   },
+   "status": "complete"
+  },
+  {
+   "action_fired_cells": 8,
+   "admissible_under_safety_caps": true,
+   "availability_preserved": true,
+   "cells_with_availability_loss": [],
+   "cells_with_clean_collateral": [],
+   "clean_collateral_free": true,
+   "clean_signal_verdicts": {
+    "clear": 8
+   },
+   "clears_sesoi": true,
+   "dirty_signal_verdicts": {
+    "duplicate_shape": 4,
+    "numeric_shape": 4
+   },
+   "disposition_layer": "L2",
+   "macro_nrd": {
+    "denominator": 2,
+    "numerator": 1,
+    "value": 0.5
+   },
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "per_error_type_mean_nrd": {
+    "duplicate": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "numeric": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "policy_class": "conditional",
+   "policy_id": "pol-07-cond-v2-nullout",
+   "policy_label": "conditional v2+: numeric->null_out, dup->dedup",
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 31,
+    "numerator": 12,
+    "value": 0.3870967741935484
+   },
+   "status": "complete"
+  }
+ ],
+ "schema_version": 1,
+ "scope": {
+  "effect_claim_allowed": false,
+  "gate_issued": false,
+  "oracle_detector": false,
+  "paper_eligible": false,
+  "study_phase": "development"
+ },
+ "sesoi_relative_improvement": {
+  "denominator": 10,
+  "numerator": 1,
+  "value": 0.1
+ },
+ "source": {
+  "measurement_sha256": [
+   "cb96644d26f35b2c3351b32fa85fd4132957ade32004461133dfc55c6156cb9f",
+   "ef56cacbf2acb2448cd81f3d5950c8bbe91c79d23309634c7e0e584197ea568a",
+   "319e6e8ed875466f29d956042ecbfaa0710748707e57bc1087f1c78793054679",
+   "a221aca40ecb3697fb2ee423c47a1602b950617ed8d08921d17d39960cbb386b"
+  ]
+ },
+ "summary_sha256": "6a79a1e959ca88d05a94e326723c8ebcd5d691ac950ad4d15acf6c9bdb67acec"
+}

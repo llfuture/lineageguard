@@ -1,0 +1,3083 @@
+{
+  "checksum_file": "files.sha256",
+  "command": [
+    "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815/bin/python",
+    "/home/u0020090017/projects/lineageguard/releases/ee40ef2/scripts/run_propagation_calibrated_v4_evaluate.py",
+    "--fit-artifact",
+    "/home/u0020090017/projects/lineageguard/outputs/20260818-020642-pilot-rq1c-fit-e44a6c7/stdout.log",
+    "--calibration-artifact",
+    "/home/u0020090017/projects/lineageguard/outputs/20260821-100614-pilot-rq1-v4-calibration-ee40ef2/stdout.log",
+    "--validation-registry",
+    "/home/u0020090017/projects/lineageguard/20260821-104045-pilot-rq1-v4-w30-validation-registry-ee40ef2.json"
+  ],
+  "command_display": "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815/bin/python /home/u0020090017/projects/lineageguard/releases/ee40ef2/scripts/run_propagation_calibrated_v4_evaluate.py --fit-artifact /home/u0020090017/projects/lineageguard/outputs/20260818-020642-pilot-rq1c-fit-e44a6c7/stdout.log --calibration-artifact /home/u0020090017/projects/lineageguard/outputs/20260821-100614-pilot-rq1-v4-calibration-ee40ef2/stdout.log --validation-registry /home/u0020090017/projects/lineageguard/20260821-104045-pilot-rq1-v4-w30-validation-registry-ee40ef2.json",
+  "cwd": "/home/u0020090017/projects/lineageguard/releases/ee40ef2",
+  "duration_seconds": 2.086356951,
+  "end_time_utc": "2026-08-21T10:44:04.663143Z",
+  "environment": {
+    "CONDA_DEFAULT_ENV": "base",
+    "CONDA_EXE": "/home/u0020090017/miniconda3/bin/conda",
+    "CONDA_PREFIX": "/home/u0020090017/miniconda3",
+    "CONDA_PROMPT_MODIFIER": "(base) ",
+    "CONDA_PYTHON_EXE": "/home/u0020090017/miniconda3/bin/python",
+    "CONDA_SHLVL": "1",
+    "HOME": "/home/u0020090017",
+    "LANG": "C.UTF-8",
+    "LANGUAGE": "en_US.UTF-8",
+    "LC_ALL": "en_US.UTF-8",
+    "LC_CTYPE": "C.UTF-8",
+    "LOGNAME": "u0020090017",
+    "MOTD_SHOWN": "pam",
+    "PATH": "/home/u0020090017/texlive/bin/x86_64-linux:/home/u0020090017/miniconda3/bin:/home/u0020090017/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "PWD": "/home/u0020090017",
+    "SHELL": "/bin/bash",
+    "SHLVL": "1",
+    "SSH_CLIENT": "10.0.255.254 44986 22",
+    "SSH_CONNECTION": "10.0.255.254 44986 10.0.0.6 22",
+    "USER": "u0020090017",
+    "XDG_RUNTIME_DIR": "/run/user/500007",
+    "XDG_SESSION_CLASS": "<redacted>",
+    "XDG_SESSION_ID": "<redacted>",
+    "XDG_SESSION_TYPE": "<redacted>",
+    "_": "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815/bin/python",
+    "_CE_CONDA": "",
+    "_CE_M": "",
+    "_CONDA_EXE": "/home/u0020090017/miniconda3/bin/conda",
+    "_CONDA_ROOT": "/home/u0020090017/miniconda3"
+  },
+  "exit_code": 0,
+  "host": {
+    "cpu_count": 32,
+    "fqdn": "n1.example.com",
+    "hostname": "n1",
+    "machine": "x86_64",
+    "platform": "Linux-5.4.0-100-generic-x86_64-with-glibc2.31",
+    "processor": "x86_64",
+    "release": "5.4.0-100-generic",
+    "system": "Linux"
+  },
+  "input_files": [
+    {
+      "bytes": 971184,
+      "path": ".remote_sync_tmp/lineageguard-ee40ef2.tar.gz",
+      "path_kind": "project_relative",
+      "sha256": "50bf61929cb5ff88ea1ae0d870642998a09db4e8182928320dd9b09227e199f1"
+    },
+    {
+      "bytes": 854,
+      "path": ".remote_sync_tmp/n1-discovery-20260821-095408.tsv",
+      "path_kind": "project_relative",
+      "sha256": "409103cd0f1b802564ad195b6ccb78ca5030c718878c494ce03e486007307812"
+    },
+    {
+      "bytes": 38893,
+      "path": "20260821-104045-pilot-rq1-v4-w30-validation-registry-ee40ef2.json",
+      "path_kind": "project_relative",
+      "sha256": "b401d8ad140493ba27d93e5a46058e02b10fd9ebcbc71486fcabe94e83ed7639"
+    },
+    {
+      "bytes": 231618,
+      "path": "outputs/20260818-020642-pilot-rq1c-fit-e44a6c7/stdout.log",
+      "path_kind": "project_relative",
+      "sha256": "5366aa299acaa81997a4e04f3ba82e11769e8e6179b429fcd8f4a7d74dd4e9e6"
+    },
+    {
+      "bytes": 21680,
+      "path": "outputs/20260821-100614-pilot-rq1-v4-calibration-ee40ef2/stdout.log",
+      "path_kind": "project_relative",
+      "sha256": "3925fbdeaa07ef1b3c2be8a83ee72f087364dcc374d0acc397dfea546db6b5d3"
+    }
+  ],
+  "input_roots": [
+    {
+      "path": ".remote_sync_tmp/lineageguard-ee40ef2.tar.gz",
+      "path_kind": "project_relative"
+    },
+    {
+      "path": ".remote_sync_tmp/n1-discovery-20260821-095408.tsv",
+      "path_kind": "project_relative"
+    },
+    {
+      "path": "outputs/20260818-020642-pilot-rq1c-fit-e44a6c7/stdout.log",
+      "path_kind": "project_relative"
+    },
+    {
+      "path": "outputs/20260821-100614-pilot-rq1-v4-calibration-ee40ef2/stdout.log",
+      "path_kind": "project_relative"
+    },
+    {
+      "path": "20260821-104045-pilot-rq1-v4-w30-validation-registry-ee40ef2.json",
+      "path_kind": "project_relative"
+    }
+  ],
+  "logs": {
+    "exit_code": {
+      "bytes": 2,
+      "path": "exit_code.txt"
+    },
+    "stderr": {
+      "bytes": 0,
+      "path": "stderr.log"
+    },
+    "stdout": {
+      "bytes": 2401617,
+      "path": "stdout.log"
+    }
+  },
+  "output_dir": "/home/u0020090017/projects/lineageguard/outputs/20260821-104340-pilot-rq1-v4-w30-evaluate-ee40ef2",
+  "project_root": "/home/u0020090017/projects/lineageguard",
+  "python": {
+    "executable": "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815/bin/python",
+    "implementation": "CPython",
+    "version": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:19:41) [GCC 14.3.0]",
+    "version_info": [
+      3,
+      13,
+      13,
+      "final",
+      0
+    ]
+  },
+  "run_id": "20260821-104340-pilot-rq1-v4-w30-evaluate-ee40ef2",
+  "schema_version": 1,
+  "snapshot_time_utc": "2026-08-21T10:44:02.576789Z",
+  "source_files": [
+    {
+      "bytes": 409,
+      "path": "releases/ee40ef2/.gitignore",
+      "path_kind": "project_relative",
+      "sha256": "8c84741e84f3b9f7368ba4190319180dad2f13104a869ed26075ee943c87b9b3"
+    },
+    {
+      "bytes": 68343,
+      "path": "releases/ee40ef2/EXPERIMENT_PROTOCOL.md",
+      "path_kind": "project_relative",
+      "sha256": "b4b3df79df722d9a8a22051b4084b8b95264e3be8eb309c9018cc7556ab0c5c1"
+    },
+    {
+      "bytes": 9198,
+      "path": "releases/ee40ef2/README.md",
+      "path_kind": "project_relative",
+      "sha256": "f044880a944689f6bc0bdacf2ee22a77f75934506d786066fb32f096d2732dba"
+    },
+    {
+      "bytes": 5421,
+      "path": "releases/ee40ef2/adapters/README.md",
+      "path_kind": "project_relative",
+      "sha256": "90c352cda14a2d700339bea91c1b84ca3ec8897cfe92c36fd3e14c2c57969da5"
+    },
+    {
+      "bytes": 19159,
+      "path": "releases/ee40ef2/adapters/imin_adapter.cpp",
+      "path_kind": "project_relative",
+      "sha256": "576a09024a0d82a2e33790ae52ed0ce5061bf909499e99c524497a1ece0f5b0e"
+    },
+    {
+      "bytes": 1,
+      "path": "releases/ee40ef2/backup/.gitkeep",
+      "path_kind": "project_relative",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1008,
+      "path": "releases/ee40ef2/baselines/UPSTREAMS.json",
+      "path_kind": "project_relative",
+      "sha256": "073c1694aac13b312ac5c6ccba96540708ff1d23edec7457028f307a4ef0a206"
+    },
+    {
+      "bytes": 2261,
+      "path": "releases/ee40ef2/codes/lineageguard/__init__.py",
+      "path_kind": "project_relative",
+      "sha256": "7a9245b5b50626e6fe2cd3cd15f33cf0a7553c4ed1407ecf7da575893c63a18e"
+    },
+    {
+      "bytes": 1794,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/__init__.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "9249ef4b24f8fa778d4abe0bd8ab2ab62159cc90a65412f84c498b0dea9e5bc6"
+    },
+    {
+      "bytes": 39122,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/baselines.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "e440b412443122a5b56b1fe5bdf5e54054edc3621079e8e0e20c2abdfe754fb1"
+    },
+    {
+      "bytes": 8831,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/corrected_pilot_design.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "35b7d8019f590aa54cae2ab7c0e2743098c8eefaad8ee19ebee761e16033eaba"
+    },
+    {
+      "bytes": 7017,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/corrected_pilot_v3_design.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "09e21398b770b8c5543f74d8e9d6da21120bb3c8854ff9c966ad9e36f13c693c"
+    },
+    {
+      "bytes": 7560,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/corrected_pilot_v4_design.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "d2b192e613a4ac103e8ae8c57f74158ccff8d0ca554e2f2fab1c806af5d6a1fc"
+    },
+    {
+      "bytes": 42991,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/experiment_schema.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "d461dafa7c59de4a57a01b3d52e85326b8a12a067f8b574c9ada625161a7881a"
+    },
+    {
+      "bytes": 57397,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/jaffle_ground_truth.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "0e136be88db05cc5ece8368b4e2b0c4e8e168c6a37a3941d8d194fceead4ff50"
+    },
+    {
+      "bytes": 15857,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/mc_planner.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "3c60780d76c248e77f2d4cefa7c143df337e298e365deaa52d7434d996d6b31c"
+    },
+    {
+      "bytes": 25301,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/model.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "c1be6aa8beabb20e95c8631fa243ecb3cbd9e1ea67b611ff5fb753e94f6ac793"
+    },
+    {
+      "bytes": 18485,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/placement.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "8ffbfd6d93fe681b897c1c88512776ecd9cfcb08662f1df5da2c673d46ea1f6f"
+    },
+    {
+      "bytes": 40390,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/propagation_calibrated_v3.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "5a3d14756a32bce2b17863eb7380d097e68b5e3b13519ad48a073a58f622c741"
+    },
+    {
+      "bytes": 47392,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/propagation_calibrated_v3_evaluation.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "02aadb4dc2f1437cff8d8979b8281e2c60677eb430f888e40d1fcf60644d769e"
+    },
+    {
+      "bytes": 54864,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/propagation_calibrated_v4.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "29f7b25885885e6451133e0b6a3a2b2d648b8166f00cefd5d936fce2cf23f883"
+    },
+    {
+      "bytes": 49247,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/propagation_calibrated_v4_evaluation.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "6ffe9db24b187d24f305bf227393efe21c327c238fd01e9b61586620a4f8dd7c"
+    },
+    {
+      "bytes": 79683,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/propagation_context_v2.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "d42fb398fe235e0728d7a6228ace2f40d88f94ba224654f7a258ef9d33986ed5"
+    },
+    {
+      "bytes": 43176,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/propagation_corrected_matrix.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "5431b57559ae2a8f45552fd61e601013560d4ea262fb32a51fc9cdaaa48558ef"
+    },
+    {
+      "bytes": 19440,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/propagation_corrected_stats.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "9bfcbe205f5a0ed5db7209ba04774139be9b217022a5f4809ae6729224e26691"
+    },
+    {
+      "bytes": 103120,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/propagation_model_revised.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "d16a73207f9eb357cb4627f41ee70109333b9f9cddb4d2c55c4e24f151b6a2c4"
+    },
+    {
+      "bytes": 86232,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/propagation_observations.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "4f8965f5495129ae4f75aca94d3e30b5c59fb0ee17438f947bd7bf644b41631b"
+    },
+    {
+      "bytes": 44486,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/run_contract.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "f7f5743d9cf99ee62d96a925834ee3e4802452da8546966c96810ad7d7da6c2d"
+    },
+    {
+      "bytes": 52111,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/simulation.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "3eccda8780062a8ff356611171f2a7bacb118843c4554fc40d2313fc3a1cef72"
+    },
+    {
+      "bytes": 41318,
+      "path": "releases/ee40ef2/codes/lineageguard/__pycache__/target_ledger.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "c9dd5ae0cf64f87a4b124b619f3145e5f2df0538298a2ab25368b1c5a2f9cfb1"
+    },
+    {
+      "bytes": 62801,
+      "path": "releases/ee40ef2/codes/lineageguard/action_outcomes.py",
+      "path_kind": "project_relative",
+      "sha256": "dde1dc8175058000994eb27d2a15ca0aeb1d864575910c282e68a2f2c8c95cf7"
+    },
+    {
+      "bytes": 30842,
+      "path": "releases/ee40ef2/codes/lineageguard/baselines.py",
+      "path_kind": "project_relative",
+      "sha256": "9c5d805281aa28a696f3c07f43bb3fc25935aed2207687357c733e4f3fe9d76c"
+    },
+    {
+      "bytes": 9581,
+      "path": "releases/ee40ef2/codes/lineageguard/corrected_pilot_design.py",
+      "path_kind": "project_relative",
+      "sha256": "9aa6e5e0fafa4559c49607b82087480702400d24b31f24fa8e9214d8d45711b8"
+    },
+    {
+      "bytes": 7048,
+      "path": "releases/ee40ef2/codes/lineageguard/corrected_pilot_v3_design.py",
+      "path_kind": "project_relative",
+      "sha256": "ad64da7ac40de4b938599bdedba417b52b2b9062f21c0486d665bb5a475d2752"
+    },
+    {
+      "bytes": 7726,
+      "path": "releases/ee40ef2/codes/lineageguard/corrected_pilot_v4_design.py",
+      "path_kind": "project_relative",
+      "sha256": "4cc7bf535d4e4ab9ce729b26c4ba01561b2cca78544ac975b7d1cc052c545e84"
+    },
+    {
+      "bytes": 4279,
+      "path": "releases/ee40ef2/codes/lineageguard/dbt_lineage.py",
+      "path_kind": "project_relative",
+      "sha256": "6b06162793b6c17a44e3f712a78dea3234e87013f6abf72077d13db8339a0187"
+    },
+    {
+      "bytes": 38129,
+      "path": "releases/ee40ef2/codes/lineageguard/deployed_cost.py",
+      "path_kind": "project_relative",
+      "sha256": "da6fc53a7dd58394cca12695311f8ceb8332e26990ba9c3ec45aff431d656a58"
+    },
+    {
+      "bytes": 39712,
+      "path": "releases/ee40ef2/codes/lineageguard/experiment_schema.py",
+      "path_kind": "project_relative",
+      "sha256": "46ec0fb3f8ae3344b90c8a37291bf3783884f246ec51a4239a5067d38be319f0"
+    },
+    {
+      "bytes": 38322,
+      "path": "releases/ee40ef2/codes/lineageguard/intermediate_catalog.py",
+      "path_kind": "project_relative",
+      "sha256": "b71632918695f59eb285a089010e179589e8e950ce36a263a20156777345052d"
+    },
+    {
+      "bytes": 30441,
+      "path": "releases/ee40ef2/codes/lineageguard/intermediate_protected.py",
+      "path_kind": "project_relative",
+      "sha256": "5b3e03adae92313f028f49c758da3e7f1ddbc0006298129adf3c8cb2b8f70b66"
+    },
+    {
+      "bytes": 32270,
+      "path": "releases/ee40ef2/codes/lineageguard/intermediate_repair.py",
+      "path_kind": "project_relative",
+      "sha256": "d6e5bb9a21d1b6810caf447e8fa6cd0e521847d4e4e1bb636a63d5814ef7d009"
+    },
+    {
+      "bytes": 53806,
+      "path": "releases/ee40ef2/codes/lineageguard/jaffle_ground_truth.py",
+      "path_kind": "project_relative",
+      "sha256": "5f9d025443b2ebb0afbce0a6483cb783351a45c0e21d6c5c270c226ea90d11f6"
+    },
+    {
+      "bytes": 15693,
+      "path": "releases/ee40ef2/codes/lineageguard/mc_planner.py",
+      "path_kind": "project_relative",
+      "sha256": "d7ccaa327e6602bc146c96195e0c0d11605644541a36cd486d8236d2dabf79ad"
+    },
+    {
+      "bytes": 16329,
+      "path": "releases/ee40ef2/codes/lineageguard/model.py",
+      "path_kind": "project_relative",
+      "sha256": "973e5dd7aa9a29d612eeaa24ea59d0fbbdaa9e1c63b34e4d86fe726298dad184"
+    },
+    {
+      "bytes": 42174,
+      "path": "releases/ee40ef2/codes/lineageguard/pilot.py",
+      "path_kind": "project_relative",
+      "sha256": "e12a51cce81bfabfc288dc4fe6262a149e3cc0ac93f3b52c02cb2940ebadcdf9"
+    },
+    {
+      "bytes": 15934,
+      "path": "releases/ee40ef2/codes/lineageguard/placement.py",
+      "path_kind": "project_relative",
+      "sha256": "a21833c420e0262bb8f90ec642af79c18d439272aa5ad9e50dda481357329324"
+    },
+    {
+      "bytes": 39294,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_calibrated_v3.py",
+      "path_kind": "project_relative",
+      "sha256": "c08af3220434217bb7cd4140e106ae29c1850417485c02d4083d90fe854b19c6"
+    },
+    {
+      "bytes": 41095,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_calibrated_v3_evaluation.py",
+      "path_kind": "project_relative",
+      "sha256": "b195ddc80d91a0f50ceac1439e5f2227d18c24f1c0fa24bb368bfa3d20664ff9"
+    },
+    {
+      "bytes": 53468,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_calibrated_v4.py",
+      "path_kind": "project_relative",
+      "sha256": "eec7ae9017fcdfe932d1662bf3268cf844814340179d56adccecc55719cece96"
+    },
+    {
+      "bytes": 42399,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_calibrated_v4_evaluation.py",
+      "path_kind": "project_relative",
+      "sha256": "8ed6b30f20545540fa154dcc0f966a348b8b8fe23f8254eca4717ca8d8b98e49"
+    },
+    {
+      "bytes": 75330,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_context_v2.py",
+      "path_kind": "project_relative",
+      "sha256": "7ee894b0ae02e393b87fc2512a9c4f93e5927f27f752dd534ed42cc632265a38"
+    },
+    {
+      "bytes": 38256,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_corrected_matrix.py",
+      "path_kind": "project_relative",
+      "sha256": "38bf1ccc701963fb8858cf337dbe9f03c60fb99057250ea9bcee4673227ea9b6"
+    },
+    {
+      "bytes": 15129,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_corrected_stats.py",
+      "path_kind": "project_relative",
+      "sha256": "1b1db8ec567717ff0d64b2c5d66d66a9efc14ce4477f907f0ba6533f0a17b1dc"
+    },
+    {
+      "bytes": 10822,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_diagnosis.py",
+      "path_kind": "project_relative",
+      "sha256": "a39c3ea7777bda75f3083459d21003d8928e3fc915e7dd49994d8a273e25226b"
+    },
+    {
+      "bytes": 42888,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_matrix.py",
+      "path_kind": "project_relative",
+      "sha256": "4e1219571e3023d0cbd4006f0853a368488ee147c68eb39fb72281cdfb4917a2"
+    },
+    {
+      "bytes": 70233,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_model.py",
+      "path_kind": "project_relative",
+      "sha256": "a12dbc1148d330fee40ee1cb954e34d132b559c61d4ee0d7b39e84e37df36927"
+    },
+    {
+      "bytes": 89109,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_model_revised.py",
+      "path_kind": "project_relative",
+      "sha256": "27e18f51cf58988970cef682531c0bd033a1a790adfbd1bcb4287bc8e72bfe13"
+    },
+    {
+      "bytes": 78290,
+      "path": "releases/ee40ef2/codes/lineageguard/propagation_observations.py",
+      "path_kind": "project_relative",
+      "sha256": "4a5967f509a09005b0d9b321fdf6dfe107c68c4fa95050acb2465a1431b75901"
+    },
+    {
+      "bytes": 18473,
+      "path": "releases/ee40ef2/codes/lineageguard/protected_campaign.py",
+      "path_kind": "project_relative",
+      "sha256": "4d206e7b7c4b32b53631e877630bf4caed73820239328b69fcaf007a6e02d6ff"
+    },
+    {
+      "bytes": 31233,
+      "path": "releases/ee40ef2/codes/lineageguard/raha_ground_truth.py",
+      "path_kind": "project_relative",
+      "sha256": "2d97252b7149f02c9f0976f87a03d1a91be54a270e5b2e82e2e3381abdd770c1"
+    },
+    {
+      "bytes": 32850,
+      "path": "releases/ee40ef2/codes/lineageguard/run_contract.py",
+      "path_kind": "project_relative",
+      "sha256": "858579c4b15f692c00f3b01330c6552a0715a0ee1f980c8c075e69fe88937986"
+    },
+    {
+      "bytes": 19000,
+      "path": "releases/ee40ef2/codes/lineageguard/semantic_damage.py",
+      "path_kind": "project_relative",
+      "sha256": "f10554f18170198e9fc53b3242d92b512e3e03c2426e5cf2d06c783c34f2247f"
+    },
+    {
+      "bytes": 40731,
+      "path": "releases/ee40ef2/codes/lineageguard/simulation.py",
+      "path_kind": "project_relative",
+      "sha256": "5b5412836ac601dd92e4468cf3d0a533dcd7079de3086639c1bfb1bc8ede0a88"
+    },
+    {
+      "bytes": 18239,
+      "path": "releases/ee40ef2/codes/lineageguard/statistics.py",
+      "path_kind": "project_relative",
+      "sha256": "25f27487e31739df9fcbb4c58d6860a0cd6295c3a486e8ce69fb95ec48c8b6fa"
+    },
+    {
+      "bytes": 24587,
+      "path": "releases/ee40ef2/codes/lineageguard/surrogate.py",
+      "path_kind": "project_relative",
+      "sha256": "b72925fa48691808872030db2b65266a3f23b65ff18cd7e2db393151b01806b7"
+    },
+    {
+      "bytes": 19855,
+      "path": "releases/ee40ef2/codes/lineageguard/synthetic.py",
+      "path_kind": "project_relative",
+      "sha256": "d3c85496c9178f5df1dff94dd4b155ecd07123c33195305a577bb49584aca0b6"
+    },
+    {
+      "bytes": 36342,
+      "path": "releases/ee40ef2/codes/lineageguard/target_ledger.py",
+      "path_kind": "project_relative",
+      "sha256": "407b25024bffeab66d8939f6c54a9ef56c0e5183d7e1230a700c454ab62cfd57"
+    },
+    {
+      "bytes": 105417,
+      "path": "releases/ee40ef2/codes/lineageguard/validator_calibration.py",
+      "path_kind": "project_relative",
+      "sha256": "98ffc9c7cc7757a4870201e25025b7fec1f547170c83e5ca07e15ba97d245a38"
+    },
+    {
+      "bytes": 211162,
+      "path": "releases/ee40ef2/codes/lineageguard/validator_catalog.py",
+      "path_kind": "project_relative",
+      "sha256": "ec31a48c17dcea2d2524d4657f0c32e283b21528da59c9f639f68051b9e9538d"
+    },
+    {
+      "bytes": 598,
+      "path": "releases/ee40ef2/configs/formal_v1.template.yaml",
+      "path_kind": "project_relative",
+      "sha256": "a58bd85347e88c87a9aa1e995ed8ecfab91c6d10ae0a8a258e684b449ab28b6b"
+    },
+    {
+      "bytes": 181,
+      "path": "releases/ee40ef2/configs/jaffle-mve-requirements.txt",
+      "path_kind": "project_relative",
+      "sha256": "ebde1054e47e5051029850fe7365014c962587a21127c53973b7ba13a5490354"
+    },
+    {
+      "bytes": 25392,
+      "path": "releases/ee40ef2/configs/jaffle_edge_context_contract_v2.json",
+      "path_kind": "project_relative",
+      "sha256": "5d87d7abf7d8c7d1c6cf3f1acf71520374689388eb7b9010d426be27f3805501"
+    },
+    {
+      "bytes": 809,
+      "path": "releases/ee40ef2/configs/jaffle_ground_truth_pilot_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "c279d656058477d1d2426807b0e0ca84e535442e8b7e94b6e9c43c050b28a434"
+    },
+    {
+      "bytes": 5332,
+      "path": "releases/ee40ef2/configs/jaffle_node_local_calibration_control_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "11ec63e0ab02cd239036d5a2513a06061722bbd3a1cb940a5c6f554a86c762bf"
+    },
+    {
+      "bytes": 4406,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_feature_contract_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "3de1e5676bebf2cf66c7a0086d78742900c36b28159db03221e42a16543ffaf3"
+    },
+    {
+      "bytes": 8404,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_feature_contract_v1.provenance.json",
+      "path_kind": "project_relative",
+      "sha256": "b9315623c31b7d5363a25cd7251dbece57eebb806ccf7c148a92ee360be374f4"
+    },
+    {
+      "bytes": 556,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_matrix_pilot_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "b9ce10175b1681ada9c64be0337fc064163d010503a907e189af437962ca3217"
+    },
+    {
+      "bytes": 870,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/01-train-numeric-raw-orders-subtotal.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "ff9041b30fa6cdd7b39a1c1b36cde0991f0664df99ae848e365f43661eb9d2e9"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/01-train-numeric-raw-orders-subtotal.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "bb2f779529788bb2bf28a3d52e3abf3127572d3b84d8db9251901553b5577733"
+    },
+    {
+      "bytes": 870,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/02-train-numeric-raw-orders-tax-paid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "f4251d450d5e75ac3adf70279158476554b49f33ae65a938405922cf32c3da8d"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/02-train-numeric-raw-orders-tax-paid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "bfe4a7f808294b7a0db12395e9498d0322dbad165d96a1658a8ec89ac70fee51"
+    },
+    {
+      "bytes": 805,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/03-train-null-raw-orders-subtotal.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "524d3f6c4f8d82a4ad17bd96f5c3389a885c64df5b4f2631687d4b5ef56290ac"
+    },
+    {
+      "bytes": 632,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/03-train-null-raw-orders-subtotal.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "67c1fc7f148c938ce5375afcedd90137fd639a3933b60405cb2258407eb9a700"
+    },
+    {
+      "bytes": 787,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/04-train-null-raw-items-sku.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "9fa06efbf361e81d2665cb7fff00b3d7a4cb20aaefbc6aa973c990ca57b022de"
+    },
+    {
+      "bytes": 620,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/04-train-null-raw-items-sku.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "1f52d05291419de13ee2abce1c6a6dcd8e50a52fbe07fe62504272b17559ec92"
+    },
+    {
+      "bytes": 948,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/05-train-fk-raw-orders-customer.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "bee87e67eb1a5f66326e422b13c4c912b7735f718c36acad44da6d1792e24623"
+    },
+    {
+      "bytes": 636,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/05-train-fk-raw-orders-customer.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "8542b7f5e8f72b985746c96ecb5f52acc1c35d25a7478740924c9951deac5587"
+    },
+    {
+      "bytes": 943,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/06-train-fk-raw-items-order-id.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "9f06855e0db7d382a08aa3cb2b8f4097f0aa5443be4faa0ec3f554fe7f9ffe66"
+    },
+    {
+      "bytes": 635,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/06-train-fk-raw-items-order-id.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "55fd3fcd3951892f58d283485164eaafee294ff8df4d715580967187c9b1e85d"
+    },
+    {
+      "bytes": 783,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/07-train-row-deletion-raw-orders.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "55512d2ed26355b9c3a856d5c8de1eacb1f1d39cfb173ddf8d05bb4615f4d3b4"
+    },
+    {
+      "bytes": 638,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/07-train-row-deletion-raw-orders.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "d67da07382f0f9b299466d8c615753c83c2d36f1afa14f78887ea07e03f588a3"
+    },
+    {
+      "bytes": 782,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/08-train-duplicate-row-raw-items.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "862626ae6a057f4bb54b245a9881ee27f1bb5286223e041420bee59a68d9ec3f"
+    },
+    {
+      "bytes": 638,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/08-train-duplicate-row-raw-items.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "7864952ac50612f7ea556e71348abb0e2c9dd455aa383cbfebd5f20bf7a7c78e"
+    },
+    {
+      "bytes": 900,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/09-validation-numeric-raw-orders-order-total.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "4ac4b77b29dbeb06ee03f74647302bbd9c922a5e3b2be47f336ec7c8487d3f4d"
+    },
+    {
+      "bytes": 679,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/09-validation-numeric-raw-orders-order-total.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "c2abc797a18396f04908e31149b3ce2c7f4a893b2350a4d0efe5ebb50e6b8525"
+    },
+    {
+      "bytes": 826,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/10-validation-null-raw-orders-tax-paid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "eb8127ac582154dedbc868f459a5f854f7e66b3cc657e6cf9b93098a18309f62"
+    },
+    {
+      "bytes": 653,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/10-validation-null-raw-orders-tax-paid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "27a205bb5b41a9952745be405c0152a2c4be98b5c262e1f9bd63753c56373fcd"
+    },
+    {
+      "bytes": 967,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/11-validation-fk-raw-orders-store-id.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "90e48c91f53dd751e503b460539a975b6bc93adf1e512f211c940b78b2785bd9"
+    },
+    {
+      "bytes": 658,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/11-validation-fk-raw-orders-store-id.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "a3bc1b13a57c8eccb6f302b08e95e08990bf275aa2a8274a11e1506a05b128f3"
+    },
+    {
+      "bytes": 801,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/12-validation-row-deletion-raw-items.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "212abe440f5cb0a2cdedbb78135897da469df267475f450b1af127753d29ddef"
+    },
+    {
+      "bytes": 657,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/12-validation-row-deletion-raw-items.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "0ca45bca03504e222bb82d257e50241f41722e5299ae9be920639be941767a9b"
+    },
+    {
+      "bytes": 807,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/13-validation-duplicate-row-raw-orders.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "af49e6c65da9d459832bd3af11582cce752c86f340db76c58bbc9a6428e8a075"
+    },
+    {
+      "bytes": 662,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/13-validation-duplicate-row-raw-orders.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "16eb91c6c5248c18f65d9a952419462914c4551e1531a5754956f1ec3cfa4526"
+    },
+    {
+      "bytes": 11008,
+      "path": "releases/ee40ef2/configs/jaffle_propagation_pilot_v1/index.json",
+      "path_kind": "project_relative",
+      "sha256": "51dd564faae5335535452932507e4fc3ea9bfaa00a0dc7cb15b3fa697c2611f3"
+    },
+    {
+      "bytes": 868,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/001-train-numeric-orders-subtotal-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "999e5f815355a29e030d428a937e446939830929399f7d8909b476bfe05f603b"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/001-train-numeric-orders-subtotal-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "3cd39c2abdb6c9b120c5412e993460d46759a1099bbe4856399464cbf8d3c089"
+    },
+    {
+      "bytes": 868,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/002-train-numeric-orders-subtotal-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "615022439fd2d00c803b0dacc21392eb3d8c899479e6032f1eee6c70ef5b108e"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/002-train-numeric-orders-subtotal-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "2f3e79166b80f7b5c342d524790eedb38b54d88563461bf054157fa019dd8301"
+    },
+    {
+      "bytes": 870,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/003-train-numeric-orders-subtotal-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "da68ffce27ca8a3ca406cddc8d29257875cc4574ea6b8dbbf2cf054d8a1ddbbc"
+    },
+    {
+      "bytes": 654,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/003-train-numeric-orders-subtotal-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "4cbdaedc55c36e8f6003293452f6b6cee135ecfcb67ca8a462255c02e22c4f81"
+    },
+    {
+      "bytes": 867,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/004-train-numeric-orders-tax-paid-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "02a0152fed37ab2431698d0331ab0387bac914561207fdbfc3a965a9cc5a1017"
+    },
+    {
+      "bytes": 651,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/004-train-numeric-orders-tax-paid-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "198e0fc89a9f9d80dfc6eeed6b759b887d5c4656a85b61a89625f030839e1d73"
+    },
+    {
+      "bytes": 868,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/005-train-numeric-orders-tax-paid-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "b106fe0d1c345f455d6961475771db4036a5730ff7384068e4971471c12a3ede"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/005-train-numeric-orders-tax-paid-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "d99bc0f7251869ee6d0aab95c10021f5ead7510455e90eb1a447995d4b9952d6"
+    },
+    {
+      "bytes": 870,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/006-train-numeric-orders-tax-paid-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "f415e0575ad12d3a3d859bd80dc420b9338b0d8ff19bc8b9f93b90c4e964c25f"
+    },
+    {
+      "bytes": 654,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/006-train-numeric-orders-tax-paid-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "5d77af66fb7e2c43f7b632b042c84aa8f80fec9a4d211f68d65c14ea1e937e1b"
+    },
+    {
+      "bytes": 803,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/007-train-null-orders-subtotal-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "414e8404abdb938a5af728e5498ea90306dc77c85513fd43e6ab1a53e5f0eda4"
+    },
+    {
+      "bytes": 632,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/007-train-null-orders-subtotal-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "cc26f3369fd23493801f8796b445a35d4c56683ce7596799a2dddb777cb45340"
+    },
+    {
+      "bytes": 803,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/008-train-null-orders-subtotal-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "83fd76dec87c1cf8b471b39d1d97adfb1c0995d469a41aa2701d5ba0ba85c03a"
+    },
+    {
+      "bytes": 632,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/008-train-null-orders-subtotal-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "c6684a3c4da389b35f2536aac1ce01d501fa2137f221de17e7f5a74ff2f06efa"
+    },
+    {
+      "bytes": 805,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/009-train-null-orders-subtotal-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "3e816175761c0a4fb2596662458349801c5bf63d8881053cbf7832ad34efd88f"
+    },
+    {
+      "bytes": 634,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/009-train-null-orders-subtotal-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "02be0e917660d0abe0a2210207f6242eda1b804e1903bc729afc1a7ec59725d8"
+    },
+    {
+      "bytes": 785,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/010-train-null-items-sku-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "ea982e334bbd620df756ba8a9e696aa6b20ede5e9160c196760b5281687fdfa4"
+    },
+    {
+      "bytes": 620,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/010-train-null-items-sku-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "1eb0fd0ef431de7fc726c385f62c1097f8b17fd6bc09ecb48571b0c2446b6baf"
+    },
+    {
+      "bytes": 784,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/011-train-null-items-sku-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "66e151ba2e6319f3be038707fad858c94848eca3206b64c875fa46889b60c272"
+    },
+    {
+      "bytes": 619,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/011-train-null-items-sku-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "02ef821ec786e5b8c10f3031825a8ccb048503f059c4256639f3ef912b454f5c"
+    },
+    {
+      "bytes": 786,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/012-train-null-items-sku-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "eaa3d0d2f4db5e33d03b6a9aced458c0848295946e0a767c2eceef2214963ff5"
+    },
+    {
+      "bytes": 621,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/012-train-null-items-sku-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "f8b246476a8480c4f6e3149908611fd17f6184eb7d652f075f737588c3fcfb9a"
+    },
+    {
+      "bytes": 947,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/013-train-fk-orders-customer-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "565d5ca511b19631ed8bb4b1f1ebdc0ee036bef2f91ced8a03d15b7128f92b57"
+    },
+    {
+      "bytes": 637,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/013-train-fk-orders-customer-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "d4530973c036c3af92a61be361d1faff044d75831413c28e4003f1fda1b3a51b"
+    },
+    {
+      "bytes": 947,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/014-train-fk-orders-customer-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "ecb174d295b258ded537a83334db5b71a7d14875acc0f47583c7d963b4aca5d9"
+    },
+    {
+      "bytes": 637,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/014-train-fk-orders-customer-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "a8f2996b27b89b6a9a26a5a6405b81fe134491067f86cc9ba0c452f41d7a752d"
+    },
+    {
+      "bytes": 949,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/015-train-fk-orders-customer-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "d0abf1d965a9cde2b826e8e3e9f7a6d0feed94301ab18f14ba81302511f07d30"
+    },
+    {
+      "bytes": 639,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/015-train-fk-orders-customer-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "da501bcaf63339d1e5c9fb78c37ce86da619b3cbb0a8b36ed484e7ffcd1b75a2"
+    },
+    {
+      "bytes": 941,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/016-train-fk-items-order-id-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "0bbb97500295e346c07987f7c4b6154afa28bfe5bbcd19f65b947ba4c6b29cb0"
+    },
+    {
+      "bytes": 635,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/016-train-fk-items-order-id-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "fb7a90bba6676d4b954e1e073ddf76d78e5e93535dcf3e8e32f421b9c5340776"
+    },
+    {
+      "bytes": 941,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/017-train-fk-items-order-id-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "d792f0b6dee14e75ead6bb59d9dccc0241dd909bb31c0766f3710d97785fd1df"
+    },
+    {
+      "bytes": 635,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/017-train-fk-items-order-id-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "305d19a4b4a3dff69905073863e0fff5f250b92955bc5e28c352f21ea02640ed"
+    },
+    {
+      "bytes": 943,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/018-train-fk-items-order-id-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "3a1629bf5713267c1576cd974c7f8a1b2d7fa6216c4c8afb6c7c9480669d1274"
+    },
+    {
+      "bytes": 637,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/018-train-fk-items-order-id-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "9d3bd62a78b55ec6e6c025431419e3518d3cd66ca67b0abc5dce0f1aa75fc2a0"
+    },
+    {
+      "bytes": 780,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/019-train-row-deletion-orders-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "96c58b446a3dc1fe5c7cb3e3fc4f39f1cd45eadead17446baf4929542442ad1b"
+    },
+    {
+      "bytes": 637,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/019-train-row-deletion-orders-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "96b714761c618ee47a668405ffdac60d778785261b6131ae5662deaf085d1f44"
+    },
+    {
+      "bytes": 781,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/020-train-row-deletion-orders-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "1296f9b7276636ec6aabdb12f8d7b34052d6147c5b9767f3fad403c375bc66a5"
+    },
+    {
+      "bytes": 638,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/020-train-row-deletion-orders-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "423db0d82f215e57dcabec31bf9217a1e0c8ed400d3ecc886ad56e5206c4f9a8"
+    },
+    {
+      "bytes": 783,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/021-train-row-deletion-orders-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "8ec769fc079e664bcaa1de979a2934c631da53d0cfc534d8a47ed495c6ec3c6c"
+    },
+    {
+      "bytes": 640,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/021-train-row-deletion-orders-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "9379a816aae91debac234ae36cf3d0e7d9ad9f265007de23106a2cf1f0b7d562"
+    },
+    {
+      "bytes": 778,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/022-train-row-deletion-items-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "64347033c15a512049cd1036fba766babcbca84cacaab004158f5b7656f5acbd"
+    },
+    {
+      "bytes": 636,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/022-train-row-deletion-items-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "05e9359a5aa843164c688389b18647201c02c134926082fa9e6c1b295f7576aa"
+    },
+    {
+      "bytes": 778,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/023-train-row-deletion-items-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "fa39c78d4f8ed57bed51b9f48d073849fde512ce4c1723df11d5cf3f04378e94"
+    },
+    {
+      "bytes": 636,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/023-train-row-deletion-items-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "a7f5af41c2745443a36de231958849101f125ea8bb74efa390c4d6aac7f8fe5f"
+    },
+    {
+      "bytes": 780,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/024-train-row-deletion-items-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "7ff9f8c851976ee1f8f60ef6c16cb2c593d6af22d206156a03ff433202e11dde"
+    },
+    {
+      "bytes": 638,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/024-train-row-deletion-items-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "c505e901a4f70a2c115ef23a98b25e0f54a82566c2cebcec2c43b3582126f502"
+    },
+    {
+      "bytes": 776,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/025-train-duplicate-orders-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "94796931142dc6c3757b8015973a2eae04f594c510bff42a5cd26a2e543b3fb6"
+    },
+    {
+      "bytes": 633,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/025-train-duplicate-orders-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "fc3dd273d805ca0206e7de441918b2f942a7eba160fc399b9cab00dd1258bd8a"
+    },
+    {
+      "bytes": 776,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/026-train-duplicate-orders-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "cec08d41f541e4955fbc3859fbafbd6450c3bae9dc0e311c7696c274dc2227dc"
+    },
+    {
+      "bytes": 633,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/026-train-duplicate-orders-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "b855b95bd05090f70f9584aa22fb73437059b27de70738c1adf75b0dae9ac62e"
+    },
+    {
+      "bytes": 778,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/027-train-duplicate-orders-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "80c22b37016cc3eb29f2e0ca562d6dbabb96f80831fb8524d34952226eda950c"
+    },
+    {
+      "bytes": 635,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/027-train-duplicate-orders-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "8f8209ba62ef1aea08e5558a5fcbdc1d404cd092cf38c17cf537f500949ffb0e"
+    },
+    {
+      "bytes": 773,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/028-train-duplicate-items-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "585fe8572aafd17e769200250256067037bd8fcc9545b10cce4cbb84d2412a64"
+    },
+    {
+      "bytes": 631,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/028-train-duplicate-items-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "ae3ecd7e5ca3345c475563aa7143a7cc4241c84814ee9948dba061267c215ae4"
+    },
+    {
+      "bytes": 773,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/029-train-duplicate-items-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "9d2f0302a950a3e1fa2871d03569926271ac790cdf35fd6bb932f08c8aacdbf1"
+    },
+    {
+      "bytes": 631,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/029-train-duplicate-items-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "b49d4dd27c3828b53bc780a7df996ff0d8b5c2a9f837ef285c64d48f78a689e5"
+    },
+    {
+      "bytes": 775,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/030-train-duplicate-items-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "52f67a23c3631458764a9c4cd3f5fd0f379213152e91d561c09b6cf801a01fbe"
+    },
+    {
+      "bytes": 633,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/030-train-duplicate-items-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "e7ff6df5210e626d84bae1312789e2682c221528da1deb26e6bab7e3cbce7650"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/031-validation-numeric-orders-subtotal-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "318289fd4859db46c9201e86acad3017aeb087bc568d5535b77ad04ad433ed91"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/031-validation-numeric-orders-subtotal-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "50bf5a82624e23e6d0f813a124a356155a8b4094775ef64c6278fb5db8d7195a"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/032-validation-numeric-orders-subtotal-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "5290f3178f309ef89306200af4c86d016ad3b78c72dcd15fca23907062edce9f"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/032-validation-numeric-orders-subtotal-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "347007afb69a44a10364cf82f61f624b8988ab946ba1fa8598700622b83fc712"
+    },
+    {
+      "bytes": 891,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/033-validation-numeric-orders-subtotal-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "bc5dafab82ae74a73d1ba49331c1803bd3388de7da0687367063bf21f76eb5ab"
+    },
+    {
+      "bytes": 675,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/033-validation-numeric-orders-subtotal-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "4ae436b1ede599234e1cd915005d7bdacf956ad6907cbb66f6598532e12e383e"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/034-validation-numeric-orders-tax-paid-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "1c55776757da15245aee9e1bb1cb560104709222dcc322b300e9f4fc8100f1fd"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/034-validation-numeric-orders-tax-paid-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "9fa6aa65fbab7c3fc9ff5a1faeff6a93eb8aca0f73341999d80eecd1308528b5"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/035-validation-numeric-orders-tax-paid-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "e56f34153e88a75ac6836c42ff0ba547f99714fa1d693694355d2db71156616a"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/035-validation-numeric-orders-tax-paid-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "686add7182cc644d61eb547ec15be6858e177cfbdf4c17b2813a5661f598d398"
+    },
+    {
+      "bytes": 891,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/036-validation-numeric-orders-tax-paid-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "2d7b842b7b0c9ce31e7c3e2f1818948c2c0cc76f3efac68262c8a8b576e6cfc5"
+    },
+    {
+      "bytes": 675,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/036-validation-numeric-orders-tax-paid-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "c50a3dcbd5af0e30ee621c5c0795a0d464bed87a0749401a3999bcaad591e4ea"
+    },
+    {
+      "bytes": 824,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/037-validation-null-orders-subtotal-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "39b28fa35d9ddc518320d45df1cba0dd26cf58f8e30ced475ba06f1aebc7a000"
+    },
+    {
+      "bytes": 653,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/037-validation-null-orders-subtotal-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "bcd28ab5a94840c5b97e700bddbfad394a4f8c75615523fdae6a7d4be8277f55"
+    },
+    {
+      "bytes": 823,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/038-validation-null-orders-subtotal-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "f8102eef1fc7ccf8f47a544e3b903c5db61f4e7c77664f4d76202e68b71d9d80"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/038-validation-null-orders-subtotal-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "0569062ed91d39ab55c4dc203a59f556c22b27c966c8dc4ce8ef67a369fb341f"
+    },
+    {
+      "bytes": 826,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/039-validation-null-orders-subtotal-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "259956535c919829c00af5ec0a01780b233907eb4fd7030937198f5f4c808a96"
+    },
+    {
+      "bytes": 655,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/039-validation-null-orders-subtotal-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "d9f9da64f3a667fa29f5f81b9a47a006caa87c1b4a452a69355f40adf9b3e406"
+    },
+    {
+      "bytes": 806,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/040-validation-null-items-sku-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "93261b66d21e2113a8530f965d4db462bd75494cf7863618f7b9eb505e45fa6a"
+    },
+    {
+      "bytes": 641,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/040-validation-null-items-sku-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "166ede2f5ec7997fef30045ef2b05f6307b1aa525eebc10d5c4ff57b4e2c4373"
+    },
+    {
+      "bytes": 806,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/041-validation-null-items-sku-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "a189e7908a5e47ff89f166638160445f7c981d32b42d1f5657b3317ebdd4527b"
+    },
+    {
+      "bytes": 641,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/041-validation-null-items-sku-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "99c357cf3765922538404e1602454e25f4155ea3f69acf0105b068d2591de0fe"
+    },
+    {
+      "bytes": 807,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/042-validation-null-items-sku-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "9ca6e1852cef3dccde475f7f087b0e0285b2d911b9e0a228573a3872aa5fb31b"
+    },
+    {
+      "bytes": 642,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/042-validation-null-items-sku-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "fcd127b2cd7000f76d2ab6fe98494ee419826c1996bc8075b61bf3456f3b30c4"
+    },
+    {
+      "bytes": 968,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/043-validation-fk-orders-customer-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "327009e8880088dacceb77b21b067ab210c267610dc10faef295fbb5f296c0af"
+    },
+    {
+      "bytes": 658,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/043-validation-fk-orders-customer-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "846f37b3d57068e9edf24e40759705c565894d9c61db6c27266a4f2a1eafa98d"
+    },
+    {
+      "bytes": 967,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/044-validation-fk-orders-customer-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "a9d245309467216c7fb04dbac942487c775e730bfdc66175abd942e329fe4e33"
+    },
+    {
+      "bytes": 657,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/044-validation-fk-orders-customer-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "6b5ce798bbc3e5be94c480a9c314e18c2ae0a9756e606a5c519c55da0d10c440"
+    },
+    {
+      "bytes": 969,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/045-validation-fk-orders-customer-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "3375e8ea299e179e72262bf37e19fbd88741a417ae4784555be717918d430cb5"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/045-validation-fk-orders-customer-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "256a3494bc96f22e597a5acf47165ee73abb28dda6a39753cd01112be6d838ff"
+    },
+    {
+      "bytes": 962,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/046-validation-fk-items-order-id-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "77b4c64ede25bfb66844a65acbcd280977a971ac6d883cabcda09e4fa6d4b548"
+    },
+    {
+      "bytes": 656,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/046-validation-fk-items-order-id-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "bcfe9d75340f9c7286b031516b871a902347d12da6f9c251577c83cc60b80809"
+    },
+    {
+      "bytes": 962,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/047-validation-fk-items-order-id-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "5903ada83ba8190219d2e3973dab8d9c18066bf754942454e7ca207df70fe9c3"
+    },
+    {
+      "bytes": 656,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/047-validation-fk-items-order-id-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "79bf7aeb1b7d6248a925c2efcbc585d2b1c8ad1141198fc21f94ce459a7fb496"
+    },
+    {
+      "bytes": 964,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/048-validation-fk-items-order-id-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "49fe963a649e4fa0542790297b9ae402d46fd3d0da576c73fc72ae1344465661"
+    },
+    {
+      "bytes": 658,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/048-validation-fk-items-order-id-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "3268715e789d3f7dc601225455e83896338cf1c371ba2afdfe486308c978eae1"
+    },
+    {
+      "bytes": 802,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/049-validation-row-deletion-orders-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "a52d32172ab7395b1754843f518df7c8f3f675c51faa53627bda246d46a9a8fc"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/049-validation-row-deletion-orders-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "13b83e5a396573854724b7594cad46e8947ac3e01b065a7d22fdab16b5de7f90"
+    },
+    {
+      "bytes": 802,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/050-validation-row-deletion-orders-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "bbd0ccc608b6648277311a6f90021b48ddb66467c29eb7bef97aab836ece52e2"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/050-validation-row-deletion-orders-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "45ea6a4db708e4fcd114c3222bb0d8c35b156132357c52599fa791243bde90b2"
+    },
+    {
+      "bytes": 804,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/051-validation-row-deletion-orders-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "9ebe903682b46d7126ba27e5c44482cdab08962e3c2048d200077133c945b4c6"
+    },
+    {
+      "bytes": 661,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/051-validation-row-deletion-orders-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "5116057ac32d34c90b2d12f3cdd514616219764753e660d1c44db54b08a084a7"
+    },
+    {
+      "bytes": 799,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/052-validation-row-deletion-items-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "285559c71a792c469f2c156b5cf5f03400a9ed3d6fb487eb6b85ac4dd9e7841f"
+    },
+    {
+      "bytes": 657,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/052-validation-row-deletion-items-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "959ef08a2d5fdb19801127e700a155b43d5d15f65d61db628edcbc1a266cf806"
+    },
+    {
+      "bytes": 799,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/053-validation-row-deletion-items-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "c728ce1bd43c29cfe19c3f710b26299c77d21b804e7f8af5489f1bf697fbef08"
+    },
+    {
+      "bytes": 657,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/053-validation-row-deletion-items-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "36b0ebafe95d2a91c63fb3826e311c2f097c19e698c80c46d4bcbdcc82caa716"
+    },
+    {
+      "bytes": 801,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/054-validation-row-deletion-items-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "9e9381d55ed340642d0eab545cbd4bdfbd626c9ad10d458d7341a6a02e994d11"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/054-validation-row-deletion-items-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "b4a0231a2d8a6d591dae33343ffbec7c0bc3826debd3b1738cef30e9dee9eb4f"
+    },
+    {
+      "bytes": 797,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/055-validation-duplicate-orders-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "4ba1c653676d888a05e68e8950a86d92fce2a5bdc88d953285f0fc13f5bba885"
+    },
+    {
+      "bytes": 654,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/055-validation-duplicate-orders-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "338d6fb6ad03b62d4b2ae8a293ed961e9088b03d855e805c1e58cd16aa8304ec"
+    },
+    {
+      "bytes": 796,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/056-validation-duplicate-orders-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "09e255196e05de8146012c9c4ff0e3330109b6dd7d409c177acf1d1047c89b89"
+    },
+    {
+      "bytes": 653,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/056-validation-duplicate-orders-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "e042a9c5356c008c36b9f70e424af26284cdf424741f927ba3d4cbe73ba8d692"
+    },
+    {
+      "bytes": 799,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/057-validation-duplicate-orders-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "7218f523c72c1709e307f9993fafe6c5db731fb6eee2799a37b3f2a9728bc0e8"
+    },
+    {
+      "bytes": 656,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/057-validation-duplicate-orders-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "1ace9cae1acc163c7870eb1cdb4fbbb2a85e624bd955fe9961704b8ba0a8ced0"
+    },
+    {
+      "bytes": 794,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/058-validation-duplicate-items-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "aa1951e09efa875f55d2e6c6f1de65bc132c5ed2fd42c84ad66443fb7648650d"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/058-validation-duplicate-items-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "5130a4946163b55fbb9eae1750e4aed2b93e6754f4a80110094a796ea888c072"
+    },
+    {
+      "bytes": 794,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/059-validation-duplicate-items-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "c4d5aba13902d6d94c47829031d2815c846f7c9de160ee3165a680a966ca849a"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/059-validation-duplicate-items-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "fb768cabd4cc1006b544a1930cb46d98baa4a155d34af0cfd0807d734e36b64c"
+    },
+    {
+      "bytes": 796,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/060-validation-duplicate-items-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "f664a29ec60798dae9a9b46d867b5abf94c4ae7e35996d4254316e0db60390d3"
+    },
+    {
+      "bytes": 654,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/060-validation-duplicate-items-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "324ad3f869832beb70bf4693d532a929f4dc1f22329e8f1799ad1def34b436b0"
+    },
+    {
+      "bytes": 52812,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v2/design.json",
+      "path_kind": "project_relative",
+      "sha256": "59868d8e59827e20b88f335936c8a836ea0051345490fec7daa7f1603f1b7553"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/001-validation-numeric-orders-subtotal-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "4dc6e131aeb0619ec662c03283c23b68a078353ecee5d626c5387efa45b8790a"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/001-validation-numeric-orders-subtotal-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "bfd31be6f8e5d14e2e493e9535f0454b859658f6c22e4a658250141db0c79ef0"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/002-validation-numeric-orders-subtotal-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "9d27a89caba7c11a75126bb94d76aded0b54016b76c3884519b08fd70a92be52"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/002-validation-numeric-orders-subtotal-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "edeea5ec35b41cc20daf26884a0d8318ce5eeea0c1b4932bd05d692aec4cd68a"
+    },
+    {
+      "bytes": 891,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/003-validation-numeric-orders-subtotal-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "169b0a806a10a9e7eeb43c467a5f00a76eff2b6bf7254142394ad1475629ba9a"
+    },
+    {
+      "bytes": 675,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/003-validation-numeric-orders-subtotal-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "d21b5f3c9fd6e391a5bd1a63afc4e30c42a8d83533ff66e29a73f2235e687dec"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/004-validation-numeric-orders-tax-paid-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "f5f321a361c4ba676306c64eb67506f13b374a8aaddff0a7e59428eee672668d"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/004-validation-numeric-orders-tax-paid-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "9876c55bbff16964f69c56dd3615747ad0399fe7d6d702d1516be9f46a9f6a4c"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/005-validation-numeric-orders-tax-paid-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "74189e944f42f1b0433578c070b76deea8385bf04ffe8757eca14d895292ba53"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/005-validation-numeric-orders-tax-paid-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "72f7052362cb56414d9461df68a1275d5571adc8a450877b5919316b8d8d208c"
+    },
+    {
+      "bytes": 891,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/006-validation-numeric-orders-tax-paid-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "d8de468df8bce9de87591a1d13c535899405f4b1c5dc9a70555bbb36a450e42a"
+    },
+    {
+      "bytes": 675,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/006-validation-numeric-orders-tax-paid-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "2db9b358f10fcb7d0449ae1b7e611fd5a23bb3a77dbd5f4336e7bef087e75850"
+    },
+    {
+      "bytes": 824,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/007-validation-null-orders-subtotal-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "14be85ffca15569c1be5dcbf2c414363858c7730eedb8989bcfd97b219a97d35"
+    },
+    {
+      "bytes": 653,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/007-validation-null-orders-subtotal-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "18d419f53bfe95c9b539d9d2998fefc580a6ec798d5496936ec2f62581231266"
+    },
+    {
+      "bytes": 824,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/008-validation-null-orders-subtotal-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "8ef86046efca26968fae937ad259527f292d98f5cf618b5b8df110a6c0ed39c5"
+    },
+    {
+      "bytes": 653,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/008-validation-null-orders-subtotal-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "1451ac7a478273b5825fc69d579c9f112ffaddc73602a71b5c52a67619fbd239"
+    },
+    {
+      "bytes": 826,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/009-validation-null-orders-subtotal-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "d359e6ece1500beeda4c0556d3c49f49d9e3c9cbac57340b46fa6edc6ab6e432"
+    },
+    {
+      "bytes": 655,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/009-validation-null-orders-subtotal-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "ed864cc78db6e15521060a4e43180de28c539837a68b1809aea70f71da50507b"
+    },
+    {
+      "bytes": 806,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/010-validation-null-items-sku-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "044c799d482eb2488f04ea8a7219c6f8f59c1ddf9b4a9903e6fe83d30a35a234"
+    },
+    {
+      "bytes": 641,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/010-validation-null-items-sku-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "d6556c18e059e7da2fe9635d7f453452b2020b65aae1212ad9be0e92406e2bf3"
+    },
+    {
+      "bytes": 806,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/011-validation-null-items-sku-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "9a8642d28bfc3f3a46ac160a41b8605f4067d65c9413597447143f6c7df4fadf"
+    },
+    {
+      "bytes": 641,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/011-validation-null-items-sku-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "a298f21813b3c7058c2e625acacbbb9b01d560b1e8e024e862962b1b758b074e"
+    },
+    {
+      "bytes": 808,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/012-validation-null-items-sku-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "f04781c3ab206a1f72a7096c1cb10048b212ac3c3cf48f6b04dc9289547e111f"
+    },
+    {
+      "bytes": 643,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/012-validation-null-items-sku-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "659bee4ba13842154947c92e195ee582d603f0908de75d2bbb158e76c7085eac"
+    },
+    {
+      "bytes": 968,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/013-validation-fk-orders-customer-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "3f4d792ba0af08ff7898516d29bc29aa7dd48ade86be0607f229d446e4fc0823"
+    },
+    {
+      "bytes": 658,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/013-validation-fk-orders-customer-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "26425772b0137ffda0fceebc54d2c4baceebb9e3eebb791c4e01017b5f1d99fe"
+    },
+    {
+      "bytes": 968,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/014-validation-fk-orders-customer-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "ffaa7dfd64ccd98d7a795541eeb9985e564351bcfb060a64b858aa68130bb53d"
+    },
+    {
+      "bytes": 658,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/014-validation-fk-orders-customer-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "d5fcfbe6dfc73a6ebfb4a515f29b8c5f9635005966c68ea6eb173e1d8a55023a"
+    },
+    {
+      "bytes": 970,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/015-validation-fk-orders-customer-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "fbea8125b56fb8ecd555a2b964a419518558b3faff7155f13072fb4ca465fb6a"
+    },
+    {
+      "bytes": 660,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/015-validation-fk-orders-customer-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "cb7709e660d04e83070077936d9d332ddef99d022f0eeb52d705080294e20aba"
+    },
+    {
+      "bytes": 962,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/016-validation-fk-items-order-id-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "08b2c4d77dbcb9fd2718ee087a84c53b1cbd67792b42e01625b1b50c4805cc80"
+    },
+    {
+      "bytes": 656,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/016-validation-fk-items-order-id-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "5352544cee36ac6e0ce002d20c0095b92185ac616baccf3ed9116fbed2e0f42b"
+    },
+    {
+      "bytes": 962,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/017-validation-fk-items-order-id-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "1224651409012d03fa828b1615898b57fca5a88e4a9ebe584d796cd9fe081dcc"
+    },
+    {
+      "bytes": 656,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/017-validation-fk-items-order-id-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "3342e61f4c08edab4c38bac68b12dd31717cd739b7e3de88994c24c08796ccb5"
+    },
+    {
+      "bytes": 964,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/018-validation-fk-items-order-id-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "b4d12a355935fcef76eedc82f82ac8ac5ad3b300aef1a9fbc519d404773015f5"
+    },
+    {
+      "bytes": 658,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/018-validation-fk-items-order-id-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "32afe62d749b4d9b4b1ced6bac7a77ebd9da7dfc3f4e274510816bc873603f1a"
+    },
+    {
+      "bytes": 802,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/019-validation-row-deletion-orders-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "f7b87525675474e463ed51cd01ea531b1679542df99aa9b8f0a34ad4f3e60b2e"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/019-validation-row-deletion-orders-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "e1514dfce6d4c753873698ce0bfb8d38739a3265c78d53c9d86a0a7a9e8f9ab1"
+    },
+    {
+      "bytes": 802,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/020-validation-row-deletion-orders-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "79304eb90849d82daffa402d88cf2ee990a935d0144b47f3857beb5bee1cd131"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/020-validation-row-deletion-orders-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "d08ed06fa23383440a661b7c64c8db5e0a6248d4a5e567f1a66648bc5b932366"
+    },
+    {
+      "bytes": 804,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/021-validation-row-deletion-orders-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "5bf463a83869f7fbf4cb6df30092a24d188c9f505b3fc680e2e8c4ec2b39f026"
+    },
+    {
+      "bytes": 661,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/021-validation-row-deletion-orders-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "d3895bbc524b378b90c40a25936a4fd665846f0ad370fc61d383be8f8b1dbd77"
+    },
+    {
+      "bytes": 799,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/022-validation-row-deletion-items-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "d0008cd80ec5cbc1a5511e3b886d27b464f9d97763dd147aeda012d1670df60a"
+    },
+    {
+      "bytes": 657,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/022-validation-row-deletion-items-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "176ab468c5e0cfa901865781f9c4c33e785212477829747a595dbc8f84e6e162"
+    },
+    {
+      "bytes": 799,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/023-validation-row-deletion-items-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "5b2c67816fa95a614279e9952a5857ce129c2d394bbe25d83264a62c58a333e1"
+    },
+    {
+      "bytes": 657,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/023-validation-row-deletion-items-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "5bd245043049c674b460ed1f6dd974313e250b799e7b5059c60c9e3ae102ab31"
+    },
+    {
+      "bytes": 801,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/024-validation-row-deletion-items-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "d8c38f5a91f88b47a3dd062e1feed519f03bc0fb7c51951204ff8a9a92bff7ae"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/024-validation-row-deletion-items-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "2d2e4326b67be1829786281ea40edec95c7c7c4dad6c7098e404a16457c0e5dc"
+    },
+    {
+      "bytes": 796,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/025-validation-duplicate-orders-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "e1446f7416f983d12316e006ade29c75e340d233931cc0dc7039e0420dabb4df"
+    },
+    {
+      "bytes": 653,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/025-validation-duplicate-orders-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "b70dbbe280e45eb7890dfb3b9e007ae706e0cdf146b54c28da025a10a4528e22"
+    },
+    {
+      "bytes": 797,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/026-validation-duplicate-orders-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "7990689e8bc7e634da9642c79ed99b621567a68d0d4800addf1c9c2f4d188dec"
+    },
+    {
+      "bytes": 654,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/026-validation-duplicate-orders-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "c7e522bdbfaaaa5e5c8ead9909540885a3ad89874805a06efd5ba2ec6228a4df"
+    },
+    {
+      "bytes": 799,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/027-validation-duplicate-orders-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "367b37cf4daf8b1b52f231cd899ac861bafcf8580189a8f1d88508f9683e8319"
+    },
+    {
+      "bytes": 656,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/027-validation-duplicate-orders-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "6602f51e4b8f6e97a972125bfb5c3d145b563c6c600bc6bfed2fa79ff31406ff"
+    },
+    {
+      "bytes": 794,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/028-validation-duplicate-items-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "6e506c6129e3d7741a2bcbfa33c57aeb8a4542f4bad7a4f3167d418ebb9e347e"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/028-validation-duplicate-items-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "e7fd1b7d4b2e0e466822dcd1b096d4f34236c36f53fbdd4f7d5db1b671448477"
+    },
+    {
+      "bytes": 794,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/029-validation-duplicate-items-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "cf8156ba822ab18ee1c6b5b45c4c6560e567c97473ac45960bd7c7d93e2da466"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/029-validation-duplicate-items-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "d54ce4f5e388362b8342452b331e9bca999f9336e1db3b5ea63ba79d7ed86382"
+    },
+    {
+      "bytes": 796,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/030-validation-duplicate-items-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "5884830d651b6dccc190ddc7b026e921585e9f2c2f267e059055142de3a8734b"
+    },
+    {
+      "bytes": 654,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/030-validation-duplicate-items-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "7a65ea4d3b25da390674c6191059b1dc1ffc958841e2e593abd6b2510561c460"
+    },
+    {
+      "bytes": 27780,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v3/design.json",
+      "path_kind": "project_relative",
+      "sha256": "fbd7a7a9ca02c1cdbd967de6f4904c97eb35e0200184849f3ce33b474cde7444"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/001-validation-numeric-orders-subtotal-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "97e728908cf27ac90c63e714b7e2385738edc78f3ec7003b7b77aed9d971dc42"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/001-validation-numeric-orders-subtotal-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "b68edc229b33d9268c4597ab8e5a045e137ec1f4ede03219f7bca8690aeb0cf4"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/002-validation-numeric-orders-subtotal-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "e184de350c997bf3a9cc348e36dec19fe8e38b608259acc4cda6067a0c81f5e5"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/002-validation-numeric-orders-subtotal-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "784d13afa8eea11e9935c01edca03782d5325d2f5496165d80312a533bcaa0b6"
+    },
+    {
+      "bytes": 891,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/003-validation-numeric-orders-subtotal-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "b7e0286f84bff29498687660c65e42702cc3cd4d5fb22f379512f15f9a09d860"
+    },
+    {
+      "bytes": 675,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/003-validation-numeric-orders-subtotal-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "f970abeb6d652e89b02fdcc4d8d73272d8423abb0467531f21853547dfb8a9b8"
+    },
+    {
+      "bytes": 888,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/004-validation-numeric-orders-tax-paid-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "b174c5e242e1d75c5849d6a13ed0bdd1003543828d537bbd88a44c63520909b3"
+    },
+    {
+      "bytes": 672,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/004-validation-numeric-orders-tax-paid-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "bbc4053d1e347674db19a082a87f2effdf8d330ec76f8db76587eed710d2962a"
+    },
+    {
+      "bytes": 889,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/005-validation-numeric-orders-tax-paid-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "e50815b9e44f914035b08b0096545847a838c1cc08c114b3c534873db87d39b1"
+    },
+    {
+      "bytes": 673,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/005-validation-numeric-orders-tax-paid-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "3049e5c61cf9edaeb60791c94c3945ec5cb740baf0dc2acb870d419c08104140"
+    },
+    {
+      "bytes": 891,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/006-validation-numeric-orders-tax-paid-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "e73ab8a9b5eea7bd0ddba31d05763d1145e3781ef59a72ea78c3d967d2906210"
+    },
+    {
+      "bytes": 675,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/006-validation-numeric-orders-tax-paid-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "03391303efa659e985b62e82e7926240ee3d1f5553719b69d6a1f0e77cf383f9"
+    },
+    {
+      "bytes": 823,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/007-validation-null-orders-subtotal-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "1bfdd3ec4862932a4df0dd938a3bf091c1a7c426f79f633a9dc480a3d622f501"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/007-validation-null-orders-subtotal-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "ff78b4ee26878b27a20f2e5fb5f942330851d21b8ead51b95314a262529c2086"
+    },
+    {
+      "bytes": 824,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/008-validation-null-orders-subtotal-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "67529f2f93bc960cf14c40751a12353930518ae980a14369e41748d8c1ed13d0"
+    },
+    {
+      "bytes": 653,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/008-validation-null-orders-subtotal-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "0137d65adfee5d0e43aa17edcf974f18f7607e9df5b5bd7855902c67d24c72fb"
+    },
+    {
+      "bytes": 826,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/009-validation-null-orders-subtotal-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "1a66bf6d3fe3c3b7ae0b00c566fa71936f7d7843998683836aaeb3880b35dd75"
+    },
+    {
+      "bytes": 655,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/009-validation-null-orders-subtotal-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "cb5258e64800ebb5d2260e18e58bf1f81a29a620b5aedc3286d9e1905ce5bd01"
+    },
+    {
+      "bytes": 806,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/010-validation-null-items-sku-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "17f331fb29ce848d7baf4f25c061820e5ceb80529afbd85991bf9794a5dcb1e7"
+    },
+    {
+      "bytes": 641,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/010-validation-null-items-sku-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "6f86fae347cef811b523c2b8336acdc38d18578a857f4c8025b0202b9e1146ce"
+    },
+    {
+      "bytes": 806,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/011-validation-null-items-sku-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "ec01d5a125999c97a48f9360b939e706f014974b2d5ea2d19ad178ad9543236d"
+    },
+    {
+      "bytes": 641,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/011-validation-null-items-sku-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "5ad9e51f07657c7741bd1661551e15c5886f77b53d6518889e4722d32aa1c45d"
+    },
+    {
+      "bytes": 808,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/012-validation-null-items-sku-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "e1a7efccdbd64d4a550dc247a1bcd54bc14e053b3a21007c5a2ba9c54c82c98c"
+    },
+    {
+      "bytes": 643,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/012-validation-null-items-sku-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "5f7bb8b65c12dc750574d5767e96cb6da31261eba8ec29120131ccc4b41554ac"
+    },
+    {
+      "bytes": 968,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/013-validation-fk-orders-customer-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "ef775eb241bb70ec184e8fd35a932ef93e09d5fc4b290e83bda9742dd09ff7c5"
+    },
+    {
+      "bytes": 658,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/013-validation-fk-orders-customer-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "1904bcf741cc6311d75ca7a00f992c4fc7d303f90ed52100639cdbe202ab507a"
+    },
+    {
+      "bytes": 968,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/014-validation-fk-orders-customer-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "16c7684c22fc8fd2114ae4e072035dc1b1e0390cf35ab0480571e1a211f89460"
+    },
+    {
+      "bytes": 658,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/014-validation-fk-orders-customer-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "95e09ae3bccf18009165c642a9293907f5dd635967d9d4b02d300bdfa7c4e21b"
+    },
+    {
+      "bytes": 969,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/015-validation-fk-orders-customer-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "31b4fef70be807b41cd031a36b7aaf45fddd0f9b3b10481986ba20c326936e4f"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/015-validation-fk-orders-customer-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "0cf0a4e7b792fea9b2846a665a842abfdcfcc16496354bf7e41a8f5e8c45236f"
+    },
+    {
+      "bytes": 962,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/016-validation-fk-items-order-id-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "c87b44d55f22bc6c5f1f15595ae96ae32ec1ddf18e3233c622f4be360e7d222b"
+    },
+    {
+      "bytes": 656,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/016-validation-fk-items-order-id-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "c9b211a8d6ea4f14cf794662898a5bbbbc34a0c61b012f1fd0e9da77e1d0cb47"
+    },
+    {
+      "bytes": 962,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/017-validation-fk-items-order-id-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "641eb2123831b51292d65c5afb7cc01a860a219f6410507ae7100150ecf6cb78"
+    },
+    {
+      "bytes": 656,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/017-validation-fk-items-order-id-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "6998bddad91c82fb605a71cf5aa08b90ab4377b2ba6a5acce2734cd788ebe65b"
+    },
+    {
+      "bytes": 964,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/018-validation-fk-items-order-id-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "915096fd124486eb77cb3ae91de0420703a93501b7cc5d1768991187bd94aa77"
+    },
+    {
+      "bytes": 658,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/018-validation-fk-items-order-id-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "b1608982522c5592577b8517a91de43d9643553a5c0f23c133d241b869c6cd90"
+    },
+    {
+      "bytes": 802,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/019-validation-row-deletion-orders-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "637bfd0595a6cc15b055a2f772f6a351c2098126e69bde6e2b615aaf5b2dbccf"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/019-validation-row-deletion-orders-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "57ec6b16588c135d3a1b064a99d01dd940dbb54a4c597ad008ff9df7bbcd510b"
+    },
+    {
+      "bytes": 802,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/020-validation-row-deletion-orders-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "6cecfcb28bc2d8393f18aa03439b210054821416b8dd19b0fb54f5298b4a37f4"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/020-validation-row-deletion-orders-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "f9c46cbe1187987f2c53e65b8ca45c0f9a8c0f699420fbbde0c361156ee488ce"
+    },
+    {
+      "bytes": 804,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/021-validation-row-deletion-orders-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "f8c048eda84b77bf0a5851e0451c16b09181e3ca05313fb63cce4b81193ef10a"
+    },
+    {
+      "bytes": 661,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/021-validation-row-deletion-orders-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "37a7970b5c673c00f722a5b714a85c482ac236f11abefa41650633fa65b9646c"
+    },
+    {
+      "bytes": 799,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/022-validation-row-deletion-items-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "ede09d1c9d49b59aaa53ddb8eeb5dd2053270672661a1e20d5af82c677f31ce8"
+    },
+    {
+      "bytes": 657,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/022-validation-row-deletion-items-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "4a8ae522f65c6a8fb48ac56580fd2b521557bd5e5d8e76f67a5ab76dfef62315"
+    },
+    {
+      "bytes": 798,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/023-validation-row-deletion-items-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "97833b0d7cffb02da8f05a5cd8abcab8c85aaed8cef2e0e7136c02d8bb0e9fe9"
+    },
+    {
+      "bytes": 656,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/023-validation-row-deletion-items-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "5804a96fac74c3b97a5458b950facbeeae822d81c91c470850d73697430021d0"
+    },
+    {
+      "bytes": 801,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/024-validation-row-deletion-items-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "e0944feeba7c9c952bd652008ec5f4e2c20faf0769260b97eb8b1257fbdf1e72"
+    },
+    {
+      "bytes": 659,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/024-validation-row-deletion-items-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "c1f78bd8c1805bc86ed6d152d2a8d971c0c9a8553dc92ec983528b03282500f6"
+    },
+    {
+      "bytes": 797,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/025-validation-duplicate-orders-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "3ebe37063c42e2b9d0cc227dcec822ad12f63b9834b3ea6267a348fe8098220a"
+    },
+    {
+      "bytes": 654,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/025-validation-duplicate-orders-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "b51182006c7efb359b1ce80e0636f3823c2416928df39ce9cd4126d25ad26a51"
+    },
+    {
+      "bytes": 797,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/026-validation-duplicate-orders-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "f91739a05c2ed5b8db01f9742eb772065fbc05f441470c080318e9137a5f4f8c"
+    },
+    {
+      "bytes": 654,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/026-validation-duplicate-orders-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "c97d52ee524b50d71d587fb1d5a45784ca392c2dc412e9d8b2f8cf5c2b4807ae"
+    },
+    {
+      "bytes": 799,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/027-validation-duplicate-orders-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "b046016f33f93aa1a5e6f35c7d08b1e06b9a4a86a663ae02b931293bd471c696"
+    },
+    {
+      "bytes": 656,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/027-validation-duplicate-orders-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "f3fe32f7c92c373f35c6715b1b7f3ab768057bd5a472da17d92510e98ad23b37"
+    },
+    {
+      "bytes": 794,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/028-validation-duplicate-items-low.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "34599efbb7ae65e8cb60be6c3c5ff798b51936d73655e9248f8d7aeec4deccc6"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/028-validation-duplicate-items-low.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "0f433327ebadaa92312f0e692b352457489b9e67040167b7c14d6532c69215d2"
+    },
+    {
+      "bytes": 794,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/029-validation-duplicate-items-mid.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "7d78f4f89eb0961464bc82e2b704b4902c57976713a159e1efc33cff38c034e9"
+    },
+    {
+      "bytes": 652,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/029-validation-duplicate-items-mid.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "f88b8595ef3c6c987262faf92a867f8ad38f9a7a9d108a03e337f6f97afcd1aa"
+    },
+    {
+      "bytes": 795,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/030-validation-duplicate-items-high.campaign.json",
+      "path_kind": "project_relative",
+      "sha256": "fa0ffa7ee0752cf1c1cde6f65a36910435da95def813232ac7737cab596652a5"
+    },
+    {
+      "bytes": 653,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/030-validation-duplicate-items-high.experiment.json",
+      "path_kind": "project_relative",
+      "sha256": "7fdc6b1c18e0fb5b47649d49e733ee01d444dff442d7ed2bdf4b27b77d69710d"
+    },
+    {
+      "bytes": 28363,
+      "path": "releases/ee40ef2/configs/jaffle_rq1_corrected_pilot_v4/design.json",
+      "path_kind": "project_relative",
+      "sha256": "5af5c140f9e067ed0fe494585ba063114dfc8c2c51b9ba63834f439ed7c82f8f"
+    },
+    {
+      "bytes": 1903,
+      "path": "releases/ee40ef2/configs/jaffle_source_protected_campaign_engineering_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "395758b77bd80ac90bc05ff37ab18f4b73f8009bc1934faa450e273a4a3b32a0"
+    },
+    {
+      "bytes": 446,
+      "path": "releases/ee40ef2/configs/jaffle_source_protected_plan_engineering_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "98bcad9eaea8b22c8b0f7799cb9abcabf75b5c7db712794302fae6fd9d38a8c2"
+    },
+    {
+      "bytes": 693,
+      "path": "releases/ee40ef2/configs/jaffle_stg_orders_protected_campaign_engineering_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "979175f00fcf4df4008b630f37916d4f79c1e21f115954929aa8a4d580c506b4"
+    },
+    {
+      "bytes": 451,
+      "path": "releases/ee40ef2/configs/jaffle_stg_orders_protected_plan_engineering_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "1e26c99472db484d18d16762a0defb7388bf17f29f70ca34712fb54cd77bd923"
+    },
+    {
+      "bytes": 2082,
+      "path": "releases/ee40ef2/configs/jaffle_stg_orders_subtotal_repair_engineering_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "a79cdb77091bc23a81e2116212d94ec45cf094980f19e2cfc36f2f7646c4705c"
+    },
+    {
+      "bytes": 790,
+      "path": "releases/ee40ef2/configs/jaffle_train_snapshot_carrier_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "252e280097b67928c7bd6eba30e38c1ce6f9142ab3fe1a937344092abfc33a28"
+    },
+    {
+      "bytes": 1567,
+      "path": "releases/ee40ef2/configs/jaffle_validator_engineering_catalog_v1.lock.json",
+      "path_kind": "project_relative",
+      "sha256": "93b53177845298ebc2e4c363dc6b56e591ed55326e41a6570e22982c459ae5be"
+    },
+    {
+      "bytes": 6737,
+      "path": "releases/ee40ef2/configs/jaffle_validator_engineering_registry_v1.json",
+      "path_kind": "project_relative",
+      "sha256": "7ce6c98d82ece42ad5f62abef7104c9c199e401b448ed0832e722783d30676d3"
+    },
+    {
+      "bytes": 1565,
+      "path": "releases/ee40ef2/configs/pilot_v0.yaml",
+      "path_kind": "project_relative",
+      "sha256": "268d30b5f90f228220d6e74945a98cfef403f375a5c79219840912dde40bf1b9"
+    },
+    {
+      "bytes": 876,
+      "path": "releases/ee40ef2/configs/synthetic_pilot_mve.json",
+      "path_kind": "project_relative",
+      "sha256": "eca66b684ad0b4bcaf81e2266ffbaf76af32c31be3735a22c6c2518919046f0e"
+    },
+    {
+      "bytes": 1765,
+      "path": "releases/ee40ef2/configs/synthetic_sizing_pilot.json",
+      "path_kind": "project_relative",
+      "sha256": "2a9d1d5889708371a58a2e290757b3ed229859b977c168fe3e1c980bf6d4e5f1"
+    },
+    {
+      "bytes": 788,
+      "path": "releases/ee40ef2/data/README.md",
+      "path_kind": "project_relative",
+      "sha256": "88cde614491c4ae2582a938629cdc9ff48d5eb0b8fc16c17eb5a296bf3c99436"
+    },
+    {
+      "bytes": 1847,
+      "path": "releases/ee40ef2/data/jaffle-offline-package-bundle-v1.json",
+      "path_kind": "project_relative",
+      "sha256": "37c48600bb582bbd6febdf8917fa4e7bea7e2b77e25754be514a52d447692bc2"
+    },
+    {
+      "bytes": 613,
+      "path": "releases/ee40ef2/data/tpcdi-pdgf-license-consent.json",
+      "path_kind": "project_relative",
+      "sha256": "68c02799054e8020df0660f9b59869482ba8091dda8d4c8392cea386a90e8b95"
+    },
+    {
+      "bytes": 2937,
+      "path": "releases/ee40ef2/data/tpcdi-run-incidents.json",
+      "path_kind": "project_relative",
+      "sha256": "db0952f6213caab4da5af5aebf519bfea16b750bc01c9c37889cf5897426a528"
+    },
+    {
+      "bytes": 9341,
+      "path": "releases/ee40ef2/evidence/jaffle_propagation_feature_contract_v1/canonical_hash_evidence.json",
+      "path_kind": "project_relative",
+      "sha256": "e042927f6c3ff598f53923ae16ea8e20fcfc7627501f550dc185cb1557cf4a26"
+    },
+    {
+      "bytes": 1,
+      "path": "releases/ee40ef2/figures/.gitkeep",
+      "path_kind": "project_relative",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "releases/ee40ef2/outputs/.gitkeep",
+      "path_kind": "project_relative",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "path": "releases/ee40ef2/papers/.gitkeep",
+      "path_kind": "project_relative",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 479,
+      "path": "releases/ee40ef2/pyproject.toml",
+      "path_kind": "project_relative",
+      "sha256": "f3938cd640e95a19bd7f4070bbe6bc46503d1dd052d377ff62628150556f2e37"
+    },
+    {
+      "bytes": 80044,
+      "path": "releases/ee40ef2/scripts/__pycache__/run_jaffle_mve.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "7506f1fd68626ff6ff0436791a28391d5ef40477ac8ec9bcf14299e21c4e1648"
+    },
+    {
+      "bytes": 45830,
+      "path": "releases/ee40ef2/scripts/__pycache__/validate_jaffle_mve.cpython-313.pyc",
+      "path_kind": "project_relative",
+      "sha256": "6e6b2d80f7c3eaf8a3942547b0a44b965e10f3cdd4f48eee6db9ce2e35b8afb8"
+    },
+    {
+      "bytes": 1318,
+      "path": "releases/ee40ef2/scripts/analyze_propagation_pilot_failure.py",
+      "path_kind": "project_relative",
+      "sha256": "7e8a738807eca5831de4c9e64130b2654bebdb84c687348eb7149c47130ea7e3"
+    },
+    {
+      "bytes": 1453,
+      "path": "releases/ee40ef2/scripts/audit_run.py",
+      "path_kind": "project_relative",
+      "sha256": "a9e4f71f0b65c7b6ac8bbc5767e2f6e689a0084f91f6effb9d67baccfa240fbc"
+    },
+    {
+      "bytes": 1019,
+      "path": "releases/ee40ef2/scripts/build_imin.sh",
+      "path_kind": "project_relative",
+      "sha256": "87ccba52d3150c2a43fc842431bc914938de736c5b0d0bc09ce3b33347820dde"
+    },
+    {
+      "bytes": 1518,
+      "path": "releases/ee40ef2/scripts/build_imin_adapter.sh",
+      "path_kind": "project_relative",
+      "sha256": "56baeafef53a91a102cb13110786e242aa37228f6d876f27172eef2bfe990ef3"
+    },
+    {
+      "bytes": 6120,
+      "path": "releases/ee40ef2/scripts/build_jaffle_edge_context_profile.py",
+      "path_kind": "project_relative",
+      "sha256": "eea9aa6264ec215be0910590661053b3d56e19b33bde46b4ba14bf243e039325"
+    },
+    {
+      "bytes": 5582,
+      "path": "releases/ee40ef2/scripts/build_jaffle_stg_orders_engineering_catalog.py",
+      "path_kind": "project_relative",
+      "sha256": "ac16b94f7c84dcc1efd8c3fc96426280ba777c7ffa01a77119618a1d055c027a"
+    },
+    {
+      "bytes": 9645,
+      "path": "releases/ee40ef2/scripts/build_validator_catalog.py",
+      "path_kind": "project_relative",
+      "sha256": "172ea49d2e052840443b8c3246d70baa5152c3c83d3d8f4f5557d3638d32c38a"
+    },
+    {
+      "bytes": 41293,
+      "path": "releases/ee40ef2/scripts/collect_jaffle_deployed_cost.py",
+      "path_kind": "project_relative",
+      "sha256": "bc0060fc1fbcf152444bd9136b6ea2fc5c6038e92ebf86f9ff3cd3636f308acb"
+    },
+    {
+      "bytes": 37097,
+      "path": "releases/ee40ef2/scripts/collect_jaffle_stg_orders_deployed_cost.py",
+      "path_kind": "project_relative",
+      "sha256": "1896d8db52fe373e4edcf8c30501f2d0f5da1f7f4755a5fb3a5c2744b262b612"
+    },
+    {
+      "bytes": 139820,
+      "path": "releases/ee40ef2/scripts/collect_jaffle_validator_evidence.py",
+      "path_kind": "project_relative",
+      "sha256": "1e422e38be15df71f51d7a3aa27d518b9206eed2e51c4408e050915c5bda1585"
+    },
+    {
+      "bytes": 1245,
+      "path": "releases/ee40ef2/scripts/extract_dbt_lineage.py",
+      "path_kind": "project_relative",
+      "sha256": "53129f85d1bddfba7af5261a4aa10af597cb7e5eb0fcbee315cc9dfa2ac9fe92"
+    },
+    {
+      "bytes": 5158,
+      "path": "releases/ee40ef2/scripts/extract_tpcdi_tools_pristine.py",
+      "path_kind": "project_relative",
+      "sha256": "47a93b677341018de0f938d12d27a4e7ca4006d6dee76ba9f2c74e7142333bdb"
+    },
+    {
+      "bytes": 1813,
+      "path": "releases/ee40ef2/scripts/fit_propagation_calibrated_v3.py",
+      "path_kind": "project_relative",
+      "sha256": "6075276c8290ea173a9063c20991c7678e697cf5be3fd9aab5f4017bc9f09707"
+    },
+    {
+      "bytes": 2059,
+      "path": "releases/ee40ef2/scripts/fit_propagation_calibrated_v4.py",
+      "path_kind": "project_relative",
+      "sha256": "b730f724a387de862bd0ade1d8772646e458e404f02c00b7814f37216878f50c"
+    },
+    {
+      "bytes": 160780,
+      "path": "releases/ee40ef2/scripts/freeze_jaffle_deployed_cost_hit_load.py",
+      "path_kind": "project_relative",
+      "sha256": "7bd83916870e7f32efe7c6b21d378a9f5a50f935baaf5b6e216d2e9f7c54e306"
+    },
+    {
+      "bytes": 51615,
+      "path": "releases/ee40ef2/scripts/freeze_jaffle_target_ledgers.py",
+      "path_kind": "project_relative",
+      "sha256": "a6a9411a4ce31c0af3cdf9210946f4c2157fe079b315ac3f50563e6b3f7c15d9"
+    },
+    {
+      "bytes": 93175,
+      "path": "releases/ee40ef2/scripts/freeze_jaffle_validator_calibration_control.py",
+      "path_kind": "project_relative",
+      "sha256": "872d5bfd7b812289b6b9b9c20e97cbc1bd6b81154e7dd7a827f5e99b731f3812"
+    },
+    {
+      "bytes": 28555,
+      "path": "releases/ee40ef2/scripts/freeze_jaffle_validator_input_registry.py",
+      "path_kind": "project_relative",
+      "sha256": "0dfe838e7f0745c7c867b3dc8853b557ddab5901d939ed45feb73c34060ab026"
+    },
+    {
+      "bytes": 21260,
+      "path": "releases/ee40ef2/scripts/freeze_propagation_calibrated_v3_registry.py",
+      "path_kind": "project_relative",
+      "sha256": "c3d0a32e1579ab7cf10031eeebff156c43685c0dce51ca0daabaa61708b0e0a6"
+    },
+    {
+      "bytes": 22213,
+      "path": "releases/ee40ef2/scripts/freeze_propagation_calibrated_v4_registry.py",
+      "path_kind": "project_relative",
+      "sha256": "b2d9d0fc74665de588683af83e3c124a0262006b5a4a5ea4c2531f9d95aa2b7a"
+    },
+    {
+      "bytes": 20836,
+      "path": "releases/ee40ef2/scripts/freeze_propagation_corrected_registry.py",
+      "path_kind": "project_relative",
+      "sha256": "09214c641561a562bce5a1bd3a15ce1e062f0b025a05bcc3e330b280e62c031b"
+    },
+    {
+      "bytes": 47187,
+      "path": "releases/ee40ef2/scripts/freeze_propagation_matrix_registry.py",
+      "path_kind": "project_relative",
+      "sha256": "605165a3e642ce24fec7b83ba23f34ad185bb85fe2c9ae15847b2ac52ac89fae"
+    },
+    {
+      "bytes": 1218,
+      "path": "releases/ee40ef2/scripts/generate_jaffle_rq1_corrected_pilot_configs.py",
+      "path_kind": "project_relative",
+      "sha256": "3d0bd18a7955b90835c50d5a98ed812fe8ab0f56f5b9c733b76a28bc0b975ef9"
+    },
+    {
+      "bytes": 1236,
+      "path": "releases/ee40ef2/scripts/generate_jaffle_rq1_corrected_pilot_v3_configs.py",
+      "path_kind": "project_relative",
+      "sha256": "e1cb2859f75596fd9beea4d6f0af9b30b8cdcf053faa8cf1c9fa94b24986a91b"
+    },
+    {
+      "bytes": 1228,
+      "path": "releases/ee40ef2/scripts/generate_jaffle_rq1_corrected_pilot_v4_configs.py",
+      "path_kind": "project_relative",
+      "sha256": "1f3c39e7820470321d4bb3f43016431e29ae04902b6b489bf535c48ad1cb9247"
+    },
+    {
+      "bytes": 53546,
+      "path": "releases/ee40ef2/scripts/qualify_raha_ground_truth.py",
+      "path_kind": "project_relative",
+      "sha256": "0897f20921cfe4b475348b505690cf12b7a9eb58db2b15ad6e1d6247c7a9fafc"
+    },
+    {
+      "bytes": 31731,
+      "path": "releases/ee40ef2/scripts/run_imin_adapter.py",
+      "path_kind": "project_relative",
+      "sha256": "20207ebbe38874c43ff5a3dba4ad47202345e5f5cffbb395e3cb76b1b52dbe52"
+    },
+    {
+      "bytes": 46210,
+      "path": "releases/ee40ef2/scripts/run_jaffle_corrected_pilot_shard.py",
+      "path_kind": "project_relative",
+      "sha256": "abd9b30ac065fe424aec8b21183e954fa9e5f00466e1c00feeea2ea7edb0a868"
+    },
+    {
+      "bytes": 155763,
+      "path": "releases/ee40ef2/scripts/run_jaffle_ground_truth_mve.py",
+      "path_kind": "project_relative",
+      "sha256": "4ea3632ea4faf87eea7f62f9dea96ea6c89a332e26cfa1e79d4db9550c2bc691"
+    },
+    {
+      "bytes": 66995,
+      "path": "releases/ee40ef2/scripts/run_jaffle_intermediate_protected_campaign.py",
+      "path_kind": "project_relative",
+      "sha256": "e1284830026b2e97897b742462af324f9bce9937b659d0faf299220ef274c478"
+    },
+    {
+      "bytes": 59109,
+      "path": "releases/ee40ef2/scripts/run_jaffle_intermediate_repair_continuation.py",
+      "path_kind": "project_relative",
+      "sha256": "da2f7cb2d10fc1abc427d54f898d4c7e3d6433bc25c0f4147c997cd76e28abd9"
+    },
+    {
+      "bytes": 71387,
+      "path": "releases/ee40ef2/scripts/run_jaffle_mve.py",
+      "path_kind": "project_relative",
+      "sha256": "b06a0c6a67c0a78f1de9fc2170224a5213da390aa316290cdd38442504b062d9"
+    },
+    {
+      "bytes": 39005,
+      "path": "releases/ee40ef2/scripts/run_jaffle_propagation_pilot_batch.py",
+      "path_kind": "project_relative",
+      "sha256": "d9b69e08f1b3b58d048b9dc9e2089f9705cef6e218930e8d8ab1cc8a094a6b8d"
+    },
+    {
+      "bytes": 104792,
+      "path": "releases/ee40ef2/scripts/run_jaffle_protected_campaign.py",
+      "path_kind": "project_relative",
+      "sha256": "39e92752abf586d9af65009f624dbfbf0b7e35d18e7e58ba6ce1cdc390ef5844"
+    },
+    {
+      "bytes": 42498,
+      "path": "releases/ee40ef2/scripts/run_jaffle_validator_calibration_engineering.py",
+      "path_kind": "project_relative",
+      "sha256": "2d2b91c40c083ee02059f5ab2306826fe4ee3c578f1dc409d6c60a4e94f96615"
+    },
+    {
+      "bytes": 3188,
+      "path": "releases/ee40ef2/scripts/run_logged.py",
+      "path_kind": "project_relative",
+      "sha256": "8c41774f532c5d302fda661adf7de630e64e146795d74aeccbd58b2aa39b86cd"
+    },
+    {
+      "bytes": 1835,
+      "path": "releases/ee40ef2/scripts/run_propagation_calibrated_v3_evaluate.py",
+      "path_kind": "project_relative",
+      "sha256": "f80e0ef6582480bacd5b4e8bd8eb2a5d932281a118230bd3f300be6c8987189a"
+    },
+    {
+      "bytes": 1839,
+      "path": "releases/ee40ef2/scripts/run_propagation_calibrated_v4_evaluate.py",
+      "path_kind": "project_relative",
+      "sha256": "4a1246dd026fa871041f0549d302ef7f4c82c27742863dbe96268e0df0e193fc"
+    },
+    {
+      "bytes": 1778,
+      "path": "releases/ee40ef2/scripts/run_propagation_corrected_evaluate.py",
+      "path_kind": "project_relative",
+      "sha256": "d358bcf77813adbf4276f66dc3528fc8ebb2b863eaf6682d5d5adb2575dfb048"
+    },
+    {
+      "bytes": 1523,
+      "path": "releases/ee40ef2/scripts/run_propagation_corrected_fit.py",
+      "path_kind": "project_relative",
+      "sha256": "34db9a849138e50b319a973a9820ddbb7e8bd358d81025230458973ed5dc4fa7"
+    },
+    {
+      "bytes": 1441,
+      "path": "releases/ee40ef2/scripts/run_propagation_matrix_pilot.py",
+      "path_kind": "project_relative",
+      "sha256": "4cfa9ce43961cc6695bd19e4b2e16d0e0e7972923289530ec68ce43d91d92b54"
+    },
+    {
+      "bytes": 1708,
+      "path": "releases/ee40ef2/scripts/run_synthetic_pilot.py",
+      "path_kind": "project_relative",
+      "sha256": "3af8430950e70d80730c5dcd2c975ebfe839009628fcdc83413abe30bdd89726"
+    },
+    {
+      "bytes": 29020,
+      "path": "releases/ee40ef2/scripts/run_tpcdi_sf3_mve.py",
+      "path_kind": "project_relative",
+      "sha256": "b6bdd634bd97b215becfca4d8a99864ea3be3cfc30b8b075675c7f1871d9b9d3"
+    },
+    {
+      "bytes": 92820,
+      "path": "releases/ee40ef2/scripts/run_tpcds_q3_qualification.py",
+      "path_kind": "project_relative",
+      "sha256": "1a666c5f096f145fcabe8909f184e923fa4698c585d38f5a4d174c26f65f368d"
+    },
+    {
+      "bytes": 1075,
+      "path": "releases/ee40ef2/scripts/setup_jaffle_env.sh",
+      "path_kind": "project_relative",
+      "sha256": "666c7c7a1ed579499b12ea430402c0b97096deb690e532f4036572ba84968c9c"
+    },
+    {
+      "bytes": 36149,
+      "path": "releases/ee40ef2/scripts/validate_jaffle_mve.py",
+      "path_kind": "project_relative",
+      "sha256": "88a60ec1dc477cb67aaf593fb1016e0bd7740597be8ea807c56f06d7e26339e7"
+    },
+    {
+      "bytes": 14851,
+      "path": "releases/ee40ef2/scripts/validate_tpcdi_output.py",
+      "path_kind": "project_relative",
+      "sha256": "cb232b8ca92c65ee372d5469bf867ff4878d90cf605c84f49302a9efbb3a2c6d"
+    },
+    {
+      "bytes": 55488,
+      "path": "releases/ee40ef2/tests/test_action_outcomes.py",
+      "path_kind": "project_relative",
+      "sha256": "3ddd9e6adaa2be4a1171d734d8a1919dd477933ea49710f8b5cba19d6121a2c6"
+    },
+    {
+      "bytes": 17505,
+      "path": "releases/ee40ef2/tests/test_baselines.py",
+      "path_kind": "project_relative",
+      "sha256": "31d38679e22677614a5ec9f6965302a16c9cc60ef6e845659b6883ba98adf6ed"
+    },
+    {
+      "bytes": 5056,
+      "path": "releases/ee40ef2/tests/test_build_jaffle_edge_context_profile.py",
+      "path_kind": "project_relative",
+      "sha256": "d1a909f0fce072a5128c923420259b263f839132474c211297d6a03a0b5f713d"
+    },
+    {
+      "bytes": 13533,
+      "path": "releases/ee40ef2/tests/test_build_validator_catalog.py",
+      "path_kind": "project_relative",
+      "sha256": "e93c457b3b85f74e1bcd37ac0db46d548c2570721e0f1b180b4e9a1bfca64aae"
+    },
+    {
+      "bytes": 20513,
+      "path": "releases/ee40ef2/tests/test_collect_jaffle_deployed_cost.py",
+      "path_kind": "project_relative",
+      "sha256": "56995e56161e7f2219b6720848979a6f00a3272611c8b3bf932d3f954cc49edb"
+    },
+    {
+      "bytes": 14495,
+      "path": "releases/ee40ef2/tests/test_collect_jaffle_stg_orders_deployed_cost.py",
+      "path_kind": "project_relative",
+      "sha256": "78540b5c86dcb44b4b8aaf40bd772395c1c72e383988cf46e835de923317dc1e"
+    },
+    {
+      "bytes": 47179,
+      "path": "releases/ee40ef2/tests/test_collect_jaffle_validator_evidence.py",
+      "path_kind": "project_relative",
+      "sha256": "11a856a771b4d57bde686af253398017d36cc8d51dee6f1d0527f32e139fcf98"
+    },
+    {
+      "bytes": 2533,
+      "path": "releases/ee40ef2/tests/test_corrected_pilot_design.py",
+      "path_kind": "project_relative",
+      "sha256": "b7842bd9597452eb452236d7fca33e55750b69fd325a9f0a3e562d113d870e3a"
+    },
+    {
+      "bytes": 4024,
+      "path": "releases/ee40ef2/tests/test_corrected_pilot_v3_design.py",
+      "path_kind": "project_relative",
+      "sha256": "2f438dacbe60c614a449ee1d8c63c490ffb059d5c37a210c0d9d41220367b1e8"
+    },
+    {
+      "bytes": 5448,
+      "path": "releases/ee40ef2/tests/test_corrected_pilot_v4_design.py",
+      "path_kind": "project_relative",
+      "sha256": "d791ec8dd00b89ad5a91a1c7cd022cc343dd72772817bec18e7baac0793fa90e"
+    },
+    {
+      "bytes": 2402,
+      "path": "releases/ee40ef2/tests/test_dbt_lineage.py",
+      "path_kind": "project_relative",
+      "sha256": "4a7f133732b9db63e0573cab5d7696d6f66be6cbe6e23f258446f38017a5ac2d"
+    },
+    {
+      "bytes": 14908,
+      "path": "releases/ee40ef2/tests/test_deployed_cost.py",
+      "path_kind": "project_relative",
+      "sha256": "d2e0640dc0fafe573ac89b22ab121f0fc282d2e3a93593aa38587074916cecc7"
+    },
+    {
+      "bytes": 17041,
+      "path": "releases/ee40ef2/tests/test_experiment_schema.py",
+      "path_kind": "project_relative",
+      "sha256": "df74eef2ec1697f101692c3ecbd0cc5e34248f53d7bd64d8bfc7da6c9b356295"
+    },
+    {
+      "bytes": 1352,
+      "path": "releases/ee40ef2/tests/test_extract_tpcdi_tools_pristine.py",
+      "path_kind": "project_relative",
+      "sha256": "41e5533775b1064d4072bf0d8347dce485b74f0e1dd05916d9138fabc9b060e6"
+    },
+    {
+      "bytes": 3311,
+      "path": "releases/ee40ef2/tests/test_fit_propagation_calibrated_v3.py",
+      "path_kind": "project_relative",
+      "sha256": "521445faa31ffdab0f4ee8985d120f1da3e9b4d707372acdeb9dc480aae31565"
+    },
+    {
+      "bytes": 4019,
+      "path": "releases/ee40ef2/tests/test_fit_propagation_calibrated_v4.py",
+      "path_kind": "project_relative",
+      "sha256": "4ec37f995936b246e79c3b550a1ae21d020ecf94d2e28748139fe3cddc5948c6"
+    },
+    {
+      "bytes": 68722,
+      "path": "releases/ee40ef2/tests/test_freeze_jaffle_deployed_cost_hit_load.py",
+      "path_kind": "project_relative",
+      "sha256": "61780489e650e3dad31acd2a03595413f65824e6f2cae6eea91ea7c67c976732"
+    },
+    {
+      "bytes": 14069,
+      "path": "releases/ee40ef2/tests/test_freeze_jaffle_target_ledgers.py",
+      "path_kind": "project_relative",
+      "sha256": "a2c07908b8524df33b29a12086d68f31035f77e100b10a6dbe3b33d0ced15533"
+    },
+    {
+      "bytes": 26144,
+      "path": "releases/ee40ef2/tests/test_freeze_jaffle_validator_calibration_control.py",
+      "path_kind": "project_relative",
+      "sha256": "2cb1f219ff8f999e5b69409fa55aa46a5ab2b94e4bdb658668a8002a451c7b74"
+    },
+    {
+      "bytes": 12880,
+      "path": "releases/ee40ef2/tests/test_freeze_jaffle_validator_input_registry.py",
+      "path_kind": "project_relative",
+      "sha256": "31a970c528a8c86173b7f2365058745ec1d4fdb0c5a8395425dc67f68265174b"
+    },
+    {
+      "bytes": 13163,
+      "path": "releases/ee40ef2/tests/test_freeze_propagation_calibrated_v3_registry.py",
+      "path_kind": "project_relative",
+      "sha256": "eb22aac0751507c7591911edd710d9fb7ff62812f507edc8987f789b216af1e9"
+    },
+    {
+      "bytes": 12391,
+      "path": "releases/ee40ef2/tests/test_freeze_propagation_corrected_registry.py",
+      "path_kind": "project_relative",
+      "sha256": "33886434fb707a0f13f60d81f3c1685a1aae276d781b721e9cf760ce829ef02d"
+    },
+    {
+      "bytes": 23658,
+      "path": "releases/ee40ef2/tests/test_freeze_propagation_matrix_registry.py",
+      "path_kind": "project_relative",
+      "sha256": "a57df995e9c94ede0ac66bf216c794857bd803ca6373c0d0a102056e51d9f4f7"
+    },
+    {
+      "bytes": 20255,
+      "path": "releases/ee40ef2/tests/test_imin_adapter.py",
+      "path_kind": "project_relative",
+      "sha256": "205a52bd3852398c2d08eda692bc7d3eacff04fa5a19a11142b52f0d75e1ded7"
+    },
+    {
+      "bytes": 17663,
+      "path": "releases/ee40ef2/tests/test_intermediate_catalog.py",
+      "path_kind": "project_relative",
+      "sha256": "06ebdc957a359c942eadd671099115004da54737db51cbedaf3264afdd821afa"
+    },
+    {
+      "bytes": 10861,
+      "path": "releases/ee40ef2/tests/test_intermediate_protected.py",
+      "path_kind": "project_relative",
+      "sha256": "b56d00572ca4711a690bb74ec6cebdcde41b12d09adeceb9a65d36fb98d49e1f"
+    },
+    {
+      "bytes": 9004,
+      "path": "releases/ee40ef2/tests/test_intermediate_repair.py",
+      "path_kind": "project_relative",
+      "sha256": "4ef1ee7f34c88b2d44dd3cdb1b51c165e87a853ffedfaa174b4fd57bd734ab0c"
+    },
+    {
+      "bytes": 17359,
+      "path": "releases/ee40ef2/tests/test_jaffle_ground_truth.py",
+      "path_kind": "project_relative",
+      "sha256": "8c70daea685b257c328f3171bf07b2ed916cfb1469414d3e8b3f78a0187a9329"
+    },
+    {
+      "bytes": 12197,
+      "path": "releases/ee40ef2/tests/test_jaffle_node_local_calibration_control.py",
+      "path_kind": "project_relative",
+      "sha256": "88b6999d12635b999e1114d043f6b114956192e37130d935db38f91a54ef4d3e"
+    },
+    {
+      "bytes": 24059,
+      "path": "releases/ee40ef2/tests/test_jaffle_propagation_pilot_configs.py",
+      "path_kind": "project_relative",
+      "sha256": "383bb3d065f9acb114c7c3fdfbe750905b2c80ef2662763aefbe1410d535fda2"
+    },
+    {
+      "bytes": 6579,
+      "path": "releases/ee40ef2/tests/test_mc_planner.py",
+      "path_kind": "project_relative",
+      "sha256": "51c35ec65273b356fc8aac58023f8e736e769378094e6dc016fc1266c57bb571"
+    },
+    {
+      "bytes": 6105,
+      "path": "releases/ee40ef2/tests/test_model.py",
+      "path_kind": "project_relative",
+      "sha256": "e3da9dc1d53e096d072c05dadb09bcc0537eb70b437e2dfaf3bddcb8433ffa5c"
+    },
+    {
+      "bytes": 16743,
+      "path": "releases/ee40ef2/tests/test_pilot.py",
+      "path_kind": "project_relative",
+      "sha256": "591c007c81be0fd15caf6547b1b33ec1389b868242f56ae586c84eac5c6e0fab"
+    },
+    {
+      "bytes": 8979,
+      "path": "releases/ee40ef2/tests/test_placement.py",
+      "path_kind": "project_relative",
+      "sha256": "5f2a049c5060df6e99be3f4ddb21f8e580ed9bce15621eac96ff5e8dfcad8c80"
+    },
+    {
+      "bytes": 17705,
+      "path": "releases/ee40ef2/tests/test_propagation_calibrated_v3.py",
+      "path_kind": "project_relative",
+      "sha256": "5f66f35ab8247dc3b4b1b7d62e23d79498e510aa051795d6dd345c5b8fbda772"
+    },
+    {
+      "bytes": 12324,
+      "path": "releases/ee40ef2/tests/test_propagation_calibrated_v3_evaluation.py",
+      "path_kind": "project_relative",
+      "sha256": "b5c260a809183e822fd772cac9508fd541ca1023cab62feadbbafdec5d4788ff"
+    },
+    {
+      "bytes": 14111,
+      "path": "releases/ee40ef2/tests/test_propagation_calibrated_v4.py",
+      "path_kind": "project_relative",
+      "sha256": "22ed68cc4ad4988efea9333968fa3886c7f018843dbd2044a5e470d64cba78d3"
+    },
+    {
+      "bytes": 12660,
+      "path": "releases/ee40ef2/tests/test_propagation_calibrated_v4_evaluation.py",
+      "path_kind": "project_relative",
+      "sha256": "110a83888ba322b34cbb38654441bc68b0471864e339ce364b7a107a92c57a5b"
+    },
+    {
+      "bytes": 11749,
+      "path": "releases/ee40ef2/tests/test_propagation_context_v2.py",
+      "path_kind": "project_relative",
+      "sha256": "3a5114c49cb0bb887b53ccaba1c7d93e5c17f7908650866eea361200def9557c"
+    },
+    {
+      "bytes": 14125,
+      "path": "releases/ee40ef2/tests/test_propagation_corrected_matrix.py",
+      "path_kind": "project_relative",
+      "sha256": "59263ffba61e1dfba80b2e7d2c4151dfc8bfdd94477098e85d433a327bec5be7"
+    },
+    {
+      "bytes": 3864,
+      "path": "releases/ee40ef2/tests/test_propagation_corrected_stats.py",
+      "path_kind": "project_relative",
+      "sha256": "3272a1c7c456525b53bb4e8821b87892d0c310efa7e915a80ac4a28b96bbd0ea"
+    },
+    {
+      "bytes": 1980,
+      "path": "releases/ee40ef2/tests/test_propagation_diagnosis.py",
+      "path_kind": "project_relative",
+      "sha256": "92cb47be08ff5f50f1127e4f34d306de6dca36fc29057f153804b3196671dd7f"
+    },
+    {
+      "bytes": 22881,
+      "path": "releases/ee40ef2/tests/test_propagation_matrix.py",
+      "path_kind": "project_relative",
+      "sha256": "02afd060be1bfa141657c88080d20a3f58ab7ca0e0eacc288cd6a178b977242d"
+    },
+    {
+      "bytes": 26087,
+      "path": "releases/ee40ef2/tests/test_propagation_model.py",
+      "path_kind": "project_relative",
+      "sha256": "6c4a71ba9f51c9636fe24022653b608c0d603e22f35a4a49a92990df2c38b0db"
+    },
+    {
+      "bytes": 21024,
+      "path": "releases/ee40ef2/tests/test_propagation_model_revised.py",
+      "path_kind": "project_relative",
+      "sha256": "c80d601bbc74c0d220a36c3279af075b8030413a98fceb7db15e95247c2f6924"
+    },
+    {
+      "bytes": 34343,
+      "path": "releases/ee40ef2/tests/test_propagation_observations.py",
+      "path_kind": "project_relative",
+      "sha256": "424cba9ba2d8f92a98e89c02a4c0cc5b8285f4180faece6b540763bc27b49403"
+    },
+    {
+      "bytes": 12766,
+      "path": "releases/ee40ef2/tests/test_protected_campaign.py",
+      "path_kind": "project_relative",
+      "sha256": "bf8fae7be599b2ccffcdf6b722e408b40d533af6406e7314ed813852b25d9024"
+    },
+    {
+      "bytes": 21938,
+      "path": "releases/ee40ef2/tests/test_qualify_raha_ground_truth.py",
+      "path_kind": "project_relative",
+      "sha256": "1e1f7ef4029e2035b312d95ab12ec9b7690a868cde27f0e65b6a1a06e6f6e4c3"
+    },
+    {
+      "bytes": 12062,
+      "path": "releases/ee40ef2/tests/test_raha_ground_truth.py",
+      "path_kind": "project_relative",
+      "sha256": "430ab98031b5c0a4f759802b727564d003d8a47d516cad04daa99254ed171c9b"
+    },
+    {
+      "bytes": 8172,
+      "path": "releases/ee40ef2/tests/test_run_contract.py",
+      "path_kind": "project_relative",
+      "sha256": "c48d50b325c0a326f067d6585b9306ff4f51d050d1510f7696a69ba0913b71b5"
+    },
+    {
+      "bytes": 24116,
+      "path": "releases/ee40ef2/tests/test_run_jaffle_corrected_pilot_shard.py",
+      "path_kind": "project_relative",
+      "sha256": "bd835282f88aa1f89df8a2b5f1eeed3331becaa2c306e8583e2feaca49ad4cd8"
+    },
+    {
+      "bytes": 66211,
+      "path": "releases/ee40ef2/tests/test_run_jaffle_ground_truth_mve.py",
+      "path_kind": "project_relative",
+      "sha256": "cdf25d1ad6cdf445f6b14f7d123d962153eeabfe591bc958c935343380af319f"
+    },
+    {
+      "bytes": 12941,
+      "path": "releases/ee40ef2/tests/test_run_jaffle_intermediate_protected_campaign.py",
+      "path_kind": "project_relative",
+      "sha256": "ad797f70b1086145e994528b52ec818d5ccc8eef627a4a23c4ac8295c27d59a5"
+    },
+    {
+      "bytes": 13049,
+      "path": "releases/ee40ef2/tests/test_run_jaffle_intermediate_repair_continuation.py",
+      "path_kind": "project_relative",
+      "sha256": "61f1c1a6ad2d5e6aa4462463bd468da7426b8950ded79702ad43922e536096ae"
+    },
+    {
+      "bytes": 37540,
+      "path": "releases/ee40ef2/tests/test_run_jaffle_mve.py",
+      "path_kind": "project_relative",
+      "sha256": "c52c5e214ca50a6579a682957a856e6e8e7e11cedecde0070a07df08ff0da016"
+    },
+    {
+      "bytes": 19111,
+      "path": "releases/ee40ef2/tests/test_run_jaffle_propagation_pilot_batch.py",
+      "path_kind": "project_relative",
+      "sha256": "e6ac1d598b179f96862ef256402c883375867b0825c1fad0037fd939644dc336"
+    },
+    {
+      "bytes": 24995,
+      "path": "releases/ee40ef2/tests/test_run_jaffle_protected_campaign.py",
+      "path_kind": "project_relative",
+      "sha256": "ef0354f93f7d3a84a48493cb515c0d5ae8cc8cc4fc6376389bc0d21bcefbed80"
+    },
+    {
+      "bytes": 21228,
+      "path": "releases/ee40ef2/tests/test_run_jaffle_validator_calibration_engineering.py",
+      "path_kind": "project_relative",
+      "sha256": "101693a0b57e227396fa56026f836a35829350a53d125a80ccbd83bc1ea30310"
+    },
+    {
+      "bytes": 3559,
+      "path": "releases/ee40ef2/tests/test_run_propagation_calibrated_v3_evaluate.py",
+      "path_kind": "project_relative",
+      "sha256": "a64166ee106e846aae9391e93ed7ca81e8415d3b8470d55c7cd4d25ce6683f56"
+    },
+    {
+      "bytes": 4459,
+      "path": "releases/ee40ef2/tests/test_run_propagation_corrected_matrix.py",
+      "path_kind": "project_relative",
+      "sha256": "2a2b97d0c3662610747cbde522108309f9e0de643af7c45e5039e8df11d9a320"
+    },
+    {
+      "bytes": 3189,
+      "path": "releases/ee40ef2/tests/test_run_propagation_matrix_pilot.py",
+      "path_kind": "project_relative",
+      "sha256": "be08def6554951b0411917db49add0ff9bb737410f2131cebb25a049d19ac292"
+    },
+    {
+      "bytes": 19010,
+      "path": "releases/ee40ef2/tests/test_run_tpcdi_sf3_mve.py",
+      "path_kind": "project_relative",
+      "sha256": "ef0d5ff9f8ef6fac9f8c5dfee1d79f9fc8ddecd0321e88bc09fb4532751c3797"
+    },
+    {
+      "bytes": 11666,
+      "path": "releases/ee40ef2/tests/test_semantic_damage.py",
+      "path_kind": "project_relative",
+      "sha256": "883afe4a4480ab007f339435ec98572ad44ba56499bade801c3282039f3d3ef5"
+    },
+    {
+      "bytes": 25081,
+      "path": "releases/ee40ef2/tests/test_simulation.py",
+      "path_kind": "project_relative",
+      "sha256": "8c105161587a43eeb887759d75d2467a11ef5fa5fbd62f4cd247e8d380a48a59"
+    },
+    {
+      "bytes": 6326,
+      "path": "releases/ee40ef2/tests/test_statistics.py",
+      "path_kind": "project_relative",
+      "sha256": "09da0357922503e3f0b87bb0e0237a688dff5639e7d09789b3ad295a8e8916c2"
+    },
+    {
+      "bytes": 10324,
+      "path": "releases/ee40ef2/tests/test_surrogate.py",
+      "path_kind": "project_relative",
+      "sha256": "57133bef71ee23c4d10f35aa3e12e011553104348c01fd3b3e859b64dc25f6df"
+    },
+    {
+      "bytes": 12882,
+      "path": "releases/ee40ef2/tests/test_synthetic.py",
+      "path_kind": "project_relative",
+      "sha256": "746f802a2409fcc6d803f18849ce9fd00109b4538dad1136acf95b3241687084"
+    },
+    {
+      "bytes": 6050,
+      "path": "releases/ee40ef2/tests/test_target_ledger.py",
+      "path_kind": "project_relative",
+      "sha256": "786e65ae19868967d41b98f162114fad2c043986bd2ce91ae07772591b4333e9"
+    },
+    {
+      "bytes": 37169,
+      "path": "releases/ee40ef2/tests/test_tpcds_q3_qualification.py",
+      "path_kind": "project_relative",
+      "sha256": "b05e0e19117ee986a881352a6c7cdd52a8f42c20ee3898043a49729b69431a54"
+    },
+    {
+      "bytes": 57900,
+      "path": "releases/ee40ef2/tests/test_validator_calibration.py",
+      "path_kind": "project_relative",
+      "sha256": "9560e0ff7d0aebb8fe41eea88462f3aa4b578c679e490cce1ec05619c493ff70"
+    },
+    {
+      "bytes": 87632,
+      "path": "releases/ee40ef2/tests/test_validator_catalog.py",
+      "path_kind": "project_relative",
+      "sha256": "7fddd777eb72770f86d973c8cf411cc218feefc3a7292a974a9024fe36ed66e2"
+    },
+    {
+      "bytes": 16365,
+      "path": "releases/ee40ef2/tests/test_w30_execution_contract.py",
+      "path_kind": "project_relative",
+      "sha256": "45e6c0d0e49390335258a5d662935905d959c20bf000a48c328cfef6d54014a1"
+    }
+  ],
+  "source_roots": [
+    {
+      "path": "releases/ee40ef2",
+      "path_kind": "project_relative"
+    }
+  ],
+  "start_time_utc": "2026-08-21T10:44:02.576812Z",
+  "status": "complete",
+  "stdin": "DEVNULL"
+}

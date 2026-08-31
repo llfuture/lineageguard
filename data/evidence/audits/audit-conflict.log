@@ -1,0 +1,20 @@
+[2026-08-29T15:05:27Z] audit-disjoint-10x10           no_validation damage=9.797214156171884e-05
+[2026-08-29T15:06:03Z] audit-disjoint-10x10           derived-policy           NRD=  0.479811 fired={'duplicate_shape': 20, 'numeric_shape': 10, 'null_shape': 0} acted={'duplicate_shape': 'dedup', 'numeric_shape': 'quarantine'} clean=0.0
+[2026-08-29T15:06:38Z] audit-disjoint-10x10           dedup-only               NRD=  0.595993 fired={'duplicate_shape': 20} acted={'duplicate_shape': 'dedup'} clean=0.0
+[2026-08-29T15:07:14Z] audit-disjoint-10x10           quarantine-numeric-only  NRD=  0.883823 fired={'numeric_shape': 10} acted={'numeric_shape': 'quarantine'} clean=0.0
+[2026-08-29T15:07:51Z] audit-disjoint-10x10           quarantine-null-only     NRD=  1.000000 fired={'null_shape': 0} acted={} clean=0.0
+[2026-08-29T15:08:27Z] audit-disjoint-10x10           quarantine-all-shapes    NRD=  0.939455 fired={'duplicate_shape': 20, 'numeric_shape': 10, 'null_shape': 0} acted={'duplicate_shape': 'quarantine', 'numeric_shape': 'quarantine'} clean=0.0
+[2026-08-29T15:08:28Z] audit-overlap-numdup-10        no_validation damage=None
+   FAILURE: HarnessError: injection target hit 20 != 10 on stg_financial
+[2026-08-29T15:08:28Z] audit-overlap-nulldup-10       no_validation damage=None
+   FAILURE: HarnessError: injection target hit 20 != 10 on stg_financial
+[2026-08-29T15:08:47Z] audit-unknown-inband-null-10   no_validation damage=5.839075431325855e-05
+[2026-08-29T15:09:26Z] audit-unknown-inband-null-10   derived-policy           NRD=  0.805061 fired={'duplicate_shape': 0, 'numeric_shape': 0, 'null_shape': 10} acted={'null_shape': 'quarantine'} clean=0.0
+[2026-08-29T15:10:02Z] audit-unknown-inband-null-10   dedup-only               NRD=  1.000000 fired={'duplicate_shape': 0} acted={} clean=0.0
+[2026-08-29T15:10:39Z] audit-unknown-inband-null-10   quarantine-numeric-only  NRD=  1.000000 fired={'numeric_shape': 0} acted={} clean=0.0
+[2026-08-29T15:11:16Z] audit-unknown-inband-null-10   quarantine-null-only     NRD=  0.805061 fired={'null_shape': 10} acted={'null_shape': 'quarantine'} clean=0.0
+[2026-08-29T15:11:52Z] audit-unknown-inband-null-10   quarantine-all-shapes    NRD=  0.805061 fired={'duplicate_shape': 0, 'numeric_shape': 0, 'null_shape': 10} acted={'null_shape': 'quarantine'} clean=0.0
+
+[2026-08-29T15:11:52Z] DONE rows=14 failures=2
+artifact: /home/u0020090017/projects/lineageguard_claude/tpcdi/out-audit-conflict/audit-conflict-signal.json
+sha256  : 47b1fbb0c92f9de8c462466ab652677b3af1a05d9a846bb6483165f181b23bea

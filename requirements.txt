@@ -1,0 +1,13 @@
+# Measurement environment: Python 3.13 on Ubuntu 20.04.
+# Verification (verify_paper_numbers.py) needs the standard library only.
+
+# Physical harnesses (Jaffle and TPC-DI suites)
+duckdb==1.5.4
+dbt-core==1.12.2
+dbt-duckdb==1.11.0
+# dbt package dependency, vendored offline on the measurement host:
+# dbt-labs/dbt_utils 1.4.1
+
+# Figure regeneration (code-paper/make_all_figures.py)
+matplotlib>=3.8
+numpy>=1.26

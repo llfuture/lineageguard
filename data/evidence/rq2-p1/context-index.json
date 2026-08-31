@@ -1,0 +1,60 @@
+{
+  "assignment_sha256": "4df4d538436583e29b1bad2530c5fc7f88e25513b18081b8f4dec1cd1d64cd4c",
+  "clean_input_binding_sha256": "257b12f8525a15d7a6b53cffc85ee6785488401e014dd11a4089e059692eea47",
+  "context_count": 8,
+  "contexts": [
+    {
+      "context_file": "contexts/001-jaffle-rq2-p1-fresh-slot-001.context.json",
+      "context_sha256": "8b862e2cea79daadeae87933fcb7394ebdaff737ff964bdabfbe473f2a8dcc15",
+      "ordinal": 1,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-001"
+    },
+    {
+      "context_file": "contexts/002-jaffle-rq2-p1-fresh-slot-002.context.json",
+      "context_sha256": "633d23e4dc1a920a4a13066193fa39ed60d53c6d302f7e7b4e509e647228db30",
+      "ordinal": 2,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-002"
+    },
+    {
+      "context_file": "contexts/003-jaffle-rq2-p1-fresh-slot-003.context.json",
+      "context_sha256": "2adea4afeb5e76dc0ff5eaf33699df515cf6a9635a56f870dbff3e60741afc71",
+      "ordinal": 3,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-003"
+    },
+    {
+      "context_file": "contexts/004-jaffle-rq2-p1-fresh-slot-004.context.json",
+      "context_sha256": "88781df54662277498dae34e411aacd66b0c6269e13f681000924a5c707a41ba",
+      "ordinal": 4,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-004"
+    },
+    {
+      "context_file": "contexts/005-jaffle-rq2-p1-fresh-slot-005.context.json",
+      "context_sha256": "42cf88e0a487e846b0544cd1b4821be80a95d4ee9b01bceb4cd6a3727fd37a91",
+      "ordinal": 5,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-005"
+    },
+    {
+      "context_file": "contexts/006-jaffle-rq2-p1-fresh-slot-006.context.json",
+      "context_sha256": "816e6c105bd64db9a264e05ff4a400361ceec053628c962936e928cae5bd9191",
+      "ordinal": 6,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-006"
+    },
+    {
+      "context_file": "contexts/007-jaffle-rq2-p1-fresh-slot-007.context.json",
+      "context_sha256": "d9f73dced5b4c1a89a24f1d5af47b595dabab12aad11b5b6ccd16706da826ac8",
+      "ordinal": 7,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-007"
+    },
+    {
+      "context_file": "contexts/008-jaffle-rq2-p1-fresh-slot-008.context.json",
+      "context_sha256": "4af37bca8eafe534bbaf1ac136eff81a4111bcae37dab4a89575d43f0872a2c4",
+      "ordinal": 8,
+      "slot_id": "jaffle-rq2-p1-fresh-slot-008"
+    }
+  ],
+  "index_sha256": "3d5c47a6fc9ad3ba0512c690684c368e2b7ebc43e8bd977b004aa2509f25f0ce",
+  "kind": "lineageguard_jaffle_rq2_p1_context_index_v1",
+  "outcomes_read": false,
+  "planning_input": false,
+  "schema_version": 1
+}

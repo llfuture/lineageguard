@@ -1,0 +1,304 @@
+{
+ "aurd": {
+  "policy_all_feasible|p3-del-ord-k200": 1.0,
+  "policy_all_feasible|p3-fk-ord-k200": 1.0,
+  "policy_all_feasible|p3-null-prod-1": 0.881578947368421,
+  "policy_all_feasible|p3-null-prod-2": 0.881578947368421,
+  "policy_all_feasible|p3-ord-dup-k20": 0.75,
+  "policy_all_feasible|p3-ord-num-k20": 0.8754042690815007,
+  "policy_all_feasible|p3-prod-dup-intermediate-high": 0.75,
+  "policy_all_feasible|p3-prod-dup-source-low": 0.75,
+  "policy_all_feasible|p3-prod-mixed-1x9": 0.784688995215311,
+  "policy_all_feasible|p3-prod-mixed-3x7": 0.8416289592760181,
+  "policy_all_feasible|p3-prod-mixed-5x5": 0.888888888888889,
+  "policy_all_feasible|p3-prod-mixed-7x3": 0.9321266968325792,
+  "policy_all_feasible|p3-prod-mixed-9x1": 0.9760765550239234,
+  "policy_all_feasible|p3-prod-num-intermediate-high": 0.881578947368421,
+  "policy_all_feasible|p3-prod-num-intermediate-low": 0.881578947368421,
+  "policy_all_feasible|p3-prod-num-k4": 0.90625,
+  "policy_all_feasible|p3-prod-num-source-high": 0.881578947368421,
+  "policy_all_feasible|p3-prod-num-source-low": 0.881578947368421,
+  "policy_planner|p3-del-ord-k200": 1.0,
+  "policy_planner|p3-fk-ord-k200": 1.0,
+  "policy_planner|p3-null-prod-1": 0.5269460464886635,
+  "policy_planner|p3-null-prod-2": 0.5269460464886635,
+  "policy_planner|p3-ord-dup-k20": 0.30000000200114696,
+  "policy_planner|p3-ord-num-k20": 0.5022801960306733,
+  "policy_planner|p3-prod-dup-intermediate-high": 0.0013305425871784154,
+  "policy_planner|p3-prod-dup-source-low": 0.0013305425871784154,
+  "policy_planner|p3-prod-mixed-1x9": 0.13990190270666084,
+  "policy_planner|p3-prod-mixed-3x7": 0.3673587147611085,
+  "policy_planner|p3-prod-mixed-5x5": 0.5561469078165238,
+  "policy_planner|p3-prod-mixed-7x3": 0.7288680206119037,
+  "policy_planner|p3-prod-mixed-9x1": 0.9044335447451846,
+  "policy_planner|p3-prod-num-intermediate-high": 0.5269460464886635,
+  "policy_planner|p3-prod-num-intermediate-low": 0.5269460464886635,
+  "policy_planner|p3-prod-num-k4": 0.6254989534701919,
+  "policy_planner|p3-prod-num-source-high": 0.5269460464886635,
+  "policy_planner|p3-prod-num-source-low": 0.5269460464886635,
+  "static_best|p3-del-ord-k200": 1.0,
+  "static_best|p3-fk-ord-k200": 1.0,
+  "static_best|p3-null-prod-1": 1.0,
+  "static_best|p3-null-prod-2": 1.0,
+  "static_best|p3-ord-dup-k20": 0.30000000200114696,
+  "static_best|p3-ord-num-k20": 0.5022801960306733,
+  "static_best|p3-prod-dup-intermediate-high": 0.0013305425871784154,
+  "static_best|p3-prod-dup-source-low": 0.0013305425871784154,
+  "static_best|p3-prod-mixed-1x9": 0.26461612681419505,
+  "static_best|p3-prod-mixed-3x7": 0.6235784352828596,
+  "static_best|p3-prod-mixed-5x5": 0.8335550904311965,
+  "static_best|p3-prod-mixed-7x3": 0.9471292640193213,
+  "static_best|p3-prod-mixed-9x1": 0.9947438449609852,
+  "static_best|p3-prod-num-intermediate-high": 1.0,
+  "static_best|p3-prod-num-intermediate-low": 1.0,
+  "static_best|p3-prod-num-k4": 1.0,
+  "static_best|p3-prod-num-source-high": 1.0,
+  "static_best|p3-prod-num-source-low": 1.0,
+  "static_quarantine_legacy|p3-del-ord-k200": 1.0,
+  "static_quarantine_legacy|p3-fk-ord-k200": 1.0,
+  "static_quarantine_legacy|p3-null-prod-1": 0.5269460464886635,
+  "static_quarantine_legacy|p3-null-prod-2": 0.5269460464886635,
+  "static_quarantine_legacy|p3-ord-dup-k20": 1.0,
+  "static_quarantine_legacy|p3-ord-num-k20": 1.0,
+  "static_quarantine_legacy|p3-prod-dup-intermediate-high": 1.105123100780297,
+  "static_quarantine_legacy|p3-prod-dup-source-low": 1.105123100780297,
+  "static_quarantine_legacy|p3-prod-mixed-1x9": 2.634186384857345,
+  "static_quarantine_legacy|p3-prod-mixed-3x7": 2.0754901849061156,
+  "static_quarantine_legacy|p3-prod-mixed-5x5": 1.6657796382752146,
+  "static_quarantine_legacy|p3-prod-mixed-7x3": 1.3524715732045256,
+  "static_quarantine_legacy|p3-prod-mixed-9x1": 1.105123100780297,
+  "static_quarantine_legacy|p3-prod-num-intermediate-high": 0.5269460464886635,
+  "static_quarantine_legacy|p3-prod-num-intermediate-low": 0.5269460464886635,
+  "static_quarantine_legacy|p3-prod-num-k4": 0.6254989534701919,
+  "static_quarantine_legacy|p3-prod-num-source-high": 0.5269460464886635,
+  "static_quarantine_legacy|p3-prod-num-source-low": 0.5269460464886635
+ },
+ "counts": {
+  "campaigns": 18,
+  "expected_campaigns": 18,
+  "missing_bindings": [],
+  "no_validation_positive": 18,
+  "technical_failures": 0
+ },
+ "kind": "lineageguard_p3_summary_v1",
+ "measurement_sha256s": [
+  "08ad5f15adb51a3c5c70385895ea6839b9b3e801d8db7f45fa21dcf16b3c87ec",
+  "cf4750c29839a44e01039e610fca5fd67f887bba8ad2f8c51b6e6426706edc1d",
+  "991fa811eea65f18c2a2aa78c481bdc3edf77eb2e3c97bbd6f697b59dd86e0db",
+  "3e0bfd7c7b4f09681cdedcf0005c7a66afcb1abd4ea368693403f41eef08ab59"
+ ],
+ "per_family_mean_aurd": {
+  "del-ord": {
+   "policy_all_feasible": 1.0,
+   "policy_planner": 1.0,
+   "static_best": 1.0,
+   "static_quarantine_legacy": 1.0
+  },
+  "fk-ord": {
+   "policy_all_feasible": 1.0,
+   "policy_planner": 1.0,
+   "static_best": 1.0,
+   "static_quarantine_legacy": 1.0
+  },
+  "null-prod": {
+   "policy_all_feasible": 0.881578947368421,
+   "policy_planner": 0.5269460464886635,
+   "static_best": 1.0,
+   "static_quarantine_legacy": 0.5269460464886635
+  },
+  "ord-dup": {
+   "policy_all_feasible": 0.75,
+   "policy_planner": 0.30000000200114696,
+   "static_best": 0.30000000200114696,
+   "static_quarantine_legacy": 1.0
+  },
+  "ord-num": {
+   "policy_all_feasible": 0.8754042690815007,
+   "policy_planner": 0.5022801960306733,
+   "static_best": 0.5022801960306733,
+   "static_quarantine_legacy": 1.0
+  },
+  "prod-dup": {
+   "policy_all_feasible": 0.75,
+   "policy_planner": 0.0013305425871784154,
+   "static_best": 0.0013305425871784154,
+   "static_quarantine_legacy": 1.105123100780297
+  },
+  "prod-mixed-1x9": {
+   "policy_all_feasible": 0.784688995215311,
+   "policy_planner": 0.13990190270666084,
+   "static_best": 0.26461612681419505,
+   "static_quarantine_legacy": 2.634186384857345
+  },
+  "prod-mixed-3x7": {
+   "policy_all_feasible": 0.8416289592760181,
+   "policy_planner": 0.3673587147611085,
+   "static_best": 0.6235784352828596,
+   "static_quarantine_legacy": 2.0754901849061156
+  },
+  "prod-mixed-5x5": {
+   "policy_all_feasible": 0.888888888888889,
+   "policy_planner": 0.5561469078165238,
+   "static_best": 0.8335550904311965,
+   "static_quarantine_legacy": 1.6657796382752146
+  },
+  "prod-mixed-7x3": {
+   "policy_all_feasible": 0.9321266968325792,
+   "policy_planner": 0.7288680206119037,
+   "static_best": 0.9471292640193213,
+   "static_quarantine_legacy": 1.3524715732045256
+  },
+  "prod-mixed-9x1": {
+   "policy_all_feasible": 0.9760765550239234,
+   "policy_planner": 0.9044335447451846,
+   "static_best": 0.9947438449609852,
+   "static_quarantine_legacy": 1.105123100780297
+  },
+  "prod-num": {
+   "policy_all_feasible": 0.881578947368421,
+   "policy_planner": 0.5269460464886635,
+   "static_best": 1.0,
+   "static_quarantine_legacy": 0.5269460464886635
+  },
+  "prod-num-k4": {
+   "policy_all_feasible": 0.90625,
+   "policy_planner": 0.6254989534701919,
+   "static_best": 1.0,
+   "static_quarantine_legacy": 0.6254989534701919
+  }
+ },
+ "physically_distinguishable": true,
+ "plans_sha256": "e99b10d4ff646f8ef80ad7ba58705707bc93227318bd7c750e954803d1e5f1be",
+ "primary_comparison": {
+  "bootstrap": {
+   "lower95": -0.32530570654273233,
+   "mean": -0.23223422757849865,
+   "p_below_zero": 1.0,
+   "resamples": 10000,
+   "seed": 7457232996202650,
+   "upper95": -0.13921021487928195
+  },
+  "campaigns": [
+   "p3-del-ord-k200",
+   "p3-fk-ord-k200",
+   "p3-null-prod-1",
+   "p3-null-prod-2",
+   "p3-ord-dup-k20",
+   "p3-ord-num-k20",
+   "p3-prod-dup-intermediate-high",
+   "p3-prod-dup-source-low",
+   "p3-prod-mixed-1x9",
+   "p3-prod-mixed-3x7",
+   "p3-prod-mixed-5x5",
+   "p3-prod-mixed-7x3",
+   "p3-prod-mixed-9x1",
+   "p3-prod-num-intermediate-high",
+   "p3-prod-num-intermediate-low",
+   "p3-prod-num-k4",
+   "p3-prod-num-source-high",
+   "p3-prod-num-source-low"
+  ],
+  "diffs": [
+   0.0,
+   0.0,
+   -0.4730539535113365,
+   -0.4730539535113365,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   -0.12471422410753422,
+   -0.2562197205217511,
+   -0.2774081826146727,
+   -0.2182612434074176,
+   -0.09031030021580067,
+   -0.4730539535113365,
+   -0.4730539535113365,
+   -0.3745010465298081,
+   -0.4730539535113365,
+   -0.4730539535113365
+  ],
+  "mean": -0.23220769102583352,
+  "mean_comparator_aurd": 0.7482535580397074,
+  "mean_primary_aurd": 0.5160458670138739,
+  "relative_improvement": 0.31033289254805124,
+  "sign_flip_p_one_sided": 0.000244140625
+ },
+ "protocol_sha256": "28cac435761222a96a9403169934bdf0bb3d15d9b7a543153662350ca0420c7d",
+ "safety": {
+  "availability_full": true,
+  "clean_collateral_zero": true,
+  "placements": 72
+ },
+ "secondary": {
+  "holm_adjusted": {
+   "vs_no_validation": 3.0517578125e-05,
+   "vs_static_quarantine_legacy": 0.001953125
+  },
+  "vs_no_validation": {
+   "mean": -0.4839541329861261,
+   "sign_flip_p_one_sided": 1.52587890625e-05
+  },
+  "vs_static_quarantine_legacy": {
+   "bootstrap": {
+    "lower95": -0.8900149996698031,
+    "mean": -0.5306357986837762,
+    "p_below_zero": 1.0,
+    "resamples": 10000,
+    "seed": 7457232996202650,
+    "upper95": -0.23423982016024888
+   },
+   "campaigns": [
+    "p3-del-ord-k200",
+    "p3-fk-ord-k200",
+    "p3-null-prod-1",
+    "p3-null-prod-2",
+    "p3-ord-dup-k20",
+    "p3-ord-num-k20",
+    "p3-prod-dup-intermediate-high",
+    "p3-prod-dup-source-low",
+    "p3-prod-mixed-1x9",
+    "p3-prod-mixed-3x7",
+    "p3-prod-mixed-5x5",
+    "p3-prod-mixed-7x3",
+    "p3-prod-mixed-9x1",
+    "p3-prod-num-intermediate-high",
+    "p3-prod-num-intermediate-low",
+    "p3-prod-num-k4",
+    "p3-prod-num-source-high",
+    "p3-prod-num-source-low"
+   ],
+   "diffs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.699999997998853,
+    -0.4977198039693267,
+    -1.1037925581931187,
+    -1.1037925581931187,
+    -2.4942844821506838,
+    -1.7081314701450072,
+    -1.1096327304586908,
+    -0.6236035525926219,
+    -0.20068955603511252,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "mean": -0.5300914838742519,
+   "mean_comparator_aurd": 1.0461373508881258,
+   "mean_primary_aurd": 0.5160458670138739,
+   "sign_flip_p_one_sided": 0.001953125
+  }
+ },
+ "summary_sha256": "064fb482aa561a1ce7b0931d73e6e4c59880d11fa3e445d321a19e5eb5491045",
+ "worst_case_aurd_T2_view": {
+  "policy_all_feasible": 1.0,
+  "policy_planner": 1.0,
+  "static_best": 1.0,
+  "static_quarantine_legacy": 2.634186384857345
+ }
+}

@@ -1,0 +1,7205 @@
+{
+ "anchor_sha256": "8c361da121c83702c83ac755a4fb9c2eae9441c5f866705e2ed282324d692311",
+ "bands": {
+  "dim_security": [
+   0.0,
+   6.0
+  ],
+  "fact_financials": [
+   0.0,
+   19999980486.06
+  ],
+  "fact_market_history": [
+   0.0,
+   2000.0
+  ],
+  "stg_daily_market": [
+   0.0,
+   2000.0
+  ],
+  "stg_financial": [
+   0.0,
+   19999980486.06
+  ],
+  "stg_security": [
+   0.0,
+   6.0
+  ]
+ },
+ "counts": {
+  "campaigns": 4,
+  "dbt_model_steps": 196,
+  "distinct_plans": 7,
+  "rows": 32,
+  "technical_failures": 0
+ },
+ "finished_utc": "2026-08-29T12:58:51Z",
+ "kind": "lineageguard_p5_measurement_v1",
+ "measurement_sha256": "23ad210fb0f184a39771799d4f33c5d7f73da31c19214940611a085439ec4ce4",
+ "plans_sha256": "4716eee088604e63461e278d069bef364dab418144564c135b3d29ad9766504c",
+ "protocol_sha256": "75fae07932f14df145871339aa9e285ff178e19da07899f5f523b52500de4532",
+ "registry_sha256": "74af0346e60409a74fa3293db569824d7ee9dfa818e5c2f1ca634cbf2247677c",
+ "results": [
+  {
+   "absolute_damage": 0.01065030134573575,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-1",
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.471772280563983e-05,
+    "absolute_damage_value_weighted": 8.250368678910745e-13,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.00025836645614274613,
+      "damage_value_weighted": 4.3556526993259804e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019465760349673267,
+      "damage_value_weighted": 5.339692805304923e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.32,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--noval"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan_sig": null,
+   "role": "no_validation",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.471772280563983e-05,
+   "absolute_damage_value_weighted": 8.250368678910745e-13,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.65,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--f47aa0cc--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.471772280563983e-05,
+    "absolute_damage_value_weighted": 8.250368678910745e-13,
+    "acted": [
+     {
+      "acted": {
+       "numeric_shape": "dedup"
+      },
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 10
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.00025836645614274613,
+      "damage_value_weighted": 4.3556526993259804e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019465760349673267,
+      "damage_value_weighted": 5.339692805304923e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.31,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--f47aa0cc--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"stg_daily_market\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.471772280563983e-05,
+   "absolute_damage_value_weighted": 8.250368678910745e-13,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 21.93,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--af326724--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.471772280563983e-05,
+    "absolute_damage_value_weighted": 8.250368678910745e-13,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.00025836645614274613,
+      "damage_value_weighted": 4.3556526993259804e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019465760349673267,
+      "damage_value_weighted": 5.339692805304923e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.0,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--af326724--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "fact_financials"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"fact_financials\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.471772280563983e-05,
+   "absolute_damage_value_weighted": 8.250368678910745e-13,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.03,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--247838c2--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.471772280563983e-05,
+    "absolute_damage_value_weighted": 8.250368678910745e-13,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.00025836645614274613,
+      "damage_value_weighted": 4.3556526993259804e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019465760349673267,
+      "damage_value_weighted": 5.339692805304923e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.86,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--247838c2--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"stg_daily_market\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.471772280563983e-05,
+   "absolute_damage_value_weighted": 8.250368678910745e-13,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 21.35,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--90e008e2--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.471772280563983e-05,
+    "absolute_damage_value_weighted": 8.250368678910745e-13,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.00025836645614274613,
+      "damage_value_weighted": 4.3556526993259804e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019465760349673267,
+      "damage_value_weighted": 5.339692805304923e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.86,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--90e008e2--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 8.265057011598136e-06,
+   "absolute_damage_value_weighted": 1.19635421523233e-05,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     },
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "fact_market_history"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 36.32,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--5e20caa4--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 8.265057011598136e-06,
+    "absolute_damage_value_weighted": 1.19635421523233e-05,
+    "acted": [
+     {
+      "acted": {
+       "numeric_shape": "quarantine"
+      },
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 10
+      },
+      "node": "stg_daily_market"
+     },
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "fact_market_history"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 3.324731419876261e-05,
+      "damage_value_weighted": 4.187239801554143e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.4608084882424344e-05,
+      "damage_value_weighted": 4.187239705072167e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 39.29,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--5e20caa4--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_daily_market"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_market_history"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_market_history\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_daily_market\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 8.265052896903134e-06,
+   "absolute_damage_value_weighted": 1.196354215232319e-05,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.43,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--9a2b31c4--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 8.265052896903134e-06,
+    "absolute_damage_value_weighted": 1.196354215232319e-05,
+    "acted": [
+     {
+      "acted": {
+       "numeric_shape": "quarantine"
+      },
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 10
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 3.324731419876261e-05,
+      "damage_value_weighted": 4.187239801554143e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.4608056079559327e-05,
+      "damage_value_weighted": 4.18723970507209e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.16,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--9a2b31c4--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_daily_market\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.471772280563983e-05,
+   "absolute_damage_value_weighted": 8.250368678910745e-13,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.74,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--83c981d3--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.471772280563983e-05,
+    "absolute_damage_value_weighted": 8.250368678910745e-13,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.00025836645614274613,
+      "damage_value_weighted": 4.3556526993259804e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019465760349673267,
+      "damage_value_weighted": 5.339692805304923e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 24.58,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-1--83c981d3--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-2",
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.435849561965247e-05,
+    "absolute_damage_value_weighted": 8.250931673391068e-13,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.0002584974557843551,
+      "damage_value_weighted": 4.359593660688257e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019201201355321216,
+      "damage_value_weighted": 5.3396928053049216e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 21.56,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--noval"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan_sig": null,
+   "role": "no_validation",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.435849561965247e-05,
+   "absolute_damage_value_weighted": 8.250931673391068e-13,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 21.97,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--f47aa0cc--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.435849561965247e-05,
+    "absolute_damage_value_weighted": 8.250931673391068e-13,
+    "acted": [
+     {
+      "acted": {
+       "numeric_shape": "dedup"
+      },
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 10
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.0002584974557843551,
+      "damage_value_weighted": 4.359593660688257e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019201201355321216,
+      "damage_value_weighted": 5.3396928053049216e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.85,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--f47aa0cc--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"stg_daily_market\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.435849561965247e-05,
+   "absolute_damage_value_weighted": 8.250931673391068e-13,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.54,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--af326724--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.435849561965247e-05,
+    "absolute_damage_value_weighted": 8.250931673391068e-13,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.0002584974557843551,
+      "damage_value_weighted": 4.359593660688257e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019201201355321216,
+      "damage_value_weighted": 5.3396928053049216e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.94,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--af326724--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "fact_financials"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"fact_financials\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.435849561965247e-05,
+   "absolute_damage_value_weighted": 8.250931673391068e-13,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.41,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--247838c2--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.435849561965247e-05,
+    "absolute_damage_value_weighted": 8.250931673391068e-13,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.0002584974557843551,
+      "damage_value_weighted": 4.359593660688257e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019201201355321216,
+      "damage_value_weighted": 5.3396928053049216e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.08,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--247838c2--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"stg_daily_market\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.435849561965247e-05,
+   "absolute_damage_value_weighted": 8.250931673391068e-13,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.5,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--90e008e2--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.435849561965247e-05,
+    "absolute_damage_value_weighted": 8.250931673391068e-13,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.0002584974557843551,
+      "damage_value_weighted": 4.359593660688257e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019201201355321216,
+      "damage_value_weighted": 5.3396928053049216e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.03,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--90e008e2--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 7.596574211494316e-06,
+   "absolute_damage_value_weighted": 1.1437022069563891e-05,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     },
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "fact_market_history"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 35.41,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--5e20caa4--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 7.596574211494316e-06,
+    "absolute_damage_value_weighted": 1.1437022069563891e-05,
+    "acted": [
+     {
+      "acted": {
+       "numeric_shape": "quarantine"
+      },
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 10
+      },
+      "node": "stg_daily_market"
+     },
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "fact_market_history"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 3.0503722988064527e-05,
+      "damage_value_weighted": 4.0029577720556865e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.2672296492395677e-05,
+      "damage_value_weighted": 4.0029576766390384e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 35.5,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--5e20caa4--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_daily_market"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_market_history"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_market_history\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_daily_market\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 7.596578126295093e-06,
+   "absolute_damage_value_weighted": 1.1437022069564005e-05,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.1,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--9a2b31c4--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 7.596578126295093e-06,
+    "absolute_damage_value_weighted": 1.1437022069564005e-05,
+    "acted": [
+     {
+      "acted": {
+       "numeric_shape": "quarantine"
+      },
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 10
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 3.0503722988064527e-05,
+      "damage_value_weighted": 4.0029577720556865e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.2672323896001117e-05,
+      "damage_value_weighted": 4.002957676639116e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.66,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--9a2b31c4--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_daily_market\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.435849561965247e-05,
+   "absolute_damage_value_weighted": 8.250931673391068e-13,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-num-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.63,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--83c981d3--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.435849561965247e-05,
+    "absolute_damage_value_weighted": 8.250931673391068e-13,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "numeric_add",
+      "node": "stg_daily_market",
+      "rows_after": 257764,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 0.0002584974557843551,
+      "damage_value_weighted": 4.359593660688257e-13,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 0.00019201201355321216,
+      "damage_value_weighted": 5.3396928053049216e-12,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.36,
+    "status": "complete",
+    "tag": "p5-mkt-num-k10-2--83c981d3--d"
+   },
+   "family": "mkt-num",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-1",
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.402518404695185e-06,
+    "absolute_damage_value_weighted": 1.1758950262999041e-05,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 2.0120654822285883e-05,
+      "damage_value_weighted": 4.11563263503962e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.469697401058041e-05,
+      "damage_value_weighted": 4.115632549059709e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.9,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--noval"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan_sig": null,
+   "role": "no_validation",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "absolute_damage_relative_error": 0.0,
+   "absolute_damage_value_weighted": 0.0,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.13,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--f47aa0cc--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {
+       "duplicate_shape": "dedup"
+      },
+      "fired": {
+       "duplicate_shape": 20,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.16,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--f47aa0cc--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 0.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"stg_daily_market\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.402518404695185e-06,
+   "absolute_damage_value_weighted": 1.1758950262999041e-05,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.0,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--af326724--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.402518404695185e-06,
+    "absolute_damage_value_weighted": 1.1758950262999041e-05,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 2.0120654822285883e-05,
+      "damage_value_weighted": 4.11563263503962e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.469697401058041e-05,
+      "damage_value_weighted": 4.115632549059709e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.88,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--af326724--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "fact_financials"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"fact_financials\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "absolute_damage_relative_error": 0.0,
+   "absolute_damage_value_weighted": 0.0,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.47,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--247838c2--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {
+       "duplicate_shape": "dedup"
+      },
+      "fired": {
+       "duplicate_shape": 20
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 25.36,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--247838c2--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 0.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"stg_daily_market\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.402518404695185e-06,
+   "absolute_damage_value_weighted": 1.1758950262999041e-05,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 21.64,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--90e008e2--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.402518404695185e-06,
+    "absolute_damage_value_weighted": 1.1758950262999041e-05,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 2.0120654822285883e-05,
+      "damage_value_weighted": 4.11563263503962e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.469697401058041e-05,
+      "damage_value_weighted": 4.115632549059709e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.29,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--90e008e2--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 8.261870249065662e-06,
+   "absolute_damage_value_weighted": 1.1758950274338237e-05,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     },
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "fact_market_history"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 36.44,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--5e20caa4--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 8.261870249065662e-06,
+    "absolute_damage_value_weighted": 1.1758950274338237e-05,
+    "acted": [
+     {
+      "acted": {
+       "duplicate_shape": "quarantine"
+      },
+      "fired": {
+       "duplicate_shape": 20,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     },
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "fact_market_history"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 3.3065777342791674e-05,
+      "damage_value_weighted": 4.115632642783338e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.476731440066796e-05,
+      "damage_value_weighted": 4.1156325492534276e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 37.51,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--5e20caa4--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_daily_market"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_market_history"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_market_history\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_daily_market\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 8.261870249065662e-06,
+   "absolute_damage_value_weighted": 1.1758950274338237e-05,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.94,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--9a2b31c4--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 8.261870249065662e-06,
+    "absolute_damage_value_weighted": 1.1758950274338237e-05,
+    "acted": [
+     {
+      "acted": {
+       "duplicate_shape": "quarantine"
+      },
+      "fired": {
+       "duplicate_shape": 20,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 3.3065777342791674e-05,
+      "damage_value_weighted": 4.115632642783338e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.476731440066796e-05,
+      "damage_value_weighted": 4.1156325492534276e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.16,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--9a2b31c4--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_daily_market\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.01065030134573575,
+   "absolute_damage_relative_error": 6.402518404695185e-06,
+   "absolute_damage_value_weighted": 1.1758950262999041e-05,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-1",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.68,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--83c981d3--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.01065030134573575,
+    "absolute_damage_relative_error": 6.402518404695185e-06,
+    "absolute_damage_value_weighted": 1.1758950262999041e-05,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.01491042188403005,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06896551724137931,
+      "damage_relative_error": 2.0120654822285883e-05,
+      "damage_value_weighted": 4.11563263503962e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.469697401058041e-05,
+      "damage_value_weighted": 4.115632549059709e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.17,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-1--83c981d3--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.01065030134573575,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.009665079670858903,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-2",
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.009665079670858903,
+    "absolute_damage_relative_error": 4.989752440507067e-06,
+    "absolute_damage_value_weighted": 8.2002310332729e-06,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.013531111539202464,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 9,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06206896551724138,
+      "damage_relative_error": 1.4491177198842655e-05,
+      "damage_value_weighted": 2.8700808900869545e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.0437089884706816e-05,
+      "damage_value_weighted": 2.870080833204076e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.39,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--noval"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.009665079670858903,
+   "nrd": 1.0,
+   "plan_sig": null,
+   "role": "no_validation",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "absolute_damage_relative_error": 0.0,
+   "absolute_damage_value_weighted": 0.0,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.07,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--f47aa0cc--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {
+       "duplicate_shape": "dedup"
+      },
+      "fired": {
+       "duplicate_shape": 20,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.55,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--f47aa0cc--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.009665079670858903,
+   "nrd": 0.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"stg_daily_market\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.009665079670858903,
+   "absolute_damage_relative_error": 4.989752440507067e-06,
+   "absolute_damage_value_weighted": 8.2002310332729e-06,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 21.77,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--af326724--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.009665079670858903,
+    "absolute_damage_relative_error": 4.989752440507067e-06,
+    "absolute_damage_value_weighted": 8.2002310332729e-06,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.013531111539202464,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 9,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06206896551724138,
+      "damage_relative_error": 1.4491177198842655e-05,
+      "damage_value_weighted": 2.8700808900869545e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.0437089884706816e-05,
+      "damage_value_weighted": 2.870080833204076e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.4,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--af326724--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.009665079670858903,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "fact_financials"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"dedup\",\"null_shape\":\"dedup\",\"numeric_shape\":\"dedup\"},\"node\":\"fact_financials\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "absolute_damage_relative_error": 0.0,
+   "absolute_damage_value_weighted": 0.0,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 21.9,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--247838c2--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {
+       "duplicate_shape": "dedup"
+      },
+      "fired": {
+       "duplicate_shape": 20
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.61,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--247838c2--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.009665079670858903,
+   "nrd": 0.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"no_op\"},\"node\":\"stg_daily_market\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.009665079670858903,
+   "absolute_damage_relative_error": 4.989752440507067e-06,
+   "absolute_damage_value_weighted": 8.2002310332729e-06,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.53,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--90e008e2--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.009665079670858903,
+    "absolute_damage_relative_error": 4.989752440507067e-06,
+    "absolute_damage_value_weighted": 8.2002310332729e-06,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.013531111539202464,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 9,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06206896551724138,
+      "damage_relative_error": 1.4491177198842655e-05,
+      "damage_value_weighted": 2.8700808900869545e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.0437089884706816e-05,
+      "damage_value_weighted": 2.870080833204076e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.83,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--90e008e2--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.009665079670858903,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"dedup\",\"fk_shape\":\"no_op\",\"null_shape\":\"no_op\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.009665079670858903,
+   "absolute_damage_relative_error": 6.846500139870387e-06,
+   "absolute_damage_value_weighted": 8.200231044544956e-06,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     },
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "fact_market_history"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 35.37,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--5e20caa4--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.009665079670858903,
+    "absolute_damage_relative_error": 6.846500139870387e-06,
+    "absolute_damage_value_weighted": 8.200231044544956e-06,
+    "acted": [
+     {
+      "acted": {
+       "duplicate_shape": "quarantine"
+      },
+      "fired": {
+       "duplicate_shape": 20,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     },
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "fact_market_history"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.013531111539202464,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 9,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06206896551724138,
+      "damage_relative_error": 2.743626151545476e-05,
+      "damage_value_weighted": 2.870080897830672e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.0489239463637945e-05,
+      "damage_value_weighted": 2.870080833350797e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 36.15,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--5e20caa4--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.009665079670858903,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_financials"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_daily_market"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "fact_market_history"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_financials\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"fact_market_history\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_daily_market\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.009665079670858903,
+   "absolute_damage_relative_error": 6.846500139870387e-06,
+   "absolute_damage_value_weighted": 8.200231044544956e-06,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [
+     {
+      "acted": {},
+      "fired": {
+       "duplicate_shape": 0,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.86,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--9a2b31c4--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.009665079670858903,
+    "absolute_damage_relative_error": 6.846500139870387e-06,
+    "absolute_damage_value_weighted": 8.200231044544956e-06,
+    "acted": [
+     {
+      "acted": {
+       "duplicate_shape": "quarantine"
+      },
+      "fired": {
+       "duplicate_shape": 20,
+       "fk_shape": 0,
+       "null_shape": 0,
+       "numeric_shape": 0
+      },
+      "node": "stg_daily_market"
+     }
+    ],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.013531111539202464,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 9,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06206896551724138,
+      "damage_relative_error": 2.743626151545476e-05,
+      "damage_value_weighted": 2.870080897830672e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.0489239463637945e-05,
+      "damage_value_weighted": 2.870080833350797e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 23.91,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--9a2b31c4--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.009665079670858903,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_daily_market"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_daily_market\"},{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.009665079670858903,
+   "absolute_damage_relative_error": 4.989752440507067e-06,
+   "absolute_damage_value_weighted": 8.2002310332729e-06,
+   "availability_loss": 0.0,
+   "campaign_id": "p5-mkt-dup-k10-2",
+   "clean": {
+    "absolute_damage": 0.0,
+    "absolute_damage_relative_error": 0.0,
+    "absolute_damage_value_weighted": 0.0,
+    "acted": [],
+    "macro_by_sink_kind": {
+     "aggregate": 0.0,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 145,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 22.57,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--83c981d3--c"
+   },
+   "clean_absolute_damage": 0.0,
+   "clean_availability_loss": 0.0,
+   "dirty": {
+    "absolute_damage": 0.009665079670858903,
+    "absolute_damage_relative_error": 4.989752440507067e-06,
+    "absolute_damage_value_weighted": 8.2002310332729e-06,
+    "acted": [],
+    "injection": [
+     {
+      "mode": "duplicate_rows",
+      "node": "stg_daily_market",
+      "rows_after": 257774,
+      "rows_before": 257764,
+      "targets": 10
+     }
+    ],
+    "macro_by_sink_kind": {
+     "aggregate": 0.013531111539202464,
+     "row_preserving": 0.0
+    },
+    "per_sink": {
+     "mart_company_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1096,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_customer_report": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 2382,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_financial_detail": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 22626,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_financial_summary": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 10968,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "aggregate"
+     },
+     "mart_market_daily": {
+      "A": 0,
+      "C": 9,
+      "L": 0,
+      "N": 145,
+      "damage": 0.06206896551724138,
+      "damage_relative_error": 1.4491177198842655e-05,
+      "damage_value_weighted": 2.8700808900869545e-05,
+      "kind": "aggregate"
+     },
+     "mart_security_master": {
+      "A": 0,
+      "C": 0,
+      "L": 0,
+      "N": 1998,
+      "damage": 0.0,
+      "damage_relative_error": 0.0,
+      "damage_value_weighted": 0.0,
+      "kind": "row_preserving"
+     },
+     "mart_security_report": {
+      "A": 0,
+      "C": 10,
+      "L": 0,
+      "N": 1790,
+      "damage": 0.00558659217877095,
+      "damage_relative_error": 2.0437089884706816e-05,
+      "damage_value_weighted": 2.870080833204076e-05,
+      "kind": "aggregate"
+     }
+    },
+    "rebuilt": [
+     "fact_market_history",
+     "mart_security_report",
+     "mart_market_daily"
+    ],
+    "seconds": 24.74,
+    "status": "complete",
+    "tag": "p5-mkt-dup-k10-2--83c981d3--d"
+   },
+   "family": "mkt-dup",
+   "k": 10,
+   "no_validation_damage": 0.009665079670858903,
+   "nrd": 1.0,
+   "plan": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "stg_financial"
+    }
+   ],
+   "plan_sig": "[{\"map\":{\"duplicate_shape\":\"quarantine\",\"fk_shape\":\"quarantine\",\"null_shape\":\"quarantine\",\"numeric_shape\":\"quarantine\"},\"node\":\"stg_financial\"}]",
+   "role": "physical_plan",
+   "status": "complete"
+  }
+ ],
+ "schema_version": 1,
+ "scope": {
+  "data_role": "validation",
+  "paper_eligible": true,
+  "pipeline": "tpcdi_sf3_temporal_split",
+  "real_signal_detection_on_both_branches": true,
+  "study_phase": "confirmatory"
+ },
+ "started_utc": "2026-08-29T12:33:23Z"
+}

@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: raw_finwire
+      - name: raw_dailymarket
+      - name: raw_trade
+      - name: raw_account_actions
+      - name: raw_customer_actions
+      - name: raw_industry

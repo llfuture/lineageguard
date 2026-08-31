@@ -1,0 +1,11 @@
+[2026-08-29T12:01:34Z] d8p-fin-null-k10           no_validation damage=5.839075431325855e-05 (22.19s)
+[2026-08-29T12:02:25Z] d8p-fin-null-k10           quar@stg_financial               NRD=  0.805061 clean=0.0 (25.23s)
+[2026-08-29T12:03:16Z] d8p-fin-null-k10           dedup@stg_financial              NRD=  1.000000 clean=0.0 (23.3s)
+[2026-08-29T12:04:11Z] d8p-fin-null-k10           cond@stg_financial               NRD=  0.805061 clean=0.0 (27.56s)
+[2026-08-29T12:04:40Z] d8p-fin-fk-k10             no_validation damage=7.223905853801318e-05 (27.39s)
+[2026-08-29T12:05:38Z] d8p-fin-fk-k10             quar@stg_financial               NRD=1324.354465 clean=0.09565100488000851 (28.54s)
+[2026-08-29T12:06:35Z] d8p-fin-fk-k10             cond@stg_financial               NRD=1324.354465 clean=0.09565100488000851 (27.25s)
+
+[2026-08-29T12:06:35Z] DONE rows=7 failures=0 dbt_steps=48
+artifact: /home/u0020090017/projects/lineageguard_claude/tpcdi/out-split-E/d8p-measurement.json
+sha256  : 7e02b08b59a62c8065929361d67ead3d9da7de355cb565b6f610c5263052cf2b

@@ -1,0 +1,4235 @@
+{
+ "counts": {
+  "cells": 7,
+  "rows": 34,
+  "technical_failures": 0
+ },
+ "finished_utc": "2026-08-24T03:39:00Z",
+ "kind": "lineageguard_d11_dev_measurement_v1",
+ "measurement_sha256": "6dbaf8261898f2d15665826f46871f744c8bea7f1fe37e0dfc04971d0d2b4805",
+ "merged_from_shards": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "results": [
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "no_validation",
+   "cell_id": "d11-ord-num-multi",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "numeric_add",
+     "relation": "raw.raw_orders",
+     "row_count_after": 729082,
+     "row_count_before": 729082,
+     "target_count": 100
+    },
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "quarantine@orders/numeric",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-num-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 20782123,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 148722477,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "numeric_add",
+     "relation": "raw.raw_orders",
+     "row_count_after": 729082,
+     "row_count_before": 729082,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 100,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 103918366,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 1324963526,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 100
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "null_out@orders/numeric",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-num-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27909939,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 198255550,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "numeric_add",
+     "relation": "raw.raw_orders",
+     "row_count_after": 729082,
+     "row_count_before": 729082,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 100,
+         "disposition": "null_out",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 223250411,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 162788682,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 100
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "null_out"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0034277719482336483,
+   "action_label": "quarantine@customers/numeric",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-num-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24313969,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 93608246,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0034277719482336483,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0034277719482336483,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.01713885974116824
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "numeric_add",
+     "relation": "raw.raw_orders",
+     "row_count_after": 729082,
+     "row_count_before": 729082,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 98,
+         "rows_deleted": 98,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 53573783,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 41550664,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 98
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 0.5085694298705842,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "composed:cond@products+cond@orders",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-num-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 27734363,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 38532008,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29259198,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 204506916,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "numeric_add",
+     "relation": "raw.raw_orders",
+     "row_count_after": 729082,
+     "row_count_before": 729082,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 23196104,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 36113056,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 100,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 100881596,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 299510714,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 100
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "conformance",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "no_validation",
+   "cell_id": "d11-items-dup-multi",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054235,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.0,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "dedup@order_items/duplicate",
+   "availability_loss": 0.0,
+   "cell_id": "d11-items-dup-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26124038,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 186281752,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054235,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 100,
+         "shape": "duplicate_shape"
+        }
+       ],
+       "dispose_runtime_ns": 525390149,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 234583224,
+       "fired_shapes": [
+        "duplicate_shape"
+       ],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 100,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "duplicate_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.0,
+   "nrd": null,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:order_items"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "quarantine@order_items/duplicate",
+   "availability_loss": 0.0,
+   "cell_id": "d11-items-dup-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29198941,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 265069262,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054235,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 200,
+         "shape": "duplicate_shape"
+        }
+       ],
+       "dispose_runtime_ns": 130130518,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 223514484,
+       "fired_shapes": [
+        "duplicate_shape"
+       ],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 100,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "duplicate_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.0,
+   "nrd": null,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:order_items"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "cond@products/cross-fork",
+   "availability_loss": 0.0,
+   "cell_id": "d11-items-dup-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 23444142,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 39823178,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054235,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 21965504,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 33790541,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.0,
+   "nrd": null,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "composed:cond@products+order_items+orders",
+   "availability_loss": 0.0,
+   "cell_id": "d11-items-dup-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 19201547,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 38753382,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28158500,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 288868591,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25201704,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 245081525,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054235,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 23636629,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 42371846,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 100,
+         "shape": "duplicate_shape"
+        }
+       ],
+       "dispose_runtime_ns": 202875734,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 264276438,
+       "fired_shapes": [
+        "duplicate_shape"
+       ],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 100,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "duplicate_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 47379473,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 2249150982,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "conformance",
+   "no_validation_damage": 0.0,
+   "nrd": null,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:order_items"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "no_validation",
+   "cell_id": "d11-ord-dup-multi",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_orders",
+     "row_count_after": 729182,
+     "row_count_before": 729082,
+     "target_count": 100
+    },
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "dedup@orders/duplicate",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-dup-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28223941,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 160081745,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_orders",
+     "row_count_after": 729182,
+     "row_count_before": 729082,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 100,
+         "shape": "duplicate_shape"
+        }
+       ],
+       "dispose_runtime_ns": 157261145,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 1383938403,
+       "fired_shapes": [
+        "duplicate_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 100,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "duplicate_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 0.0,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "quarantine@orders/duplicate",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-dup-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29407867,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 163463929,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_orders",
+     "row_count_after": 729182,
+     "row_count_before": 729082,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 200,
+         "shape": "duplicate_shape"
+        }
+       ],
+       "dispose_runtime_ns": 140650409,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 154954413,
+       "fired_shapes": [
+        "duplicate_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 100,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "duplicate_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.02,
+   "action_label": "no_validation",
+   "cell_id": "d11-null-products",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.02,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.02,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.1
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "sku",
+     "mode": "null_out_column",
+     "relation": "raw.raw_products",
+     "row_count_after": 10,
+     "row_count_before": 10,
+     "target_count": 1
+    },
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.02,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.010526315789473684,
+   "action_label": "quarantine@products/null",
+   "availability_loss": 0.0,
+   "cell_id": "d11-null-products",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 21448531,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 34592054,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.010526315789473684,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.010526315789473684,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.05263157894736842
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "sku",
+     "mode": "null_out_column",
+     "relation": "raw.raw_products",
+     "row_count_after": 10,
+     "row_count_before": 10,
+     "target_count": 1
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 1,
+         "rows_deleted": 1,
+         "shape": "null_shape"
+        }
+       ],
+       "dispose_runtime_ns": 49629432,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 48150000,
+       "fired_shapes": [
+        "null_shape"
+       ],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 1,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "null_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.02,
+   "nrd": 0.5263157894736842,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "quarantine",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:products"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "no_validation",
+   "cell_id": "d11-fk-items",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "fk_orphan",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054135,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.0,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "quarantine@order_items/fk",
+   "availability_loss": 0.0,
+   "cell_id": "d11-fk-items",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 23388472,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 169028682,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "fk_orphan",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054135,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 100,
+         "shape": "fk_shape"
+        }
+       ],
+       "dispose_runtime_ns": 106736131,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 178119674,
+       "fired_shapes": [
+        "fk_shape"
+       ],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 100,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "fk_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.0,
+   "nrd": null,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "quarantine",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:order_items"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006602475928473177,
+   "action_label": "no_validation",
+   "cell_id": "d11-fk-orders",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.006602475928473177,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006602475928473177,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.033012379642365884
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "fk_orphan",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 100
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.006602475928473177,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006602475928473177,
+   "action_label": "quarantine@orders/fk",
+   "availability_loss": 0.0,
+   "cell_id": "d11-fk-orders",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25963932,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 201577128,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.006602475928473177,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006602475928473177,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.033012379642365884
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "fk_orphan",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 100
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 100,
+         "shape": "fk_shape"
+        }
+       ],
+       "dispose_runtime_ns": 90184997,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 173260813,
+       "fired_shapes": [
+        "fk_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 100,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "fk_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.006602475928473177,
+   "nrd": 1.0,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "quarantine",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "no_validation",
+   "cell_id": "d11-ord-mixed",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0033012379642365884,
+   "action_label": "cond@orders/per-shape-routing",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-mixed",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 70411060,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 211152006,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0033012379642365884,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0033012379642365884,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.016506189821182942
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 50,
+         "shape": "duplicate_shape"
+        },
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 50,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 272759022,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 202838080,
+       "fired_shapes": [
+        "duplicate_shape",
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 50,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 50
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "multi"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 0.4897959183673469,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0033012379642365884,
+   "action_label": "static-dedup@orders/mixed",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-mixed",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26868909,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 188545311,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0033012379642365884,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0033012379642365884,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.016506189821182942
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 50,
+         "shape": "duplicate_shape"
+        },
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 166478839,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 232731162,
+       "fired_shapes": [
+        "duplicate_shape",
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 50,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 50
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "multi"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 0.4897959183673469,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "static-quarantine@orders/mixed",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-mixed",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 30016460,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 1441613850,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 100,
+         "shape": "duplicate_shape"
+        },
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 50,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 172612061,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 234848154,
+       "fired_shapes": [
+        "duplicate_shape",
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 50,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 50
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "multi"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "no_validation",
+   "cell_id": "d11-ord-num-multi",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 100
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "composed:cond@orders+condq@customers",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-num-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25762154,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 1275533074,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22413410,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 44559104,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 100
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 100,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 102746255,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 222883232,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 100
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22335043,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 57241225,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "conformance",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "no_validation",
+   "cell_id": "d11-ord-mixed",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0033012379642365884,
+   "action_label": "composed:cond@orders+cond@customers/mixed",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-mixed",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25892287,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 166652002,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24487542,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 44020090,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0033012379642365884,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0033012379642365884,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.016506189821182942
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 50,
+         "shape": "duplicate_shape"
+        },
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 50,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 172538955,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 251463915,
+       "fired_shapes": [
+        "duplicate_shape",
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 50,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 50
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "multi"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 21639441,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 45334045,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "conformance",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 0.4897959183673469,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "no_validation",
+   "cell_id": "d11-ord-num-multi",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 100
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0034277719482336483,
+   "action_label": "composed:derived@orders+customers/ord-num",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-num-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24937482,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 160648920,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25475729,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 43829265,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0034277719482336483,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0034277719482336483,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.01713885974116824
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 100
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 44395147,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 1449261936,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 100
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "numeric_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 98,
+         "rows_deleted": 98,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 49855771,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 56417598,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 98
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "conformance",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 0.5085694298705842,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "no_validation",
+   "cell_id": "d11-ord-mixed",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0016643550624133147,
+   "action_label": "composed:derived@orders+customers/mixed",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-mixed",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26832288,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 166002790,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22587121,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 45245391,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0016643550624133147,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0016643550624133147,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.008321775312066574
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 50,
+         "shape": "duplicate_shape"
+        }
+       ],
+       "dispose_runtime_ns": 124013245,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 195511110,
+       "fired_shapes": [
+        "duplicate_shape",
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 50,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 50
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "multi"
+      }
+     },
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 48,
+         "rows_deleted": 48,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 51516901,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 61515869,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 48
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "conformance",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 0.24693594497438365,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.006740027510316368,
+   "action_label": "no_validation",
+   "cell_id": "d11-ord-mixed",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.006740027510316368,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.006740027510316368,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.03370013755158184
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.005131761442441054,
+   "action_label": "composed:customers-only/mixed",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-mixed",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 24739521,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 41209773,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.005131761442441054,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.005131761442441054,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.02565880721220527
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 48,
+         "rows_deleted": 48,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 50563280,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 41673711,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 48
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "conformance",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 0.7613858303376829,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "no_op",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0016643550624133147,
+   "action_label": "composed:dedup@orders+quar@customers/mixed-static-set",
+   "availability_loss": 0.0,
+   "cell_id": "d11-ord-mixed",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28346053,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 220215428,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 22738444,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 43657184,
+       "fired_shapes": [],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0016643550624133147,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "evaluation": {
+     "primary": {
+      "absolute_damage": 0.0016643550624133147,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.008321775312066574
+     }
+    },
+    "injection": [
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "numeric_add",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729082,
+      "row_count_before": 729082,
+      "target_count": 50
+     },
+     {
+      "actual_mutation_executed": true,
+      "key_column": "id",
+      "mode": "duplicate_physical_row",
+      "relation": "raw.raw_orders",
+      "row_count_after": 729132,
+      "row_count_before": 729082,
+      "target_count": 50
+     }
+    ],
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 50,
+         "shape": "duplicate_shape"
+        },
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 50,
+         "rows_deleted": 0,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 181770713,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 207200831,
+       "fired_shapes": [
+        "duplicate_shape",
+        "numeric_shape"
+       ],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 50,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 50
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "multi"
+      }
+     },
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 48,
+         "rows_deleted": 48,
+         "shape": "numeric_shape"
+        }
+       ],
+       "dispose_runtime_ns": 51033186,
+       "downstream_suppressed": false,
+       "node_id": "model:customers"
+      },
+      "signal": {
+       "detect_runtime_ns": 54451925,
+       "fired_shapes": [
+        "numeric_shape"
+       ],
+       "node_id": "model:customers",
+       "reads_ground_truth": false,
+       "relation": "analytics.customers",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 48
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "numeric_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "conformance",
+   "no_validation_damage": 0.006740027510316368,
+   "nrd": 0.24693594497438365,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "dedup",
+      "null_shape": "dedup",
+      "numeric_shape": "dedup"
+     },
+     "node": "model:orders"
+    },
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "quarantine",
+      "null_shape": "quarantine",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:customers"
+    }
+   ],
+   "status": "complete"
+  }
+ ],
+ "schema_version": 1,
+ "scope": {
+  "data_role": "train",
+  "effect_claim_allowed": false,
+  "gate_computed_by_runner": false,
+  "paper_eligible": false,
+  "real_signal_detection_on_both_branches": true,
+  "study_phase": "development"
+ },
+ "slim_of_sha256": "6dbaf8261898f2d15665826f46871f744c8bea7f1fe37e0dfc04971d0d2b4805",
+ "started_utc": "2026-08-24T03:31:32Z"
+}

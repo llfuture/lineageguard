@@ -1,0 +1,27 @@
+[2026-08-29T12:00:26Z] d8p-fin-dup-k1             no_validation damage=3.958138724846029e-06 (20.7s)
+[2026-08-29T12:01:08Z] d8p-fin-dup-k1             quar@stg_financial               NRD=  1.237605 clean=0.0 (19.44s)
+[2026-08-29T12:01:57Z] d8p-fin-dup-k1             dedup@stg_financial              NRD=  0.000000 clean=0.0 (22.35s)
+[2026-08-29T12:03:23Z] d8p-fin-dup-k1             quar@fact_financials             NRD=  1.237605 clean=0.0 (40.4s)
+[2026-08-29T12:04:59Z] d8p-fin-dup-k1             dedup@fact_financials            NRD=  0.000000 clean=0.0 (44.75s)
+[2026-08-29T12:05:56Z] d8p-fin-dup-k1             cond@stg_financial               NRD=  0.000000 clean=0.0 (29.06s)
+[2026-08-29T12:06:51Z] d8p-fin-dup-k1             nullout@stg_financial            NRD=  1.950415 clean=0.0 (27.43s)
+[2026-08-29T12:07:12Z] d8p-fin-dup-k10            no_validation damage=3.958138724846029e-05 (20.52s)
+[2026-08-29T12:07:52Z] d8p-fin-dup-k10            quar@stg_financial               NRD=  1.237619 clean=0.0 (19.08s)
+[2026-08-29T12:08:31Z] d8p-fin-dup-k10            dedup@stg_financial              NRD=  0.000000 clean=0.0 (19.39s)
+[2026-08-29T12:09:34Z] d8p-fin-dup-k10            quar@fact_financials             NRD=  1.237619 clean=0.0 (30.8s)
+[2026-08-29T12:10:36Z] d8p-fin-dup-k10            dedup@fact_financials            NRD=  0.000000 clean=0.0 (30.74s)
+[2026-08-29T12:11:12Z] d8p-fin-dup-k10            cond@stg_financial               NRD=  0.000000 clean=0.0 (18.03s)
+[2026-08-29T12:11:49Z] d8p-fin-dup-k10            nullout@stg_financial            NRD=  1.950415 clean=0.0 (17.93s)
+[2026-08-29T12:12:06Z] d8p-fin-dup-k100           no_validation damage=0.0003918557337597568 (17.35s)
+[2026-08-29T12:12:43Z] d8p-fin-dup-k100           quar@stg_financial               NRD=  1.169635 clean=0.0 (17.93s)
+[2026-08-29T12:13:21Z] d8p-fin-dup-k100           dedup@stg_financial              NRD=  0.000000 clean=0.0 (18.44s)
+[2026-08-29T12:14:19Z] d8p-fin-dup-k100           quar@fact_financials             NRD=  1.169635 clean=0.0 (29.24s)
+[2026-08-29T12:15:19Z] d8p-fin-dup-k100           dedup@fact_financials            NRD=  0.000000 clean=0.0 (29.66s)
+[2026-08-29T12:15:53Z] d8p-fin-dup-k100           cond@stg_financial               NRD=  0.000000 clean=0.0 (17.14s)
+[2026-08-29T12:16:31Z] d8p-fin-dup-k100           nullout@stg_financial            NRD=  1.960015 clean=0.0 (17.97s)
+[2026-08-29T12:16:48Z] d8p-fin-dup-k10-oracle     no_validation damage=3.958138724846029e-05 (16.41s)
+[2026-08-29T12:17:25Z] d8p-fin-dup-k10-oracle     oracle-quar@stg_financial        NRD=  1.237619 clean=0.0 (17.61s)
+
+[2026-08-29T12:17:25Z] DONE rows=23 failures=0 dbt_steps=204
+artifact: /home/u0020090017/projects/lineageguard_claude/tpcdi/out-split-B/d8p-measurement.json
+sha256  : e24c5c54a1c8585a776778f4ab0ea03a39bf98c6de4e754ec6f206a8f8bb5e9f

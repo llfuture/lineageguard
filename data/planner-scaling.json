@@ -1,0 +1,250 @@
+{
+ "kind": "lineageguard_planner_scaling_v1",
+ "semantics": "first-effective response classes, shared budget, admissible per-family bound",
+ "results": [
+  {
+   "n_nodes": 5,
+   "n_classes": 4,
+   "n_families": 8,
+   "naive_s": 3.369999467395246e-05,
+   "naive_score": 0.682875,
+   "eqbnb_s": 7.130001904442906e-05,
+   "eqbnb_score": 0.682875,
+   "reduced_nodes": 5,
+   "bnb_s": 5.250002141110599e-05,
+   "bnb_score": 0.682875
+  },
+  {
+   "n_nodes": 5,
+   "n_classes": 8,
+   "n_families": 8,
+   "naive_s": 2.7300004148855805e-05,
+   "naive_score": 0.859,
+   "eqbnb_s": 5.8399979025125504e-05,
+   "eqbnb_score": 0.859,
+   "reduced_nodes": 5,
+   "bnb_s": 4.539999645203352e-05,
+   "bnb_score": 0.859
+  },
+  {
+   "n_nodes": 10,
+   "n_classes": 4,
+   "n_families": 8,
+   "naive_s": 0.0005332000146154314,
+   "naive_score": 0.800125,
+   "eqbnb_s": 7.619999814778566e-05,
+   "eqbnb_score": 0.800125,
+   "reduced_nodes": 8,
+   "bnb_s": 5.3099996875971556e-05,
+   "bnb_score": 0.800125
+  },
+  {
+   "n_nodes": 10,
+   "n_classes": 8,
+   "n_families": 8,
+   "naive_s": 0.0005275000003166497,
+   "naive_score": 0.95875,
+   "eqbnb_s": 5.0300004659220576e-05,
+   "eqbnb_score": 0.95875,
+   "reduced_nodes": 9,
+   "bnb_s": 4.859999171458185e-05,
+   "bnb_score": 0.95875
+  },
+  {
+   "n_nodes": 15,
+   "n_classes": 4,
+   "n_families": 8,
+   "naive_s": 0.020604199991794303,
+   "naive_score": 0.490125,
+   "eqbnb_s": 0.00023010000586509705,
+   "eqbnb_score": 0.490125,
+   "reduced_nodes": 13,
+   "bnb_s": 0.00017740001203492284,
+   "bnb_score": 0.490125
+  },
+  {
+   "n_nodes": 15,
+   "n_classes": 8,
+   "n_families": 8,
+   "naive_s": 0.02094850002322346,
+   "naive_score": 0.56825,
+   "eqbnb_s": 0.00022479999461211264,
+   "eqbnb_score": 0.56825,
+   "reduced_nodes": 15,
+   "bnb_s": 0.00010199999087490141,
+   "bnb_score": 0.56825
+  },
+  {
+   "n_nodes": 20,
+   "n_classes": 4,
+   "n_families": 8,
+   "naive_s": 0.7691402000200469,
+   "naive_score": 0.626875,
+   "eqbnb_s": 0.0004406000080052763,
+   "eqbnb_score": 0.626875,
+   "reduced_nodes": 17,
+   "bnb_s": 0.00047309999354183674,
+   "bnb_score": 0.626875
+  },
+  {
+   "n_nodes": 20,
+   "n_classes": 8,
+   "n_families": 8,
+   "naive_s": 0.773302000015974,
+   "naive_score": 0.15475,
+   "eqbnb_s": 0.0003195999888703227,
+   "eqbnb_score": 0.15475,
+   "reduced_nodes": 19,
+   "bnb_s": 0.00022300001000985503,
+   "bnb_score": 0.15475
+  },
+  {
+   "n_nodes": 25,
+   "n_classes": 4,
+   "n_families": 8,
+   "eqbnb_s": 0.004977199976565316,
+   "eqbnb_score": 0.37024999999999997,
+   "reduced_nodes": 21,
+   "bnb_s": 0.005232900002738461,
+   "bnb_score": 0.37024999999999997
+  },
+  {
+   "n_nodes": 25,
+   "n_classes": 8,
+   "n_families": 8,
+   "eqbnb_s": 0.00023140001576393843,
+   "eqbnb_score": 0.479375,
+   "reduced_nodes": 22,
+   "bnb_s": 0.00024120000307448208,
+   "bnb_score": 0.479375
+  },
+  {
+   "n_nodes": 50,
+   "n_classes": 4,
+   "n_families": 8,
+   "eqbnb_s": 0.06823389997589402,
+   "eqbnb_score": 0.22762500000000002,
+   "reduced_nodes": 37,
+   "bnb_s": 0.29216929999529384,
+   "bnb_score": 0.22762500000000002
+  },
+  {
+   "n_nodes": 50,
+   "n_classes": 8,
+   "n_families": 8,
+   "eqbnb_s": 0.1868493999936618,
+   "eqbnb_score": 0.241375,
+   "reduced_nodes": 47,
+   "bnb_s": 0.4571566999948118,
+   "bnb_score": 0.241375
+  },
+  {
+   "n_nodes": 100,
+   "n_classes": 4,
+   "n_families": 8,
+   "eqbnb_s": 0.0030183999915607274,
+   "eqbnb_score": 0.206375,
+   "reduced_nodes": 78,
+   "bnb_s": 0.004020299995318055,
+   "bnb_score": 0.206375
+  },
+  {
+   "n_nodes": 100,
+   "n_classes": 8,
+   "n_families": 8,
+   "eqbnb_s": 0.0059154999908059835,
+   "eqbnb_score": 0.099,
+   "reduced_nodes": 90,
+   "bnb_s": 0.00579760002437979,
+   "bnb_score": 0.099
+  },
+  {
+   "n_nodes": 200,
+   "n_classes": 4,
+   "n_families": 8,
+   "eqbnb_s": 0.014034300023922697,
+   "eqbnb_score": 0.165625,
+   "reduced_nodes": 140,
+   "bnb_s": 0.019467399979475886,
+   "bnb_score": 0.165625
+  },
+  {
+   "n_nodes": 200,
+   "n_classes": 8,
+   "n_families": 8,
+   "eqbnb_s": 0.029566399985924363,
+   "eqbnb_score": 0.10400000000000001,
+   "reduced_nodes": 175,
+   "bnb_s": 0.03573220001999289,
+   "bnb_score": 0.10400000000000001
+  },
+  {
+   "n_nodes": 400,
+   "n_classes": 4,
+   "n_families": 8,
+   "eqbnb_s": 0.021559599990723655,
+   "eqbnb_score": 0.27949999999999997,
+   "reduced_nodes": 249,
+   "bnb_s": 0.03392010001698509,
+   "bnb_score": 0.27949999999999997
+  },
+  {
+   "n_nodes": 400,
+   "n_classes": 8,
+   "n_families": 8,
+   "eqbnb_s": 0.07602570002200082,
+   "eqbnb_score": 0.08775000000000001,
+   "reduced_nodes": 313,
+   "bnb_s": 0.09977010000147857,
+   "bnb_score": 0.08775000000000001
+  },
+  {
+   "n_nodes": 800,
+   "n_classes": 4,
+   "n_families": 8,
+   "eqbnb_s": 0.07798229999025352,
+   "eqbnb_score": 0.21075,
+   "reduced_nodes": 452
+  },
+  {
+   "n_nodes": 800,
+   "n_classes": 8,
+   "n_families": 8,
+   "eqbnb_s": 0.23614579997956753,
+   "eqbnb_score": 0.09799999999999999,
+   "reduced_nodes": 616
+  },
+  {
+   "n_nodes": 1600,
+   "n_classes": 4,
+   "n_families": 8,
+   "eqbnb_s": 0.05596939998213202,
+   "eqbnb_score": 0.24350000000000002,
+   "reduced_nodes": 697
+  },
+  {
+   "n_nodes": 1600,
+   "n_classes": 8,
+   "n_families": 8,
+   "eqbnb_s": 0.22397329998784699,
+   "eqbnb_score": 0.12012499999999998,
+   "reduced_nodes": 1131
+  },
+  {
+   "n_nodes": 3200,
+   "n_classes": 4,
+   "n_families": 8,
+   "eqbnb_s": 0.12370120000559837,
+   "eqbnb_score": 0.285875,
+   "reduced_nodes": 1144
+  },
+  {
+   "n_nodes": 3200,
+   "n_classes": 8,
+   "n_families": 8,
+   "eqbnb_s": 0.78013580001425,
+   "eqbnb_score": 0.13125,
+   "reduced_nodes": 2098
+  }
+ ]
+}

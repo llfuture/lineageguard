@@ -1,0 +1,400 @@
+{
+ "anchors": {
+  "train_sha256": "2957462b5a3224aaf4e96642c85761ec7f3380d30f4d8e8b56c255c17454e171",
+  "validation_sha256": "8c361da121c83702c83ac755a4fb9c2eae9441c5f866705e2ed282324d692311"
+ },
+ "band_rule": "[0, 2.0 x clean train maximum] per numeric column",
+ "budget_grid_us": [
+  0,
+  6388976,
+  7244520,
+  14489039,
+  28978078
+ ],
+ "campaigns": [
+  {
+   "campaign_id": "p5-fin-num-k1-1",
+   "family": "fin-num",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 1,
+    "mode": "numeric_add",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 1,
+   "replicate": 1
+  },
+  {
+   "campaign_id": "p5-fin-num-k1-2",
+   "family": "fin-num",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 1,
+    "mode": "numeric_add",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 1,
+   "replicate": 2
+  },
+  {
+   "campaign_id": "p5-fin-num-k100-1",
+   "family": "fin-num",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 100,
+    "mode": "numeric_add",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 100,
+   "replicate": 1
+  },
+  {
+   "campaign_id": "p5-fin-num-k100-2",
+   "family": "fin-num",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 100,
+    "mode": "numeric_add",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 100,
+   "replicate": 2
+  },
+  {
+   "campaign_id": "p5-fin-dup-k1-1",
+   "family": "fin-dup",
+   "injection_rule": {
+    "k": 1,
+    "mode": "duplicate_rows",
+    "node": "stg_financial"
+   },
+   "k": 1,
+   "replicate": 1
+  },
+  {
+   "campaign_id": "p5-fin-dup-k100-1",
+   "family": "fin-dup",
+   "injection_rule": {
+    "k": 100,
+    "mode": "duplicate_rows",
+    "node": "stg_financial"
+   },
+   "k": 100,
+   "replicate": 1
+  },
+  {
+   "campaign_id": "p5-fin-null-k10-1",
+   "family": "fin-null",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 10,
+    "mode": "null_out",
+    "node": "stg_financial"
+   },
+   "k": 10,
+   "replicate": 1
+  },
+  {
+   "campaign_id": "p5-fin-null-k10-2",
+   "family": "fin-null",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 10,
+    "mode": "null_out",
+    "node": "stg_financial"
+   },
+   "k": 10,
+   "replicate": 2
+  },
+  {
+   "campaign_id": "p5-fin-mixed-k40-1",
+   "family": "fin-mixed",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 40,
+    "mode": "mixed",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 40,
+   "replicate": 1
+  },
+  {
+   "campaign_id": "p5-fin-mixed-k40-2",
+   "family": "fin-mixed",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 40,
+    "mode": "mixed",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 40,
+   "replicate": 2
+  },
+  {
+   "campaign_id": "p5-fin-mixed-k40-3",
+   "family": "fin-mixed",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 40,
+    "mode": "mixed",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 40,
+   "replicate": 3
+  },
+  {
+   "campaign_id": "p5-fin-mixed-k40-4",
+   "family": "fin-mixed",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 40,
+    "mode": "mixed",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 40,
+   "replicate": 4
+  },
+  {
+   "campaign_id": "p5-fin-mixed-k40-5",
+   "family": "fin-mixed",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 40,
+    "mode": "mixed",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 40,
+   "replicate": 5
+  },
+  {
+   "campaign_id": "p5-fin-mixed-k40-6",
+   "family": "fin-mixed",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 40,
+    "mode": "mixed",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 40,
+   "replicate": 6
+  },
+  {
+   "campaign_id": "p5-fin-mixed-k40-7",
+   "family": "fin-mixed",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 40,
+    "mode": "mixed",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 40,
+   "replicate": 7
+  },
+  {
+   "campaign_id": "p5-fin-mixed-k40-8",
+   "family": "fin-mixed",
+   "injection_rule": {
+    "column": "revenue",
+    "k": 40,
+    "mode": "mixed",
+    "node": "stg_financial",
+    "operand": 1000000000000.0
+   },
+   "k": 40,
+   "replicate": 8
+  },
+  {
+   "campaign_id": "p5-mkt-num-k10-1",
+   "family": "mkt-num",
+   "injection_rule": {
+    "column": "close_price",
+    "k": 10,
+    "mode": "numeric_add",
+    "node": "stg_daily_market",
+    "operand": 10000.0
+   },
+   "k": 10,
+   "replicate": 1
+  },
+  {
+   "campaign_id": "p5-mkt-dup-k10-1",
+   "family": "mkt-dup",
+   "injection_rule": {
+    "k": 10,
+    "mode": "duplicate_rows",
+    "node": "stg_daily_market"
+   },
+   "k": 10,
+   "replicate": 1
+  }
+ ],
+ "cost_catalog_sha256": "0412dbae177c6066423e29c5f1518195bfc4e32db4e7bcdf66858e983e3e79f7",
+ "forbidden_claims": [
+  "pooling this round with either Jaffle round",
+  "reporting a roster-relative mean as a balanced-roster effect",
+  "reporting any TPC-DI effect size without the gate verdict",
+  "re-running the one-shot gate after seeing its output"
+ ],
+ "frozen_bands": {
+  "dim_security": [
+   0.0,
+   6.0
+  ],
+  "fact_financials": [
+   0.0,
+   19999980486.06
+  ],
+  "fact_market_history": [
+   0.0,
+   2000.0
+  ],
+  "stg_daily_market": [
+   0.0,
+   2000.0
+  ],
+  "stg_financial": [
+   0.0,
+   19999980486.06
+  ],
+  "stg_security": [
+   0.0,
+   6.0
+  ]
+ },
+ "injection_contract": {
+  "fin-del": {
+   "mode": "delete_rows",
+   "node": "stg_financial"
+  },
+  "fin-dup": {
+   "mode": "duplicate_rows",
+   "node": "stg_financial"
+  },
+  "fin-fk": {
+   "mode": "fk_orphan",
+   "node": "stg_financial",
+   "orphan_value": "LGP5-ORPHAN"
+  },
+  "fin-mixed": {
+   "column": "revenue",
+   "mode": "mixed",
+   "node": "stg_financial",
+   "operand": 1000000000000.0
+  },
+  "fin-null": {
+   "column": "revenue",
+   "mode": "null_out",
+   "node": "stg_financial"
+  },
+  "fin-num": {
+   "column": "revenue",
+   "mode": "numeric_add",
+   "node": "stg_financial",
+   "operand": 1000000000000.0
+  },
+  "mkt-dup": {
+   "mode": "duplicate_rows",
+   "node": "stg_daily_market"
+  },
+  "mkt-num": {
+   "column": "close_price",
+   "mode": "numeric_add",
+   "node": "stg_daily_market",
+   "operand": 10000.0
+  }
+ },
+ "kind": "lineageguard_p5_protocol_v1",
+ "methods": [
+  "policy_planner",
+  "static_best",
+  "static_quarantine_legacy",
+  "no_validation"
+ ],
+ "policy_cost_us": {
+  "fact_financials": 6388976,
+  "fact_market_history": 8802004,
+  "stg_daily_market": 7245901,
+  "stg_financial": 6541197
+ },
+ "protocol_id": "tpcdi_rq2_policy_p5_v1",
+ "protocol_sha256": "79eace176a8a9c4bf017d8037d360c176fbc504c422f0fe00303274aedb453c5",
+ "role": {
+  "data_role": "validation",
+  "paper_eligible": true,
+  "pipeline": "tpcdi_sf3_temporal_split",
+  "study_phase": "confirmatory"
+ },
+ "roster": [
+  [
+   "fin-num",
+   1,
+   2
+  ],
+  [
+   "fin-num",
+   100,
+   2
+  ],
+  [
+   "fin-dup",
+   1,
+   1
+  ],
+  [
+   "fin-dup",
+   100,
+   1
+  ],
+  [
+   "fin-null",
+   10,
+   2
+  ],
+  [
+   "fin-mixed",
+   40,
+   8
+  ],
+  [
+   "mkt-num",
+   10,
+   1
+  ],
+  [
+   "mkt-dup",
+   10,
+   1
+  ]
+ ],
+ "roster_name": "C_conflict_heavy",
+ "roster_selection_rule": "All four roster variants are scored in this same artifact from development data alone, before any fresh input exists. The round launches on a roster only if that roster's own precheck returns LAUNCH; where exactly one variant is admissible there is no discretion left to exercise, and the refusals of the others are reported alongside the launched round rather than discarded.",
+ "sealed_utc": "2026-08-29T12:20:26Z",
+ "split_manifest_sha256": "767b3be5afd2760070a45048457ef54d201df510f082df4bc3459ff270f38221",
+ "statistics": {
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 5150292026082900,
+  "confidence": {
+   "denominator": 20,
+   "numerator": 19,
+   "value": 0.95
+  },
+  "multiplicity": "Holm over the two secondary comparisons",
+  "sesoi_relative": {
+   "denominator": 10,
+   "numerator": 1,
+   "value": 0.1
+  },
+  "sign_flip": "exact, all 2^n assignments"
+ }
+}

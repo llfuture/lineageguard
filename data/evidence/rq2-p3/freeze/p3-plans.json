@@ -1,0 +1,1436 @@
+{
+ "kind": "lineageguard_p3_shared_plans_v1",
+ "methods": {
+  "policy_all_feasible": [
+   {
+    "budget_us": 0,
+    "cost_us": 0,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [],
+    "predicted_macro_nrd": 1.0
+   },
+   {
+    "budget_us": 265956,
+    "cost_us": 0,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [],
+    "predicted_macro_nrd": 1.0
+   },
+   {
+    "budget_us": 9994269,
+    "cost_us": 0,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [],
+    "predicted_macro_nrd": 1.0
+   },
+   {
+    "budget_us": 49971343,
+    "cost_us": 0,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [],
+    "predicted_macro_nrd": 1.0
+   },
+   {
+    "budget_us": 99942686,
+    "cost_us": 99942686,
+    "per_family": null,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:stg_products"
+     },
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:products"
+     },
+     {
+      "map": {
+       "duplicate_shape": "no_op",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "no_op"
+      },
+      "node": "model:order_items"
+     },
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "no_op"
+      },
+      "node": "model:orders"
+     },
+     {
+      "map": {
+       "duplicate_shape": "no_op",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:customers"
+     }
+    ],
+    "predicted_macro_nrd": null
+   }
+  ],
+  "policy_planner": [
+   {
+    "budget_us": 0,
+    "cost_us": 0,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [],
+    "predicted_macro_nrd": 1.0
+   },
+   {
+    "budget_us": 265956,
+    "cost_us": 183014,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d11:quarantine@products/null"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 0.5085694298705842,
+      "provenance": "d11:composed:derived@orders+customers/ord-num"
+     },
+     "prod-dup": {
+      "nrd": 0.0,
+      "provenance": "d10-cond"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 0.13875598086124402,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 0.3665158371040724,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 0.5555555555555556,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 0.7285067873303168,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 0.9043062200956938,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-num": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d10"
+     },
+     "prod-num-k4": {
+      "nrd": 0.625,
+      "provenance": "d12:composed:cond@products/numk4"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:products"
+     },
+     {
+      "map": {
+       "duplicate_shape": "no_op",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:customers"
+     }
+    ],
+    "predicted_macro_nrd": 0.5547280304255318
+   },
+   {
+    "budget_us": 9994269,
+    "cost_us": 183014,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d11:quarantine@products/null"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 0.5085694298705842,
+      "provenance": "d11:composed:derived@orders+customers/ord-num"
+     },
+     "prod-dup": {
+      "nrd": 0.0,
+      "provenance": "d10-cond"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 0.13875598086124402,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 0.3665158371040724,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 0.5555555555555556,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 0.7285067873303168,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 0.9043062200956938,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-num": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d10"
+     },
+     "prod-num-k4": {
+      "nrd": 0.625,
+      "provenance": "d12:composed:cond@products/numk4"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:products"
+     },
+     {
+      "map": {
+       "duplicate_shape": "no_op",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:customers"
+     }
+    ],
+    "predicted_macro_nrd": 0.5547280304255318
+   },
+   {
+    "budget_us": 49971343,
+    "cost_us": 47507876,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d11:quarantine@products/null"
+     },
+     "ord-dup": {
+      "nrd": 0.0,
+      "provenance": "d11:dedup@orders/duplicate"
+     },
+     "ord-num": {
+      "nrd": 0.5085694298705842,
+      "provenance": "d11:composed:derived@orders+customers/ord-num"
+     },
+     "prod-dup": {
+      "nrd": 0.0,
+      "provenance": "d10-cond"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 0.13875598086124402,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 0.3665158371040724,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 0.5555555555555556,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 0.7285067873303168,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 0.9043062200956938,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-num": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d10"
+     },
+     "prod-num-k4": {
+      "nrd": 0.625,
+      "provenance": "d12:composed:cond@products/numk4"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:products"
+     },
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "no_op"
+      },
+      "node": "model:orders"
+     },
+     {
+      "map": {
+       "duplicate_shape": "no_op",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:customers"
+     }
+    ],
+    "predicted_macro_nrd": 0.4991724748699762
+   },
+   {
+    "budget_us": 99942686,
+    "cost_us": 47507876,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d11:quarantine@products/null"
+     },
+     "ord-dup": {
+      "nrd": 0.0,
+      "provenance": "d11:dedup@orders/duplicate"
+     },
+     "ord-num": {
+      "nrd": 0.5085694298705842,
+      "provenance": "d11:composed:derived@orders+customers/ord-num"
+     },
+     "prod-dup": {
+      "nrd": 0.0,
+      "provenance": "d10-cond"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 0.13875598086124402,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 0.3665158371040724,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 0.5555555555555556,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 0.7285067873303168,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 0.9043062200956938,
+      "provenance": "d12:cond@products/per-shape-routing"
+     },
+     "prod-num": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d10"
+     },
+     "prod-num-k4": {
+      "nrd": 0.625,
+      "provenance": "d12:composed:cond@products/numk4"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:products"
+     },
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "no_op"
+      },
+      "node": "model:orders"
+     },
+     {
+      "map": {
+       "duplicate_shape": "no_op",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:customers"
+     }
+    ],
+    "predicted_macro_nrd": 0.4991724748699762
+   }
+  ],
+  "static_best": [
+   {
+    "budget_us": 0,
+    "cost_us": 0,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [],
+    "predicted_macro_nrd": 1.0
+   },
+   {
+    "budget_us": 265956,
+    "cost_us": 183014,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 0.5085694298705842,
+      "provenance": "d11:composed:derived@orders+customers/ord-num"
+     },
+     "prod-dup": {
+      "nrd": 0.0,
+      "provenance": "d10-cond"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 0.26363636363636367,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 0.6230769230769231,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 0.8333333333333334,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 0.9470588235294118,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 0.9947368421052631,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "model:products"
+     },
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:customers"
+     }
+    ],
+    "predicted_macro_nrd": 0.7872450953084378
+   },
+   {
+    "budget_us": 9994269,
+    "cost_us": 183014,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 0.5085694298705842,
+      "provenance": "d11:composed:derived@orders+customers/ord-num"
+     },
+     "prod-dup": {
+      "nrd": 0.0,
+      "provenance": "d10-cond"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 0.26363636363636367,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 0.6230769230769231,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 0.8333333333333334,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 0.9470588235294118,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 0.9947368421052631,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "model:products"
+     },
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:customers"
+     }
+    ],
+    "predicted_macro_nrd": 0.7872450953084378
+   },
+   {
+    "budget_us": 49971343,
+    "cost_us": 47507876,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 0.0,
+      "provenance": "d11:dedup@orders/duplicate"
+     },
+     "ord-num": {
+      "nrd": 0.5085694298705842,
+      "provenance": "d11:composed:derived@orders+customers/ord-num"
+     },
+     "prod-dup": {
+      "nrd": 0.0,
+      "provenance": "d10-cond"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 0.26363636363636367,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 0.6230769230769231,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 0.8333333333333334,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 0.9470588235294118,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 0.9947368421052631,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "model:products"
+     },
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "model:orders"
+     },
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:customers"
+     }
+    ],
+    "predicted_macro_nrd": 0.7316895397528822
+   },
+   {
+    "budget_us": 99942686,
+    "cost_us": 47507876,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 0.0,
+      "provenance": "d11:dedup@orders/duplicate"
+     },
+     "ord-num": {
+      "nrd": 0.5085694298705842,
+      "provenance": "d11:composed:derived@orders+customers/ord-num"
+     },
+     "prod-dup": {
+      "nrd": 0.0,
+      "provenance": "d10-cond"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 0.26363636363636367,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 0.6230769230769231,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 0.8333333333333334,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 0.9470588235294118,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 0.9947368421052631,
+      "provenance": "d12:static-dedup@products/mixed"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "model:products"
+     },
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "model:orders"
+     },
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:customers"
+     }
+    ],
+    "predicted_macro_nrd": 0.7316895397528822
+   }
+  ],
+  "static_quarantine_legacy": [
+   {
+    "budget_us": 0,
+    "cost_us": 0,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-num-k4": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     }
+    },
+    "plan": [],
+    "predicted_macro_nrd": 1.0
+   },
+   {
+    "budget_us": 265956,
+    "cost_us": 85132,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d11:quarantine@products/null"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.105263157894737,
+      "provenance": "d10"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 2.6363636363636367,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 2.076923076923077,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.6666666666666667,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.3529411764705885,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.105263157894737,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-num": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d10"
+     },
+     "prod-num-k4": {
+      "nrd": 0.625,
+      "provenance": "d12:composed:cond@products/numk4"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:products"
+     }
+    ],
+    "predicted_macro_nrd": 1.0461988203861268
+   },
+   {
+    "budget_us": 9994269,
+    "cost_us": 85132,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d11:quarantine@products/null"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.105263157894737,
+      "provenance": "d10"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 2.6363636363636367,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 2.076923076923077,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.6666666666666667,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.3529411764705885,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.105263157894737,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-num": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d10"
+     },
+     "prod-num-k4": {
+      "nrd": 0.625,
+      "provenance": "d12:composed:cond@products/numk4"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:products"
+     }
+    ],
+    "predicted_macro_nrd": 1.0461988203861268
+   },
+   {
+    "budget_us": 49971343,
+    "cost_us": 85132,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d11:quarantine@products/null"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.105263157894737,
+      "provenance": "d10"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 2.6363636363636367,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 2.076923076923077,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.6666666666666667,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.3529411764705885,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.105263157894737,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-num": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d10"
+     },
+     "prod-num-k4": {
+      "nrd": 0.625,
+      "provenance": "d12:composed:cond@products/numk4"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:products"
+     }
+    ],
+    "predicted_macro_nrd": 1.0461988203861268
+   },
+   {
+    "budget_us": 99942686,
+    "cost_us": 85132,
+    "per_family": {
+     "del-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "fk-ord": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "null-prod": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d11:quarantine@products/null"
+     },
+     "ord-dup": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "ord-num": {
+      "nrd": 1.0,
+      "provenance": "analytic:state-inert"
+     },
+     "prod-dup": {
+      "nrd": 1.105263157894737,
+      "provenance": "d10"
+     },
+     "prod-mixed-1x9": {
+      "nrd": 2.6363636363636367,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-3x7": {
+      "nrd": 2.076923076923077,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-5x5": {
+      "nrd": 1.6666666666666667,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-7x3": {
+      "nrd": 1.3529411764705885,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-mixed-9x1": {
+      "nrd": 1.105263157894737,
+      "provenance": "d12:static-quarantine@products/mixed"
+     },
+     "prod-num": {
+      "nrd": 0.5263157894736842,
+      "provenance": "d10"
+     },
+     "prod-num-k4": {
+      "nrd": 0.625,
+      "provenance": "d12:composed:cond@products/numk4"
+     }
+    },
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "model:products"
+     }
+    ],
+    "predicted_macro_nrd": 1.0461988203861268
+   }
+  ]
+ },
+ "plans_sha256": "e99b10d4ff646f8ef80ad7ba58705707bc93227318bd7c750e954803d1e5f1be",
+ "protocol_sha256": "28cac435761222a96a9403169934bdf0bb3d15d9b7a543153662350ca0420c7d"
+}

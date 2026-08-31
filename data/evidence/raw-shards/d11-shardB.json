@@ -1,0 +1,3413 @@
+{
+ "counts": {
+  "cells": 1,
+  "rows": 5,
+  "technical_failures": 0
+ },
+ "finished_utc": "2026-08-24T03:38:58Z",
+ "kind": "lineageguard_d11_dev_measurement_v1",
+ "measurement_sha256": "ceb60a4e9bec2beb814be6f97e97e754be3f8e1d04f30b172afaa92e052f8072",
+ "results": [
+  {
+   "absolute_damage": 0.0,
+   "action_label": "no_validation",
+   "cell_id": "d11-items-dup-multi",
+   "clean": null,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "no_validation_dirty",
+    "dbt_step_count": 4,
+    "dbt_steps": [
+     {
+      "manifest_sha256": "502ada52a89b688b8e1e72c6d6fff62e28482a52030b9df52bb42fd3f1e74f08",
+      "materialization": "table",
+      "node_id": "model:products",
+      "run_results_sha256": "40736abfca128bafd6ae3146688b25482843a9cd0806fdaba413e49bd5053496",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "f5d34006b2464a4c99b52d538b2241d0599e29062a69a3f149f24622f01dff8e",
+      "materialization": "table",
+      "node_id": "model:order_items",
+      "run_results_sha256": "b7a2a1d0c97cbfa55727328d06adcdef36e2c9609c85941202548b7127dc75d5",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "e7e45f254fd4a877d118e690a1d4317793ea18639e87bdd74e1d2762c13ed495",
+      "materialization": "table",
+      "node_id": "model:orders",
+      "run_results_sha256": "d0bb8980e69987a2915118b674631a176ecd9d735a7775ba2fa6c98a417533c2",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "bc400635fed0897bee6654461e43fb15331ace1ccd926822eb941dd538e5f34d",
+      "materialization": "table",
+      "node_id": "model:customers",
+      "run_results_sha256": "abc12fdd822d10da5983d1009a2ad69b1de003f175c33c6c86de9486dcd0617d",
+      "status": "success"
+     }
+    ],
+    "evaluation": {
+     "availability_loss": 0.0,
+     "clean_output_retention": 1.0,
+     "normalization": {
+      "aurd_applicable": false,
+      "no_validation_damage": null,
+      "nrd": null,
+      "nrd_applicable": false,
+      "reason": "absolute damage is valid, but NRD and AURD require the paired no-validation anchor",
+      "status": "no_no_validation_anchor_supplied"
+     },
+     "per_sink": [
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 2908,
+         "denominator_rows": 5816,
+         "dirty_rows": 2908,
+         "exactly_unchanged_rows": 2908,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 2908,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "count_lifetime_orders": 0,
+           "customer_name": 0,
+           "customer_type": 0,
+           "first_ordered_at": 0,
+           "last_ordered_at": 0,
+           "lifetime_spend": 0,
+           "lifetime_spend_pretax": 0,
+           "lifetime_tax_paid": 0
+          },
+          "comparable_key_aligned_cells": 23264,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:customers"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 6,
+         "denominator_rows": 12,
+         "dirty_rows": 6,
+         "exactly_unchanged_rows": 6,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 6,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "location_name": 0,
+           "opened_date": 0,
+           "tax_rate": 0
+          },
+          "comparable_key_aligned_cells": 18,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:locations"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10958,
+         "denominator_rows": 21916,
+         "dirty_rows": 10958,
+         "exactly_unchanged_rows": 10958,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10958,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": null,
+          "changed_cells": 0,
+          "changed_cells_by_column": {},
+          "comparable_key_aligned_cells": 0,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:metricflow_time_spine"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10,
+         "denominator_rows": 20,
+         "dirty_rows": 10,
+         "exactly_unchanged_rows": 10,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_drink_item": 0,
+           "is_food_item": 0,
+           "product_description": 0,
+           "product_name": 0,
+           "product_price": 0,
+           "product_type": 0
+          },
+          "comparable_key_aligned_cells": 60,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:products"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 65,
+         "denominator_rows": 130,
+         "dirty_rows": 65,
+         "exactly_unchanged_rows": 65,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 65,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_perishable_supply": 0,
+           "product_id": 0,
+           "supply_cost": 0,
+           "supply_id": 0,
+           "supply_name": 0
+          },
+          "comparable_key_aligned_cells": 325,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:supplies"
+      }
+     ],
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     },
+     "schema_version": 1,
+     "semantics": {
+      "is_dbt_test_result": false,
+      "is_propagation_proxy": false,
+      "kind": "observed_terminal_semantic_damage",
+      "sink_selection": "explicit_preregistered_list",
+      "source": "jaffle_ground_truth_relation_diff"
+     },
+     "sink_count": 5,
+     "sink_ids": [
+      "model:customers",
+      "model:locations",
+      "model:metricflow_time_spine",
+      "model:products",
+      "model:supplies"
+     ],
+     "supplemental": {
+      "cell": {
+       "changed_cells_sum": 0,
+       "complete_for_all_sinks": true,
+       "is_primary": false,
+       "warning": "raw changed-cell counts have different relation sizes and schemas and are not substituted for the primary sink mean"
+      },
+      "value": {
+       "available": false,
+       "is_primary": false,
+       "reason": "no preregistered cross-type value-distance metric is present in the relation-diff artifact",
+       "value": null
+      }
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054235,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "anchor",
+   "no_validation_damage": 0.0,
+   "nrd": 1.0,
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "dedup@order_items/duplicate",
+   "availability_loss": 0.0,
+   "cell_id": "d11-items-dup-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "dbt_steps": [
+     {
+      "manifest_sha256": "1b4e280244be94a474c8b7d1e36b4cc0556e2cee946ce84f72a2128e2139f674",
+      "materialization": "table",
+      "node_id": "model:products",
+      "run_results_sha256": "8122f8d0c1d3c4071142af5e0a6bdaedbb8f35102b3c869c839fdf62e64a7a56",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "363f8e77abe7187b0c57c7d9f294d37e08d8ea149e519fe072758342f95e042a",
+      "materialization": "table",
+      "node_id": "model:order_items",
+      "run_results_sha256": "9165e17bd5a4c089fa9f73229f387f4741144feebb9852547e2dc24c11a35fbc",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "ce7dd74a213087da95506fbe33809d1404b8e35093a3e3832da2ea32e550b5e6",
+      "materialization": "table",
+      "node_id": "model:orders",
+      "run_results_sha256": "bfe1697fce4363e5cfc31aa58120ad15b2933dc8fccde56f31cb2737fb2c225b",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "895e4820788ac688b70b5a25846670117536d7054f4f1c81185e10f3935171f9",
+      "materialization": "table",
+      "node_id": "model:customers",
+      "run_results_sha256": "51310b5cf9d7da84e9038edd0008bb36b2c3331d17a85557d34a4803b52380f8",
+      "status": "success"
+     }
+    ],
+    "evaluation": {
+     "availability_loss": 0.0,
+     "clean_output_retention": 1.0,
+     "normalization": {
+      "aurd_applicable": false,
+      "no_validation_damage": null,
+      "nrd": null,
+      "nrd_applicable": false,
+      "reason": "absolute damage is valid, but NRD and AURD require the paired no-validation anchor",
+      "status": "no_no_validation_anchor_supplied"
+     },
+     "per_sink": [
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 2908,
+         "denominator_rows": 5816,
+         "dirty_rows": 2908,
+         "exactly_unchanged_rows": 2908,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 2908,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "count_lifetime_orders": 0,
+           "customer_name": 0,
+           "customer_type": 0,
+           "first_ordered_at": 0,
+           "last_ordered_at": 0,
+           "lifetime_spend": 0,
+           "lifetime_spend_pretax": 0,
+           "lifetime_tax_paid": 0
+          },
+          "comparable_key_aligned_cells": 23264,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:customers"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 6,
+         "denominator_rows": 12,
+         "dirty_rows": 6,
+         "exactly_unchanged_rows": 6,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 6,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "location_name": 0,
+           "opened_date": 0,
+           "tax_rate": 0
+          },
+          "comparable_key_aligned_cells": 18,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:locations"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10958,
+         "denominator_rows": 21916,
+         "dirty_rows": 10958,
+         "exactly_unchanged_rows": 10958,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10958,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": null,
+          "changed_cells": 0,
+          "changed_cells_by_column": {},
+          "comparable_key_aligned_cells": 0,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:metricflow_time_spine"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10,
+         "denominator_rows": 20,
+         "dirty_rows": 10,
+         "exactly_unchanged_rows": 10,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_drink_item": 0,
+           "is_food_item": 0,
+           "product_description": 0,
+           "product_name": 0,
+           "product_price": 0,
+           "product_type": 0
+          },
+          "comparable_key_aligned_cells": 60,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:products"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 65,
+         "denominator_rows": 130,
+         "dirty_rows": 65,
+         "exactly_unchanged_rows": 65,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 65,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_perishable_supply": 0,
+           "product_id": 0,
+           "supply_cost": 0,
+           "supply_id": 0,
+           "supply_name": 0
+          },
+          "comparable_key_aligned_cells": 325,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:supplies"
+      }
+     ],
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     },
+     "schema_version": 1,
+     "semantics": {
+      "is_dbt_test_result": false,
+      "is_propagation_proxy": false,
+      "kind": "observed_terminal_semantic_damage",
+      "sink_selection": "explicit_preregistered_list",
+      "source": "jaffle_ground_truth_relation_diff"
+     },
+     "sink_count": 5,
+     "sink_ids": [
+      "model:customers",
+      "model:locations",
+      "model:metricflow_time_spine",
+      "model:products",
+      "model:supplies"
+     ],
+     "supplemental": {
+      "cell": {
+       "changed_cells_sum": 0,
+       "complete_for_all_sinks": true,
+       "is_primary": false,
+       "warning": "raw changed-cell counts have different relation sizes and schemas and are not substituted for the primary sink mean"
+      },
+      "value": {
+       "available": false,
+       "is_primary": false,
+       "reason": "no preregistered cross-type value-distance metric is present in the relation-diff artifact",
+       "value": null
+      }
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 26124038,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 186281752,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "dbt_steps": [
+     {
+      "manifest_sha256": "a12adde4ab0ad60f0da86627ee355a158ac6d560c9f9a700d741076adbb1ccd1",
+      "materialization": "table",
+      "node_id": "model:products",
+      "run_results_sha256": "e0fe3e974252372689a9e0d0418809d7a8b862af5f70140d7fcea6a4986c7db6",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "d244c58247aa0ac54a6a8c6600950b62b2c220d9d99c52879212bb11fdf67aa3",
+      "materialization": "table",
+      "node_id": "model:order_items",
+      "run_results_sha256": "9690b34b585cdfb5e9820dca765ce3b792c0147b708bec27924a22fc447b9eed",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "00d59ddf2e34f76ef3406f0a0a3a454fc0f7831c5f6b274d7adde5bed1d65041",
+      "materialization": "table",
+      "node_id": "model:orders",
+      "run_results_sha256": "c685c7e111d16c7178af21951be41a11c4b97a5dbdd587000ea99228fc988946",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "ddb6aee4f41c7de14cf0d427c2ac7b94957feea8924fc6960eb5342cae3f7111",
+      "materialization": "table",
+      "node_id": "model:customers",
+      "run_results_sha256": "eff4e082a3c729a670c1976834dca534b6b8af094ac16422b99bd64975744c7a",
+      "status": "success"
+     }
+    ],
+    "evaluation": {
+     "availability_loss": 0.0,
+     "clean_output_retention": 1.0,
+     "normalization": {
+      "aurd_applicable": false,
+      "no_validation_damage": 0.0,
+      "nrd": null,
+      "nrd_applicable": false,
+      "reason": "the paired no-validation campaign has zero measurable terminal damage; division and residual-damage-curve normalization are undefined, so report absolute_damage instead",
+      "status": "not_applicable_zero_no_validation_damage"
+     },
+     "per_sink": [
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 2908,
+         "denominator_rows": 5816,
+         "dirty_rows": 2908,
+         "exactly_unchanged_rows": 2908,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 2908,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "count_lifetime_orders": 0,
+           "customer_name": 0,
+           "customer_type": 0,
+           "first_ordered_at": 0,
+           "last_ordered_at": 0,
+           "lifetime_spend": 0,
+           "lifetime_spend_pretax": 0,
+           "lifetime_tax_paid": 0
+          },
+          "comparable_key_aligned_cells": 23264,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:customers"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 6,
+         "denominator_rows": 12,
+         "dirty_rows": 6,
+         "exactly_unchanged_rows": 6,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 6,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "location_name": 0,
+           "opened_date": 0,
+           "tax_rate": 0
+          },
+          "comparable_key_aligned_cells": 18,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:locations"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10958,
+         "denominator_rows": 21916,
+         "dirty_rows": 10958,
+         "exactly_unchanged_rows": 10958,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10958,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": null,
+          "changed_cells": 0,
+          "changed_cells_by_column": {},
+          "comparable_key_aligned_cells": 0,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:metricflow_time_spine"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10,
+         "denominator_rows": 20,
+         "dirty_rows": 10,
+         "exactly_unchanged_rows": 10,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_drink_item": 0,
+           "is_food_item": 0,
+           "product_description": 0,
+           "product_name": 0,
+           "product_price": 0,
+           "product_type": 0
+          },
+          "comparable_key_aligned_cells": 60,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:products"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 65,
+         "denominator_rows": 130,
+         "dirty_rows": 65,
+         "exactly_unchanged_rows": 65,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 65,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_perishable_supply": 0,
+           "product_id": 0,
+           "supply_cost": 0,
+           "supply_id": 0,
+           "supply_name": 0
+          },
+          "comparable_key_aligned_cells": 325,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:supplies"
+      }
+     ],
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     },
+     "schema_version": 1,
+     "semantics": {
+      "is_dbt_test_result": false,
+      "is_propagation_proxy": false,
+      "kind": "observed_terminal_semantic_damage",
+      "sink_selection": "explicit_preregistered_list",
+      "source": "jaffle_ground_truth_relation_diff"
+     },
+     "sink_count": 5,
+     "sink_ids": [
+      "model:customers",
+      "model:locations",
+      "model:metricflow_time_spine",
+      "model:products",
+      "model:supplies"
+     ],
+     "supplemental": {
+      "cell": {
+       "changed_cells_sum": 0,
+       "complete_for_all_sinks": true,
+       "is_primary": false,
+       "warning": "raw changed-cell counts have different relation sizes and schemas and are not substituted for the primary sink mean"
+      },
+      "value": {
+       "available": false,
+       "is_primary": false,
+       "reason": "no preregistered cross-type value-distance metric is present in the relation-diff artifact",
+       "value": null
+      }
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054235,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 100,
+         "shape": "duplicate_shape"
+        }
+       ],
+       "dispose_runtime_ns": 525390149,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 234583224,
+       "fired_shapes": [
+        "duplicate_shape"
+       ],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 100,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "duplicate_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.0,
+   "nrd": null,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:order_items"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "quarantine@order_items/duplicate",
+   "availability_loss": 0.0,
+   "cell_id": "d11-items-dup-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "dbt_steps": [
+     {
+      "manifest_sha256": "a215f918387cf46d92b5c5d05fa48bf12848d706c422ee5c285b29277c2cb038",
+      "materialization": "table",
+      "node_id": "model:products",
+      "run_results_sha256": "0496837ea431155f5667bfa1d0f29d5095d8a90b63e392343d9c3619c5108131",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "7b9856a2e960d9b3235254a7d8ffbd0032dcc62948c461e757bda3f9bd252733",
+      "materialization": "table",
+      "node_id": "model:order_items",
+      "run_results_sha256": "3d66cd1b5cf2d4967d34d659e7b71762310e5a616ee0e99a6ef4e58698eb3160",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "2eeb3880cfdb184ef368f75f87a35b08b1591f66f1009513ede85e252e0de03e",
+      "materialization": "table",
+      "node_id": "model:orders",
+      "run_results_sha256": "b6f069bfd85e120113367c1360e129a4276bb77db644f2d4d945cda5a5240ee0",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "e61ca2b9dbd0d579448487526bf5521abf53f4f71c77493fcba38e5051928028",
+      "materialization": "table",
+      "node_id": "model:customers",
+      "run_results_sha256": "4b992815ff01e74863b293aaba24642eb82c5e30dc176898e108a43b1345c33e",
+      "status": "success"
+     }
+    ],
+    "evaluation": {
+     "availability_loss": 0.0,
+     "clean_output_retention": 1.0,
+     "normalization": {
+      "aurd_applicable": false,
+      "no_validation_damage": null,
+      "nrd": null,
+      "nrd_applicable": false,
+      "reason": "absolute damage is valid, but NRD and AURD require the paired no-validation anchor",
+      "status": "no_no_validation_anchor_supplied"
+     },
+     "per_sink": [
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 2908,
+         "denominator_rows": 5816,
+         "dirty_rows": 2908,
+         "exactly_unchanged_rows": 2908,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 2908,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "count_lifetime_orders": 0,
+           "customer_name": 0,
+           "customer_type": 0,
+           "first_ordered_at": 0,
+           "last_ordered_at": 0,
+           "lifetime_spend": 0,
+           "lifetime_spend_pretax": 0,
+           "lifetime_tax_paid": 0
+          },
+          "comparable_key_aligned_cells": 23264,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:customers"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 6,
+         "denominator_rows": 12,
+         "dirty_rows": 6,
+         "exactly_unchanged_rows": 6,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 6,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "location_name": 0,
+           "opened_date": 0,
+           "tax_rate": 0
+          },
+          "comparable_key_aligned_cells": 18,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:locations"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10958,
+         "denominator_rows": 21916,
+         "dirty_rows": 10958,
+         "exactly_unchanged_rows": 10958,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10958,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": null,
+          "changed_cells": 0,
+          "changed_cells_by_column": {},
+          "comparable_key_aligned_cells": 0,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:metricflow_time_spine"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10,
+         "denominator_rows": 20,
+         "dirty_rows": 10,
+         "exactly_unchanged_rows": 10,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_drink_item": 0,
+           "is_food_item": 0,
+           "product_description": 0,
+           "product_name": 0,
+           "product_price": 0,
+           "product_type": 0
+          },
+          "comparable_key_aligned_cells": 60,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:products"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 65,
+         "denominator_rows": 130,
+         "dirty_rows": 65,
+         "exactly_unchanged_rows": 65,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 65,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_perishable_supply": 0,
+           "product_id": 0,
+           "supply_cost": 0,
+           "supply_id": 0,
+           "supply_name": 0
+          },
+          "comparable_key_aligned_cells": 325,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:supplies"
+      }
+     ],
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     },
+     "schema_version": 1,
+     "semantics": {
+      "is_dbt_test_result": false,
+      "is_propagation_proxy": false,
+      "kind": "observed_terminal_semantic_damage",
+      "sink_selection": "explicit_preregistered_list",
+      "source": "jaffle_ground_truth_relation_diff"
+     },
+     "sink_count": 5,
+     "sink_ids": [
+      "model:customers",
+      "model:locations",
+      "model:metricflow_time_spine",
+      "model:products",
+      "model:supplies"
+     ],
+     "supplemental": {
+      "cell": {
+       "changed_cells_sum": 0,
+       "complete_for_all_sinks": true,
+       "is_primary": false,
+       "warning": "raw changed-cell counts have different relation sizes and schemas and are not substituted for the primary sink mean"
+      },
+      "value": {
+       "available": false,
+       "is_primary": false,
+       "reason": "no preregistered cross-type value-distance metric is present in the relation-diff artifact",
+       "value": null
+      }
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 29198941,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 265069262,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "dbt_steps": [
+     {
+      "manifest_sha256": "c4566c72d4f2ade405cd89546bb26f1c994a9e11e9532a7b548047921006f54d",
+      "materialization": "table",
+      "node_id": "model:products",
+      "run_results_sha256": "fe84a415d24a00bfe0035d4bb76279cfacb2bc65dd3e4ea2c35836513c40fa23",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "80bbddb128e2ad3aba4a85462ebf9c5c666a8090f6ef68fbee04c51c29c2dc64",
+      "materialization": "table",
+      "node_id": "model:order_items",
+      "run_results_sha256": "2b1d928d7cdb75846832106b88e7eb3159a572f8f7e2d215c6854a036dfab839",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "23d1bd0c6f2c52aa30e853060b0e1a23a3bece5cfba6cc3d66eccdb2eea2374d",
+      "materialization": "table",
+      "node_id": "model:orders",
+      "run_results_sha256": "b6ca0cbc8b0504eb762808731f09dc42276fcf834cfb64d4971c04f614cc2f44",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "28fa343f0d868397e6246646b62bb2d292a1bae8a62205f5a8565d9642f669e2",
+      "materialization": "table",
+      "node_id": "model:customers",
+      "run_results_sha256": "0e7a145c1a94c7e9443e9dcffdd967151136b6d95f681acd74f4f02566d4dcae",
+      "status": "success"
+     }
+    ],
+    "evaluation": {
+     "availability_loss": 0.0,
+     "clean_output_retention": 1.0,
+     "normalization": {
+      "aurd_applicable": false,
+      "no_validation_damage": 0.0,
+      "nrd": null,
+      "nrd_applicable": false,
+      "reason": "the paired no-validation campaign has zero measurable terminal damage; division and residual-damage-curve normalization are undefined, so report absolute_damage instead",
+      "status": "not_applicable_zero_no_validation_damage"
+     },
+     "per_sink": [
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 2908,
+         "denominator_rows": 5816,
+         "dirty_rows": 2908,
+         "exactly_unchanged_rows": 2908,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 2908,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "count_lifetime_orders": 0,
+           "customer_name": 0,
+           "customer_type": 0,
+           "first_ordered_at": 0,
+           "last_ordered_at": 0,
+           "lifetime_spend": 0,
+           "lifetime_spend_pretax": 0,
+           "lifetime_tax_paid": 0
+          },
+          "comparable_key_aligned_cells": 23264,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:customers"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 6,
+         "denominator_rows": 12,
+         "dirty_rows": 6,
+         "exactly_unchanged_rows": 6,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 6,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "location_name": 0,
+           "opened_date": 0,
+           "tax_rate": 0
+          },
+          "comparable_key_aligned_cells": 18,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:locations"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10958,
+         "denominator_rows": 21916,
+         "dirty_rows": 10958,
+         "exactly_unchanged_rows": 10958,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10958,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": null,
+          "changed_cells": 0,
+          "changed_cells_by_column": {},
+          "comparable_key_aligned_cells": 0,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:metricflow_time_spine"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10,
+         "denominator_rows": 20,
+         "dirty_rows": 10,
+         "exactly_unchanged_rows": 10,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_drink_item": 0,
+           "is_food_item": 0,
+           "product_description": 0,
+           "product_name": 0,
+           "product_price": 0,
+           "product_type": 0
+          },
+          "comparable_key_aligned_cells": 60,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:products"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 65,
+         "denominator_rows": 130,
+         "dirty_rows": 65,
+         "exactly_unchanged_rows": 65,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 65,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_perishable_supply": 0,
+           "product_id": 0,
+           "supply_cost": 0,
+           "supply_id": 0,
+           "supply_name": 0
+          },
+          "comparable_key_aligned_cells": 325,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:supplies"
+      }
+     ],
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     },
+     "schema_version": 1,
+     "semantics": {
+      "is_dbt_test_result": false,
+      "is_propagation_proxy": false,
+      "kind": "observed_terminal_semantic_damage",
+      "sink_selection": "explicit_preregistered_list",
+      "source": "jaffle_ground_truth_relation_diff"
+     },
+     "sink_count": 5,
+     "sink_ids": [
+      "model:customers",
+      "model:locations",
+      "model:metricflow_time_spine",
+      "model:products",
+      "model:supplies"
+     ],
+     "supplemental": {
+      "cell": {
+       "changed_cells_sum": 0,
+       "complete_for_all_sinks": true,
+       "is_primary": false,
+       "warning": "raw changed-cell counts have different relation sizes and schemas and are not substituted for the primary sink mean"
+      },
+      "value": {
+       "available": false,
+       "is_primary": false,
+       "reason": "no preregistered cross-type value-distance metric is present in the relation-diff artifact",
+       "value": null
+      }
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054235,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "quarantine",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 200,
+         "shape": "duplicate_shape"
+        }
+       ],
+       "dispose_runtime_ns": 130130518,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 223514484,
+       "fired_shapes": [
+        "duplicate_shape"
+       ],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 100,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "duplicate_shape"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.0,
+   "nrd": null,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "quarantine",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "no_op"
+     },
+     "node": "model:order_items"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "cond@products/cross-fork",
+   "availability_loss": 0.0,
+   "cell_id": "d11-items-dup-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "dbt_steps": [
+     {
+      "manifest_sha256": "ae26bdde00e6fec905ae1815200ee833212433f7a1d0f0b721984c98fab3d763",
+      "materialization": "table",
+      "node_id": "model:products",
+      "run_results_sha256": "3829f2f66877f398e7ad051e97ee60220cccb4b8ce60a154bc8eed162743fe9d",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "6dbedf08b8b7eafc525451c269a189371d631e27dd424eb41634f1cb09b5a89e",
+      "materialization": "table",
+      "node_id": "model:order_items",
+      "run_results_sha256": "0134de37c455b92501d30d8d0630e88890f38c55af7e0ecda7b6e4fce2380f2c",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "e1c16bac48f0b335255a8092c8e1e2fd354d697c444d9dcb4ce7c18adf60fffd",
+      "materialization": "table",
+      "node_id": "model:orders",
+      "run_results_sha256": "31aeaf9763d3ee7e39c41fea5d3ff7a0a4555243111606012e24cdbe3ee1911d",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "908471d81603924cd7cd57b4d51b9973db5c17bebe29d1f3e4af086fbb879dac",
+      "materialization": "table",
+      "node_id": "model:customers",
+      "run_results_sha256": "44331d2e86e36ca2600ff85f8e97e7d8e300a9bdbf5d0c5f13c2572256ef891a",
+      "status": "success"
+     }
+    ],
+    "evaluation": {
+     "availability_loss": 0.0,
+     "clean_output_retention": 1.0,
+     "normalization": {
+      "aurd_applicable": false,
+      "no_validation_damage": null,
+      "nrd": null,
+      "nrd_applicable": false,
+      "reason": "absolute damage is valid, but NRD and AURD require the paired no-validation anchor",
+      "status": "no_no_validation_anchor_supplied"
+     },
+     "per_sink": [
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 2908,
+         "denominator_rows": 5816,
+         "dirty_rows": 2908,
+         "exactly_unchanged_rows": 2908,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 2908,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "count_lifetime_orders": 0,
+           "customer_name": 0,
+           "customer_type": 0,
+           "first_ordered_at": 0,
+           "last_ordered_at": 0,
+           "lifetime_spend": 0,
+           "lifetime_spend_pretax": 0,
+           "lifetime_tax_paid": 0
+          },
+          "comparable_key_aligned_cells": 23264,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:customers"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 6,
+         "denominator_rows": 12,
+         "dirty_rows": 6,
+         "exactly_unchanged_rows": 6,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 6,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "location_name": 0,
+           "opened_date": 0,
+           "tax_rate": 0
+          },
+          "comparable_key_aligned_cells": 18,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:locations"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10958,
+         "denominator_rows": 21916,
+         "dirty_rows": 10958,
+         "exactly_unchanged_rows": 10958,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10958,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": null,
+          "changed_cells": 0,
+          "changed_cells_by_column": {},
+          "comparable_key_aligned_cells": 0,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:metricflow_time_spine"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10,
+         "denominator_rows": 20,
+         "dirty_rows": 10,
+         "exactly_unchanged_rows": 10,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_drink_item": 0,
+           "is_food_item": 0,
+           "product_description": 0,
+           "product_name": 0,
+           "product_price": 0,
+           "product_type": 0
+          },
+          "comparable_key_aligned_cells": 60,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:products"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 65,
+         "denominator_rows": 130,
+         "dirty_rows": 65,
+         "exactly_unchanged_rows": 65,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 65,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_perishable_supply": 0,
+           "product_id": 0,
+           "supply_cost": 0,
+           "supply_id": 0,
+           "supply_name": 0
+          },
+          "comparable_key_aligned_cells": 325,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:supplies"
+      }
+     ],
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     },
+     "schema_version": 1,
+     "semantics": {
+      "is_dbt_test_result": false,
+      "is_propagation_proxy": false,
+      "kind": "observed_terminal_semantic_damage",
+      "sink_selection": "explicit_preregistered_list",
+      "source": "jaffle_ground_truth_relation_diff"
+     },
+     "sink_count": 5,
+     "sink_ids": [
+      "model:customers",
+      "model:locations",
+      "model:metricflow_time_spine",
+      "model:products",
+      "model:supplies"
+     ],
+     "supplemental": {
+      "cell": {
+       "changed_cells_sum": 0,
+       "complete_for_all_sinks": true,
+       "is_primary": false,
+       "warning": "raw changed-cell counts have different relation sizes and schemas and are not substituted for the primary sink mean"
+      },
+      "value": {
+       "available": false,
+       "is_primary": false,
+       "reason": "no preregistered cross-type value-distance metric is present in the relation-diff artifact",
+       "value": null
+      }
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 23444142,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 39823178,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "dbt_steps": [
+     {
+      "manifest_sha256": "3b75454c0f42de9fa4e45d635dc9c17ad11cd9c402d7e52e40ebc83034d7c61c",
+      "materialization": "table",
+      "node_id": "model:products",
+      "run_results_sha256": "9c53746419cc15ce94a047a1dfb6c7ce8a5e27af6c4bd38862ea0fc2ac77c2a5",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "110514f9a580b658763efae1c6fffb6ed7aafc3d8bf5d3e1988cfbd1ccc2ff9f",
+      "materialization": "table",
+      "node_id": "model:order_items",
+      "run_results_sha256": "808bc0dd3e51e8307767deb234a6eab8935542d9c048696c250412a4097629dd",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "e7229c8e05b862e7328d672f1137cdeb5360bedbbb839d3b26facb19eb05010c",
+      "materialization": "table",
+      "node_id": "model:orders",
+      "run_results_sha256": "10ba86f466f6bbaae10b390cde82c75b417cd716ebcc9d116605a9e38c83aad6",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "e7fcf65d572983967b062a63ccd3ad89a403bbac7d2213647183a5f1beb2976a",
+      "materialization": "table",
+      "node_id": "model:customers",
+      "run_results_sha256": "bd3394c85fcbacdd43af68392f02931304936467ed0aeade34d8ace157fe2ede",
+      "status": "success"
+     }
+    ],
+    "evaluation": {
+     "availability_loss": 0.0,
+     "clean_output_retention": 1.0,
+     "normalization": {
+      "aurd_applicable": false,
+      "no_validation_damage": 0.0,
+      "nrd": null,
+      "nrd_applicable": false,
+      "reason": "the paired no-validation campaign has zero measurable terminal damage; division and residual-damage-curve normalization are undefined, so report absolute_damage instead",
+      "status": "not_applicable_zero_no_validation_damage"
+     },
+     "per_sink": [
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 2908,
+         "denominator_rows": 5816,
+         "dirty_rows": 2908,
+         "exactly_unchanged_rows": 2908,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 2908,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "count_lifetime_orders": 0,
+           "customer_name": 0,
+           "customer_type": 0,
+           "first_ordered_at": 0,
+           "last_ordered_at": 0,
+           "lifetime_spend": 0,
+           "lifetime_spend_pretax": 0,
+           "lifetime_tax_paid": 0
+          },
+          "comparable_key_aligned_cells": 23264,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:customers"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 6,
+         "denominator_rows": 12,
+         "dirty_rows": 6,
+         "exactly_unchanged_rows": 6,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 6,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "location_name": 0,
+           "opened_date": 0,
+           "tax_rate": 0
+          },
+          "comparable_key_aligned_cells": 18,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:locations"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10958,
+         "denominator_rows": 21916,
+         "dirty_rows": 10958,
+         "exactly_unchanged_rows": 10958,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10958,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": null,
+          "changed_cells": 0,
+          "changed_cells_by_column": {},
+          "comparable_key_aligned_cells": 0,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:metricflow_time_spine"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10,
+         "denominator_rows": 20,
+         "dirty_rows": 10,
+         "exactly_unchanged_rows": 10,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_drink_item": 0,
+           "is_food_item": 0,
+           "product_description": 0,
+           "product_name": 0,
+           "product_price": 0,
+           "product_type": 0
+          },
+          "comparable_key_aligned_cells": 60,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:products"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 65,
+         "denominator_rows": 130,
+         "dirty_rows": 65,
+         "exactly_unchanged_rows": 65,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 65,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_perishable_supply": 0,
+           "product_id": 0,
+           "supply_cost": 0,
+           "supply_id": 0,
+           "supply_name": 0
+          },
+          "comparable_key_aligned_cells": 325,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:supplies"
+      }
+     ],
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     },
+     "schema_version": 1,
+     "semantics": {
+      "is_dbt_test_result": false,
+      "is_propagation_proxy": false,
+      "kind": "observed_terminal_semantic_damage",
+      "sink_selection": "explicit_preregistered_list",
+      "source": "jaffle_ground_truth_relation_diff"
+     },
+     "sink_count": 5,
+     "sink_ids": [
+      "model:customers",
+      "model:locations",
+      "model:metricflow_time_spine",
+      "model:products",
+      "model:supplies"
+     ],
+     "supplemental": {
+      "cell": {
+       "changed_cells_sum": 0,
+       "complete_for_all_sinks": true,
+       "is_primary": false,
+       "warning": "raw changed-cell counts have different relation sizes and schemas and are not substituted for the primary sink mean"
+      },
+      "value": {
+       "available": false,
+       "is_primary": false,
+       "reason": "no preregistered cross-type value-distance metric is present in the relation-diff artifact",
+       "value": null
+      }
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054235,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 21965504,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 33790541,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "singleton",
+   "no_validation_damage": 0.0,
+   "nrd": null,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    }
+   ],
+   "status": "complete"
+  },
+  {
+   "absolute_damage": 0.0,
+   "action_label": "composed:cond@products+order_items+orders",
+   "availability_loss": 0.0,
+   "cell_id": "d11-items-dup-multi",
+   "clean": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "clean_counterfactual",
+    "dbt_step_count": 4,
+    "dbt_steps": [
+     {
+      "manifest_sha256": "0c59475b0e2173c010cf82f11467b5d53979e409d7970a3ce383b5064c85f650",
+      "materialization": "table",
+      "node_id": "model:products",
+      "run_results_sha256": "7b452b8d5b20224d35be0cec97709bc536a5be2b4470a54a68468237678a0db7",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "345ea3bdeabb126745b3055353dee58286e34cb637e37899973541e70c25125f",
+      "materialization": "table",
+      "node_id": "model:order_items",
+      "run_results_sha256": "9060804b5c14474dc3cc1a8b00d112180d96f319840dae2bdc7d2d4e358f6bee",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "e32c0d35213a7ff1bafe6bacbed654a5c76d14aff6e3d940628a06b71a3390b9",
+      "materialization": "table",
+      "node_id": "model:orders",
+      "run_results_sha256": "c580d7f0158af8504218ca49fbbd51039bd37b4c15cf027e3095a4c70fc6ab49",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "04705b98b1a7f39607bf0b22c4247eee5a20451e62ae96334ba5b2efd5b7279f",
+      "materialization": "table",
+      "node_id": "model:customers",
+      "run_results_sha256": "d887b471a9c2f2bf5eddf582cbb3f62da20a44d143a8925fa961da343cae828e",
+      "status": "success"
+     }
+    ],
+    "evaluation": {
+     "availability_loss": 0.0,
+     "clean_output_retention": 1.0,
+     "normalization": {
+      "aurd_applicable": false,
+      "no_validation_damage": null,
+      "nrd": null,
+      "nrd_applicable": false,
+      "reason": "absolute damage is valid, but NRD and AURD require the paired no-validation anchor",
+      "status": "no_no_validation_anchor_supplied"
+     },
+     "per_sink": [
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 2908,
+         "denominator_rows": 5816,
+         "dirty_rows": 2908,
+         "exactly_unchanged_rows": 2908,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 2908,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "count_lifetime_orders": 0,
+           "customer_name": 0,
+           "customer_type": 0,
+           "first_ordered_at": 0,
+           "last_ordered_at": 0,
+           "lifetime_spend": 0,
+           "lifetime_spend_pretax": 0,
+           "lifetime_tax_paid": 0
+          },
+          "comparable_key_aligned_cells": 23264,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:customers"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 6,
+         "denominator_rows": 12,
+         "dirty_rows": 6,
+         "exactly_unchanged_rows": 6,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 6,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "location_name": 0,
+           "opened_date": 0,
+           "tax_rate": 0
+          },
+          "comparable_key_aligned_cells": 18,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:locations"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10958,
+         "denominator_rows": 21916,
+         "dirty_rows": 10958,
+         "exactly_unchanged_rows": 10958,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10958,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": null,
+          "changed_cells": 0,
+          "changed_cells_by_column": {},
+          "comparable_key_aligned_cells": 0,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:metricflow_time_spine"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10,
+         "denominator_rows": 20,
+         "dirty_rows": 10,
+         "exactly_unchanged_rows": 10,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_drink_item": 0,
+           "is_food_item": 0,
+           "product_description": 0,
+           "product_name": 0,
+           "product_price": 0,
+           "product_type": 0
+          },
+          "comparable_key_aligned_cells": 60,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:products"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 65,
+         "denominator_rows": 130,
+         "dirty_rows": 65,
+         "exactly_unchanged_rows": 65,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 65,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_perishable_supply": 0,
+           "product_id": 0,
+           "supply_cost": 0,
+           "supply_id": 0,
+           "supply_name": 0
+          },
+          "comparable_key_aligned_cells": 325,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:supplies"
+      }
+     ],
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     },
+     "schema_version": 1,
+     "semantics": {
+      "is_dbt_test_result": false,
+      "is_propagation_proxy": false,
+      "kind": "observed_terminal_semantic_damage",
+      "sink_selection": "explicit_preregistered_list",
+      "source": "jaffle_ground_truth_relation_diff"
+     },
+     "sink_count": 5,
+     "sink_ids": [
+      "model:customers",
+      "model:locations",
+      "model:metricflow_time_spine",
+      "model:products",
+      "model:supplies"
+     ],
+     "supplemental": {
+      "cell": {
+       "changed_cells_sum": 0,
+       "complete_for_all_sinks": true,
+       "is_primary": false,
+       "warning": "raw changed-cell counts have different relation sizes and schemas and are not substituted for the primary sink mean"
+      },
+      "value": {
+       "available": false,
+       "is_primary": false,
+       "reason": "no preregistered cross-type value-distance metric is present in the relation-diff artifact",
+       "value": null
+      }
+     }
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 19201547,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 38753382,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 28158500,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 288868591,
+       "fired_shapes": [],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 25201704,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 245081525,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "clean_absolute_damage": 0.0,
+   "dirty": {
+    "absolute_damage": 0.0,
+    "availability_loss": 0.0,
+    "branch": "dirty_protected",
+    "dbt_step_count": 4,
+    "dbt_steps": [
+     {
+      "manifest_sha256": "9e1a0cc9fe55dc3ecc483037f072371714bdd7d8027302f838c8c0c035f6d685",
+      "materialization": "table",
+      "node_id": "model:products",
+      "run_results_sha256": "dae95825f33917156f60ae9db9b07f6c024ad817f9dfbfaf0b41497f7e03e9a3",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "00e729692dc8e41d1b9cea68628b0de5cf084db7a1e34bca1174b44a28289cbb",
+      "materialization": "table",
+      "node_id": "model:order_items",
+      "run_results_sha256": "9f542c69c85f45f7b0b733c1fb3c7a4a488345a7be4021086723271655475507",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "3ed69bd087ef50a2e229c98f3beef8485c6ae85fb41376771c1a54e6b8e88c7a",
+      "materialization": "table",
+      "node_id": "model:orders",
+      "run_results_sha256": "5e029336a4d0199ce7f1d390842534941974778c5a917fbe17652c4ea0045556",
+      "status": "success"
+     },
+     {
+      "manifest_sha256": "60a4936fa7c8db6015379d232e2b47d603c997b99857fc37d1deb8667786b6c3",
+      "materialization": "table",
+      "node_id": "model:customers",
+      "run_results_sha256": "710ede8d31bfbb6cef49fab824a745e73aac5a1ae7522c0438aa0c6754f870b8",
+      "status": "success"
+     }
+    ],
+    "evaluation": {
+     "availability_loss": 0.0,
+     "clean_output_retention": 1.0,
+     "normalization": {
+      "aurd_applicable": false,
+      "no_validation_damage": 0.0,
+      "nrd": null,
+      "nrd_applicable": false,
+      "reason": "the paired no-validation campaign has zero measurable terminal damage; division and residual-damage-curve normalization are undefined, so report absolute_damage instead",
+      "status": "not_applicable_zero_no_validation_damage"
+     },
+     "per_sink": [
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 2908,
+         "denominator_rows": 5816,
+         "dirty_rows": 2908,
+         "exactly_unchanged_rows": 2908,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 2908,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "count_lifetime_orders": 0,
+           "customer_name": 0,
+           "customer_type": 0,
+           "first_ordered_at": 0,
+           "last_ordered_at": 0,
+           "lifetime_spend": 0,
+           "lifetime_spend_pretax": 0,
+           "lifetime_tax_paid": 0
+          },
+          "comparable_key_aligned_cells": 23264,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:customers"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 6,
+         "denominator_rows": 12,
+         "dirty_rows": 6,
+         "exactly_unchanged_rows": 6,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 6,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "location_name": 0,
+           "opened_date": 0,
+           "tax_rate": 0
+          },
+          "comparable_key_aligned_cells": 18,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:locations"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10958,
+         "denominator_rows": 21916,
+         "dirty_rows": 10958,
+         "exactly_unchanged_rows": 10958,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10958,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": null,
+          "changed_cells": 0,
+          "changed_cells_by_column": {},
+          "comparable_key_aligned_cells": 0,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:metricflow_time_spine"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 10,
+         "denominator_rows": 20,
+         "dirty_rows": 10,
+         "exactly_unchanged_rows": 10,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 10,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_drink_item": 0,
+           "is_food_item": 0,
+           "product_description": 0,
+           "product_name": 0,
+           "product_price": 0,
+           "product_type": 0
+          },
+          "comparable_key_aligned_cells": 60,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:products"
+      },
+      {
+       "damage": {
+        "alignment_method": "unique_non_null_key_alignment",
+        "primary": {
+         "both_rowsets_empty": false,
+         "changed_rows": 0,
+         "clean_rows": 65,
+         "denominator_rows": 130,
+         "dirty_rows": 65,
+         "exactly_unchanged_rows": 65,
+         "formula": "(clean_rows + dirty_rows - 2 * exactly_unchanged_rows) / (clean_rows + dirty_rows)",
+         "is_primary": true,
+         "matched_rows": 65,
+         "name": "symmetric_exact_row_mismatch_rate",
+         "symmetric_difference_rows": 0,
+         "value": 0.0
+        },
+        "schema_version": 1,
+        "supplemental": {
+         "cell": {
+          "available": true,
+          "changed_cell_rate_on_key_aligned_non_key_cells": 0.0,
+          "changed_cells": 0,
+          "changed_cells_by_column": {
+           "is_perishable_supply": 0,
+           "product_id": 0,
+           "supply_cost": 0,
+           "supply_id": 0,
+           "supply_name": 0
+          },
+          "comparable_key_aligned_cells": 325,
+          "is_primary": false,
+          "per_column_evidence": "frozen_per_column_counts",
+          "scope": "key-aligned non-key cells only; added/deleted rows are not assigned invented cell pairings"
+         },
+         "value": {
+          "available": false,
+          "is_primary": false,
+          "reason": "the frozen relation diff does not define a type- and scale-aware value distance; one must be preregistered before evaluation",
+          "value": null
+         }
+        }
+       },
+       "equal_weight": 0.2,
+       "sink_id": "model:supplies"
+      }
+     ],
+     "primary": {
+      "absolute_damage": 0.0,
+      "aggregation": "arithmetic_mean_over_preregistered_sinks",
+      "equal_sink_weight": 0.2,
+      "is_primary": true,
+      "name": "equal_weight_mean_symmetric_exact_row_mismatch_rate",
+      "unweighted_damage_sum": 0.0
+     },
+     "schema_version": 1,
+     "semantics": {
+      "is_dbt_test_result": false,
+      "is_propagation_proxy": false,
+      "kind": "observed_terminal_semantic_damage",
+      "sink_selection": "explicit_preregistered_list",
+      "source": "jaffle_ground_truth_relation_diff"
+     },
+     "sink_count": 5,
+     "sink_ids": [
+      "model:customers",
+      "model:locations",
+      "model:metricflow_time_spine",
+      "model:products",
+      "model:supplies"
+     ],
+     "supplemental": {
+      "cell": {
+       "changed_cells_sum": 0,
+       "complete_for_all_sinks": true,
+       "is_primary": false,
+       "warning": "raw changed-cell counts have different relation sizes and schemas and are not substituted for the primary sink mean"
+      },
+      "value": {
+       "available": false,
+       "is_primary": false,
+       "reason": "no preregistered cross-type value-distance metric is present in the relation-diff artifact",
+       "value": null
+      }
+     }
+    },
+    "injection": {
+     "actual_mutation_executed": true,
+     "key_column": "id",
+     "mode": "duplicate_physical_row",
+     "relation": "raw.raw_items",
+     "row_count_after": 1054235,
+     "row_count_before": 1054135,
+     "target_count": 100
+    },
+    "node_reports": [
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 23636629,
+       "downstream_suppressed": false,
+       "node_id": "model:products"
+      },
+      "signal": {
+       "detect_runtime_ns": 42371846,
+       "fired_shapes": [],
+       "node_id": "model:products",
+       "reads_ground_truth": false,
+       "relation": "analytics.products",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     },
+     {
+      "action": {
+       "actions": [
+        {
+         "cells_nulled": 0,
+         "disposition": "dedup",
+         "fired": true,
+         "rows_affected": 100,
+         "rows_deleted": 100,
+         "shape": "duplicate_shape"
+        }
+       ],
+       "dispose_runtime_ns": 202875734,
+       "downstream_suppressed": false,
+       "node_id": "model:order_items"
+      },
+      "signal": {
+       "detect_runtime_ns": 264276438,
+       "fired_shapes": [
+        "duplicate_shape"
+       ],
+       "node_id": "model:order_items",
+       "reads_ground_truth": false,
+       "relation": "analytics.order_items",
+       "shape_counts": {
+        "duplicate_shape": 100,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "duplicate_shape"
+      }
+     },
+     {
+      "action": {
+       "actions": [],
+       "dispose_runtime_ns": 47379473,
+       "downstream_suppressed": false,
+       "node_id": "model:orders"
+      },
+      "signal": {
+       "detect_runtime_ns": 2249150982,
+       "fired_shapes": [],
+       "node_id": "model:orders",
+       "reads_ground_truth": false,
+       "relation": "analytics.orders",
+       "shape_counts": {
+        "duplicate_shape": 0,
+        "fk_shape": 0,
+        "null_shape": 0,
+        "numeric_shape": 0
+       },
+       "shape_relations": {
+        "duplicate_shape": "\"analytics\".\"_lg_sig_duplicate_shape\"",
+        "fk_shape": "\"analytics\".\"_lg_sig_fk_shape\"",
+        "null_shape": "\"analytics\".\"_lg_sig_null_shape\"",
+        "numeric_shape": "\"analytics\".\"_lg_sig_numeric_shape\""
+       },
+       "verdict": "clear"
+      }
+     }
+    ],
+    "publish_suppressed": false,
+    "status": "complete"
+   },
+   "kind": "conformance",
+   "no_validation_damage": 0.0,
+   "nrd": null,
+   "plan_nodes": [
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:products"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:order_items"
+    },
+    {
+     "map": {
+      "duplicate_shape": "dedup",
+      "fk_shape": "no_op",
+      "null_shape": "no_op",
+      "numeric_shape": "quarantine"
+     },
+     "node": "model:orders"
+    }
+   ],
+   "status": "complete"
+  }
+ ],
+ "schema_version": 1,
+ "scope": {
+  "data_role": "train",
+  "effect_claim_allowed": false,
+  "gate_computed_by_runner": false,
+  "paper_eligible": false,
+  "real_signal_detection_on_both_branches": true,
+  "study_phase": "development"
+ },
+ "started_utc": "2026-08-24T03:31:32Z"
+}

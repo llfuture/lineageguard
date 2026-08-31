@@ -1,0 +1,32 @@
+{
+ "criteria": {
+  "g10_sign_flip_p_le_005": true,
+  "g1_campaigns_complete": true,
+  "g2_bindings_complete": true,
+  "g3_zero_technical_failures": true,
+  "g4_no_validation_damage_positive": true,
+  "g5_safety_caps": true,
+  "g6_physically_distinguishable": true,
+  "g7_mean_diff_negative": true,
+  "g8_bootstrap_upper_negative": true,
+  "g9_relative_improvement_ge_sesoi": true
+ },
+ "criteria_passed": 10,
+ "decision": "GO",
+ "gate_sha256": "f89e2135081d553ea261022b5c3f2dd77b5cecc9733af689650a7353c89e141c",
+ "issued_utc": "2026-08-24T11:36:32Z",
+ "kind": "lineageguard_p3_gate_result_v1",
+ "notes": "confirmatory-replication decision under protocol jaffle_rq2_policy_p3_v1; forbidden claims list applies unchanged",
+ "one_shot": true,
+ "plans_sha256": "e99b10d4ff646f8ef80ad7ba58705707bc93227318bd7c750e954803d1e5f1be",
+ "protocol_sha256": "28cac435761222a96a9403169934bdf0bb3d15d9b7a543153662350ca0420c7d",
+ "recomputed": {
+  "bootstrap_lower95": -0.32530570654273233,
+  "bootstrap_upper95": -0.13921021487928195,
+  "mean_paired_aurd_diff": -0.23220769102583352,
+  "relative_improvement": 0.31033289254805124,
+  "sign_flip_p_one_sided": 0.000244140625
+ },
+ "summary_cross_check_ok": true,
+ "summary_sha256": "064fb482aa561a1ce7b0931d73e6e4c59880d11fa3e445d321a19e5eb5491045"
+}

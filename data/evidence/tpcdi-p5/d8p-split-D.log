@@ -1,0 +1,14 @@
+[2026-08-29T12:00:27Z] d8p-fin-mixed-20x20        no_validation damage=0.00019594428312343768 (20.84s)
+[2026-08-29T12:00:46Z] d8p-fin-mixed-20x20        anchor:num_only  damage=0.0001167815086265171
+[2026-08-29T12:01:07Z] d8p-fin-mixed-20x20        anchor:dup_only  damage=7.916277449692058e-05
+[2026-08-29T12:01:55Z] d8p-fin-mixed-20x20        cond@stg_financial               NRD=  0.489918 clean=0.0 (22.12s)
+[2026-08-29T12:02:46Z] d8p-fin-mixed-20x20        static-quar@stg_financial        NRD=  0.969782 clean=0.0 (24.5s)
+[2026-08-29T12:03:41Z] d8p-fin-mixed-20x20        static-dedup@stg_financial       NRD=  0.595993 clean=0.0 (26.68s)
+[2026-08-29T12:04:39Z] d8p-fin-mixed-20x20        static-nullout@stg_financial     NRD=  1.383974 clean=0.0 (27.81s)
+[2026-08-29T12:06:14Z] d8p-fin-mixed-20x20        cond@fact_financials             NRD=  0.489918 clean=0.0 (47.85s)
+[2026-08-29T12:07:32Z] d8p-fin-mixed-20x20        all-nodes-quar                   NRD=488.917387 clean=0.09565100488000851 (43.15s)
+[2026-08-29T12:08:38Z] d8p-fin-mixed-20x20        composed:cond@stg+quar@fact      NRD=  0.489918 clean=0.0 (32.83s)
+
+[2026-08-29T12:08:38Z] DONE rows=10 failures=0 dbt_steps=86
+artifact: /home/u0020090017/projects/lineageguard_claude/tpcdi/out-split-D/d8p-measurement.json
+sha256  : 2fbcaf477eacc6ec2d77625177699cc452b47aa86e280fa5134f10ab05d9bfb3

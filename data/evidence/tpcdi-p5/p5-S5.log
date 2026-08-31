@@ -1,0 +1,20 @@
+[2026-08-29T12:22:14Z] p5-mkt-num-k10-1           no_validation damage=0.01065030134573575 (18.92s)
+[2026-08-29T12:22:48Z] p5-mkt-num-k10-1           fact_financials,stg_daily_market       NRD=  1.000000 clean=0.0 (17.02s)
+[2026-08-29T12:23:24Z] p5-mkt-num-k10-1           fact_financials                        NRD=  1.000000 clean=0.0 (18.41s)
+[2026-08-29T12:23:59Z] p5-mkt-num-k10-1           fact_financials,stg_daily_market       NRD=  1.000000 clean=0.0 (17.07s)
+[2026-08-29T12:24:32Z] p5-mkt-num-k10-1           fact_financials                        NRD=  1.000000 clean=0.0 (16.28s)
+[2026-08-29T12:25:24Z] p5-mkt-num-k10-1           stg_financial,fact_financials,stg_dail NRD=  1.000000 clean=0.0 (25.24s)
+[2026-08-29T12:25:59Z] p5-mkt-num-k10-1           stg_financial,stg_daily_market         NRD=  1.000000 clean=0.0 (15.71s)
+[2026-08-29T12:26:32Z] p5-mkt-num-k10-1           stg_financial                          NRD=  1.000000 clean=0.0 (16.05s)
+[2026-08-29T12:26:49Z] p5-mkt-dup-k10-1           no_validation damage=0.01065030134573575 (16.18s)
+[2026-08-29T12:27:24Z] p5-mkt-dup-k10-1           fact_financials,stg_daily_market       NRD=  0.000000 clean=0.0 (15.95s)
+[2026-08-29T12:27:59Z] p5-mkt-dup-k10-1           fact_financials                        NRD=  1.000000 clean=0.0 (16.29s)
+[2026-08-29T12:28:34Z] p5-mkt-dup-k10-1           fact_financials,stg_daily_market       NRD=  0.000000 clean=0.0 (16.34s)
+[2026-08-29T12:29:08Z] p5-mkt-dup-k10-1           fact_financials                        NRD=  1.000000 clean=0.0 (17.06s)
+[2026-08-29T12:30:01Z] p5-mkt-dup-k10-1           stg_financial,fact_financials,stg_dail NRD=  1.000000 clean=0.0 (26.16s)
+[2026-08-29T12:30:35Z] p5-mkt-dup-k10-1           stg_financial,stg_daily_market         NRD=  1.000000 clean=0.0 (16.45s)
+[2026-08-29T12:31:09Z] p5-mkt-dup-k10-1           stg_financial                          NRD=  1.000000 clean=0.0 (16.42s)
+
+[2026-08-29T12:31:09Z] DONE rows=16 failures=0 dbt_steps=98
+artifact: /home/u0020090017/projects/lineageguard_claude/tpcdi/out-p5-S5/p5-measurement-mkt-.json
+sha256  : d93d584fbf70e629fb520ea631da52f475f3f763968e24b5e905371f9f84cce1

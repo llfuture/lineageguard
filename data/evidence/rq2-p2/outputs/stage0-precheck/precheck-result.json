@@ -1,0 +1,1306 @@
+{
+ "disposition_universe_headroom": [
+  {
+   "clears_sesoi": false,
+   "disposition_universe": "v1_first_version_quarantine_noop_alert_only",
+   "macro_nrd": {
+    "denominator": 38,
+    "numerator": 29,
+    "value": 0.7631578947368421
+   },
+   "per_error_type_residual": {
+    "duplicate": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "numeric": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    }
+   },
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 31,
+    "numerator": 2,
+    "value": 0.06451612903225806
+   }
+  },
+  {
+   "clears_sesoi": true,
+   "disposition_universe": "v2_first_version_with_exact_dedup",
+   "macro_nrd": {
+    "denominator": 19,
+    "numerator": 5,
+    "value": 0.2631578947368421
+   },
+   "per_error_type_residual": {
+    "duplicate": {
+     "denominator": 1,
+     "numerator": 0,
+     "value": 0.0
+    },
+    "numeric": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    }
+   },
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 31,
+    "numerator": 21,
+    "value": 0.6774193548387096
+   }
+  },
+  {
+   "clears_sesoi": false,
+   "disposition_universe": "reference_static_quarantine_only",
+   "macro_nrd": {
+    "denominator": 38,
+    "numerator": 31,
+    "value": 0.8157894736842105
+   },
+   "per_error_type_residual": {
+    "duplicate": {
+     "denominator": 19,
+     "numerator": 21,
+     "value": 1.105263157894737
+    },
+    "numeric": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    }
+   },
+   "relative_improvement_over_static_ceiling": {
+    "denominator": 1,
+    "numerator": 0,
+    "value": 0.0
+   }
+  }
+ ],
+ "kind": "lineageguard_stage0_identifiability_precheck_v1",
+ "precheck_sha256": "f77c3057252b9a51cf9082e5d65db8bc3f34215856b2d338a1bd346ec10cb98b",
+ "requires_physical_confirmation_in_d9": [
+  "duplicate-side dedup residual assumed 0 (arithmetic bound, not measured)",
+  "conservative max-dominance rule for unmeasured 2..4 action subsets"
+ ],
+ "response_class_count": 3,
+ "response_equivalence_classes": [
+  {
+   "cheapest_member_cost_us": 28211,
+   "class_id": "resp-class-01",
+   "member_actions": [
+    "model:customers",
+    "model:order_items"
+   ],
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 1,
+     "numerator": 1,
+     "value": 1.0
+    }
+   },
+   "signature_digest": "7d3492c7ca7ee16a"
+  },
+  {
+   "cheapest_member_cost_us": 47159369,
+   "class_id": "resp-class-02",
+   "member_actions": [
+    "model:orders"
+   ],
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 2908,
+     "numerator": 63493,
+     "value": 21.833906464924347
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 727,
+     "numerator": 10450,
+     "value": 14.37414030261348
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 2908,
+     "numerator": 63619,
+     "value": 21.87723521320495
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 727,
+     "numerator": 10471,
+     "value": 14.40302613480055
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 1454,
+     "numerator": 15889,
+     "value": 10.927785419532325
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 727,
+     "numerator": 5352,
+     "value": 7.361760660247593
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 1454,
+     "numerator": 15889,
+     "value": 10.927785419532325
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 727,
+     "numerator": 5362,
+     "value": 7.375515818431912
+    }
+   },
+   "signature_digest": "4ca3e761d612dbf8"
+  },
+  {
+   "cheapest_member_cost_us": 4708,
+   "class_id": "resp-class-03",
+   "member_actions": [
+    "model:products",
+    "model:stg_products"
+   ],
+   "per_cell_nrd": {
+    "rq2-action-response-d8-duplicate-intermediate-high-v2": {
+     "denominator": 19,
+     "numerator": 21,
+     "value": 1.105263157894737
+    },
+    "rq2-action-response-d8-duplicate-intermediate-low-v2": {
+     "denominator": 19,
+     "numerator": 21,
+     "value": 1.105263157894737
+    },
+    "rq2-action-response-d8-duplicate-source-high-v2": {
+     "denominator": 19,
+     "numerator": 21,
+     "value": 1.105263157894737
+    },
+    "rq2-action-response-d8-duplicate-source-low-v2": {
+     "denominator": 19,
+     "numerator": 21,
+     "value": 1.105263157894737
+    },
+    "rq2-action-response-d8-numeric-intermediate-high-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-intermediate-low-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-source-high-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    },
+    "rq2-action-response-d8-numeric-source-low-v2": {
+     "denominator": 19,
+     "numerator": 10,
+     "value": 0.5263157894736842
+    }
+   },
+   "signature_digest": "0e460b14612f69db"
+  }
+ ],
+ "retroactive_p1_launch_verdict": {
+  "criterion_distinct_physical_signature": false,
+  "criterion_headroom_at_least_sesoi": false,
+  "note": "Every budget point places primary and comparator in the same measured response class on all eight development cells, so the paired difference is determined to be zero before any fresh campaign is materialised.",
+  "per_budget": [
+   {
+    "budget_anchors": "100_percent",
+    "comparator_actions": [
+     "model:stg_products"
+    ],
+    "comparator_spend_us": 6813,
+    "per_cell": [
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     }
+    ],
+    "primary_actions": [
+     "model:products",
+     "model:customers"
+    ],
+    "primary_spend_us": 32919,
+    "responses_distinct_on_any_cell": false
+   },
+   {
+    "budget_anchors": "10_percent",
+    "comparator_actions": [
+     "model:stg_products"
+    ],
+    "comparator_spend_us": 6813,
+    "per_cell": [
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     }
+    ],
+    "primary_actions": [
+     "model:products",
+     "model:customers"
+    ],
+    "primary_spend_us": 32919,
+    "responses_distinct_on_any_cell": false
+   },
+   {
+    "budget_anchors": "1_percent",
+    "comparator_actions": [
+     "model:stg_products"
+    ],
+    "comparator_spend_us": 6813,
+    "per_cell": [
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     }
+    ],
+    "primary_actions": [
+     "model:products",
+     "model:customers"
+    ],
+    "primary_spend_us": 32919,
+    "responses_distinct_on_any_cell": false
+   },
+   {
+    "budget_anchors": "20_percent",
+    "comparator_actions": [
+     "model:stg_products"
+    ],
+    "comparator_spend_us": 6813,
+    "per_cell": [
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     }
+    ],
+    "primary_actions": [
+     "model:products",
+     "model:customers"
+    ],
+    "primary_spend_us": 32919,
+    "responses_distinct_on_any_cell": false
+   },
+   {
+    "budget_anchors": "2_percent",
+    "comparator_actions": [
+     "model:stg_products"
+    ],
+    "comparator_spend_us": 6813,
+    "per_cell": [
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     }
+    ],
+    "primary_actions": [
+     "model:products",
+     "model:customers"
+    ],
+    "primary_spend_us": 32919,
+    "responses_distinct_on_any_cell": false
+   },
+   {
+    "budget_anchors": "5_percent",
+    "comparator_actions": [
+     "model:stg_products"
+    ],
+    "comparator_spend_us": 6813,
+    "per_cell": [
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     }
+    ],
+    "primary_actions": [
+     "model:products",
+     "model:customers"
+    ],
+    "primary_spend_us": 32919,
+    "responses_distinct_on_any_cell": false
+   },
+   {
+    "budget_anchors": "cheapest_action",
+    "comparator_actions": [
+     "model:products"
+    ],
+    "comparator_spend_us": 4708,
+    "per_cell": [
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 21,
+       "value": 1.105263157894737
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 19,
+       "numerator": 10,
+       "value": 0.5263157894736842
+      }
+     }
+    ],
+    "primary_actions": [
+     "model:products"
+    ],
+    "primary_spend_us": 4708,
+    "responses_distinct_on_any_cell": false
+   },
+   {
+    "budget_anchors": "zero",
+    "comparator_actions": [],
+    "comparator_spend_us": 0,
+    "per_cell": [
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-duplicate-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-high-v2",
+      "comparator_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-intermediate-low-v2",
+      "comparator_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-high-v2",
+      "comparator_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     },
+     {
+      "cell_id": "rq2-action-response-d8-numeric-source-low-v2",
+      "comparator_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      },
+      "identical": true,
+      "primary_nrd": {
+       "denominator": 1,
+       "numerator": 1,
+       "value": 1.0
+      }
+     }
+    ],
+    "primary_actions": [],
+    "primary_spend_us": 0,
+    "responses_distinct_on_any_cell": false
+   }
+  ],
+  "verdict": "LAUNCH_REFUSED"
+ },
+ "schema_version": 1,
+ "scope": {
+  "development_evidence_only": true,
+  "effect_claim_allowed": false,
+  "fresh_or_outcome_input_read": false,
+  "physical_execution_performed": false,
+  "purpose": "launch_admissibility_only"
+ },
+ "sesoi_relative_improvement": {
+  "denominator": 10,
+  "numerator": 1,
+  "value": 0.1
+ },
+ "source": {
+  "d8_gate_sha256": "c89864e475a4f168eb6e1f1397970f7f2220bda0c46864d6b053e44d0a4710e9",
+  "shared_plan_registry_sha256": "abbb28c21115e25ed028b09443980f5a0e9ef385796431693bdedd9c18bc4916"
+ },
+ "stage1_launch_decision": "LAUNCH_PERMITTED",
+ "stage1_launch_rationale": {
+  "conclusion": "v1 first version is inadmissible (below SESOI); v2 first version with exact dedup is admissible. Proceed to D9-MVE with dedup in the first-stage policy class.",
+  "v1_minimal_policy_clears_sesoi": false,
+  "v1_relative_improvement": {
+   "denominator": 31,
+   "numerator": 2,
+   "value": 0.06451612903225806
+  },
+  "v2_relative_improvement": {
+   "denominator": 31,
+   "numerator": 21,
+   "value": 0.6774193548387096
+  },
+  "v2_with_dedup_clears_sesoi": true
+ },
+ "static_ceiling": {
+  "best_actions": [
+   "model:products"
+  ],
+  "best_macro_nrd": {
+   "denominator": 38,
+   "numerator": 31,
+   "value": 0.8157894736842105
+  },
+  "best_spend_us": 4708,
+  "enumerated_subsets": 32
+ }
+}

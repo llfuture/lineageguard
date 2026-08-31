@@ -1,0 +1,3142 @@
+{
+ "catalog": [
+  {
+   "c_deploy_us": null,
+   "c_detect_us": 73833.076,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": null,
+   "disposition": "no_op",
+   "node_id": "source:ecom.raw_products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": null,
+   "c_detect_us": 73833.076,
+   "c_disposition_us": 829.594,
+   "c_disposition_worst_us": 905.582,
+   "c_total_us": null,
+   "disposition": "quarantine",
+   "node_id": "source:ecom.raw_products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": null,
+   "c_detect_us": 73833.076,
+   "c_disposition_us": 2386.204,
+   "c_disposition_worst_us": 3397.79,
+   "c_total_us": null,
+   "disposition": "dedup",
+   "node_id": "source:ecom.raw_products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": null,
+   "c_detect_us": 73833.076,
+   "c_disposition_us": 1509.243,
+   "c_disposition_worst_us": 1642.155,
+   "c_total_us": null,
+   "disposition": "null_out",
+   "node_id": "source:ecom.raw_products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": null,
+   "c_detect_us": 73833.076,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": null,
+   "disposition": "fail_closed",
+   "node_id": "source:ecom.raw_products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 6813,
+   "c_detect_us": 73777.627,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 80590.627,
+   "disposition": "no_op",
+   "node_id": "model:stg_products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 6813,
+   "c_detect_us": 73777.627,
+   "c_disposition_us": 1042.948,
+   "c_disposition_worst_us": 1077.542,
+   "c_total_us": 81633.575,
+   "disposition": "quarantine",
+   "node_id": "model:stg_products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 6813,
+   "c_detect_us": 73777.627,
+   "c_disposition_us": 2351.104,
+   "c_disposition_worst_us": 5976.13,
+   "c_total_us": 82941.731,
+   "disposition": "dedup",
+   "node_id": "model:stg_products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 6813,
+   "c_detect_us": 73777.627,
+   "c_disposition_us": 846.142,
+   "c_disposition_worst_us": 927.493,
+   "c_total_us": 81436.769,
+   "disposition": "null_out",
+   "node_id": "model:stg_products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 6813,
+   "c_detect_us": 73777.627,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 80590.627,
+   "disposition": "fail_closed",
+   "node_id": "model:stg_products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 4708,
+   "c_detect_us": 77996.204,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 82704.204,
+   "disposition": "no_op",
+   "node_id": "model:products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 4708,
+   "c_detect_us": 77996.204,
+   "c_disposition_us": 863.844,
+   "c_disposition_worst_us": 914.979,
+   "c_total_us": 83568.048,
+   "disposition": "quarantine",
+   "node_id": "model:products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 4708,
+   "c_detect_us": 77996.204,
+   "c_disposition_us": 2427.76,
+   "c_disposition_worst_us": 3637.324,
+   "c_total_us": 85131.964,
+   "disposition": "dedup",
+   "node_id": "model:products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 4708,
+   "c_detect_us": 77996.204,
+   "c_disposition_us": 1756.412,
+   "c_disposition_worst_us": 2027.956,
+   "c_total_us": 84460.616,
+   "disposition": "null_out",
+   "node_id": "model:products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 4708,
+   "c_detect_us": 77996.204,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 82704.204,
+   "disposition": "fail_closed",
+   "node_id": "model:products",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 51078023,
+   "c_detect_us": 967902.437,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 52045925.437,
+   "disposition": "no_op",
+   "node_id": "model:order_items",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 51078023,
+   "c_detect_us": 967902.437,
+   "c_disposition_us": 132101.059,
+   "c_disposition_worst_us": 136363.043,
+   "c_total_us": 52178026.496,
+   "disposition": "quarantine",
+   "node_id": "model:order_items",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 51078023,
+   "c_detect_us": 967902.437,
+   "c_disposition_us": 305942.915,
+   "c_disposition_worst_us": 318052.675,
+   "c_total_us": 52351868.352,
+   "disposition": "dedup",
+   "node_id": "model:order_items",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "disposition": "null_out",
+   "node_id": "model:order_items",
+   "status": "not_applicable"
+  },
+  {
+   "c_deploy_us": 51078023,
+   "c_detect_us": 967902.437,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 52045925.437,
+   "disposition": "fail_closed",
+   "node_id": "model:order_items",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 47159369,
+   "c_detect_us": 165493.106,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 47324862.106,
+   "disposition": "no_op",
+   "node_id": "model:orders",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 47159369,
+   "c_detect_us": 165493.106,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 47324862.106,
+   "disposition": "quarantine",
+   "node_id": "model:orders",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 47159369,
+   "c_detect_us": 165493.106,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 47324862.106,
+   "disposition": "dedup",
+   "node_id": "model:orders",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "disposition": "null_out",
+   "node_id": "model:orders",
+   "status": "not_applicable"
+  },
+  {
+   "c_deploy_us": 47159369,
+   "c_detect_us": 165493.106,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 47324862.106,
+   "disposition": "fail_closed",
+   "node_id": "model:orders",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 28211,
+   "c_detect_us": 69670.986,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 97881.986,
+   "disposition": "no_op",
+   "node_id": "model:customers",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 28211,
+   "c_detect_us": 69670.986,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 97881.986,
+   "disposition": "quarantine",
+   "node_id": "model:customers",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "c_deploy_us": 28211,
+   "c_detect_us": 69670.986,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 97881.986,
+   "disposition": "dedup",
+   "node_id": "model:customers",
+   "status": "priced",
+   "workload_count": 9
+  },
+  {
+   "disposition": "null_out",
+   "node_id": "model:customers",
+   "status": "not_applicable"
+  },
+  {
+   "c_deploy_us": 28211,
+   "c_detect_us": 69670.986,
+   "c_disposition_us": 0.0,
+   "c_disposition_worst_us": 0.0,
+   "c_total_us": 97881.986,
+   "disposition": "fail_closed",
+   "node_id": "model:customers",
+   "status": "priced",
+   "workload_count": 9
+  }
+ ],
+ "cost_catalog_sha256": "7b933abfcec953f52b57a408e7638e68683f1051db69c46d218448cf39ab0323",
+ "dispositions": [
+  "no_op",
+  "quarantine",
+  "dedup",
+  "null_out",
+  "fail_closed"
+ ],
+ "frozen_deploy_component_source": "P1 action-p1-cost-catalog (C_deploy only)",
+ "kind": "lineageguard_policy_cost_catalog_v1",
+ "measured_utc": "2026-08-23T08:05:53Z",
+ "observations": [
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 66532482,
+    "median_ns": 64125502,
+    "min_ns": 60832008,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "source:ecom.raw_products",
+   "workload": "clean"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 133509017,
+    "median_ns": 62369172,
+    "min_ns": 61436093,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:stg_products",
+   "workload": "clean"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 73925015,
+    "median_ns": 65121481,
+    "min_ns": 60400876,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:products",
+   "workload": "clean"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 268040671,
+    "median_ns": 189757684,
+    "min_ns": 181923881,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:order_items",
+   "workload": "clean"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 176556918,
+    "median_ns": 158928884,
+    "min_ns": 155259059,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:orders",
+   "workload": "clean"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 70032537,
+    "median_ns": 63313874,
+    "min_ns": 59930218,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:customers",
+   "workload": "clean"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 71462188,
+    "median_ns": 68713818,
+    "min_ns": 66773356,
+    "numeric_key_count": 1,
+    "trials": 5,
+    "verdict": "numeric_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 3105932,
+     "median_ns": 2241311,
+     "min_ns": 2229125,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 1642155,
+     "median_ns": 1509243,
+     "min_ns": 647547,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 818273,
+     "median_ns": 768489,
+     "min_ns": 744733,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "source:ecom.raw_products",
+   "workload": "001-numeric-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 74995834,
+    "median_ns": 73301891,
+    "min_ns": 69354998,
+    "numeric_key_count": 1,
+    "trials": 5,
+    "verdict": "numeric_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 2302049,
+     "median_ns": 1938052,
+     "min_ns": 1833309,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 689433,
+     "median_ns": 663718,
+     "min_ns": 654393,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": true,
+     "max_ns": 1077542,
+     "median_ns": 1042948,
+     "min_ns": 812236,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:stg_products",
+   "workload": "001-numeric-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 77453209,
+    "median_ns": 72167140,
+    "min_ns": 70815736,
+    "numeric_key_count": 1,
+    "trials": 5,
+    "verdict": "numeric_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 2481384,
+     "median_ns": 2266023,
+     "min_ns": 2245557,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 1001180,
+     "median_ns": 895299,
+     "min_ns": 848561,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 876684,
+     "median_ns": 804916,
+     "min_ns": 732924,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:products",
+   "workload": "001-numeric-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 191298578,
+    "median_ns": 188104743,
+    "min_ns": 183496222,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:order_items",
+   "workload": "001-numeric-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 172515661,
+    "median_ns": 159505738,
+    "min_ns": 157719562,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:orders",
+   "workload": "001-numeric-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 74823490,
+    "median_ns": 69670986,
+    "min_ns": 61821615,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:customers",
+   "workload": "001-numeric-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 75642593,
+    "median_ns": 73833076,
+    "min_ns": 71599292,
+    "numeric_key_count": 1,
+    "trials": 5,
+    "verdict": "numeric_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 2438086,
+     "median_ns": 2386204,
+     "min_ns": 2255084,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 976255,
+     "median_ns": 839101,
+     "min_ns": 814426,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 905582,
+     "median_ns": 829594,
+     "min_ns": 723725,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "source:ecom.raw_products",
+   "workload": "002-numeric-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 134623443,
+    "median_ns": 69648257,
+    "min_ns": 67786048,
+    "numeric_key_count": 1,
+    "trials": 5,
+    "verdict": "numeric_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 2405333,
+     "median_ns": 2234550,
+     "min_ns": 2192376,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 691162,
+     "median_ns": 656735,
+     "min_ns": 647215,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": true,
+     "max_ns": 977941,
+     "median_ns": 905748,
+     "min_ns": 891852,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:stg_products",
+   "workload": "002-numeric-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 70203315,
+    "median_ns": 67447297,
+    "min_ns": 66168915,
+    "numeric_key_count": 1,
+    "trials": 5,
+    "verdict": "numeric_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 2611198,
+     "median_ns": 2245845,
+     "min_ns": 2237207,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 948680,
+     "median_ns": 845295,
+     "min_ns": 833954,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 822158,
+     "median_ns": 783209,
+     "min_ns": 752163,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:products",
+   "workload": "002-numeric-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 245788145,
+    "median_ns": 181209708,
+    "min_ns": 178694646,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:order_items",
+   "workload": "002-numeric-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 156361333,
+    "median_ns": 155412991,
+    "min_ns": 154796870,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:orders",
+   "workload": "002-numeric-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 121479368,
+    "median_ns": 62393594,
+    "min_ns": 60391523,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:customers",
+   "workload": "002-numeric-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 128100736,
+    "median_ns": 65578295,
+    "min_ns": 60207098,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "source:ecom.raw_products",
+   "workload": "003-numeric-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 69673996,
+    "median_ns": 68536009,
+    "min_ns": 67177017,
+    "numeric_key_count": 1,
+    "trials": 5,
+    "verdict": "numeric_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 2502635,
+     "median_ns": 2351104,
+     "min_ns": 1830802,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 732282,
+     "median_ns": 669896,
+     "min_ns": 662001,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 643575,
+     "median_ns": 597332,
+     "min_ns": 588765,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:stg_products",
+   "workload": "003-numeric-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 122368961,
+    "median_ns": 77996204,
+    "min_ns": 69847804,
+    "numeric_key_count": 1,
+    "trials": 5,
+    "verdict": "numeric_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 2177623,
+     "median_ns": 2033699,
+     "min_ns": 1896355,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 906981,
+     "median_ns": 836002,
+     "min_ns": 816060,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 886973,
+     "median_ns": 788313,
+     "min_ns": 764299,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:products",
+   "workload": "003-numeric-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 252725175,
+    "median_ns": 190281144,
+    "min_ns": 182186731,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:order_items",
+   "workload": "003-numeric-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 201408856,
+    "median_ns": 161260283,
+    "min_ns": 153928497,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:orders",
+   "workload": "003-numeric-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 66433213,
+    "median_ns": 61844546,
+    "min_ns": 61573116,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:customers",
+   "workload": "003-numeric-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 112128970,
+    "median_ns": 62993647,
+    "min_ns": 61313149,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "source:ecom.raw_products",
+   "workload": "004-numeric-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 74210618,
+    "median_ns": 73777627,
+    "min_ns": 72410309,
+    "numeric_key_count": 1,
+    "trials": 5,
+    "verdict": "numeric_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 2441306,
+     "median_ns": 2305189,
+     "min_ns": 1844181,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 893333,
+     "median_ns": 815242,
+     "min_ns": 804695,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 854431,
+     "median_ns": 736603,
+     "min_ns": 732762,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:stg_products",
+   "workload": "004-numeric-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 132010893,
+    "median_ns": 70925876,
+    "min_ns": 67348813,
+    "numeric_key_count": 1,
+    "trials": 5,
+    "verdict": "numeric_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 3637324,
+     "median_ns": 2427760,
+     "min_ns": 2332191,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 938503,
+     "median_ns": 852768,
+     "min_ns": 802617,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 771738,
+     "median_ns": 738609,
+     "min_ns": 735382,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:products",
+   "workload": "004-numeric-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 199941351,
+    "median_ns": 191802058,
+    "min_ns": 187897116,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:order_items",
+   "workload": "004-numeric-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 167629458,
+    "median_ns": 160066543,
+    "min_ns": 156507373,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:orders",
+   "workload": "004-numeric-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 66515961,
+    "median_ns": 63940665,
+    "min_ns": 62513337,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:customers",
+   "workload": "004-numeric-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 1,
+    "max_ns": 70142303,
+    "median_ns": 66818202,
+    "min_ns": 66495847,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 3343251,
+     "median_ns": 2258002,
+     "min_ns": 1972548,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 722558,
+     "median_ns": 659398,
+     "min_ns": 644161,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 808145,
+     "median_ns": 760322,
+     "min_ns": 750341,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "source:ecom.raw_products",
+   "workload": "005-duplicate-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 1,
+    "max_ns": 74759436,
+    "median_ns": 68110434,
+    "min_ns": 66614477,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 3313483,
+     "median_ns": 2247539,
+     "min_ns": 2233437,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 883659,
+     "median_ns": 811289,
+     "min_ns": 803361,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": true,
+     "max_ns": 973265,
+     "median_ns": 910929,
+     "min_ns": 890254,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:stg_products",
+   "workload": "005-duplicate-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 1,
+    "max_ns": 68931324,
+    "median_ns": 65942536,
+    "min_ns": 63906308,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 3534413,
+     "median_ns": 2262481,
+     "min_ns": 2260272,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 1587956,
+     "median_ns": 1532604,
+     "min_ns": 1508650,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 810396,
+     "median_ns": 743269,
+     "min_ns": 730180,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:products",
+   "workload": "005-duplicate-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 46286,
+    "max_ns": 576071649,
+    "median_ns": 504964438,
+    "min_ns": 498122950,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 205975891,
+     "median_ns": 205455353,
+     "min_ns": 205079532,
+     "rows_targeted": 46286,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 46286,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 46286,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 101098862,
+     "median_ns": 97486196,
+     "min_ns": 97392268,
+     "rows_targeted": 46286,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:order_items",
+   "workload": "005-duplicate-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 191843844,
+    "median_ns": 165245943,
+    "min_ns": 159598088,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:orders",
+   "workload": "005-duplicate-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 66898402,
+    "median_ns": 64425976,
+    "min_ns": 59916295,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:customers",
+   "workload": "005-duplicate-source-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 1,
+    "max_ns": 71230458,
+    "median_ns": 69434075,
+    "min_ns": 66559065,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 3397790,
+     "median_ns": 2270109,
+     "min_ns": 2234599,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 929862,
+     "median_ns": 840680,
+     "min_ns": 791899,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 800729,
+     "median_ns": 733848,
+     "min_ns": 723377,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "source:ecom.raw_products",
+   "workload": "006-duplicate-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 1,
+    "max_ns": 109107229,
+    "median_ns": 68113074,
+    "min_ns": 65384089,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 3285794,
+     "median_ns": 2252763,
+     "min_ns": 2239570,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 686498,
+     "median_ns": 657472,
+     "min_ns": 648552,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": true,
+     "max_ns": 955678,
+     "median_ns": 903709,
+     "min_ns": 892697,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:stg_products",
+   "workload": "006-duplicate-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 1,
+    "max_ns": 73891614,
+    "median_ns": 70427278,
+    "min_ns": 68286257,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 3392484,
+     "median_ns": 2347964,
+     "min_ns": 2301715,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 1404762,
+     "median_ns": 1356634,
+     "min_ns": 1334161,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 914979,
+     "median_ns": 863844,
+     "min_ns": 752648,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:products",
+   "workload": "006-duplicate-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 164309,
+    "max_ns": 1050582672,
+    "median_ns": 967902437,
+    "min_ns": 948245127,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 315495834,
+     "median_ns": 305467116,
+     "min_ns": 303777151,
+     "rows_targeted": 164309,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 164309,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 164309,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 136363043,
+     "median_ns": 131905221,
+     "min_ns": 131271745,
+     "rows_targeted": 164309,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:order_items",
+   "workload": "006-duplicate-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 162721918,
+    "median_ns": 160740698,
+    "min_ns": 155854073,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:orders",
+   "workload": "006-duplicate-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 66414855,
+    "median_ns": 63351840,
+    "min_ns": 61812310,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:customers",
+   "workload": "006-duplicate-source-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 132566048,
+    "median_ns": 61060289,
+    "min_ns": 59283272,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "source:ecom.raw_products",
+   "workload": "007-duplicate-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 1,
+    "max_ns": 68114380,
+    "median_ns": 66993319,
+    "min_ns": 64478901,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 5976130,
+     "median_ns": 1888247,
+     "min_ns": 1825410,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 927493,
+     "median_ns": 846142,
+     "min_ns": 812254,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 861107,
+     "median_ns": 741378,
+     "min_ns": 728967,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:stg_products",
+   "workload": "007-duplicate-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 1,
+    "max_ns": 73741727,
+    "median_ns": 71603803,
+    "min_ns": 68534369,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 3538777,
+     "median_ns": 2310922,
+     "min_ns": 1817054,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 1371419,
+     "median_ns": 1217329,
+     "min_ns": 1209900,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 846397,
+     "median_ns": 765419,
+     "min_ns": 751245,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:products",
+   "workload": "007-duplicate-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 46568,
+    "max_ns": 555092966,
+    "median_ns": 505746896,
+    "min_ns": 496025991,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 201309629,
+     "median_ns": 200984922,
+     "min_ns": 200945663,
+     "rows_targeted": 46568,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 46568,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 46568,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 97585454,
+     "median_ns": 95138783,
+     "min_ns": 94792010,
+     "rows_targeted": 46568,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:order_items",
+   "workload": "007-duplicate-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 176265803,
+    "median_ns": 152973164,
+    "min_ns": 149865618,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:orders",
+   "workload": "007-duplicate-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 64031296,
+    "median_ns": 60362863,
+    "min_ns": 58610865,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:customers",
+   "workload": "007-duplicate-intermediate-low-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 63105297,
+    "median_ns": 59137863,
+    "min_ns": 58878542,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "source:ecom.raw_products",
+   "workload": "008-duplicate-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 1,
+    "max_ns": 131110932,
+    "median_ns": 69298725,
+    "min_ns": 65121954,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 2921015,
+     "median_ns": 1956649,
+     "min_ns": 1844529,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 695232,
+     "median_ns": 662631,
+     "min_ns": 654034,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 869647,
+     "median_ns": 781272,
+     "min_ns": 738415,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:stg_products",
+   "workload": "008-duplicate-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 1,
+    "max_ns": 70812395,
+    "median_ns": 67959113,
+    "min_ns": 64899573,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 2782062,
+     "median_ns": 1873351,
+     "min_ns": 1836206,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "materialized_view_first": false,
+     "max_ns": 2027956,
+     "median_ns": 1756412,
+     "min_ns": 812369,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 887780,
+     "median_ns": 812223,
+     "min_ns": 728931,
+     "rows_targeted": 1,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:products",
+   "workload": "008-duplicate-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 164081,
+    "max_ns": 1021354978,
+    "median_ns": 965996996,
+    "min_ns": 961105698,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "duplicate_shape"
+   },
+   "dispositions": {
+    "dedup": {
+     "materialized_view_first": false,
+     "max_ns": 318052675,
+     "median_ns": 305942915,
+     "min_ns": 302312896,
+     "rows_targeted": 164081,
+     "status": "measured",
+     "trials": 5
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 164081,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 164081,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "materialized_view_first": false,
+     "max_ns": 136263252,
+     "median_ns": 132101059,
+     "min_ns": 131548889,
+     "rows_targeted": 164081,
+     "status": "measured",
+     "trials": 5
+    }
+   },
+   "node_id": "model:order_items",
+   "workload": "008-duplicate-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 226833882,
+    "median_ns": 165493106,
+    "min_ns": 160318226,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:orders",
+   "workload": "008-duplicate-intermediate-high-fanout"
+  },
+  {
+   "detect": {
+    "duplicate_key_count": 0,
+    "max_ns": 62978938,
+    "median_ns": 61495507,
+    "min_ns": 61132408,
+    "numeric_key_count": 0,
+    "trials": 5,
+    "verdict": "clear"
+   },
+   "dispositions": {
+    "dedup": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    },
+    "fail_closed": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "no_op": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "note": "no mutation issued",
+     "rows_targeted": 0,
+     "status": "measured",
+     "trials": 5
+    },
+    "null_out": {
+     "reason": "node has no priced numeric measure column",
+     "status": "not_applicable"
+    },
+    "quarantine": {
+     "max_ns": 0,
+     "median_ns": 0,
+     "rows_targeted": 0,
+     "status": "no_target"
+    }
+   },
+   "node_id": "model:customers",
+   "workload": "008-duplicate-intermediate-high-fanout"
+  }
+ ],
+ "priced_nodes": [
+  "source:ecom.raw_products",
+  "model:stg_products",
+  "model:products",
+  "model:order_items",
+  "model:orders",
+  "model:customers"
+ ],
+ "schema_version": 1,
+ "scope": {
+  "concurrent_shards": false,
+  "paper_eligible": false,
+  "restoration": "transaction rollback (no database copy)",
+  "single_threaded": true,
+  "study_phase": "development",
+  "timing_convention": "1 warmup + 5 measured, per-workload median, max over workloads"
+ }
+}

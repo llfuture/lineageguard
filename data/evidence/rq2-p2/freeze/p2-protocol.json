@@ -1,0 +1,347 @@
+{
+ "anchors": {
+  "train_sha256": "0e82d6747fbabe6e93424836742ef6ca949bdeb7f4c69c80a3e864ef905a3e82",
+  "validation_sha256": "50d60961f3b9434fc12d9c29bbeb3ce61b8635fea0a01c01f50ac3b63e10353a"
+ },
+ "authorization": {
+  "authorized_by": "project owner (Tom), 2026-08-23 session",
+  "new_question": "policy-conditioned placement over executable signal->disposition policies vs the strongest static action-set baseline, mixed error families, re-measured full policy costs",
+  "p1_stop_flag_acknowledged": true,
+  "prior_gate": "rq2_action_p1_v1 NO_GO retained, not reinterpreted"
+ },
+ "budget_grid_us": [
+  0,
+  265956,
+  9994269,
+  49971343,
+  99942686
+ ],
+ "campaigns": [
+  {
+   "campaign_id": "p2-prod-num-source-low",
+   "family": "prod-num",
+   "injection_rule": {
+    "error": "num",
+    "fanout": "low",
+    "fork": "products",
+    "k": 1,
+    "locus": "source"
+   }
+  },
+  {
+   "campaign_id": "p2-prod-num-source-high",
+   "family": "prod-num",
+   "injection_rule": {
+    "error": "num",
+    "fanout": "high",
+    "fork": "products",
+    "k": 1,
+    "locus": "source"
+   }
+  },
+  {
+   "campaign_id": "p2-prod-num-intermediate-low",
+   "family": "prod-num",
+   "injection_rule": {
+    "error": "num",
+    "fanout": "low",
+    "fork": "products",
+    "k": 1,
+    "locus": "intermediate"
+   }
+  },
+  {
+   "campaign_id": "p2-prod-num-intermediate-high",
+   "family": "prod-num",
+   "injection_rule": {
+    "error": "num",
+    "fanout": "high",
+    "fork": "products",
+    "k": 1,
+    "locus": "intermediate"
+   }
+  },
+  {
+   "campaign_id": "p2-prod-dup-source-low",
+   "family": "prod-dup",
+   "injection_rule": {
+    "error": "dup",
+    "fanout": "low",
+    "fork": "products",
+    "k": 1,
+    "locus": "source"
+   }
+  },
+  {
+   "campaign_id": "p2-prod-dup-source-high",
+   "family": "prod-dup",
+   "injection_rule": {
+    "error": "dup",
+    "fanout": "high",
+    "fork": "products",
+    "k": 1,
+    "locus": "source"
+   }
+  },
+  {
+   "campaign_id": "p2-prod-dup-intermediate-low",
+   "family": "prod-dup",
+   "injection_rule": {
+    "error": "dup",
+    "fanout": "low",
+    "fork": "products",
+    "k": 1,
+    "locus": "intermediate"
+   }
+  },
+  {
+   "campaign_id": "p2-prod-dup-intermediate-high",
+   "family": "prod-dup",
+   "injection_rule": {
+    "error": "dup",
+    "fanout": "high",
+    "fork": "products",
+    "k": 1,
+    "locus": "intermediate"
+   }
+  },
+  {
+   "campaign_id": "p2-ord-dup-k1",
+   "family": "ord-dup",
+   "injection_rule": {
+    "error": "dup",
+    "fork": "orders",
+    "k": 1
+   }
+  },
+  {
+   "campaign_id": "p2-ord-dup-k200",
+   "family": "ord-dup",
+   "injection_rule": {
+    "error": "dup",
+    "fork": "orders",
+    "k": 200
+   }
+  },
+  {
+   "campaign_id": "p2-ord-num-k1",
+   "family": "ord-num",
+   "injection_rule": {
+    "error": "num",
+    "fork": "orders",
+    "k": 1
+   }
+  },
+  {
+   "campaign_id": "p2-ord-num-k200",
+   "family": "ord-num",
+   "injection_rule": {
+    "error": "num",
+    "fork": "orders",
+    "k": 200
+   }
+  },
+  {
+   "campaign_id": "p2-ord-mixed-k50x2",
+   "family": "ord-mixed",
+   "injection_rule": {
+    "disjoint": true,
+    "error": "mixed",
+    "fork": "orders",
+    "k_dup": 50,
+    "k_num": 50
+   }
+  },
+  {
+   "campaign_id": "p2-null-prod-k1",
+   "family": "null-prod",
+   "injection_rule": {
+    "error": "null",
+    "fork": "products",
+    "k": 1
+   }
+  },
+  {
+   "campaign_id": "p2-fk-ord-k200",
+   "family": "fk-ord",
+   "injection_rule": {
+    "error": "fk",
+    "fork": "orders",
+    "k": 200
+   }
+  },
+  {
+   "campaign_id": "p2-del-ord-k200",
+   "family": "del-ord",
+   "injection_rule": {
+    "error": "del",
+    "fork": "orders",
+    "k": 200
+   }
+  }
+ ],
+ "composition_rule": "exact composed measurement, else unique non-state-inert candidate's measured singleton, else ineligible; state-inert = no_op, dedup on multiplicity-1 shapes, or undetectable node",
+ "derived_policy_maps": {
+  "model:customers": {
+   "duplicate_shape": "no_op",
+   "fk_shape": "no_op",
+   "null_shape": "no_op",
+   "numeric_shape": "quarantine"
+  },
+  "model:order_items": {
+   "duplicate_shape": "no_op",
+   "fk_shape": "no_op",
+   "null_shape": "no_op",
+   "numeric_shape": "no_op"
+  },
+  "model:orders": {
+   "duplicate_shape": "dedup",
+   "fk_shape": "no_op",
+   "null_shape": "no_op",
+   "numeric_shape": "no_op"
+  },
+  "model:products": {
+   "duplicate_shape": "dedup",
+   "fk_shape": "no_op",
+   "null_shape": "quarantine",
+   "numeric_shape": "quarantine"
+  },
+  "model:stg_products": {
+   "duplicate_shape": "dedup",
+   "fk_shape": "no_op",
+   "null_shape": "no_op",
+   "numeric_shape": "quarantine"
+  }
+ },
+ "forbidden_claims": [
+  "cross-pipeline generalization",
+  "adaptive-adversary robustness",
+  "confirmatory significance from this pilot alone",
+  "reinterpretation of the P1 NO_GO"
+ ],
+ "gate_criteria": [
+  "g1 16/16 campaigns complete",
+  "g2 all method-budget bindings resolve to complete measurements",
+  "g3 zero technical failures",
+  "g4 all 16 no-validation damages strictly positive",
+  "g5 clean collateral 0 and availability 1 on all primary and comparator physical placements",
+  "g6 primary and comparator physically distinguishable on >=1 campaign",
+  "g7 mean paired AURD difference < 0",
+  "g8 paired bootstrap 95% upper bound < 0",
+  "g9 relative mean AURD improvement >= 0.10",
+  "g10 one-sided exact sign-flip p <= 0.05"
+ ],
+ "kind": "lineageguard_p2_protocol_v1",
+ "orders_numeric_operand_cents": 10000000,
+ "policy_cost_us": {
+  "model:customers": 97882,
+  "model:order_items": 52351868,
+  "model:orders": 47324862,
+  "model:products": 85132,
+  "model:stg_products": 82942
+ },
+ "products_injection_contract": {
+  "dup-intermediate": {
+   "mode": "duplicate_physical_row",
+   "relation_alias": "stg_products"
+  },
+  "dup-source": {
+   "mode": "duplicate_physical_row",
+   "relation_alias": "raw_products"
+  },
+  "num-intermediate": {
+   "columns": [
+    "product_price"
+   ],
+   "mode": "numeric_add",
+   "operand": 100,
+   "relation_alias": "stg_products"
+  },
+  "num-source": {
+   "columns": [
+    "price"
+   ],
+   "mode": "numeric_add",
+   "operand": 10000,
+   "relation_alias": "raw_products"
+  }
+ },
+ "protocol_id": "jaffle_rq2_policy_p2_v1",
+ "protocol_sha256": "60dd0ab90134f3e6003c0b138161699c93cc5eead3e1ca3d993db8f646644558",
+ "response_table_sha256": "3a925f35722105a20a9c185d82c61709fe4bfa712ee056fa527a9a5c1b2c6cc0",
+ "scope": {
+  "data_role": "validation_fresh",
+  "oracle_detector": false,
+  "paper_role": "primary pre-registered pilot",
+  "real_signal_detection_on_both_branches": true,
+  "single_pipeline": true,
+  "study_phase": "pilot"
+ },
+ "signal_contract": {
+  "duplicate_shape": {
+   "rule": "stable key group multiplicity > 1"
+  },
+  "fk_shape": {
+   "column_by_relation": {
+    "analytics.order_items": "product_name"
+   },
+   "rule": "left-join FK resolution failure observable as NULL join payload",
+   "train_orphan_count": 0
+  },
+  "null_shape": {
+   "column_by_relation": {
+    "analytics.products": "product_price",
+    "analytics.stg_products": "product_price"
+   },
+   "rule": "NOT NULL contract violation on frozen column",
+   "train_null_count": 0
+  },
+  "numeric_shape": {
+   "band_by_relation": {
+    "analytics.customers.lifetime_spend": [
+     0.0,
+     18909.28
+    ],
+    "analytics.orders.subtotal": [
+     0.0,
+     202.0
+    ],
+    "analytics.products.product_price": [
+     0,
+     20.0
+    ],
+    "analytics.stg_products.product_price": [
+     0,
+     20.0
+    ],
+    "raw.raw_products.price": [
+     0,
+     2000
+    ]
+   },
+   "margin_note": "2.0x train max; a 1.2x margin on customers.lifetime_spend WOULD have false-fired on the clean validation snapshot (valid max 13,330.72 vs train max 9,454.64) -- recorded as a measured drift finding, band frozen at 2.0x.",
+   "rule": "value IS NOT NULL AND outside frozen closed band"
+  }
+ },
+ "sinks": [
+  "model:customers",
+  "model:locations",
+  "model:metricflow_time_spine",
+  "model:products",
+  "model:supplies"
+ ],
+ "statistics": {
+  "bootstrap": {
+   "kind": "paired_campaign_percentile",
+   "resamples": 10000,
+   "seed": 7457232996202650
+  },
+  "primary": "AURD(policy_planner) - AURD(static_best), paired",
+  "secondary_holm": [
+   "vs static_quarantine_legacy",
+   "vs no_validation"
+  ],
+  "sesoi_relative": 0.1,
+  "sign_flip": "exact one-sided over 2^16 assignments"
+ }
+}

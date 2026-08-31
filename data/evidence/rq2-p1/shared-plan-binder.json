@@ -1,0 +1,858 @@
+{
+  "assignment_sha256": "4df4d538436583e29b1bad2530c5fc7f88e25513b18081b8f4dec1cd1d64cd4c",
+  "binder_sha256": "893bc3d810a9722f785e78b2e6f19ad7c4a06fc9f835b243a6d2c37f2791c469",
+  "binding_policy": {
+    "copy_only_no_replanning": true,
+    "cross_campaign_outcome_reuse_forbidden": true,
+    "physical_execution_deduplicated_within_each_campaign_only": true,
+    "same_selected_action_set_across_all_eight_campaigns": true
+  },
+  "campaign_bindings": [
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-001",
+      "campaign_row_sha256": "8efec70e969a30c8c8dbb5b685d44ff5a639df079d0aa8e768887ecd4ff616a6",
+      "ordinal": 1,
+      "placement_ids": [
+        "p1-placement-1c211ea2ef792363299c",
+        "p1-placement-679ba625fa31aeec89e4",
+        "p1-placement-38715d0afe4baf04dc8c",
+        "p1-placement-dcd232bb8857b721a3f0",
+        "p1-placement-7845adbbfbf6563ff0a5"
+      ],
+      "shared_plan_count": 41,
+      "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+      "shared_plan_rows_sha256": "78519b80430ffce56505ae270ec03cc993174d21cf9e548be063e0d23e04b035",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-001"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-002",
+      "campaign_row_sha256": "629aede60b83382b7cfb3823934d6d7447b42627a7da47ebc95dd64543b23aed",
+      "ordinal": 2,
+      "placement_ids": [
+        "p1-placement-1c211ea2ef792363299c",
+        "p1-placement-679ba625fa31aeec89e4",
+        "p1-placement-38715d0afe4baf04dc8c",
+        "p1-placement-dcd232bb8857b721a3f0",
+        "p1-placement-7845adbbfbf6563ff0a5"
+      ],
+      "shared_plan_count": 41,
+      "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+      "shared_plan_rows_sha256": "78519b80430ffce56505ae270ec03cc993174d21cf9e548be063e0d23e04b035",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-002"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-003",
+      "campaign_row_sha256": "d67089321bd32f17aeb93f5a99a12016c7321b4bc784b71a2671dcbbb2583ece",
+      "ordinal": 3,
+      "placement_ids": [
+        "p1-placement-1c211ea2ef792363299c",
+        "p1-placement-679ba625fa31aeec89e4",
+        "p1-placement-38715d0afe4baf04dc8c",
+        "p1-placement-dcd232bb8857b721a3f0",
+        "p1-placement-7845adbbfbf6563ff0a5"
+      ],
+      "shared_plan_count": 41,
+      "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+      "shared_plan_rows_sha256": "78519b80430ffce56505ae270ec03cc993174d21cf9e548be063e0d23e04b035",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-003"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-004",
+      "campaign_row_sha256": "213c38250cab1a9c336df20fb0085d1a751a777fc754d3d02094148ab46fb34f",
+      "ordinal": 4,
+      "placement_ids": [
+        "p1-placement-1c211ea2ef792363299c",
+        "p1-placement-679ba625fa31aeec89e4",
+        "p1-placement-38715d0afe4baf04dc8c",
+        "p1-placement-dcd232bb8857b721a3f0",
+        "p1-placement-7845adbbfbf6563ff0a5"
+      ],
+      "shared_plan_count": 41,
+      "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+      "shared_plan_rows_sha256": "78519b80430ffce56505ae270ec03cc993174d21cf9e548be063e0d23e04b035",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-004"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-005",
+      "campaign_row_sha256": "f4243d489a3a85199939883a377b1a213a1e93ab9d1964e2916c104f22235545",
+      "ordinal": 5,
+      "placement_ids": [
+        "p1-placement-1c211ea2ef792363299c",
+        "p1-placement-679ba625fa31aeec89e4",
+        "p1-placement-38715d0afe4baf04dc8c",
+        "p1-placement-dcd232bb8857b721a3f0",
+        "p1-placement-7845adbbfbf6563ff0a5"
+      ],
+      "shared_plan_count": 41,
+      "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+      "shared_plan_rows_sha256": "78519b80430ffce56505ae270ec03cc993174d21cf9e548be063e0d23e04b035",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-005"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-006",
+      "campaign_row_sha256": "dcc501ddcb3ad1ea8682b9d51b1413e09c0ac2ea5375805386836d8702105d17",
+      "ordinal": 6,
+      "placement_ids": [
+        "p1-placement-1c211ea2ef792363299c",
+        "p1-placement-679ba625fa31aeec89e4",
+        "p1-placement-38715d0afe4baf04dc8c",
+        "p1-placement-dcd232bb8857b721a3f0",
+        "p1-placement-7845adbbfbf6563ff0a5"
+      ],
+      "shared_plan_count": 41,
+      "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+      "shared_plan_rows_sha256": "78519b80430ffce56505ae270ec03cc993174d21cf9e548be063e0d23e04b035",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-006"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-007",
+      "campaign_row_sha256": "3f50e35a2ee9150389da1901c44108c64d0b6fe50c149f056e18eb74df97cec3",
+      "ordinal": 7,
+      "placement_ids": [
+        "p1-placement-1c211ea2ef792363299c",
+        "p1-placement-679ba625fa31aeec89e4",
+        "p1-placement-38715d0afe4baf04dc8c",
+        "p1-placement-dcd232bb8857b721a3f0",
+        "p1-placement-7845adbbfbf6563ff0a5"
+      ],
+      "shared_plan_count": 41,
+      "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+      "shared_plan_rows_sha256": "78519b80430ffce56505ae270ec03cc993174d21cf9e548be063e0d23e04b035",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-007"
+    },
+    {
+      "campaign_id": "jaffle-rq2-p1-fresh-slot-008",
+      "campaign_row_sha256": "05ddd11ff0547e0cca9efd986a2f4e1ed2e6534430f3059d8cbf89f60d5096dd",
+      "ordinal": 8,
+      "placement_ids": [
+        "p1-placement-1c211ea2ef792363299c",
+        "p1-placement-679ba625fa31aeec89e4",
+        "p1-placement-38715d0afe4baf04dc8c",
+        "p1-placement-dcd232bb8857b721a3f0",
+        "p1-placement-7845adbbfbf6563ff0a5"
+      ],
+      "shared_plan_count": 41,
+      "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+      "shared_plan_rows_sha256": "78519b80430ffce56505ae270ec03cc993174d21cf9e548be063e0d23e04b035",
+      "slot_id": "jaffle-rq2-p1-fresh-slot-008"
+    }
+  ],
+  "candidate_action_nodes": [
+    "model:stg_products",
+    "model:products",
+    "model:order_items",
+    "model:orders",
+    "model:customers"
+  ],
+  "distinct_placements": [
+    {
+      "bound_shared_plan_ids": [
+        "shared-plan-0c5c6ae157d5eff8bbab",
+        "shared-plan-2616cb6bf649699342ba",
+        "shared-plan-293a58ae1224bd271df8",
+        "shared-plan-5b63bbab0547b2dbe0ff",
+        "shared-plan-6653c9cf06a91a68bbe5",
+        "shared-plan-7a90aca39861978f0209",
+        "shared-plan-7f2b65f795edf425585f",
+        "shared-plan-891c13a7b935533e08be",
+        "shared-plan-a54dbb270bf5ee4f81d1",
+        "shared-plan-a87b01eccfd055bc5da1",
+        "shared-plan-af60e361465a077822ce",
+        "shared-plan-c653252a5b3d2ecf6547",
+        "shared-plan-f77cab96e325c31a4221"
+      ],
+      "placement_id": "p1-placement-1c211ea2ef792363299c",
+      "selected_action_ids": [],
+      "selected_nodes": []
+    },
+    {
+      "bound_shared_plan_ids": [
+        "shared-plan-07aed951e3a34bf38865",
+        "shared-plan-572af2894c8d23d79f99",
+        "shared-plan-ca3170d46ebf71638d15"
+      ],
+      "placement_id": "p1-placement-679ba625fa31aeec89e4",
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine"
+      ],
+      "selected_nodes": [
+        "model:products"
+      ]
+    },
+    {
+      "bound_shared_plan_ids": [
+        "shared-plan-0437896e1c05842596b2",
+        "shared-plan-0e876d11b15960fca285",
+        "shared-plan-2a364993e8fa4b3982fc",
+        "shared-plan-35cb414970b5b3633bd1",
+        "shared-plan-a5d6a30e5f94d3e87bca",
+        "shared-plan-f3db1ccfd2a3301b153e"
+      ],
+      "placement_id": "p1-placement-38715d0afe4baf04dc8c",
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine",
+        "action.oracle.jaffle.model-customers.row-quarantine"
+      ],
+      "selected_nodes": [
+        "model:products",
+        "model:customers"
+      ]
+    },
+    {
+      "bound_shared_plan_ids": [
+        "shared-plan-0932c7f2ac85f4822476",
+        "shared-plan-105a5a87c4b3d9026077",
+        "shared-plan-29eb6d5fb80a3caaa792",
+        "shared-plan-2bee7a4ae121d393c89d",
+        "shared-plan-349c4b83d5fdeb5050ab",
+        "shared-plan-35f5a53f984129c2cceb",
+        "shared-plan-3739bd03bd4838a52165",
+        "shared-plan-5af91ed50b2878e2ae3c",
+        "shared-plan-5c20c72aca4272d830cb",
+        "shared-plan-6f48a72e4b079c293a7f",
+        "shared-plan-6fb1ee0f5e346eb7df39",
+        "shared-plan-79fb8ef12039584c61e4",
+        "shared-plan-8c053f4def7298e741b9",
+        "shared-plan-8d6d265ea32e16d6e247",
+        "shared-plan-9553d56792fbe85a0487",
+        "shared-plan-a0623cdd3f148255fd13",
+        "shared-plan-cd1dcc39f8d88a19d68e",
+        "shared-plan-e17862843962e4853059"
+      ],
+      "placement_id": "p1-placement-dcd232bb8857b721a3f0",
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "selected_nodes": [
+        "model:stg_products"
+      ]
+    },
+    {
+      "bound_shared_plan_ids": [
+        "shared-plan-15a5c0b923c4e51c7aed"
+      ],
+      "placement_id": "p1-placement-7845adbbfbf6563ff0a5",
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine",
+        "action.oracle.jaffle.model-products.row-quarantine",
+        "action.oracle.jaffle.model-order-items.row-quarantine",
+        "action.oracle.jaffle.model-orders.row-quarantine",
+        "action.oracle.jaffle.model-customers.row-quarantine"
+      ],
+      "selected_nodes": [
+        "model:stg_products",
+        "model:products",
+        "model:order_items",
+        "model:orders",
+        "model:customers"
+      ]
+    }
+  ],
+  "fresh_inputs_used_to_select_or_modify_actions": false,
+  "kind": "lineageguard_jaffle_rq2_p1_shared_plan_binder_v1",
+  "outcomes_read": false,
+  "schema_version": 1,
+  "shared_plan_registry_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52",
+  "shared_plan_rows": [
+    {
+      "budget_anchors": [
+        "zero"
+      ],
+      "budget_us": 0,
+      "feasibility_status": "feasible",
+      "method_id": "no_validation",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-af60e361465a077822ce",
+      "shared_plan_row_sha256": "a06afb033ea487d72255f66799c34b3be427139b466098eae729b73d6aa19ce3",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "zero"
+      ],
+      "budget_us": 0,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_action_d8_refit",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-2616cb6bf649699342ba",
+      "shared_plan_row_sha256": "81b01784fbcab96c534f68cc26534252048fb7d072f1dab9b64ed3ca6ed24a52",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "zero"
+      ],
+      "budget_us": 0,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_v4_shared_envelope",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-a54dbb270bf5ee4f81d1",
+      "shared_plan_row_sha256": "49ca6dda852b9c340cb1362e161ec8e38560ee51d200fe66bc5a5fa66f328eb6",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "zero"
+      ],
+      "budget_us": 0,
+      "feasibility_status": "feasible",
+      "method_id": "weighted_min_cut",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-6653c9cf06a91a68bbe5",
+      "shared_plan_row_sha256": "c91917b54315336a8e96b7f0e5c6a66edc68ea7cda587e1f784496561df728b4",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "zero"
+      ],
+      "budget_us": 0,
+      "feasibility_status": "feasible",
+      "method_id": "exact_surrogate_oracle",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-5b63bbab0547b2dbe0ff",
+      "shared_plan_row_sha256": "b17794d38e6a8eb4e54f9bfd027bb73238b60b39cc091cab91b3deaea167c72e",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "cheapest_action"
+      ],
+      "budget_us": 4708,
+      "feasibility_status": "feasible",
+      "method_id": "no_validation",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-a87b01eccfd055bc5da1",
+      "shared_plan_row_sha256": "779130affdd728e2328a92cf97664d1da1702c6bc46194ce5b1be417e78baad7",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "cheapest_action"
+      ],
+      "budget_us": 4708,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_action_d8_refit",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-ca3170d46ebf71638d15",
+      "shared_plan_row_sha256": "8f3dde05dc7a7e2abe1353e39dea74d3d4479558e8067f9e5255ef14c56bbb19",
+      "spent_cost_us": 4708
+    },
+    {
+      "budget_anchors": [
+        "cheapest_action"
+      ],
+      "budget_us": 4708,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_v4_shared_envelope",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-572af2894c8d23d79f99",
+      "shared_plan_row_sha256": "d32668966da8e3312f1a651c1e97508937b093055228bc12ab79fc73376290ab",
+      "spent_cost_us": 4708
+    },
+    {
+      "budget_anchors": [
+        "cheapest_action"
+      ],
+      "budget_us": 4708,
+      "feasibility_status": "feasible",
+      "method_id": "weighted_min_cut",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-7f2b65f795edf425585f",
+      "shared_plan_row_sha256": "8bf9f9a74b528f8a2a720084cf612820e1c8bba5231f8aaf99ccb3956c2680e0",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "cheapest_action"
+      ],
+      "budget_us": 4708,
+      "feasibility_status": "feasible",
+      "method_id": "exact_surrogate_oracle",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-07aed951e3a34bf38865",
+      "shared_plan_row_sha256": "4d1d44f06a71bd679feb379a46756595cd787a58ff0318a5207079477d5b4966",
+      "spent_cost_us": 4708
+    },
+    {
+      "budget_anchors": [
+        "1_percent"
+      ],
+      "budget_us": 982771,
+      "feasibility_status": "feasible",
+      "method_id": "no_validation",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-c653252a5b3d2ecf6547",
+      "shared_plan_row_sha256": "df47fa6e9eefb22e99ade0673b01a663afe93845e3a4acd072463cfc99d2faa5",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "1_percent"
+      ],
+      "budget_us": 982771,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_action_d8_refit",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine",
+        "action.oracle.jaffle.model-customers.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-a5d6a30e5f94d3e87bca",
+      "shared_plan_row_sha256": "fd70686775308801177356bfb04b922f89c712ab8f753ed5e381bafbc70ea541",
+      "spent_cost_us": 32919
+    },
+    {
+      "budget_anchors": [
+        "1_percent"
+      ],
+      "budget_us": 982771,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_v4_shared_envelope",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-8d6d265ea32e16d6e247",
+      "shared_plan_row_sha256": "975f99a8766b54466487a603f1d61f6f6f861924356bddf1c1b09666afa847f3",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "1_percent"
+      ],
+      "budget_us": 982771,
+      "feasibility_status": "feasible",
+      "method_id": "weighted_min_cut",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-e17862843962e4853059",
+      "shared_plan_row_sha256": "56a8fbad02854101992eca17cebf32e52466bf64ee8c06a3b98885fb32a23f86",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "1_percent"
+      ],
+      "budget_us": 982771,
+      "feasibility_status": "feasible",
+      "method_id": "exact_surrogate_oracle",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-29eb6d5fb80a3caaa792",
+      "shared_plan_row_sha256": "499b3df89046b44fa1219cda1f13e090c3ce81cd6812a57482888170821052ae",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "2_percent"
+      ],
+      "budget_us": 1965542,
+      "feasibility_status": "feasible",
+      "method_id": "no_validation",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-f77cab96e325c31a4221",
+      "shared_plan_row_sha256": "3b38bf1e14db4b6fd612c1b39e5837332da286d743c6aa82643f96f924cf808e",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "2_percent"
+      ],
+      "budget_us": 1965542,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_action_d8_refit",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine",
+        "action.oracle.jaffle.model-customers.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-f3db1ccfd2a3301b153e",
+      "shared_plan_row_sha256": "3dbf4df91c65ebaadccfc0bf9f27bc1ea97e33dfb8d8b0ee33546495b2234c92",
+      "spent_cost_us": 32919
+    },
+    {
+      "budget_anchors": [
+        "2_percent"
+      ],
+      "budget_us": 1965542,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_v4_shared_envelope",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-5c20c72aca4272d830cb",
+      "shared_plan_row_sha256": "7e2ec0dde7d3a97934543127aae1beafc0eca21917ebc974ef13cb80d718f1ea",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "2_percent"
+      ],
+      "budget_us": 1965542,
+      "feasibility_status": "feasible",
+      "method_id": "weighted_min_cut",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-35f5a53f984129c2cceb",
+      "shared_plan_row_sha256": "58f4bf4f25b03670c7f0c27abbf996aad26bec8eb05cba777602cc930298a076",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "2_percent"
+      ],
+      "budget_us": 1965542,
+      "feasibility_status": "feasible",
+      "method_id": "exact_surrogate_oracle",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-6fb1ee0f5e346eb7df39",
+      "shared_plan_row_sha256": "4392694ee94cc58cc6c522780b802fe23964b6a7c9ff6953e78d49672d6b20b5",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "5_percent"
+      ],
+      "budget_us": 4913856,
+      "feasibility_status": "feasible",
+      "method_id": "no_validation",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-0c5c6ae157d5eff8bbab",
+      "shared_plan_row_sha256": "76005f9881ac3477de22063f0b20d6040f5cccf7d852d367a23fd3bb048efa6b",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "5_percent"
+      ],
+      "budget_us": 4913856,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_action_d8_refit",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine",
+        "action.oracle.jaffle.model-customers.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-35cb414970b5b3633bd1",
+      "shared_plan_row_sha256": "b026429846db43e9a913f6634d97f1c206e83a002621f5115e23dea7925a6d96",
+      "spent_cost_us": 32919
+    },
+    {
+      "budget_anchors": [
+        "5_percent"
+      ],
+      "budget_us": 4913856,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_v4_shared_envelope",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-349c4b83d5fdeb5050ab",
+      "shared_plan_row_sha256": "81e1187c04ff042ebddbc6e5644543e9b96707bbf92e3ebe348d8db237f4b9b9",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "5_percent"
+      ],
+      "budget_us": 4913856,
+      "feasibility_status": "feasible",
+      "method_id": "weighted_min_cut",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-a0623cdd3f148255fd13",
+      "shared_plan_row_sha256": "0010fb47720937b81e8bc7e064cd3a223ef3d499aa0656f00809753d0111b883",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "5_percent"
+      ],
+      "budget_us": 4913856,
+      "feasibility_status": "feasible",
+      "method_id": "exact_surrogate_oracle",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-79fb8ef12039584c61e4",
+      "shared_plan_row_sha256": "45998d9a4c74981ed799013e208aceafb0be675f4bf110153d10f2ff2233bfa9",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "10_percent"
+      ],
+      "budget_us": 9827712,
+      "feasibility_status": "feasible",
+      "method_id": "no_validation",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-891c13a7b935533e08be",
+      "shared_plan_row_sha256": "ad3e9c6f1ab3d125976088237fb44d54abd25120a302696dd2bddeebb95b40f2",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "10_percent"
+      ],
+      "budget_us": 9827712,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_action_d8_refit",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine",
+        "action.oracle.jaffle.model-customers.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-2a364993e8fa4b3982fc",
+      "shared_plan_row_sha256": "936766d2ba582b4cafd19da4a3c7af30048dad7af8dc8880a5cfe72f7fd75a89",
+      "spent_cost_us": 32919
+    },
+    {
+      "budget_anchors": [
+        "10_percent"
+      ],
+      "budget_us": 9827712,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_v4_shared_envelope",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-5af91ed50b2878e2ae3c",
+      "shared_plan_row_sha256": "df6a7fca9d7b5bce3adda155dbedc53477676be0b9add456ef49f35c36bfeaf7",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "10_percent"
+      ],
+      "budget_us": 9827712,
+      "feasibility_status": "feasible",
+      "method_id": "weighted_min_cut",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-8c053f4def7298e741b9",
+      "shared_plan_row_sha256": "a6ba187b0073db747a4539918753fa3e90173b104b71c3f85545ec11d5c2939f",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "10_percent"
+      ],
+      "budget_us": 9827712,
+      "feasibility_status": "feasible",
+      "method_id": "exact_surrogate_oracle",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-0932c7f2ac85f4822476",
+      "shared_plan_row_sha256": "2dfdf6f437bd3855f525e29b3b68cd0685dcafadc38bf7215db7696104713fc0",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "20_percent"
+      ],
+      "budget_us": 19655424,
+      "feasibility_status": "feasible",
+      "method_id": "no_validation",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-7a90aca39861978f0209",
+      "shared_plan_row_sha256": "15c596f1f8682020dabc11232825e8299de78cf67b4ecf676b84f746303f8608",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "20_percent"
+      ],
+      "budget_us": 19655424,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_action_d8_refit",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine",
+        "action.oracle.jaffle.model-customers.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-0e876d11b15960fca285",
+      "shared_plan_row_sha256": "99aaf40a68417dfbc5daba7b77e6df7a796bd62ff3a8499f6bc928bfa3453674",
+      "spent_cost_us": 32919
+    },
+    {
+      "budget_anchors": [
+        "20_percent"
+      ],
+      "budget_us": 19655424,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_v4_shared_envelope",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-cd1dcc39f8d88a19d68e",
+      "shared_plan_row_sha256": "db1a792316e843501c000fb62c8d0dd8c225e67f7ad5005fcdc11f51e25fb5a2",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "20_percent"
+      ],
+      "budget_us": 19655424,
+      "feasibility_status": "feasible",
+      "method_id": "weighted_min_cut",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-2bee7a4ae121d393c89d",
+      "shared_plan_row_sha256": "ab0ac20f57b964f34f65b70d52d1b74bc26efe2b1ffaa2f8ef2eaa13367bf68a",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "20_percent"
+      ],
+      "budget_us": 19655424,
+      "feasibility_status": "feasible",
+      "method_id": "exact_surrogate_oracle",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-6f48a72e4b079c293a7f",
+      "shared_plan_row_sha256": "2a9592baa0ff93950058a66328378b483b532b18d14ed19961e86b05a2a8fcd4",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "100_percent"
+      ],
+      "budget_us": 98277124,
+      "feasibility_status": "feasible",
+      "method_id": "no_validation",
+      "planner_seed": null,
+      "selected_action_ids": [],
+      "shared_plan_id": "shared-plan-293a58ae1224bd271df8",
+      "shared_plan_row_sha256": "5e6414a2f6a085d2441f9f3e90b5276c092de6b03762619a6b7bbf7b67f9a248",
+      "spent_cost_us": 0
+    },
+    {
+      "budget_anchors": [
+        "100_percent"
+      ],
+      "budget_us": 98277124,
+      "feasibility_status": "feasible",
+      "method_id": "all_feasible_validation",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine",
+        "action.oracle.jaffle.model-products.row-quarantine",
+        "action.oracle.jaffle.model-order-items.row-quarantine",
+        "action.oracle.jaffle.model-orders.row-quarantine",
+        "action.oracle.jaffle.model-customers.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-15a5c0b923c4e51c7aed",
+      "shared_plan_row_sha256": "d896ed2502a46fec0a4e59d61fcbfe24a7e73ca6b2896d2945053b4b2af7c0ba",
+      "spent_cost_us": 98277124
+    },
+    {
+      "budget_anchors": [
+        "100_percent"
+      ],
+      "budget_us": 98277124,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_action_d8_refit",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-products.row-quarantine",
+        "action.oracle.jaffle.model-customers.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-0437896e1c05842596b2",
+      "shared_plan_row_sha256": "86f328cfb8098cad8a128e47d8082e51b51aeac76743fb51b14952211d9768f9",
+      "spent_cost_us": 32919
+    },
+    {
+      "budget_anchors": [
+        "100_percent"
+      ],
+      "budget_us": 98277124,
+      "feasibility_status": "feasible",
+      "method_id": "lineageguard_v4_shared_envelope",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-105a5a87c4b3d9026077",
+      "shared_plan_row_sha256": "3c111f8d506e1758c21e4017f8068c921c85fbcba2263117e194517042a72909",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "100_percent"
+      ],
+      "budget_us": 98277124,
+      "feasibility_status": "feasible",
+      "method_id": "weighted_min_cut",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-9553d56792fbe85a0487",
+      "shared_plan_row_sha256": "cd03b7df1f4163c56f394ac2c41524b6c741fe65acea684ee05971afac36e3af",
+      "spent_cost_us": 6813
+    },
+    {
+      "budget_anchors": [
+        "100_percent"
+      ],
+      "budget_us": 98277124,
+      "feasibility_status": "feasible",
+      "method_id": "exact_surrogate_oracle",
+      "planner_seed": null,
+      "selected_action_ids": [
+        "action.oracle.jaffle.model-stg-products.row-quarantine"
+      ],
+      "shared_plan_id": "shared-plan-3739bd03bd4838a52165",
+      "shared_plan_row_sha256": "ff609ba8357b55e273c838ad448ac4290fed9ccdef187c0bd5b7cc865e2bda28",
+      "spent_cost_us": 6813
+    }
+  ],
+  "source_action_forbidden": true
+}

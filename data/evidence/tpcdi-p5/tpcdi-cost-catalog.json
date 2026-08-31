@@ -1,0 +1,150 @@
+{
+ "anchor_sha256": "2957462b5a3224aaf4e96642c85761ec7f3380d30f4d8e8b56c255c17454e171",
+ "budget_grid_us": [
+  0,
+  6250960,
+  5471304,
+  27356518,
+  54713037
+ ],
+ "catalog": {
+  "dim_company": {
+   "c_deploy_us": 6708767,
+   "c_detect_per_shape_us": {
+    "duplicate_shape": 7985
+   },
+   "c_detect_us": 7985,
+   "c_disposition_max_us": 5010,
+   "c_disposition_per_kind_us": {
+    "dedup": 5010,
+    "quarantine": 1654
+   },
+   "policy_cost_us": 6721762,
+   "rows": 1096
+  },
+  "dim_security": {
+   "c_deploy_us": 6473332,
+   "c_detect_per_shape_us": {
+    "duplicate_shape": 1604,
+    "null_shape": 413,
+    "numeric_shape": 492
+   },
+   "c_detect_us": 2508,
+   "c_disposition_max_us": 8224,
+   "c_disposition_per_kind_us": {
+    "dedup": 8224,
+    "null_out": 1736,
+    "quarantine": 1872
+   },
+   "policy_cost_us": 6484064,
+   "rows": 1998
+  },
+  "fact_financials": {
+   "c_deploy_us": 6238352,
+   "c_detect_per_shape_us": {
+    "duplicate_shape": 34455,
+    "fk_shape": 2090,
+    "null_shape": 696,
+    "numeric_shape": 731
+   },
+   "c_detect_us": 37972,
+   "c_disposition_max_us": 112652,
+   "c_disposition_per_kind_us": {
+    "dedup": 112652,
+    "null_out": 20194,
+    "quarantine": 19937
+   },
+   "policy_cost_us": 6388976,
+   "rows": 75950
+  },
+  "fact_market_history": {
+   "c_deploy_us": 7448441,
+   "c_detect_per_shape_us": {
+    "duplicate_shape": 104909,
+    "fk_shape": 27230,
+    "null_shape": 373,
+    "numeric_shape": 465
+   },
+   "c_detect_us": 132977,
+   "c_disposition_max_us": 1220586,
+   "c_disposition_per_kind_us": {
+    "dedup": 1220586,
+    "null_out": 101897,
+    "quarantine": 100098
+   },
+   "policy_cost_us": 8802004,
+   "rows": 1025004
+  },
+  "stg_company": {
+   "c_deploy_us": 6245577,
+   "c_detect_per_shape_us": {
+    "duplicate_shape": 1382
+   },
+   "c_detect_us": 1382,
+   "c_disposition_max_us": 4001,
+   "c_disposition_per_kind_us": {
+    "dedup": 4001,
+    "quarantine": 1584
+   },
+   "policy_cost_us": 6250960,
+   "rows": 1096
+  },
+  "stg_daily_market": {
+   "c_deploy_us": 6474265,
+   "c_detect_per_shape_us": {
+    "duplicate_shape": 108605,
+    "fk_shape": 17066,
+    "null_shape": 510,
+    "numeric_shape": 595
+   },
+   "c_detect_us": 126776,
+   "c_disposition_max_us": 644860,
+   "c_disposition_per_kind_us": {
+    "dedup": 644860,
+    "null_out": 132021,
+    "quarantine": 101817
+   },
+   "policy_cost_us": 7245901,
+   "rows": 1025004
+  },
+  "stg_financial": {
+   "c_deploy_us": 6438008,
+   "c_detect_per_shape_us": {
+    "duplicate_shape": 30193,
+    "fk_shape": 2714,
+    "null_shape": 368,
+    "numeric_shape": 429
+   },
+   "c_detect_us": 33703,
+   "c_disposition_max_us": 69486,
+   "c_disposition_per_kind_us": {
+    "dedup": 69486,
+    "null_out": 28622,
+    "quarantine": 23956
+   },
+   "policy_cost_us": 6541197,
+   "rows": 75950
+  },
+  "stg_security": {
+   "c_deploy_us": 6269755,
+   "c_detect_per_shape_us": {
+    "duplicate_shape": 1532,
+    "null_shape": 391,
+    "numeric_shape": 378
+   },
+   "c_detect_us": 2301,
+   "c_disposition_max_us": 6117,
+   "c_disposition_per_kind_us": {
+    "dedup": 6117,
+    "null_out": 1806,
+    "quarantine": 1688
+   },
+   "policy_cost_us": 6278173,
+   "rows": 1998
+  }
+ },
+ "catalog_sha256": "0412dbae177c6066423e29c5f1518195bfc4e32db4e7bcdf66858e983e3e79f7",
+ "convention": "single-threaded, 1 warm-up + 5 trials (3 for dbt/dedup), per-op median, worst case over dispositions",
+ "kind": "lineageguard_tpcdi_cost_catalog_v1",
+ "total_policy_cost_us": 54713037
+}

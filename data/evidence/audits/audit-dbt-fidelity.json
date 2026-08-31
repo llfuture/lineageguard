@@ -1,0 +1,444 @@
+{
+ "anchor_sha256": "0e82d6747fbabe6e93424836742ef6ca949bdeb7f4c69c80a3e864ef905a3e82",
+ "counts": {
+  "cases": 8,
+  "technical_failures": 1
+ },
+ "finished_utc": "2026-08-29T15:35:00Z",
+ "kind": "lineageguard_audit_dbt_fidelity_v1",
+ "measurement_sha256": "896be6311294714a8c3b418ac6cb5a7b5699517e5323768ef5bd011383c82349",
+ "results": [
+  {
+   "case_id": "clean-baseline",
+   "description": "No injection. Establishes what the shipped dbt suite fails on in clean data, which is the false-fire floor both sides must be read against.",
+   "error": "FileExistsError: [Errno 17] File exists: '/home/u0020090017/projects/lineageguard_claude/out-audit-dbt/subprocess/clean-baseline--dbtfid--audit--00-products.stdout.log'",
+   "injection": null,
+   "status": "technical_failure"
+  },
+  {
+   "case_id": "prod-num-out-of-band",
+   "dbt_failures": {},
+   "dbt_test": {
+    "log": "/home/u0020090017/projects/lineageguard_claude/out-audit-dbt/prod-num-out-of-band-dbt-test.log",
+    "returncode": 1,
+    "seconds": 11.16,
+    "tests_error": 0,
+    "tests_fail": 1,
+    "tests_pass": 29
+   },
+   "description": "Product price raised far outside the frozen 2x band. The paper's numeric predicate should fire; dbt's suite has no range assertion on price, so this is the case where the contract is expected to be the stronger of the two.",
+   "injection": {
+    "columns": [
+     "price"
+    ],
+    "mode": "numeric_add",
+    "operand": 1000000,
+    "relation_alias": "raw_products",
+    "targets": [
+     "JAF-001"
+    ]
+   },
+   "injection_report": {
+    "actual_mutation_executed": true,
+    "key_column": "sku",
+    "mode": "numeric_add",
+    "relation": "raw.raw_products",
+    "row_count_after": 10,
+    "row_count_before": 10,
+    "target_count": 1
+   },
+   "paper_signal": {
+    "model:products": {
+     "fired_shapes": [
+      "numeric_shape"
+     ],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 1
+     },
+     "verdict": "numeric_shape"
+    },
+    "model:stg_products": {
+     "fired_shapes": [
+      "numeric_shape"
+     ],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 1
+     },
+     "verdict": "numeric_shape"
+    }
+   },
+   "status": "complete"
+  },
+  {
+   "case_id": "prod-num-in-band",
+   "dbt_failures": {},
+   "dbt_test": {
+    "log": "/home/u0020090017/projects/lineageguard_claude/out-audit-dbt/prod-num-in-band-dbt-test.log",
+    "returncode": 1,
+    "seconds": 10.9,
+    "tests_error": 0,
+    "tests_fail": 1,
+    "tests_pass": 29
+   },
+   "description": "Product price raised by an amount that stays inside the 2x band. The contract is expected to stay silent (this is the E3 miss). Whether the shipped suite catches it through the order accounting identities is the question this audit exists to answer.",
+   "injection": {
+    "columns": [
+     "price"
+    ],
+    "mode": "numeric_add",
+    "operand": 100,
+    "relation_alias": "raw_products",
+    "targets": [
+     "JAF-001"
+    ]
+   },
+   "injection_report": {
+    "actual_mutation_executed": true,
+    "key_column": "sku",
+    "mode": "numeric_add",
+    "relation": "raw.raw_products",
+    "row_count_after": 10,
+    "row_count_before": 10,
+    "target_count": 1
+   },
+   "paper_signal": {
+    "model:orders": {
+     "fired_shapes": [],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 0
+     },
+     "verdict": "clear"
+    },
+    "model:products": {
+     "fired_shapes": [],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 0
+     },
+     "verdict": "clear"
+    },
+    "model:stg_products": {
+     "fired_shapes": [],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 0
+     },
+     "verdict": "clear"
+    }
+   },
+   "status": "complete"
+  },
+  {
+   "case_id": "prod-dup",
+   "dbt_failures": {},
+   "dbt_test": {
+    "log": "/home/u0020090017/projects/lineageguard_claude/out-audit-dbt/prod-dup-dbt-test.log",
+    "returncode": 1,
+    "seconds": 11.97,
+    "tests_error": 0,
+    "tests_fail": 3,
+    "tests_pass": 27
+   },
+   "description": "Duplicated product row. Both sides should fire: key multiplicity for the contract, the unique test for dbt.",
+   "injection": {
+    "mode": "duplicate_physical_row",
+    "relation_alias": "raw_products",
+    "targets": [
+     "JAF-001"
+    ]
+   },
+   "injection_report": {
+    "actual_mutation_executed": true,
+    "key_column": "sku",
+    "mode": "duplicate_physical_row",
+    "relation": "raw.raw_products",
+    "row_count_after": 11,
+    "row_count_before": 10,
+    "target_count": 1
+   },
+   "paper_signal": {
+    "model:products": {
+     "fired_shapes": [
+      "duplicate_shape"
+     ],
+     "shape_counts": {
+      "duplicate_shape": 1,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 0
+     },
+     "verdict": "duplicate_shape"
+    },
+    "model:stg_products": {
+     "fired_shapes": [
+      "duplicate_shape"
+     ],
+     "shape_counts": {
+      "duplicate_shape": 1,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 0
+     },
+     "verdict": "duplicate_shape"
+    }
+   },
+   "status": "complete"
+  },
+  {
+   "case_id": "prod-null",
+   "dbt_failures": {},
+   "dbt_test": {
+    "log": "/home/u0020090017/projects/lineageguard_claude/out-audit-dbt/prod-null-dbt-test.log",
+    "returncode": 1,
+    "seconds": 11.57,
+    "tests_error": 0,
+    "tests_fail": 1,
+    "tests_pass": 29
+   },
+   "description": "Product price set to NULL. Contract null_shape vs dbt not_null.",
+   "injection": {
+    "column": "price",
+    "mode": "null_out_column",
+    "relation_alias": "raw_products",
+    "targets": [
+     "JAF-001"
+    ]
+   },
+   "injection_report": {
+    "actual_mutation_executed": true,
+    "key_column": "sku",
+    "mode": "null_out_column",
+    "relation": "raw.raw_products",
+    "row_count_after": 10,
+    "row_count_before": 10,
+    "target_count": 1
+   },
+   "paper_signal": {
+    "model:products": {
+     "fired_shapes": [
+      "null_shape"
+     ],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 1,
+      "numeric_shape": 0
+     },
+     "verdict": "null_shape"
+    },
+    "model:stg_products": {
+     "fired_shapes": [
+      "null_shape"
+     ],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 1,
+      "numeric_shape": 0
+     },
+     "verdict": "null_shape"
+    }
+   },
+   "status": "complete"
+  },
+  {
+   "case_id": "ord-num-out-of-band",
+   "dbt_failures": {},
+   "dbt_test": {
+    "log": "/home/u0020090017/projects/lineageguard_claude/out-audit-dbt/ord-num-out-of-band-dbt-test.log",
+    "returncode": 0,
+    "seconds": 11.29,
+    "tests_error": 0,
+    "tests_fail": 0,
+    "tests_pass": 30
+   },
+   "description": "Order subtotal and total raised far outside the band, on the million-row order fork. Both the contract's band and the accounting identity should fire.",
+   "injection": {
+    "columns": [
+     "subtotal",
+     "order_total"
+    ],
+    "mode": "numeric_add",
+    "operand": 10000000,
+    "relation_alias": "raw_orders",
+    "targets": []
+   },
+   "injection_report": {
+    "actual_mutation_executed": true,
+    "key_column": "id",
+    "mode": "numeric_add",
+    "relation": "raw.raw_orders",
+    "row_count_after": 729082,
+    "row_count_before": 729082,
+    "target_count": 1
+   },
+   "paper_signal": {
+    "model:customers": {
+     "fired_shapes": [
+      "numeric_shape"
+     ],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 1
+     },
+     "verdict": "numeric_shape"
+    },
+    "model:orders": {
+     "fired_shapes": [
+      "numeric_shape"
+     ],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 1
+     },
+     "verdict": "numeric_shape"
+    }
+   },
+   "resolved_targets": [
+    "e2c2b1a4-702d-4291-be21-f17ea46ff35e"
+   ],
+   "status": "complete"
+  },
+  {
+   "case_id": "ord-num-subtotal-only",
+   "dbt_failures": {},
+   "dbt_test": {
+    "log": "/home/u0020090017/projects/lineageguard_claude/out-audit-dbt/ord-num-subtotal-only-dbt-test.log",
+    "returncode": 1,
+    "seconds": 12.61,
+    "tests_error": 0,
+    "tests_fail": 4,
+    "tests_pass": 26
+   },
+   "description": "Only the subtotal is raised, leaving order_total stale. This breaks order_total = subtotal + tax_paid without necessarily leaving the band, so it separates an identity assertion from a range assertion.",
+   "injection": {
+    "columns": [
+     "subtotal"
+    ],
+    "mode": "numeric_add",
+    "operand": 100,
+    "relation_alias": "raw_orders",
+    "targets": []
+   },
+   "injection_report": {
+    "actual_mutation_executed": true,
+    "key_column": "id",
+    "mode": "numeric_add",
+    "relation": "raw.raw_orders",
+    "row_count_after": 729082,
+    "row_count_before": 729082,
+    "target_count": 1
+   },
+   "paper_signal": {
+    "model:customers": {
+     "fired_shapes": [],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 0
+     },
+     "verdict": "clear"
+    },
+    "model:orders": {
+     "fired_shapes": [],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 0
+     },
+     "verdict": "clear"
+    }
+   },
+   "resolved_targets": [
+    "c4498bff-d5ca-4d14-93c5-4b7991cce67d"
+   ],
+   "status": "complete"
+  },
+  {
+   "case_id": "ord-fk-orphan",
+   "dbt_failures": {},
+   "dbt_test": {
+    "log": "/home/u0020090017/projects/lineageguard_claude/out-audit-dbt/ord-fk-orphan-dbt-test.log",
+    "returncode": 1,
+    "seconds": 13.0,
+    "tests_error": 0,
+    "tests_fail": 1,
+    "tests_pass": 29
+   },
+   "description": "Order customer key replaced by an orphan value. Contract fk_shape vs dbt relationships.",
+   "injection": {
+    "column": "customer",
+    "mode": "fk_orphan",
+    "orphan_value": "LGAUDIT-ORPHAN-CUSTOMER",
+    "relation_alias": "raw_orders",
+    "targets": []
+   },
+   "injection_report": {
+    "actual_mutation_executed": true,
+    "key_column": "id",
+    "mode": "fk_orphan",
+    "relation": "raw.raw_orders",
+    "row_count_after": 729082,
+    "row_count_before": 729082,
+    "target_count": 1
+   },
+   "paper_signal": {
+    "model:order_items": {
+     "fired_shapes": [],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 0,
+      "null_shape": 0,
+      "numeric_shape": 0
+     },
+     "verdict": "clear"
+    },
+    "model:orders": {
+     "fired_shapes": [
+      "fk_shape"
+     ],
+     "shape_counts": {
+      "duplicate_shape": 0,
+      "fk_shape": 1,
+      "null_shape": 0,
+      "numeric_shape": 0
+     },
+     "verdict": "fk_shape"
+    }
+   },
+   "resolved_targets": [
+    "fa73b17d-897e-46ad-89f8-d00bec393a35"
+   ],
+   "status": "complete"
+  }
+ ],
+ "review_item": "6 tier 1 (signal fidelity against the project's own dbt test suite)",
+ "scope": {
+  "compares": "signals only; no disposition executed",
+  "data_role": "train",
+  "effect_claim_allowed": false,
+  "paper_eligible": false,
+  "study_phase": "development",
+  "test_suite_provenance": "shipped with the upstream jaffle-shop project, not authored for this paper"
+ },
+ "started_utc": "2026-08-29T15:27:46Z"
+}

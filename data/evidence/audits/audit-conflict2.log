@@ -1,0 +1,16 @@
+[2026-08-29T15:13:47Z] audit-overlap-numdup-10        no_validation damage=7.720012137805682e-05
+[2026-08-29T15:14:24Z] audit-overlap-numdup-10        derived-policy           NRD=  0.583283 fired={'duplicate_shape': 20, 'numeric_shape': 10, 'null_shape': 0} acted={'duplicate_shape': 'dedup', 'numeric_shape': 'quarantine'} clean=0.0
+[2026-08-29T15:15:03Z] audit-overlap-numdup-10        dedup-only               NRD=  0.756356 fired={'duplicate_shape': 20} acted={'duplicate_shape': 'dedup'} clean=0.0
+[2026-08-29T15:15:38Z] audit-overlap-numdup-10        quarantine-numeric-only  NRD=  0.583283 fired={'numeric_shape': 20} acted={'numeric_shape': 'quarantine'} clean=0.0
+[2026-08-29T15:16:15Z] audit-overlap-numdup-10        quarantine-null-only     NRD=  1.000000 fired={'null_shape': 0} acted={} clean=0.0
+[2026-08-29T15:16:54Z] audit-overlap-numdup-10        quarantine-all-shapes    NRD=  0.583283 fired={'duplicate_shape': 20, 'numeric_shape': 0, 'null_shape': 0} acted={'duplicate_shape': 'quarantine'} clean=0.0
+[2026-08-29T15:17:13Z] audit-overlap-nulldup-10       no_validation damage=7.720012137805682e-05
+[2026-08-29T15:17:52Z] audit-overlap-nulldup-10       derived-policy           NRD=  0.634542 fired={'duplicate_shape': 20, 'numeric_shape': 0, 'null_shape': 10} acted={'duplicate_shape': 'dedup', 'null_shape': 'quarantine'} clean=0.0
+[2026-08-29T15:18:29Z] audit-overlap-nulldup-10       dedup-only               NRD=  0.756356 fired={'duplicate_shape': 20} acted={'duplicate_shape': 'dedup'} clean=0.0
+[2026-08-29T15:19:05Z] audit-overlap-nulldup-10       quarantine-numeric-only  NRD=  1.000000 fired={'numeric_shape': 0} acted={} clean=0.0
+[2026-08-29T15:19:41Z] audit-overlap-nulldup-10       quarantine-null-only     NRD=  0.634542 fired={'null_shape': 20} acted={'null_shape': 'quarantine'} clean=0.0
+[2026-08-29T15:20:18Z] audit-overlap-nulldup-10       quarantine-all-shapes    NRD=  0.634542 fired={'duplicate_shape': 20, 'numeric_shape': 0, 'null_shape': 0} acted={'duplicate_shape': 'quarantine'} clean=0.0
+
+[2026-08-29T15:20:18Z] DONE rows=12 failures=0
+artifact: /home/u0020090017/projects/lineageguard_claude/tpcdi/out-audit-conflict2/audit-conflict-signal.json
+sha256  : f6025cdcf5e72daf3cdcbb774cf1ce604dbe37fb7b6675e6c4afa826cb5387fd

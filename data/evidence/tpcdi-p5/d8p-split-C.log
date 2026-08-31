@@ -1,0 +1,14 @@
+[2026-08-29T12:00:22Z] d8p-mkt-num-k10            no_validation damage=0.0029937849396958747 (16.74s)
+[2026-08-29T12:00:54Z] d8p-mkt-num-k10            quar@stg_daily_market            NRD=  1.000000 clean=0.0 (15.32s)
+[2026-08-29T12:01:29Z] d8p-mkt-num-k10            dedup@stg_daily_market           NRD=  1.000000 clean=0.0 (16.92s)
+[2026-08-29T12:02:10Z] d8p-mkt-num-k10            cond@stg_daily_market            NRD=  1.000000 clean=0.0 (19.28s)
+[2026-08-29T12:03:14Z] d8p-mkt-num-k10            quar@fact_market_history         NRD=  1.000000 clean=0.0 (30.24s)
+[2026-08-29T12:03:36Z] d8p-mkt-dup-k10            no_validation damage=0.0029937849396958747 (21.6s)
+[2026-08-29T12:04:22Z] d8p-mkt-dup-k10            quar@stg_daily_market            NRD=  1.000000 clean=0.0 (22.11s)
+[2026-08-29T12:05:09Z] d8p-mkt-dup-k10            dedup@stg_daily_market           NRD=  0.000000 clean=0.0 (25.0s)
+[2026-08-29T12:05:55Z] d8p-mkt-dup-k10            cond@stg_daily_market            NRD=  0.000000 clean=0.0 (23.18s)
+[2026-08-29T12:07:02Z] d8p-mkt-dup-k10            quar@fact_market_history         NRD=  1.000000 clean=0.0 (35.66s)
+
+[2026-08-29T12:07:02Z] DONE rows=10 failures=0 dbt_steps=62
+artifact: /home/u0020090017/projects/lineageguard_claude/tpcdi/out-split-C/d8p-measurement.json
+sha256  : 9df75c71df05bb6402620f09c1b92ae23009d46962cb38a9f9670fb74459ee3a

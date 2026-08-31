@@ -1,0 +1,15 @@
+[2026-08-29T12:01:59Z] no_validation damage=0.00019594428312343768
+[2026-08-29T12:02:52Z] static:dedup@stg                   NRD=  0.595993 clean=0.0
+[2026-08-29T12:04:24Z] static:quar@fact                   NRD=488.917387 clean=0.09565100488000851
+[2026-08-29T12:06:00Z] static:dedup@fact                  NRD=  0.595993 clean=0.0
+[2026-08-29T12:07:22Z] staticset:dedup@stg+quar@fact      NRD=488.500218 clean=0.09565100488000851
+[2026-08-29T12:08:28Z] staticset:quar@stg+dedup@fact      NRD=488.917387 clean=0.09565100488000851
+[2026-08-29T12:09:33Z] staticset:dedup@stg+dedup@fact     NRD=  0.595993 clean=0.0
+[2026-08-29T12:10:12Z] cond@stg                           NRD=  0.489918 clean=0.0
+
+best static (incl. two-node sets) = 0.595993 (static:dedup@stg)
+conditional single node           = 0.489918
+escape vs the true static ceiling = 17.80%
+
+artifact: /home/u0020090017/projects/lineageguard_claude/tpcdi/out-split-F/d8p-ceiling.json
+sha256  : f2fe81594f3495c10d70023bcb4ab343d8eb32933c1d077a7c60fd404d202114

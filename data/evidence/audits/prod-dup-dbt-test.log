@@ -1,0 +1,106 @@
+[0m15:30:42  Running with dbt=1.12.2
+[0m15:30:43  Registered adapter: duckdb=1.11.0
+[0m15:30:43  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:30:46  [[33mWARNING[0m]: Metric 'cumulative_revenue' was included in the OSI document, but its cumulative window and grain semantics cannot be represented.
+[0m15:30:46  Found 13 models, 27 data tests, 6 sources, 23 metrics, 672 macros, 6 semantic models, 3 saved queries, 3 unit tests
+[0m15:30:46  
+[0m15:30:46  Concurrency: 1 threads (target='mve')
+[0m15:30:46  
+[0m15:30:47  1 of 30 START test accepted_values_customers_customer_type__new__returning ..... [RUN]
+[0m15:30:47  1 of 30 PASS accepted_values_customers_customer_type__new__returning ........... [[32mPASS[0m in 0.14s]
+[0m15:30:47  2 of 30 START test dbt_utils_expression_is_true_customers_lifetime_spend_pretax_lifetime_tax_paid_lifetime_spend  [RUN]
+[0m15:30:47  2 of 30 PASS dbt_utils_expression_is_true_customers_lifetime_spend_pretax_lifetime_tax_paid_lifetime_spend  [[32mPASS[0m in 0.13s]
+[0m15:30:47  3 of 30 START test dbt_utils_expression_is_true_orders_order_items_subtotal_subtotal  [RUN]
+[0m15:30:48  3 of 30 FAIL 42396 dbt_utils_expression_is_true_orders_order_items_subtotal_subtotal  [[31mFAIL 42396[0m in 0.64s]
+[0m15:30:48  4 of 30 START test dbt_utils_expression_is_true_orders_order_total_subtotal_tax_paid  [RUN]
+[0m15:30:48  4 of 30 PASS dbt_utils_expression_is_true_orders_order_total_subtotal_tax_paid . [[32mPASS[0m in 0.43s]
+[0m15:30:48  5 of 30 START test dbt_utils_expression_is_true_stg_orders_order_total_tax_paid_subtotal  [RUN]
+[0m15:30:48  5 of 30 PASS dbt_utils_expression_is_true_stg_orders_order_total_tax_paid_subtotal  [[32mPASS[0m in 0.14s]
+[0m15:30:48  6 of 30 START test not_null_customers_customer_id .............................. [RUN]
+[0m15:30:48  6 of 30 PASS not_null_customers_customer_id .................................... [[32mPASS[0m in 0.05s]
+[0m15:30:48  7 of 30 START test not_null_order_items_order_item_id .......................... [RUN]
+[0m15:30:48  7 of 30 PASS not_null_order_items_order_item_id ................................ [[32mPASS[0m in 0.05s]
+[0m15:30:48  8 of 30 START test not_null_orders_order_id .................................... [RUN]
+[0m15:30:48  8 of 30 PASS not_null_orders_order_id .......................................... [[32mPASS[0m in 0.04s]
+[0m15:30:48  9 of 30 START test not_null_stg_customers_customer_id .......................... [RUN]
+[0m15:30:48  9 of 30 PASS not_null_stg_customers_customer_id ................................ [[32mPASS[0m in 0.05s]
+[0m15:30:48  10 of 30 START test not_null_stg_locations_location_id ......................... [RUN]
+[0m15:30:48  10 of 30 PASS not_null_stg_locations_location_id ............................... [[32mPASS[0m in 0.05s]
+[0m15:30:48  11 of 30 START test not_null_stg_order_items_order_id .......................... [RUN]
+[0m15:30:48  11 of 30 PASS not_null_stg_order_items_order_id ................................ [[32mPASS[0m in 0.05s]
+[0m15:30:48  12 of 30 START test not_null_stg_order_items_order_item_id ..................... [RUN]
+[0m15:30:48  12 of 30 PASS not_null_stg_order_items_order_item_id ........................... [[32mPASS[0m in 0.04s]
+[0m15:30:48  13 of 30 START test not_null_stg_orders_order_id ............................... [RUN]
+[0m15:30:49  13 of 30 PASS not_null_stg_orders_order_id ..................................... [[32mPASS[0m in 0.04s]
+[0m15:30:49  14 of 30 START test not_null_stg_products_product_id ........................... [RUN]
+[0m15:30:49  14 of 30 PASS not_null_stg_products_product_id ................................. [[32mPASS[0m in 0.05s]
+[0m15:30:49  15 of 30 START test not_null_stg_supplies_supply_uuid .......................... [RUN]
+[0m15:30:49  15 of 30 PASS not_null_stg_supplies_supply_uuid ................................ [[32mPASS[0m in 0.05s]
+[0m15:30:49  16 of 30 START test relationships_order_items_order_id__order_id__ref_orders_ .. [RUN]
+[0m15:30:49  16 of 30 PASS relationships_order_items_order_id__order_id__ref_orders_ ........ [[32mPASS[0m in 0.22s]
+[0m15:30:49  17 of 30 START test relationships_orders_customer_id__customer_id__ref_stg_customers_  [RUN]
+[0m15:30:49  17 of 30 PASS relationships_orders_customer_id__customer_id__ref_stg_customers_  [[32mPASS[0m in 0.06s]
+[0m15:30:49  18 of 30 START test relationships_stg_order_items_order_id__order_id__ref_stg_orders_  [RUN]
+[0m15:30:49  18 of 30 PASS relationships_stg_order_items_order_id__order_id__ref_stg_orders_  [[32mPASS[0m in 0.19s]
+[0m15:30:49  19 of 30 START test unique_customers_customer_id ............................... [RUN]
+[0m15:30:49  19 of 30 PASS unique_customers_customer_id ..................................... [[32mPASS[0m in 0.04s]
+[0m15:30:49  20 of 30 START test unique_order_items_order_item_id ........................... [RUN]
+[0m15:30:49  20 of 30 FAIL 46022 unique_order_items_order_item_id ........................... [[31mFAIL 46022[0m in 0.24s]
+[0m15:30:49  21 of 30 START test unique_orders_order_id ..................................... [RUN]
+[0m15:30:50  21 of 30 PASS unique_orders_order_id ........................................... [[32mPASS[0m in 0.11s]
+[0m15:30:50  22 of 30 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m15:30:50  22 of 30 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 0.04s]
+[0m15:30:50  23 of 30 START test unique_stg_locations_location_id ........................... [RUN]
+[0m15:30:50  23 of 30 PASS unique_stg_locations_location_id ................................. [[32mPASS[0m in 0.04s]
+[0m15:30:50  24 of 30 START test unique_stg_order_items_order_item_id ....................... [RUN]
+[0m15:30:50  24 of 30 PASS unique_stg_order_items_order_item_id ............................. [[32mPASS[0m in 0.16s]
+[0m15:30:50  25 of 30 START test unique_stg_orders_order_id ................................. [RUN]
+[0m15:30:50  25 of 30 PASS unique_stg_orders_order_id ....................................... [[32mPASS[0m in 0.09s]
+[0m15:30:50  26 of 30 START test unique_stg_products_product_id ............................. [RUN]
+[0m15:30:50  26 of 30 FAIL 1 unique_stg_products_product_id ................................. [[31mFAIL 1[0m in 0.04s]
+[0m15:30:50  27 of 30 START test unique_stg_supplies_supply_uuid ............................ [RUN]
+[0m15:30:50  27 of 30 PASS unique_stg_supplies_supply_uuid .................................. [[32mPASS[0m in 0.04s]
+[0m15:30:50  28 of 30 START unit_test order_items::test_supply_costs_sum_correctly .......... [RUN]
+[0m15:30:50  28 of 30 PASS order_items::test_supply_costs_sum_correctly ..................... [[32mPASS[0m in 0.22s]
+[0m15:30:50  29 of 30 START unit_test orders::test_order_items_compute_to_bools_correctly ... [RUN]
+[0m15:30:50  29 of 30 PASS orders::test_order_items_compute_to_bools_correctly .............. [[32mPASS[0m in 0.13s]
+[0m15:30:50  30 of 30 START unit_test stg_locations::test_does_location_opened_at_trunc_to_date  [RUN]
+[0m15:30:50  30 of 30 PASS stg_locations::test_does_location_opened_at_trunc_to_date ........ [[32mPASS[0m in 0.10s]
+[0m15:30:50  
+[0m15:30:50  Finished running 27 data tests, 3 unit tests in 0 hours 0 minutes and 4.03 seconds (4.03s).
+[0m15:30:50  [[33mWARNING[0m]: Metric 'cumulative_revenue' was included in the OSI document, but its cumulative window and grain semantics cannot be represented.
+[0m15:30:51  
+[0m15:30:51  [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m15:30:51  
+[0m15:30:51  [[31mERROR[0m]: in test dbt_utils_expression_is_true_orders_order_items_subtotal_subtotal (models/marts/orders.yml)
+[0m15:30:51    Got 42396 results, configured to fail if != 0
+[0m15:30:51  
+[0m15:30:51    compiled code at /home/u0020090017/projects/lineageguard_claude/.scratch-audit-dbt/branches/prod-dup--dbtfid--audit/targets/dbt-test/compiled/jaffle_shop/models/marts/orders.yml/dbt_utils_expression_is_true_o_c0acd0b625f5605c61af04356663a823.sql
+[0m15:30:51  
+[0m15:30:51    See test failures:
+  ----------------------------------------------------------------------------------------------------------
+  select * from "jaffle-clean"."analytics"."dbt_utils_expression_is_true_o_c0acd0b625f5605c61af04356663a823"
+  ----------------------------------------------------------------------------------------------------------
+[0m15:30:51  
+[0m15:30:51  [[31mERROR[0m]: in test unique_order_items_order_item_id (models/marts/order_items.yml)
+[0m15:30:51    Got 46022 results, configured to fail if != 0
+[0m15:30:51  
+[0m15:30:51    compiled code at /home/u0020090017/projects/lineageguard_claude/.scratch-audit-dbt/branches/prod-dup--dbtfid--audit/targets/dbt-test/compiled/jaffle_shop/models/marts/order_items.yml/unique_order_items_order_item_id.sql
+[0m15:30:51  
+[0m15:30:51    See test failures:
+  ---------------------------------------------------------------------------
+  select * from "jaffle-clean"."analytics"."unique_order_items_order_item_id"
+  ---------------------------------------------------------------------------
+[0m15:30:51  
+[0m15:30:51  [[31mERROR[0m]: in test unique_stg_products_product_id (models/staging/stg_products.yml)
+[0m15:30:51    Got 1 result, configured to fail if != 0
+[0m15:30:51  
+[0m15:30:51    compiled code at /home/u0020090017/projects/lineageguard_claude/.scratch-audit-dbt/branches/prod-dup--dbtfid--audit/targets/dbt-test/compiled/jaffle_shop/models/staging/stg_products.yml/unique_stg_products_product_id.sql
+[0m15:30:51  
+[0m15:30:51    See test failures:
+  -------------------------------------------------------------------------
+  select * from "jaffle-clean"."analytics"."unique_stg_products_product_id"
+  -------------------------------------------------------------------------
+[0m15:30:51  
+[0m15:30:51  Done. PASS=27 WARN=0 ERROR=3 SKIP=0 NO-OP=0 REUSED=0 TOTAL=30
+

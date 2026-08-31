@@ -1,0 +1,310 @@
+{
+ "budget_grid_us": [
+  0,
+  6388976,
+  7244520,
+  14489039,
+  28978078
+ ],
+ "derived_policy_maps": {
+  "fact_financials": {
+   "duplicate_shape": "dedup",
+   "fk_shape": "no_op",
+   "null_shape": "no_op",
+   "numeric_shape": "quarantine"
+  },
+  "fact_market_history": {
+   "duplicate_shape": "no_op",
+   "fk_shape": "no_op",
+   "null_shape": "no_op",
+   "numeric_shape": "no_op"
+  },
+  "stg_daily_market": {
+   "duplicate_shape": "dedup",
+   "fk_shape": "no_op",
+   "null_shape": "no_op",
+   "numeric_shape": "no_op"
+  },
+  "stg_financial": {
+   "duplicate_shape": "dedup",
+   "fk_shape": "no_op",
+   "null_shape": "quarantine",
+   "numeric_shape": "quarantine"
+  }
+ },
+ "kind": "lineageguard_p5_plans_v1",
+ "methods": {
+  "no_validation": [
+   {
+    "budget_us": 0,
+    "plan": []
+   },
+   {
+    "budget_us": 6388976,
+    "plan": []
+   },
+   {
+    "budget_us": 7244520,
+    "plan": []
+   },
+   {
+    "budget_us": 14489039,
+    "plan": []
+   },
+   {
+    "budget_us": 28978078,
+    "plan": []
+   }
+  ],
+  "policy_planner": [
+   {
+    "budget_us": 0,
+    "plan": []
+   },
+   {
+    "budget_us": 6388976,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "quarantine"
+      },
+      "node": "fact_financials"
+     }
+    ]
+   },
+   {
+    "budget_us": 7244520,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "quarantine"
+      },
+      "node": "fact_financials"
+     }
+    ]
+   },
+   {
+    "budget_us": 14489039,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "quarantine"
+      },
+      "node": "fact_financials"
+     },
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "no_op"
+      },
+      "node": "stg_daily_market"
+     }
+    ]
+   },
+   {
+    "budget_us": 28978078,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "quarantine"
+      },
+      "node": "fact_financials"
+     },
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "no_op",
+       "null_shape": "no_op",
+       "numeric_shape": "no_op"
+      },
+      "node": "stg_daily_market"
+     }
+    ]
+   }
+  ],
+  "static_best": [
+   {
+    "budget_us": 0,
+    "plan": []
+   },
+   {
+    "budget_us": 6388976,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "fact_financials"
+     }
+    ]
+   },
+   {
+    "budget_us": 7244520,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "fact_financials"
+     }
+    ]
+   },
+   {
+    "budget_us": 14489039,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "fact_financials"
+     },
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "stg_daily_market"
+     }
+    ]
+   },
+   {
+    "budget_us": 28978078,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "fact_financials"
+     },
+     {
+      "map": {
+       "duplicate_shape": "dedup",
+       "fk_shape": "dedup",
+       "null_shape": "dedup",
+       "numeric_shape": "dedup"
+      },
+      "node": "stg_daily_market"
+     }
+    ]
+   }
+  ],
+  "static_quarantine_legacy": [
+   {
+    "budget_us": 0,
+    "plan": []
+   },
+   {
+    "budget_us": 6388976,
+    "plan": []
+   },
+   {
+    "budget_us": 7244520,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "stg_financial"
+     }
+    ]
+   },
+   {
+    "budget_us": 14489039,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "stg_financial"
+     },
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "stg_daily_market"
+     }
+    ]
+   },
+   {
+    "budget_us": 28978078,
+    "plan": [
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "stg_financial"
+     },
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "fact_financials"
+     },
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "stg_daily_market"
+     },
+     {
+      "map": {
+       "duplicate_shape": "quarantine",
+       "fk_shape": "quarantine",
+       "null_shape": "quarantine",
+       "numeric_shape": "quarantine"
+      },
+      "node": "fact_market_history"
+     }
+    ]
+   }
+  ]
+ },
+ "plans_sha256": "4716eee088604e63461e278d069bef364dab418144564c135b3d29ad9766504c",
+ "protocol_sha256": "75fae07932f14df145871339aa9e285ff178e19da07899f5f523b52500de4532"
+}

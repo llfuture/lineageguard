@@ -1,0 +1,548 @@
+{
+  "action_contract": {
+    "action_count": 5,
+    "action_ids": [
+      "action.oracle.jaffle.model-stg-products.row-quarantine",
+      "action.oracle.jaffle.model-products.row-quarantine",
+      "action.oracle.jaffle.model-order-items.row-quarantine",
+      "action.oracle.jaffle.model-orders.row-quarantine",
+      "action.oracle.jaffle.model-customers.row-quarantine"
+    ],
+    "all_feasible_definition": "exactly_all_five_common_actions",
+    "candidate_set_rule": "source_and_intermediate_locus_intersection",
+    "execution_order": "fixed_upstream_to_downstream_node_order",
+    "node_order": [
+      "model:stg_products",
+      "model:products",
+      "model:order_items",
+      "model:orders",
+      "model:customers"
+    ],
+    "quarantine_only": true,
+    "repair": false,
+    "same_action_universe_for_all_eight_campaigns": true,
+    "source_only_action_excluded": true,
+    "source_only_action_id": "action.oracle.jaffle.source-ecom-raw-products.row-quarantine",
+    "source_only_exclusion_reason": "not_executable_at_or_after_the_intermediate_injection_locus"
+  },
+  "budget_contract": {
+    "anchors": [
+      "zero",
+      "cheapest_action",
+      "1_percent",
+      "2_percent",
+      "5_percent",
+      "10_percent",
+      "20_percent",
+      "100_percent"
+    ],
+    "budget_values_generated_before_fresh_unlock": true,
+    "budget_values_generated_by_protocol_builder": false,
+    "cheapest_action_rule": "minimum_frozen_common_action_planning_cost_us",
+    "cost_unit": "integer_microseconds",
+    "duplicate_budget_values": "merge_and_retain_all_anchor_labels",
+    "percentage_rule": "floor_total_cost_times_percentage_div_100",
+    "same_numeric_grid_for_all_eight_campaigns": true,
+    "same_numeric_grid_for_all_methods": true,
+    "selected_action_cost_sum_must_not_exceed_budget": true,
+    "total_cost": "sum_of_five_frozen_common_action_planning_cost_us"
+  },
+  "claim_boundary": {
+    "allowed_go_statement": "frozen_action_conditioned_shared_plans_show_a_paired_single_pipeline_temporal_validation_signal_worth_confirmatory_design",
+    "effect_claim_allowed": false,
+    "excluded_from_confirmatory": true,
+    "forbidden_claims": [
+      "paper_level_primary_effect",
+      "cross_pipeline_generalization",
+      "unseen_product_generalization",
+      "causal_factor_effect",
+      "practical_detector_effect",
+      "confirmatory_statistical_significance"
+    ],
+    "go_only_unlocks_confirmatory_protocol_and_sample_size_design": true,
+    "may_pool_with_d8_or_future_test": false,
+    "one_target_per_factor_tuple": true,
+    "oracle_detector": true,
+    "paper_eligible": false,
+    "pilot_only": true,
+    "quarantine_only": true,
+    "repair": false,
+    "single_pipeline": true,
+    "study_phase": "pilot_validation",
+    "train_validation_physical_target_overlap_may_exist": true
+  },
+  "combination_contract": {
+    "candidate_subset_count": 32,
+    "clean_anchor_failure_policy": "block_before_phase_a_shared_plan_freeze",
+    "clean_collateral_combination": "sum_single_action_clean_collateral",
+    "combination_gap": {
+      "formula": "actual_common_five_nrd_minus_observed_best_common_singleton_nrd",
+      "may_change_refit_or_plans": false,
+      "may_enter_p1_gate": false,
+      "role": "diagnostic_only",
+      "source_all_six_may_enter": false
+    },
+    "d8_anchor_use": {
+      "common_singleton_clean_zero_check_count": 40,
+      "common_singleton_dirty_refit_count": 40,
+      "intermediate_all_five_clean_zero_check_count": 4,
+      "intermediate_all_five_dirty_diagnostic_count": 4,
+      "intermediate_cell_ids": [
+        "rq2-action-response-d8-numeric-intermediate-low-v2",
+        "rq2-action-response-d8-numeric-intermediate-high-v2",
+        "rq2-action-response-d8-duplicate-intermediate-low-v2",
+        "rq2-action-response-d8-duplicate-intermediate-high-v2"
+      ],
+      "no_validation_dirty_count": 8,
+      "source_all_six_excluded_count": 4,
+      "source_only_singleton_excluded_count": 4
+    },
+    "development_scenario_count": 8,
+    "development_scenario_weighting": "equal_one_eighth",
+    "empty_subset_nrd": 1,
+    "interaction_coefficients_fitted": false,
+    "nonempty_subset_rule": "minimum_refit_singleton_nrd_among_selected_actions_per_scenario",
+    "policy_id": "best_single_action_residual_envelope_no_unseen_synergy",
+    "safety_caps": {
+      "max_clean_collateral_rate": 0,
+      "min_clean_availability": 1
+    },
+    "subset_enumeration": "all_subsets_of_five_common_actions",
+    "subset_tie_break": [
+      "predicted_campaign_macro_nrd",
+      "worst_clean_collateral",
+      "negative_worst_clean_availability",
+      "spent_cost_us",
+      "selected_action_count",
+      "lexicographic_selected_action_ids"
+    ],
+    "unseen_synergy_credit": false
+  },
+  "config_directory": "configs/jaffle_rq2_action_p1_v1",
+  "cost_contract": {
+    "action_count": 5,
+    "cost_unit": "integer_microseconds",
+    "costs_generated_by_protocol_builder": false,
+    "implementation_path": "detected_key_relation_materialization_v1",
+    "implementation_source_sha256_required": true,
+    "measurement": {
+      "aggregation": "median_of_five_measured_trials",
+      "failed_or_incomplete_trial_policy": "block_cost_freeze",
+      "fresh_database_connection_each_trial": true,
+      "measured_repetition_count_per_action_workload": 5,
+      "required_trial_fields": [
+        "elapsed_us",
+        "hit_count",
+        "key_stream_sha256",
+        "environment_sha256",
+        "source_sha256"
+      ],
+      "temporary_state_rebuilt_each_trial": true,
+      "threads": 1,
+      "warmup_count_per_action_workload": 1
+    },
+    "planning_cost_must_be_positive_integer": true,
+    "planning_cost_rule": "maximum_of_clean_median_and_all_eight_d8_hit_workload_medians",
+    "sql_count_proxy_planning_eligible": false,
+    "timed_interval": {
+      "end": "detected_key_relation_ready_for_disposition_consumption",
+      "included": [
+        "stable_key_integrity_precheck",
+        "select_order_by_and_fetch",
+        "rowwise_rule_evaluation",
+        "hit_key_summary_and_deduplication",
+        "temporary_detected_key_relation_write"
+      ],
+      "separate_not_in_planning_cost_columns": [
+        "mode_specific_disposition",
+        "audit",
+        "end_to_end"
+      ],
+      "start": "before_stable_key_precheck_and_hit_relation_creation"
+    },
+    "train_snapshot": {
+      "clean_raw_load_file_sha256": "240e9166b7a46bcae6c27dca4133ef5e15c9993666836da8f4c8d6104b99a614",
+      "database_sha256": "0e82d6747fbabe6e93424836742ef6ca949bdeb7f4c69c80a3e864ef905a3e82",
+      "jaffle_commit": "7d0d8de2d58edae06f0724a3892da0224bbf0f4a",
+      "logical_snapshot_sha256": "3a269b87496f91d8232b90080a8cceffd3b42340e2c77fcc80a2220407f1bc31",
+      "raw_load_input_closure_sha256": "e446d796eb136587532b3067db9c9c064b93aeed4d9f4e0e6eaab01f483f2250"
+    },
+    "workloads": {
+      "all_five_actions_measured_on_every_workload": true,
+      "clean_workload_count_per_action": 1,
+      "d8_hit_ledgers_must_be_strictly_bound": true,
+      "fresh_or_validation_workload_forbidden": true,
+      "hit_workload_cell_ids": [
+        "rq2-action-response-d8-numeric-source-low-v2",
+        "rq2-action-response-d8-numeric-source-high-v2",
+        "rq2-action-response-d8-numeric-intermediate-low-v2",
+        "rq2-action-response-d8-numeric-intermediate-high-v2",
+        "rq2-action-response-d8-duplicate-source-low-v2",
+        "rq2-action-response-d8-duplicate-source-high-v2",
+        "rq2-action-response-d8-duplicate-intermediate-low-v2",
+        "rq2-action-response-d8-duplicate-intermediate-high-v2"
+      ],
+      "hit_workload_count_per_action": 8,
+      "total_action_workload_count": 45,
+      "workload_count_per_action": 9
+    }
+  },
+  "d8_entry_gate": {
+    "caller_supplied_d8_rows_allowed": false,
+    "design": {
+      "file_sha256": "6ff18dea45c7f1d5d23766fbfdfd3bc458f6a0cf1c7d5d2f8fd24bdca6abc15b",
+      "path": "configs/jaffle_rq2_action_response_d8_v2/design.json",
+      "semantic_sha256": "c21e6cd2d9f123d4b4a7e05517eed7d6510394f3d7a6694dc1cece99bd8e483e"
+    },
+    "formal_consumer_must_recompute_gate": true,
+    "gate_result": {
+      "file_sha256": "c89864e475a4f168eb6e1f1397970f7f2220bda0c46864d6b053e44d0a4710e9",
+      "path": "artifacts/jaffle_rq2_action_response_d8_v2/gate-20260822-011043-rq2-action-d8-ab34b47/gate-result.json",
+      "semantic_sha256": "ebe3092d3e6ce8428cffa987a26714db355969a9b2cc5682910796fdfb9bbd27"
+    },
+    "measurement_result": {
+      "file_sha256": "1e0e908cd2cf394ae6674a9f57b29fe8b80d77b8d963313b36ddd0fa4fcc04bf",
+      "path": "outputs/20260822-011043-rq2-action-d8-measure-ab34b47-inner/result.json",
+      "semantic_sha256": "bc40bfe13d86af694c95adc0b4dfa434ee250abccd985db7f522480a0b1f77c8"
+    },
+    "observed_decision": "GO",
+    "predictor_spec": {
+      "file_sha256": "a92e3aa6769c54c1ab35eb9e36f9b5f2b1d6704181086f46141b61d42d2b62d5",
+      "path": "artifacts/jaffle_rq2_action_response_d8_v2/predictor-20260821-235423-rq2-action-d8-1cb5770/predictor-spec.json",
+      "semantic_sha256": "0a59b1cd9d2b3fda56e9d7ebb6ada6b62d0b4c4e697f3dcac8db5bf05f70097d"
+    },
+    "required_decision": "GO",
+    "target_registry": {
+      "file_sha256": "71880d7e0efc89dfc0c75d95c9895c73ee01bc2e97320cbfd5d232925e551f5e",
+      "path": "artifacts/jaffle_rq2_action_response_d8_v2/targets-20260821-234932-rq2-action-d8-1cb5770/target-ledger-registry.json",
+      "semantic_sha256": "a3087f4813adc1ed97e62be9e02cdb2f9542051f356bb601ce0a73da612a25d4"
+    },
+    "technical_failure_count": 0
+  },
+  "final_model_contract": {
+    "action_model_count": 5,
+    "actions": [
+      "action.oracle.jaffle.model-stg-products.row-quarantine",
+      "action.oracle.jaffle.model-products.row-quarantine",
+      "action.oracle.jaffle.model-order-items.row-quarantine",
+      "action.oracle.jaffle.model-orders.row-quarantine",
+      "action.oracle.jaffle.model-customers.row-quarantine"
+    ],
+    "caller_supplied_training_rows_allowed": false,
+    "coefficient_count_per_action": 4,
+    "error_type_effect_coding": {
+      "duplicate_row": 1,
+      "numeric_corruption": -1
+    },
+    "factor_interactions": [],
+    "fanout_stratum_is_model_term": false,
+    "formula": "residual~intercept+error_type+injection_locus+clean_raw_items_fanout",
+    "fresh_or_validation_inputs_allowed": false,
+    "inference_boundary": {
+      "causal_factor_attribution_allowed": false,
+      "final_refit_is_a_planning_model_not_a_new_gate": true,
+      "sampling_uncertainty_identified": false,
+      "target_heterogeneity_separable": false
+    },
+    "injected_multiplicity_is_model_term": false,
+    "injection_locus_effect_coding": {
+      "intermediate": 1,
+      "source": -1
+    },
+    "lower_clip": 0,
+    "model_id": "all_d8_common_action_additive_residual_refit_v1",
+    "precondition": "authoritative_d8_gate_recomputes_exactly_to_GO",
+    "prediction_rule": "max_zero_old_surrogate_plus_fitted_residual",
+    "required_matrix_rank_per_action": 4,
+    "solver": "exact_fraction_ordinary_least_squares_normal_equations_v1",
+    "target": "actual_singleton_nrd_minus_frozen_old_surrogate_nrd",
+    "target_identity_is_model_term": false,
+    "terms": [
+      "intercept",
+      "error_type",
+      "injection_locus",
+      "clean_raw_items_fanout"
+    ],
+    "training_cell_ids": [
+      "rq2-action-response-d8-numeric-source-low-v2",
+      "rq2-action-response-d8-numeric-source-high-v2",
+      "rq2-action-response-d8-numeric-intermediate-low-v2",
+      "rq2-action-response-d8-numeric-intermediate-high-v2",
+      "rq2-action-response-d8-duplicate-source-low-v2",
+      "rq2-action-response-d8-duplicate-source-high-v2",
+      "rq2-action-response-d8-duplicate-intermediate-low-v2",
+      "rq2-action-response-d8-duplicate-intermediate-high-v2"
+    ],
+    "training_cells_per_action": 8,
+    "training_singleton_count": 40,
+    "upper_clip": null
+  },
+  "fresh_materialization_contract": {
+    "campaign_seed": {
+      "algorithm": "uint63_from_sha256_of_skeleton_phase_a_slot_and_factor_tuple",
+      "domain": "LineageGuard-jaffle-rq2-p1-campaign-seed-v1",
+      "duplicate_or_invalid_seed_policy": "fail_without_fallback"
+    },
+    "factorial": {
+      "assignment_algorithm": "sha256_sort_factor_tuples_bound_to_p1_skeleton_and_phase_a_hash",
+      "assignment_domain": "LineageGuard-jaffle-rq2-p1-factor-assignment-v1",
+      "assignment_materialized_by_protocol_builder": false,
+      "factor_tuples": [
+        [
+          "numeric_corruption",
+          "source",
+          "low"
+        ],
+        [
+          "numeric_corruption",
+          "source",
+          "high"
+        ],
+        [
+          "numeric_corruption",
+          "intermediate",
+          "low"
+        ],
+        [
+          "numeric_corruption",
+          "intermediate",
+          "high"
+        ],
+        [
+          "duplicate_row",
+          "source",
+          "low"
+        ],
+        [
+          "duplicate_row",
+          "source",
+          "high"
+        ],
+        [
+          "duplicate_row",
+          "intermediate",
+          "low"
+        ],
+        [
+          "duplicate_row",
+          "intermediate",
+          "high"
+        ]
+      ],
+      "kind": "two_by_two_by_two_exactly_once"
+    },
+    "identity_namespace": {
+      "cross_role_overlap_count_and_tokens_required": true,
+      "cross_role_physical_key_reuse_allowed": true,
+      "physical_resolver_field": "stable_key_sha256",
+      "physical_resolver_hash_input": "canonical_stable_key_object_with_sku",
+      "raw_identifier_written": false,
+      "role_namespace_creates_statistical_independence": false,
+      "role_namespaced_field": "role_namespaced_identity_sha256",
+      "role_namespaced_hash_input_fields": [
+        "data_role",
+        "partition",
+        "split_id",
+        "clean_snapshot_sha256",
+        "node_id",
+        "stable_key_sha256"
+      ],
+      "target_identity_may_enter_model_or_planner": false,
+      "unseen_entity_claim_allowed": false
+    },
+    "slot_count": 8,
+    "target_selection": {
+      "fallback": false,
+      "fanout_metric": "count_validation_raw_items_rows_joined_on_sku",
+      "high_pool_count": 4,
+      "low_pool_count": 4,
+      "node_id": "source:ecom.raw_products",
+      "outcomes_used_for_selection": false,
+      "p1_target_count": 8,
+      "pool_rule": "lowest_four_and_highest_four_by_numeric_fanout",
+      "stable_key_columns": [
+        "sku"
+      ],
+      "target_count_per_slot": 1,
+      "unused_middle_count": 2,
+      "validation_population_count": 10,
+      "within_p1_physical_key_reuse": false,
+      "within_pool_tie_break_domain": "LineageGuard-jaffle-rq2-p1-target-tie-v1"
+    },
+    "validation_anchor_expected_identity": {
+      "clean_raw_load_file_sha256": "5b6f904b08d129595368d696309af7a64323c5bd75160b1859659b6ade7c75bb",
+      "cutoff": "timestamp_strictly_before_2021-01-01",
+      "data_role": "validation",
+      "database_sha256": "50d60961f3b9434fc12d9c29bbeb3ce61b8635fea0a01c01f50ac3b63e10353a",
+      "expected_relation_rows": {
+        "customers": 3102,
+        "items": 1768124,
+        "orders": 1222760,
+        "products": 10,
+        "stores": 6,
+        "supplies": 65
+      },
+      "partition": "pilot_validation",
+      "read_allowed_only_in_phase_b": true,
+      "read_by_protocol_builder": false,
+      "split_id": "jaffle.temporal.pilot-validation.2020.v1"
+    }
+  },
+  "gate_contract": {
+    "decision_values": [
+      "GO",
+      "NO_GO"
+    ],
+    "effect_direction_optional_stopping": false,
+    "gate_must_recompute_from_measurement_and_protocol": true,
+    "go_policy": "may_design_but_not_execute_confirmatory_without_new_freeze",
+    "go_requires_all": [
+      "eight_campaigns_complete",
+      "all_bound_shared_placements_complete",
+      "all_clean_counterfactuals_complete",
+      "technical_failure_count_equals_zero",
+      "all_eight_no_validation_damages_strictly_positive",
+      "mean_primary_minus_comparator_aurd_strictly_negative",
+      "paired_bootstrap_95_percent_upper_strictly_below_zero",
+      "relative_mean_aurd_improvement_at_least_0_10",
+      "primary_holm_adjusted_p_at_most_0_05",
+      "all_clean_counterfactual_correct_sink_loss_equals_zero"
+    ],
+    "kind": "one_shot_independent_p1_pilot_gate",
+    "no_go_policy": "retain_all_evidence_and_stop_current_paper_rq2_effect_iteration",
+    "outcome_related_retry_or_plan_change": false,
+    "secondary_method_budget_or_subgroup_may_rescue_failure": false,
+    "summary_and_gate_separate_from_runner": true,
+    "thresholds": {
+      "bootstrap_confidence_level": 0.95,
+      "bootstrap_upper": 0,
+      "clean_correct_sink_loss": 0,
+      "holm_adjusted_alpha": 0.05,
+      "relative_aurd_improvement": 0.1,
+      "technical_failure_count": 0
+    }
+  },
+  "kind": "lineageguard_jaffle_rq2_action_p1_protocol_v1",
+  "method_registry": {
+    "kind": "lineageguard_jaffle_rq2_action_p1_method_registry_v1",
+    "method_count": 6,
+    "method_registry_sha256": "8a0cccb95bcd0bf0cdc8338afdfb7e78c21aea02b115ac1cc7b1c8f73b8dbd0d",
+    "path": "configs/jaffle_rq2_action_p1_v1/methods.json"
+  },
+  "p1_skeleton": {
+    "file_sha256": "280bf2cfe8a5f31adf79d353eb58b781f2b3d99e1569abc529fc6cd5e1dec33f",
+    "path": "configs/jaffle_rq2_action_response_d8_v2/p1-x8-skeleton.json",
+    "semantic_sha256": "c14c77fc783011013d9f46c95a0c7c848bb5b2a77697e537c9dbd47369d5426a"
+  },
+  "phase_id": "RQ2-P1-Jaffle-Action-Conditioned-Placement-Pilot",
+  "phase_lock_contract": {
+    "phase_a": {
+      "all_feasible_only_at_total_cost": true,
+      "all_plans_self_hashed_before_fresh_unlock": true,
+      "allowed_inputs": [
+        "p1_protocol_and_skeleton",
+        "authoritative_d8_go_closure",
+        "all_d8_final_refit",
+        "frozen_common_five_action_cost_catalog",
+        "frozen_common_five_dag",
+        "frozen_method_registry_and_hyperparameters"
+      ],
+      "forbidden_inputs": [
+        "fresh_slot_factor_assignment",
+        "fresh_error_type",
+        "fresh_injection_locus",
+        "fresh_fanout_stratum",
+        "fresh_campaign_seed",
+        "fresh_target_key_or_ledger",
+        "fresh_context_profile",
+        "validation_clean_anchor",
+        "fresh_dirty_or_protected_outcome",
+        "test_or_temporal_holdout"
+      ],
+      "granularity": "one_plan_per_method_by_unique_budget",
+      "name": "pre_fresh_shared_plan_freeze",
+      "output_has_campaign_id": false,
+      "output_kind": "lineageguard_jaffle_rq2_action_p1_shared_plan_registry_v1",
+      "row_count_formula": "five_times_unique_budget_count_plus_one"
+    },
+    "phase_b": {
+      "atomic_outputs": [
+        "factor_and_seed_assignment_registry",
+        "eight_campaign_and_execution_specs",
+        "eight_validation_product_target_ledgers_and_registry",
+        "product_clean_context_index",
+        "shared_plan_to_campaign_binding",
+        "fresh_input_prelaunch_closure"
+      ],
+      "binder_rule": "copy_shared_action_sets_without_replanning",
+      "campaign_specific_planning": false,
+      "may_open_validation_clean_anchor_only_after_predecessor": true,
+      "name": "post_shared_plan_fresh_input_materialization",
+      "required_predecessor": "strict_self_hashed_phase_a_shared_plan_registry"
+    },
+    "physical_execution_deduplication_key": "ordered_selected_action_ids",
+    "physical_outcome_reuse_across_campaigns": false,
+    "runner_computes_summary_or_gate": false,
+    "same_selected_action_set_across_all_eight_campaigns": true
+  },
+  "pipeline_id": "jaffle_shop_6y",
+  "protocol_sha256": "b59c9448e67ccc70bd97e147e2cc81ad977455db7373f020f65c3dad4c149621",
+  "research_question": "RQ2",
+  "schema_version": 1,
+  "scope": {
+    "fresh_metadata_materialized": false,
+    "fresh_or_validation_data_read": false,
+    "old_p0_v1_d8_files_modified": false,
+    "outcomes_computed": false,
+    "protocol_and_config_only": true,
+    "shared_plans_generated": false,
+    "test_or_temporal_holdout_read": false
+  },
+  "statistics_contract": {
+    "aurd": {
+      "budget_x": "budget_us_divided_by_total_common_five_cost_us",
+      "monotonicization": false,
+      "negative_difference_favors_primary": true,
+      "primary_difference": "primary_aurd_minus_comparator_aurd",
+      "within_campaign_rule": "trapezoid_on_common_unique_numeric_budget_grid"
+    },
+    "campaign_count": 8,
+    "holm": {
+      "primary_family": [
+        "aurd_primary_vs_fixed_comparator"
+      ],
+      "primary_family_size": 1,
+      "secondary_family": "one_test_per_unique_nonzero_budget_nrd",
+      "secondary_family_may_change_gate": false
+    },
+    "independent_unit_for_pilot_gate": "fresh_injection_campaign",
+    "nrd": {
+      "all_eight_denominators_must_be_strictly_positive": true,
+      "formula": "protected_damage_divided_by_paired_no_validation_damage",
+      "lower_is_better": true,
+      "required_at_every_unique_budget": true
+    },
+    "paired_bootstrap": {
+      "confidence_level": 0.95,
+      "external_pipeline_generalization_inference": false,
+      "kind": "paired_campaign_percentile_bootstrap",
+      "resamples": 10000,
+      "seed": 5561622898121566,
+      "seed_domain": "LineageGuard:RQ2:P1:paired-bootstrap:v1"
+    },
+    "paired_sign_flip": {
+      "assignment_count": 256,
+      "kind": "exact_campaign_sign_flip",
+      "pilot_p_value_is_promotion_rule_not_confirmatory_inference": true,
+      "seed": null,
+      "sidedness": "two_sided"
+    },
+    "primary_comparator_id": "lineageguard_v4_shared_envelope",
+    "primary_method_id": "lineageguard_action_d8_refit",
+    "sesoi": {
+      "estimand": "relative_mean_aurd_improvement",
+      "formula": "parenthesized_mean_comparator_aurd_minus_mean_primary_aurd_divided_by_mean_comparator_aurd",
+      "minimum": 0.1
+    }
+  }
+}

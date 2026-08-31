@@ -1,0 +1,21 @@
+{
+  "exit_code": 0,
+  "finished_utc": "2026-08-22T11:43:32.916001Z",
+  "fresh_registry_sha256": "f2e93f797a73cc22daa78387ee88f6e6f6f60f0fa86694a9ef12ee2c193bff12",
+  "gate_computed": false,
+  "kind": "lineageguard_jaffle_rq2_action_p1_run_v1",
+  "measurement_only": true,
+  "prelaunch_conformance_sha256": "d78d6112d1834cc6c0c06f1361bc01e56eb9c88d3b9f0d92d08e8f6b42f26bbc",
+  "python": {
+    "executable": "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815/bin/python",
+    "version": "3.13.13"
+  },
+  "result_file_sha256": "04ade9f5210158bc865ea2392f65e52079f0c58f09444f7e932108abb39922e9",
+  "result_sha256": "395b3a56418762fbfd46884f2be4da5aea21be98ef11b823c121ca3343072431",
+  "run_id": "20260822-092110-rq2-p1-measure-da7591a-inner",
+  "runner_source_sha256": "f68ac2001b3e1748557fc87bf065e391b109cce32a18c52a390e76ea453ec64f",
+  "schema_version": 1,
+  "started_utc": "2026-08-22T09:30:21.872317Z",
+  "status": "complete",
+  "summary_computed": false
+}

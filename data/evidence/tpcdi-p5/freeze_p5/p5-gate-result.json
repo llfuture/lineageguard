@@ -1,0 +1,51 @@
+{
+ "criteria": {
+  "g10_sign_flip_p_le_005": true,
+  "g1_campaigns_complete": true,
+  "g2_bindings_complete": true,
+  "g3_zero_technical_failures": true,
+  "g4_no_validation_damage_positive": true,
+  "g5_safety_caps": true,
+  "g6_physically_distinguishable": true,
+  "g7_mean_diff_negative": true,
+  "g8_bootstrap_upper_negative": true,
+  "g9_relative_improvement_ge_sesoi": true
+ },
+ "criteria_passed": 10,
+ "decision": "GO",
+ "gate_sha256": "58d19451c5394a30c80d87a1228ebd3dba6971af7b3fa835c4f0765e21e015ca",
+ "issued_utc": "2026-08-29T13:03:54Z",
+ "kind": "lineageguard_p5_gate_result_v1",
+ "notes": "first non-development TPC-DI round, protocol tpcdi_rq2_policy_p5_v1; forbidden claims list applies unchanged, and the verdict is reported whichever way it falls",
+ "one_shot": true,
+ "plans_sha256": "0025e364f58cd4f45f46f4d612b37d879a72b0fbec1888bbdde3962e51340dfb",
+ "protocol_sha256": "79eace176a8a9c4bf017d8037d360c176fbc504c422f0fe00303274aedb453c5",
+ "recomputed": {
+  "bootstrap_lower95": -0.10241865067450208,
+  "bootstrap_upper95": -0.048074717179060394,
+  "distinct_diff_values": [
+   -0.160093791812,
+   -0.151051552708,
+   -0.145244581711,
+   -0.131443433571,
+   -0.104627188729,
+   -0.101969785853,
+   -0.095690070491,
+   -0.093704211749,
+   -0.080959009834,
+   -0.072212110855,
+   -0.070795786671,
+   0.0
+  ],
+  "mean_paired_aurd_diff": -0.07516867253865916,
+  "mean_policy_aurd": 0.6576810089017809,
+  "mean_static_best_aurd": 0.73284968144044,
+  "n_campaigns": 18,
+  "n_nonzero_diffs": 12,
+  "relative_improvement": 0.10257038304350856,
+  "sign_flip_p_one_sided": 0.000244140625
+ },
+ "roster_name": "C_conflict_heavy",
+ "summary_cross_check_ok": true,
+ "summary_sha256": "0e36c2591ebf528beb586d645e4a6cee4a2497dd925a6a1649439fae16bdbef3"
+}

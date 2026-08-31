@@ -1,0 +1,692 @@
+{
+ "audit_sha256": "4bb280f2cbe938284843363d8f446600fcbf70091f44366e136d1b871cc55b90",
+ "cross_snapshot": [
+  {
+   "gap_points": -0.7044738418298724,
+   "observed_relative": 0.10257038304350856,
+   "predicted_relative": 0.10961512146180728,
+   "round": "gated"
+  },
+  {
+   "gap_points": -0.031156229177528583,
+   "observed_relative": 0.07767238957530576,
+   "predicted_relative": 0.07798395186708104,
+   "round": "exploratory"
+  }
+ ],
+ "kind": "lineageguard_audit_extrapolation_v1",
+ "leave_one_out": {
+  "P0_inert": {
+   "coverage": 1.0,
+   "covered": 42,
+   "direction_accuracy": 0.42857142857142855,
+   "mae": 31.79954611491798,
+   "max_abs_err": 1323.3544652574299,
+   "median_abs_err": 0.1610635404346099
+  },
+  "P1_location": {
+   "coverage": 0.5238095238095238,
+   "covered": 22,
+   "direction_accuracy": 1.0,
+   "mae": 0.0,
+   "max_abs_err": 0.0,
+   "median_abs_err": 0.0
+  },
+  "P2_cardinality": {
+   "coverage": 0.7857142857142857,
+   "covered": 33,
+   "direction_accuracy": 1.0,
+   "mae": 0.021166742391974015,
+   "max_abs_err": 0.11686638404666438,
+   "median_abs_err": 0.0
+  },
+  "P3_combined": {
+   "coverage": 1.0,
+   "covered": 42,
+   "direction_accuracy": 0.9285714285714286,
+   "mae": 31.537119143371417,
+   "max_abs_err": 1323.3544652574299,
+   "median_abs_err": 0.0
+  }
+ },
+ "n_measured_singletons": 42,
+ "per_key": [
+  {
+   "key": [
+    "fin-dup",
+    1,
+    "fact_financials",
+    "dedup"
+   ],
+   "measured": 0.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.0,
+    "P2_cardinality": 0.0,
+    "P3_combined": 0.0
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    1,
+    "fact_financials",
+    "quarantine"
+   ],
+   "measured": 1.2376052508574775,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 1.2376052508574775,
+    "P2_cardinality": 1.2376193297781288,
+    "P3_combined": 1.2376052508574775
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    1,
+    "stg_financial",
+    "dedup"
+   ],
+   "measured": 0.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.0,
+    "P2_cardinality": 0.0,
+    "P3_combined": 0.0
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    1,
+    "stg_financial",
+    "null_out"
+   ],
+   "measured": 1.9504147465437787,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.9504147465437787,
+    "P3_combined": 1.9504147465437787
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    1,
+    "stg_financial",
+    "quarantine"
+   ],
+   "measured": 1.2376052508574775,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 1.2376052508574775,
+    "P2_cardinality": 1.2376193297781288,
+    "P3_combined": 1.2376052508574775
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    10,
+    "fact_financials",
+    "dedup"
+   ],
+   "measured": 0.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.0,
+    "P2_cardinality": 0.0,
+    "P3_combined": 0.0
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    10,
+    "fact_financials",
+    "quarantine"
+   ],
+   "measured": 1.2376193297781288,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 1.2376193297781288,
+    "P2_cardinality": 1.2376052508574775,
+    "P3_combined": 1.2376193297781288
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    10,
+    "stg_financial",
+    "dedup"
+   ],
+   "measured": 0.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.0,
+    "P2_cardinality": 0.0,
+    "P3_combined": 0.0
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    10,
+    "stg_financial",
+    "null_out"
+   ],
+   "measured": 1.9504147465437787,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.9504147465437787,
+    "P3_combined": 1.9504147465437787
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    10,
+    "stg_financial",
+    "quarantine"
+   ],
+   "measured": 1.2376193297781288,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 1.2376193297781288,
+    "P2_cardinality": 1.2376052508574775,
+    "P3_combined": 1.2376193297781288
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    100,
+    "fact_financials",
+    "dedup"
+   ],
+   "measured": 0.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.0,
+    "P2_cardinality": 0.0,
+    "P3_combined": 0.0
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    100,
+    "fact_financials",
+    "quarantine"
+   ],
+   "measured": 1.169635028596933,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 1.169635028596933,
+    "P2_cardinality": 1.2376193297781288,
+    "P3_combined": 1.169635028596933
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    100,
+    "stg_financial",
+    "dedup"
+   ],
+   "measured": 0.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.0,
+    "P2_cardinality": 0.0,
+    "P3_combined": 0.0
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    100,
+    "stg_financial",
+    "null_out"
+   ],
+   "measured": 1.9600148954987664,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.9504147465437787,
+    "P3_combined": 1.9504147465437787
+   }
+  },
+  {
+   "key": [
+    "fin-dup",
+    100,
+    "stg_financial",
+    "quarantine"
+   ],
+   "measured": 1.169635028596933,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 1.169635028596933,
+    "P2_cardinality": 1.2376193297781288,
+    "P3_combined": 1.169635028596933
+   }
+  },
+  {
+   "key": [
+    "fin-fk",
+    10,
+    "stg_financial",
+    "quarantine"
+   ],
+   "measured": 1324.3544652574299,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": null,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-null",
+    10,
+    "stg_financial",
+    "dedup"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": null,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-null",
+    10,
+    "stg_financial",
+    "quarantine"
+   ],
+   "measured": 0.8050613847852744,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": null,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    1,
+    "dim_company",
+    "quarantine"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    1,
+    "fact_financials",
+    "quarantine"
+   ],
+   "measured": 0.8389364595653901,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.8389364595653901,
+    "P2_cardinality": 0.9187226255258474,
+    "P3_combined": 0.8389364595653901
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    1,
+    "stg_daily_market",
+    "quarantine"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    1,
+    "stg_financial",
+    "dedup"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    1,
+    "stg_financial",
+    "null_out"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    1,
+    "stg_financial",
+    "quarantine"
+   ],
+   "measured": 0.8389364595653901,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.8389364595653901,
+    "P2_cardinality": 0.9187226255258474,
+    "P3_combined": 0.8389364595653901
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    10,
+    "dim_company",
+    "quarantine"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    10,
+    "fact_financials",
+    "quarantine"
+   ],
+   "measured": 0.9187226255258474,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.9187226255258474,
+    "P2_cardinality": 0.8389364595653901,
+    "P3_combined": 0.9187226255258474
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    10,
+    "stg_daily_market",
+    "quarantine"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    10,
+    "stg_financial",
+    "dedup"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    10,
+    "stg_financial",
+    "null_out"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    10,
+    "stg_financial",
+    "quarantine"
+   ],
+   "measured": 0.9187226255258474,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.9187226255258474,
+    "P2_cardinality": 0.8389364595653901,
+    "P3_combined": 0.9187226255258474
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    100,
+    "dim_company",
+    "quarantine"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    100,
+    "fact_financials",
+    "quarantine"
+   ],
+   "measured": 0.801856241479183,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.801856241479183,
+    "P2_cardinality": 0.9187226255258474,
+    "P3_combined": 0.801856241479183
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    100,
+    "stg_daily_market",
+    "quarantine"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    100,
+    "stg_financial",
+    "dedup"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    100,
+    "stg_financial",
+    "null_out"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": 1.0,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "fin-num",
+    100,
+    "stg_financial",
+    "quarantine"
+   ],
+   "measured": 0.801856241479183,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 0.801856241479183,
+    "P2_cardinality": 0.9187226255258474,
+    "P3_combined": 0.801856241479183
+   }
+  },
+  {
+   "key": [
+    "mkt-dup",
+    10,
+    "fact_market_history",
+    "quarantine"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 1.0,
+    "P2_cardinality": null,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "mkt-dup",
+    10,
+    "stg_daily_market",
+    "dedup"
+   ],
+   "measured": 0.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": null,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "mkt-dup",
+    10,
+    "stg_daily_market",
+    "quarantine"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 1.0,
+    "P2_cardinality": null,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "mkt-num",
+    10,
+    "fact_market_history",
+    "quarantine"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 1.0,
+    "P2_cardinality": null,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "mkt-num",
+    10,
+    "stg_daily_market",
+    "dedup"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": null,
+    "P2_cardinality": null,
+    "P3_combined": 1.0
+   }
+  },
+  {
+   "key": [
+    "mkt-num",
+    10,
+    "stg_daily_market",
+    "quarantine"
+   ],
+   "measured": 1.0,
+   "predicted": {
+    "P0_inert": 1.0,
+    "P1_location": 1.0,
+    "P2_cardinality": null,
+    "P3_combined": 1.0
+   }
+  }
+ ],
+ "predictors": {
+  "P0_inert": "assume 1.0",
+  "P1_location": "same (family,k,disposition) at the other node on the same fork",
+  "P2_cardinality": "same (family,node,disposition) at the nearest measured k",
+  "P3_combined": "P1 if available, else P2, else P0"
+ },
+ "review_item": "8 (extrapolating unmeasured responses)"
+}

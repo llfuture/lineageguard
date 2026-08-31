@@ -1,0 +1,484 @@
+{
+  "endpoint": {
+    "compute_process_count": 0,
+    "conda_or_venv_python": "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815/bin/python",
+    "discovery_snapshot_file_sha256": "e10a5dd74ac8dfe36f71bb2dcc2e9fa13acf4a083a525eaa270b27ee24630f10",
+    "discovery_snapshot_path": "/home/u0020090017/projects/lineageguard/.remote_stage/20260822-092110-rq2-p1-measure-da7591a/n1-discovery-20260822-092110-rq2-p1-measure-da7591a.tsv",
+    "driver_version": "570.195.03",
+    "free_gpu_memory_mib": 40443,
+    "gpu_index": 0,
+    "gpu_memory_mib": 40960,
+    "gpu_name": "NVIDIA A100-PCIE-40GB",
+    "gpu_uuid": "GPU-e9f5d25e-c958-1964-a4b3-be9f69f3d22a",
+    "hostname": "n1",
+    "maximum_snapshot_age_seconds": 600,
+    "occupancy_probe_file_sha256": "057e0da59a43e5240df4a3c2bfac4d5b2ba90bb38caf91c0b16c8e4ad7fc4e62",
+    "occupancy_probe_path": "/home/u0020090017/projects/lineageguard/.remote_stage/20260822-092110-rq2-p1-measure-da7591a/n1-occupancy-20260822-092110-rq2-p1-measure-da7591a.txt",
+    "occupancy_probe_time_utc": "2026-08-22T09:22:23Z",
+    "os": "Ubuntu 20.04.6 LTS",
+    "ram": "40.0GiB",
+    "related_process_count": 0,
+    "scan_time_utc": "2026-08-22T09:21:19Z",
+    "selected_port": 24857,
+    "ssh_hostkey_sha256": "SHA256:a6ym3EfC35pPdkqWO8lg+4As2nLDI1eKu8cur4P7WDc"
+  },
+  "failure_policy": {
+    "fabricated_result_summary_or_gate_allowed": false,
+    "hard_nonzero_forces_technical_no_go": true,
+    "missing_or_invalid_result_forces_technical_no_go": true,
+    "outcome_direction_optional_stopping": false,
+    "partial_outputs_and_outer_tree_retained": true,
+    "retry_allowed": false,
+    "technical_failure_forces_no_go": true,
+    "timeout_forces_technical_no_go": true
+  },
+  "frozen_inputs": {
+    "action_model": {
+      "file_sha256": "6e69c295c8bd237290347857d03368bd0a8f003f80af76675c87341cbb274c0b",
+      "path": "artifacts/jaffle_rq2_action_p1_v1/shared-20260822-081256-rq2-p1-4a44957/action-p1-model.json",
+      "semantic_sha256": "58de8b26ee1a6333ed7f53422a46e02ecc9ef60699043fd23ea1e4e3ace638cc"
+    },
+    "assignment": {
+      "file_sha256": "02f25297e2ba1f1ac6b7094d256968841db30e46d9c7851cd3c99aa395ef4c4c",
+      "path": "artifacts/jaffle_rq2_action_p1_v1/fresh-20260822-081747-rq2-p1-4a44957/factor-seed-assignment.json",
+      "semantic_sha256": "4df4d538436583e29b1bad2530c5fc7f88e25513b18081b8f4dec1cd1d64cd4c"
+    },
+    "authority_map": {
+      "file_sha256": "1f2ef18f966ebd8629064c28455a4313cd1a398357770ff04600d076037a13dc",
+      "path": "/home/u0020090017/projects/lineageguard/.remote_stage/20260822-092110-rq2-p1-measure-da7591a/authority-overrides-rq2-p1-da7591a.json",
+      "semantic_sha256": "1f2ef18f966ebd8629064c28455a4313cd1a398357770ff04600d076037a13dc"
+    },
+    "binder": {
+      "file_sha256": "a5c02ebc4ddf914a58ecae4b864c414e289c63432f7e3bb3f802ff7e344e37aa",
+      "path": "artifacts/jaffle_rq2_action_p1_v1/fresh-20260822-081747-rq2-p1-4a44957/shared-plan-binder.json",
+      "semantic_sha256": "893bc3d810a9722f785e78b2e6f19ad7c4a06fc9f835b243a6d2c37f2791c469"
+    },
+    "clean_anchor": {
+      "clean_input_binding_sha256": "257b12f8525a15d7a6b53cffc85ee6785488401e014dd11a4089e059692eea47",
+      "file_sha256": "50d60961f3b9434fc12d9c29bbeb3ce61b8635fea0a01c01f50ac3b63e10353a",
+      "logical_snapshot_sha256": "1f505646fab83214b355b64c9780b06abc0731d468ca222a198dfb88c1cc7e31",
+      "path": "/home/u0020090017/projects/lineageguard/outputs/20260815-043100-jaffle-rolling-qualification-1cbfc2f/inner-runs/20260815-043100-jaffle-rolling-inner-1cbfc2f/work/clean/jaffle-clean.duckdb"
+    },
+    "context_index": {
+      "file_sha256": "c980aca01d8a2cfa4e1ff690b4a05846216c1139a7c3f73ee3ad556783e483fd",
+      "path": "artifacts/jaffle_rq2_action_p1_v1/fresh-20260822-081747-rq2-p1-4a44957/context-index.json",
+      "semantic_sha256": "3d5c47a6fc9ad3ba0512c690684c368e2b7ebc43e8bd977b004aa2509f25f0ce"
+    },
+    "cost_catalog": {
+      "file_sha256": "06277838cf491d56870169456735b8aa0a31df366ba41d1f6fab59ccc4439abf",
+      "path": "artifacts/jaffle_rq2_action_p1_v1/cost-20260822-070356-rq2-p1-4a44957/action-p1-cost-catalog.json",
+      "semantic_sha256": "352555ec7824427a2b0e41fee76e0a1febca539522f4eaf734e68d4a55b0043b"
+    },
+    "fresh_children": {
+      "campaign_rows_sha256": "19d4ec536796b4903c24bfd567b38ecf579ed336484821185ab8e765804e1f12",
+      "file_count": 36,
+      "files": [
+        {
+          "file_sha256": "02f25297e2ba1f1ac6b7094d256968841db30e46d9c7851cd3c99aa395ef4c4c",
+          "path": "factor-seed-assignment.json",
+          "semantic_sha256": "4df4d538436583e29b1bad2530c5fc7f88e25513b18081b8f4dec1cd1d64cd4c"
+        },
+        {
+          "file_sha256": "4f57c429089a5dd98b4d94ff4d4891740c149bbab596e014f0ed6c91a7699897",
+          "path": "target-ledger-registry.json",
+          "semantic_sha256": "79ceb1d164c96a13bebbc920326f6526317c063c3f6793a4a329ba492ed1c2db"
+        },
+        {
+          "file_sha256": "c980aca01d8a2cfa4e1ff690b4a05846216c1139a7c3f73ee3ad556783e483fd",
+          "path": "context-index.json",
+          "semantic_sha256": "3d5c47a6fc9ad3ba0512c690684c368e2b7ebc43e8bd977b004aa2509f25f0ce"
+        },
+        {
+          "file_sha256": "a5c02ebc4ddf914a58ecae4b864c414e289c63432f7e3bb3f802ff7e344e37aa",
+          "path": "shared-plan-binder.json",
+          "semantic_sha256": "893bc3d810a9722f785e78b2e6f19ad7c4a06fc9f835b243a6d2c37f2791c469"
+        },
+        {
+          "file_sha256": "a97e3505c8318f725c155da326f807515194d856caf4614bd28d96235edddccf",
+          "path": "campaigns/001-jaffle-rq2-p1-fresh-slot-001.campaign.json",
+          "semantic_sha256": null
+        },
+        {
+          "file_sha256": "c32d16ac54c75ee64d586fb4b455dbfcb35ae9fa3396e3f1c851f83e73136325",
+          "path": "campaigns/002-jaffle-rq2-p1-fresh-slot-002.campaign.json",
+          "semantic_sha256": null
+        },
+        {
+          "file_sha256": "1abf2d7d5a0a2c6d1b395f6332965bc74865f9adb5e525e82843ede0ebc197d4",
+          "path": "campaigns/003-jaffle-rq2-p1-fresh-slot-003.campaign.json",
+          "semantic_sha256": null
+        },
+        {
+          "file_sha256": "6cf1a956a754f47869334a5ce95338ca8a9c643688b5a5fb69f7c03618ea6c12",
+          "path": "campaigns/004-jaffle-rq2-p1-fresh-slot-004.campaign.json",
+          "semantic_sha256": null
+        },
+        {
+          "file_sha256": "459366d3e4ea350fbd3766084d4eccd9ddc98d3c2cfcd2718959c5f80a147903",
+          "path": "campaigns/005-jaffle-rq2-p1-fresh-slot-005.campaign.json",
+          "semantic_sha256": null
+        },
+        {
+          "file_sha256": "efa7c57af54222f4d73e13fb7fb5512cd7e0957a258a59d4c5d52421d06723fb",
+          "path": "campaigns/006-jaffle-rq2-p1-fresh-slot-006.campaign.json",
+          "semantic_sha256": null
+        },
+        {
+          "file_sha256": "147a193da58f9270da31c3d1fe00f24219e6dba44c5a41c725859b1484569a8e",
+          "path": "campaigns/007-jaffle-rq2-p1-fresh-slot-007.campaign.json",
+          "semantic_sha256": null
+        },
+        {
+          "file_sha256": "a129b4b8d7af01e33ce4f80d9fb2c0dba43f4150fe3a9c1da54a3d708873bcf1",
+          "path": "campaigns/008-jaffle-rq2-p1-fresh-slot-008.campaign.json",
+          "semantic_sha256": null
+        },
+        {
+          "file_sha256": "ba4db5fa686ba692e4e3d8e546081e24e179b65e6513f1bda2774534488fc098",
+          "path": "executions/001-jaffle-rq2-p1-fresh-slot-001.execution.json",
+          "semantic_sha256": "3444fc4d45ff29e2bfe8cc926de98a27e96f83edbaafc3d7157fc5809ca3ae68"
+        },
+        {
+          "file_sha256": "d1f1c8df64b34f3c96f490bda0250ec11a52104e2cf220562d127da6ae53887d",
+          "path": "executions/002-jaffle-rq2-p1-fresh-slot-002.execution.json",
+          "semantic_sha256": "6b5df06f7ab7416dcdd051527fe4cc365f468c91887d67545b0a88ad2e645822"
+        },
+        {
+          "file_sha256": "0b1d2bc60887cba5f0a70e02f13c2a486f5d3d3af2c2afeabc30a5c2074a7a8d",
+          "path": "executions/003-jaffle-rq2-p1-fresh-slot-003.execution.json",
+          "semantic_sha256": "02a58cada8cdc1e892a7dd9ce09267aa8f0b3c4fc0d731c873e068569549c3ec"
+        },
+        {
+          "file_sha256": "ca71221c0c6d4ccd4ddf76cc4516e9398fab755a8b8f0b1465d45c73f737e358",
+          "path": "executions/004-jaffle-rq2-p1-fresh-slot-004.execution.json",
+          "semantic_sha256": "aeee732632cf38af4ea5e12748f39ac5484591a2cc49654eedc1e815535ddc62"
+        },
+        {
+          "file_sha256": "dde7d70fb7b871472f848a31d247879fc4b903f5fbddbd5d107cb23902af53e4",
+          "path": "executions/005-jaffle-rq2-p1-fresh-slot-005.execution.json",
+          "semantic_sha256": "ca51ac7d830d30e2936485777ea9f94b9d1dbf21caa015ea63cb5b9ee594b1de"
+        },
+        {
+          "file_sha256": "6c20e328b54d8fb7b834c29efdea87061035ea8b193448a40f4f149f34731592",
+          "path": "executions/006-jaffle-rq2-p1-fresh-slot-006.execution.json",
+          "semantic_sha256": "5b50f00845b14453cc891b56c84bbe578fc09e3799037d7e4ab6e5cfb22f9cd7"
+        },
+        {
+          "file_sha256": "3c0f61e493b525766d27baf0c3c402de9f5c23c2509ce3dbc309c77dc0711bc2",
+          "path": "executions/007-jaffle-rq2-p1-fresh-slot-007.execution.json",
+          "semantic_sha256": "a236cc257dcd157db0b3734f7bb20a8274dc16c52b57f5dad2cb53c4f1e50338"
+        },
+        {
+          "file_sha256": "3ecaf2043a10204af39a707bce33e780e495710689aac6a2a6f0f4cb8f13a39f",
+          "path": "executions/008-jaffle-rq2-p1-fresh-slot-008.execution.json",
+          "semantic_sha256": "5bdc1e80fa9bc85a90cd14bf6ddb58fdeb82cb4905115bca55d235970f604399"
+        },
+        {
+          "file_sha256": "496d658e8818b2a642b5d5c24fd3dabe3d310514485b35a30dcfc3fc98963d11",
+          "path": "targets/001-jaffle-rq2-p1-fresh-slot-001.target-ledger.json",
+          "semantic_sha256": "752042f8cfaedd3120d7e545b5d8bef48b0d0c6b11c70b3ab758007f0df87b50"
+        },
+        {
+          "file_sha256": "ae519477ee05e2ffeea6bdecb51b3a2577ee6b81309b2be4b823b8164fb699c4",
+          "path": "targets/002-jaffle-rq2-p1-fresh-slot-002.target-ledger.json",
+          "semantic_sha256": "e71578d12e38daf52a97ddb2309b652a73d2f96ff5334dedbb7909a6d6495923"
+        },
+        {
+          "file_sha256": "8d2633154337eea1293830373f9c513b8303ad1d79fa84ad0c805ddca54b2c65",
+          "path": "targets/003-jaffle-rq2-p1-fresh-slot-003.target-ledger.json",
+          "semantic_sha256": "a1d2ba8b4ea584045add7874143a2eb01f560b86f12779f25cde0051082422c2"
+        },
+        {
+          "file_sha256": "a09fc5ea557a1720e4ec26198f363eaef8351db692764b019447aa4116690b13",
+          "path": "targets/004-jaffle-rq2-p1-fresh-slot-004.target-ledger.json",
+          "semantic_sha256": "20382c13cffc9f9db5964c54ae055b07f714c67a178c4748e07d49fc7aa62b48"
+        },
+        {
+          "file_sha256": "3fe5dc20eb5eb9e55b58e384bb233a5395cc9aa58d978a8425194ed5b9db5c40",
+          "path": "targets/005-jaffle-rq2-p1-fresh-slot-005.target-ledger.json",
+          "semantic_sha256": "2d83a4c5112ceea5c48d934d2fef121971e9379a1f3b76d97987c4bd99883e6d"
+        },
+        {
+          "file_sha256": "75660aa48f5f815a394faa2b8f6d3fe4741d2fe30dacf4a320e2663e8bfee26f",
+          "path": "targets/006-jaffle-rq2-p1-fresh-slot-006.target-ledger.json",
+          "semantic_sha256": "d220b5011b758bb542029e49740cd2ec2b959d27d379a614ed802e11dd57e0c3"
+        },
+        {
+          "file_sha256": "676b86a20d4ba247ba2c1340aea059c08383bda0b6e9f4ec8a21c0f9efa570a8",
+          "path": "targets/007-jaffle-rq2-p1-fresh-slot-007.target-ledger.json",
+          "semantic_sha256": "1467c61a08160d8db0fba16d783707cc1bcce93edcf8b2f70891eb900b66bd31"
+        },
+        {
+          "file_sha256": "aee468fab2974231ac9f6f23ad1378799b40c6ef7fd4384270541939d3556724",
+          "path": "targets/008-jaffle-rq2-p1-fresh-slot-008.target-ledger.json",
+          "semantic_sha256": "2ea356423973f943ad6159a8a55e07f2f32c73afde02ebb35a5d73508f27cbdc"
+        },
+        {
+          "file_sha256": "d4072453fed060ea7ed6d102245848a9cfc3c5690b097721d0d3dee809c3b7b4",
+          "path": "contexts/001-jaffle-rq2-p1-fresh-slot-001.context.json",
+          "semantic_sha256": "8b862e2cea79daadeae87933fcb7394ebdaff737ff964bdabfbe473f2a8dcc15"
+        },
+        {
+          "file_sha256": "384b16771d4b1a2c8fee8a2a0db559d4780eaf7feeea8d7b3aef0d0f15d5b0c5",
+          "path": "contexts/002-jaffle-rq2-p1-fresh-slot-002.context.json",
+          "semantic_sha256": "633d23e4dc1a920a4a13066193fa39ed60d53c6d302f7e7b4e509e647228db30"
+        },
+        {
+          "file_sha256": "e1cfb2a304fca42d669824a785b93b32aa0ab38af1176a501ac7105f44ef1be6",
+          "path": "contexts/003-jaffle-rq2-p1-fresh-slot-003.context.json",
+          "semantic_sha256": "2adea4afeb5e76dc0ff5eaf33699df515cf6a9635a56f870dbff3e60741afc71"
+        },
+        {
+          "file_sha256": "762623fb11ea8e2625547a968cba28d939f7ecf09b003f3eb45b2d22ac8b8f86",
+          "path": "contexts/004-jaffle-rq2-p1-fresh-slot-004.context.json",
+          "semantic_sha256": "88781df54662277498dae34e411aacd66b0c6269e13f681000924a5c707a41ba"
+        },
+        {
+          "file_sha256": "8f47d00dbe0000a6291dcf9af908c3949fdb76b2f3221eb54180e26a62976798",
+          "path": "contexts/005-jaffle-rq2-p1-fresh-slot-005.context.json",
+          "semantic_sha256": "42cf88e0a487e846b0544cd1b4821be80a95d4ee9b01bceb4cd6a3727fd37a91"
+        },
+        {
+          "file_sha256": "ea2319dff9ca44fd11faa1a5e346404f173874ff68c0038d31936f6a042f179b",
+          "path": "contexts/006-jaffle-rq2-p1-fresh-slot-006.context.json",
+          "semantic_sha256": "816e6c105bd64db9a264e05ff4a400361ceec053628c962936e928cae5bd9191"
+        },
+        {
+          "file_sha256": "097b80e68cda276bf02293f9c15473555b0c330a94e7526d48fd2fedf0197ea9",
+          "path": "contexts/007-jaffle-rq2-p1-fresh-slot-007.context.json",
+          "semantic_sha256": "d9f73dced5b4c1a89a24f1d5af47b595dabab12aad11b5b6ccd16706da826ac8"
+        },
+        {
+          "file_sha256": "bc6946bd777d9f4ffe8bc341c88e36ed259a5229ab06ef59efa90eaf6e6f9e1d",
+          "path": "contexts/008-jaffle-rq2-p1-fresh-slot-008.context.json",
+          "semantic_sha256": "4af37bca8eafe534bbaf1ac136eff81a4111bcae37dab4a89575d43f0872a2c4"
+        }
+      ],
+      "files_projection_sha256": "b41ff0ace945a413287774d22a8454d9d142d527bb321dbb74b4d1d23d91ce61"
+    },
+    "fresh_registry": {
+      "file_sha256": "03f81f00e6f9590eeba7a56ee6b27f641927d2c33b61886c45b580ce57cddde9",
+      "path": "artifacts/jaffle_rq2_action_p1_v1/fresh-20260822-081747-rq2-p1-4a44957/fresh-input-registry.json",
+      "semantic_sha256": "f2e93f797a73cc22daa78387ee88f6e6f6f60f0fa86694a9ef12ee2c193bff12"
+    },
+    "jaffle_source": {
+      "clean_worktree_required": true,
+      "commit": "7d0d8de2d58edae06f0724a3892da0224bbf0f4a",
+      "path": "/home/u0020090017/data_benchmark/lineageguard/sources/jaffle-shop"
+    },
+    "methods": {
+      "file_sha256": "2fcf437991ce0d4eb5d0fd53c60016c5cb8ddf54a1c2279d9cae9e1afa2cb72c",
+      "path": "configs/jaffle_rq2_action_p1_v1/methods.json",
+      "semantic_sha256": "8a0cccb95bcd0bf0cdc8338afdfb7e78c21aea02b115ac1cc7b1c8f73b8dbd0d"
+    },
+    "offline_package_directory": {
+      "path": "/home/u0020090017/data_benchmark/lineageguard/dependencies/jaffle-offline-packages-v1"
+    },
+    "phase_a_manifest": {
+      "binding_sha256": "8cde195a572ec76ce8a67c8a4f550de78d6bbb1a78e7883d5f734e1134e832d8",
+      "file_sha256": "a391b3283187bea20dad873da54c9da23f25a1e4030a6a12b20082ea993f0e02",
+      "path": "artifacts/jaffle_rq2_action_p1_v1/shared-20260822-081256-rq2-p1-4a44957/manifest.json",
+      "semantic_sha256": "aa0961783677ba2575994f64a3cdc34015b194ce3409025152cd192157751aad"
+    },
+    "prelaunch_conformance": {
+      "file_sha256": "7946eb820b6db3dcee8676bdf80077c9332daa397824c28538561b10118a6f46",
+      "path": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/prelaunch-20260822-090318-rq2-p1-da7591a/prelaunch-conformance.json",
+      "semantic_sha256": "d78d6112d1834cc6c0c06f1361bc01e56eb9c88d3b9f0d92d08e8f6b42f26bbc"
+    },
+    "protocol": {
+      "file_sha256": "4fcf92d62f717f957ff5dd784f33b54e17cfb0c36e94880d48b63a2f9797d731",
+      "path": "configs/jaffle_rq2_action_p1_v1/protocol.json",
+      "semantic_sha256": "b59c9448e67ccc70bd97e147e2cc81ad977455db7373f020f65c3dad4c149621"
+    },
+    "qualification_evidence": {
+      "failed": 0,
+      "file_sha256": "f9039ba15735f90b5adefad43b5f9113c65b29950703959f01f6a4984461a029",
+      "passed": 6,
+      "path": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/qualification-20260822-090052-rq2-p1-da7591a/evidence.json",
+      "semantic_sha256": "3526848de6a30d437710c322d5d6b5986a4587e8eb0ed492b531e10cb17cfb6a",
+      "skipped": 0
+    },
+    "shared_registry": {
+      "file_sha256": "7683d439de25429c80eac423085fefecd69e11df634377d747c9066839156204",
+      "path": "artifacts/jaffle_rq2_action_p1_v1/shared-20260822-081256-rq2-p1-4a44957/shared-plan-registry.json",
+      "semantic_sha256": "968175454dd7608c0f15b92bb1bd6ff2ead739232e8dec584f0df97979961f52"
+    },
+    "target_registry": {
+      "file_sha256": "4f57c429089a5dd98b4d94ff4d4891740c149bbab596e014f0ed6c91a7699897",
+      "path": "artifacts/jaffle_rq2_action_p1_v1/fresh-20260822-081747-rq2-p1-4a44957/target-ledger-registry.json",
+      "semantic_sha256": "79ceb1d164c96a13bebbc920326f6526317c063c3f6793a4a329ba492ed1c2db"
+    },
+    "venv": {
+      "dbt_core_version": "1.12.2",
+      "dbt_duckdb_version": "1.11.0",
+      "duckdb_version": "1.5.4",
+      "path": "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815",
+      "python_version": "3.13.13"
+    }
+  },
+  "kind": "lineageguard_jaffle_rq2_action_p1_launch_spec_v1",
+  "launch_created_utc": "2026-08-22T09:27:55.779465Z",
+  "launch_spec_sha256": "815887b760156d48d9675ccff7f5cea2fdb17174514f2732b70a7bb31ebed40e",
+  "measurement": {
+    "expected_baseline_measurement_count": 8,
+    "expected_campaign_count": 8,
+    "expected_dbt_exit_file_count": 480,
+    "expected_distinct_action_tuple_count": 5,
+    "expected_protected_placement_measurement_count": 40,
+    "expected_result_path": "/home/u0020090017/projects/lineageguard/outputs/20260822-092110-rq2-p1-measure-da7591a-inner/result.json",
+    "expected_shared_plan_count": 41,
+    "expected_total_physical_measurement_count": 48,
+    "literal_child_argv": [
+      "/usr/bin/timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "28800s",
+      "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815/bin/python",
+      "-u",
+      "/home/u0020090017/projects/lineageguard/releases/da7591adf2b85d8f44cb82beb5ec41f7f65fd6de/scripts/run_jaffle_rq2_action_p1.py",
+      "--release-root",
+      "/home/u0020090017/projects/lineageguard/releases/da7591adf2b85d8f44cb82beb5ec41f7f65fd6de",
+      "--artifact-root",
+      "/home/u0020090017/projects/lineageguard",
+      "--fresh-registry",
+      "artifacts/jaffle_rq2_action_p1_v1/fresh-20260822-081747-rq2-p1-4a44957/fresh-input-registry.json",
+      "--authority-path-overrides",
+      ".remote_stage/20260822-092110-rq2-p1-measure-da7591a/authority-overrides-rq2-p1-da7591a.json",
+      "--qualification-evidence",
+      "artifacts/jaffle_rq2_action_p1_v1/qualification-20260822-090052-rq2-p1-da7591a/evidence.json",
+      "--prelaunch-conformance",
+      "artifacts/jaffle_rq2_action_p1_v1/prelaunch-20260822-090318-rq2-p1-da7591a/prelaunch-conformance.json",
+      "--clean-anchor",
+      "outputs/20260815-043100-jaffle-rolling-qualification-1cbfc2f/inner-runs/20260815-043100-jaffle-rolling-inner-1cbfc2f/work/clean/jaffle-clean.duckdb",
+      "--source-project",
+      "/home/u0020090017/data_benchmark/lineageguard/sources/jaffle-shop",
+      "--venv",
+      "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815",
+      "--offline-package-dir",
+      "/home/u0020090017/data_benchmark/lineageguard/dependencies/jaffle-offline-packages-v1",
+      "--output-root",
+      "outputs",
+      "--scratch-root",
+      "/home/u0020090017/hermes_run",
+      "--run-id",
+      "20260822-092110-rq2-p1-measure-da7591a-inner"
+    ],
+    "literal_run_logged_argv": [
+      "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815/bin/python",
+      "-u",
+      "/home/u0020090017/projects/lineageguard/releases/da7591adf2b85d8f44cb82beb5ec41f7f65fd6de/scripts/run_logged.py",
+      "--project-root",
+      "/home/u0020090017/projects/lineageguard/releases/da7591adf2b85d8f44cb82beb5ec41f7f65fd6de",
+      "--output-root",
+      "/home/u0020090017/projects/lineageguard/outputs",
+      "--run-id",
+      "20260822-092110-rq2-p1-measure-da7591a-control",
+      "--label",
+      "rq2-action-p1-measurement",
+      "--cwd",
+      "/home/u0020090017/projects/lineageguard/releases/da7591adf2b85d8f44cb82beb5ec41f7f65fd6de",
+      "--source",
+      "/home/u0020090017/projects/lineageguard/releases/da7591adf2b85d8f44cb82beb5ec41f7f65fd6de",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/.remote_stage/20260822-092110-rq2-p1-measure-da7591a/n1-discovery-20260822-092110-rq2-p1-measure-da7591a.tsv",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/.remote_stage/20260822-092110-rq2-p1-measure-da7591a/n1-occupancy-20260822-092110-rq2-p1-measure-da7591a.txt",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/.remote_stage/20260822-092110-rq2-p1-measure-da7591a/launch-spec-20260822-092110-rq2-p1-measure-da7591a.json",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/.remote_stage/20260822-092110-rq2-p1-measure-da7591a/authority-overrides-rq2-p1-da7591a.json",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/fresh-20260822-081747-rq2-p1-4a44957",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/qualification-20260822-090052-rq2-p1-da7591a",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/prelaunch-20260822-090318-rq2-p1-da7591a",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/shared-20260822-081256-rq2-p1-4a44957",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/cost-20260822-070356-rq2-p1-4a44957/action-p1-cost-catalog.json",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/outputs/20260815-043100-jaffle-rolling-qualification-1cbfc2f/inner-runs/20260815-043100-jaffle-rolling-inner-1cbfc2f/work/clean/jaffle-clean.duckdb",
+      "--input",
+      "/home/u0020090017/projects/lineageguard/outputs/20260815-043100-jaffle-rolling-qualification-1cbfc2f/inner-runs/20260815-043100-jaffle-rolling-inner-1cbfc2f/clean-raw-load.json",
+      "--input",
+      "/home/u0020090017/data_benchmark/lineageguard/sources/jaffle-shop",
+      "--input",
+      "/home/u0020090017/data_benchmark/lineageguard/dependencies/jaffle-offline-packages-v1",
+      "--input",
+      "/usr/bin/timeout",
+      "--",
+      "/usr/bin/timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "28800s",
+      "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815/bin/python",
+      "-u",
+      "/home/u0020090017/projects/lineageguard/releases/da7591adf2b85d8f44cb82beb5ec41f7f65fd6de/scripts/run_jaffle_rq2_action_p1.py",
+      "--release-root",
+      "/home/u0020090017/projects/lineageguard/releases/da7591adf2b85d8f44cb82beb5ec41f7f65fd6de",
+      "--artifact-root",
+      "/home/u0020090017/projects/lineageguard",
+      "--fresh-registry",
+      "artifacts/jaffle_rq2_action_p1_v1/fresh-20260822-081747-rq2-p1-4a44957/fresh-input-registry.json",
+      "--authority-path-overrides",
+      ".remote_stage/20260822-092110-rq2-p1-measure-da7591a/authority-overrides-rq2-p1-da7591a.json",
+      "--qualification-evidence",
+      "artifacts/jaffle_rq2_action_p1_v1/qualification-20260822-090052-rq2-p1-da7591a/evidence.json",
+      "--prelaunch-conformance",
+      "artifacts/jaffle_rq2_action_p1_v1/prelaunch-20260822-090318-rq2-p1-da7591a/prelaunch-conformance.json",
+      "--clean-anchor",
+      "outputs/20260815-043100-jaffle-rolling-qualification-1cbfc2f/inner-runs/20260815-043100-jaffle-rolling-inner-1cbfc2f/work/clean/jaffle-clean.duckdb",
+      "--source-project",
+      "/home/u0020090017/data_benchmark/lineageguard/sources/jaffle-shop",
+      "--venv",
+      "/home/u0020090017/projects/lineageguard/.venv-jaffle-mve-20260815",
+      "--offline-package-dir",
+      "/home/u0020090017/data_benchmark/lineageguard/dependencies/jaffle-offline-packages-v1",
+      "--output-root",
+      "outputs",
+      "--scratch-root",
+      "/home/u0020090017/hermes_run",
+      "--run-id",
+      "20260822-092110-rq2-p1-measure-da7591a-inner"
+    ]
+  },
+  "release": {
+    "archive_sha256": "8e55071135d7d9ccd8ce249a060f09367008ed3697e1badb0dce471e21ae12b9",
+    "git_tree": "ce2ce70678282b208da091c07ef1b6c7d2982379",
+    "lineageguard_commit": "da7591adf2b85d8f44cb82beb5ec41f7f65fd6de",
+    "release_read_only_required": true,
+    "release_root": "/home/u0020090017/projects/lineageguard/releases/da7591adf2b85d8f44cb82beb5ec41f7f65fd6de",
+    "runner_source_set_file_sha256": "d9e6f902e92e5b72ad8a8906f85a0df78471b4bae884fb442b549c5efcaf77cc",
+    "runner_source_set_path": "/home/u0020090017/projects/lineageguard/artifacts/jaffle_rq2_action_p1_v1/prelaunch-20260822-090318-rq2-p1-da7591a/runner-source-set.json",
+    "runner_source_set_semantic_sha256": "f68ac2001b3e1748557fc87bf065e391b109cce32a18c52a390e76ea453ec64f",
+    "runner_source_sha256": "f68ac2001b3e1748557fc87bf065e391b109cce32a18c52a390e76ea453ec64f"
+  },
+  "run_identity": {
+    "inner_run_id": "20260822-092110-rq2-p1-measure-da7591a-inner",
+    "maximum_attempt_count": 1,
+    "outer_run_id": "20260822-092110-rq2-p1-measure-da7591a-control",
+    "retry_count": 0,
+    "tmux_session": "rq2_p1_measure_da7591a_20260822_092110"
+  },
+  "schema_version": 1,
+  "scope": {
+    "effect_claim_allowed": false,
+    "measurement_only": true,
+    "paper_eligible": false,
+    "study_phase": "pilot_validation",
+    "summary_or_gate_computed_at_launch": false,
+    "test_or_temporal_holdout_read": false
+  },
+  "watchdog": {
+    "binary": "/usr/bin/timeout",
+    "binary_file_sha256": "91db1e64064f0bf5ee99abda3a054cc6f05748dad2af5a145f890c9172d28d73",
+    "kill_after_seconds": 60,
+    "signal": "TERM",
+    "timeout_exit_codes": [
+      124,
+      137
+    ],
+    "timeout_seconds": 28800
+  }
+}
