@@ -137,10 +137,6 @@ four roster variants and admits or refuses each),
 `code-experiments/tpcdi-suite/run_p5.sh`), `p5_aggregate.py`,
 `p5_gate.py`.
 
-```bash
-sha256sum -c CHECKSUMS.sha256
-```
-
 ## License
 
 Apache License 2.0, see `LICENSE`.
