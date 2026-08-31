@@ -12,9 +12,7 @@ headline numbers against that evidence.
 ## Layout
 
 ```
-verify_paper_numbers.py   re-checks the paper's headline numbers against data/ (stdlib only)
 requirements.txt          pinned Python dependencies for running the code
-CHECKSUMS.sha256          SHA-256 of every file in this repository
 code-experiments/
   runtime-modules/        frozen base controllers (branch cloning, damage evaluation)
   d8-d10-harness/         M2 response matrix, M3 ladder, M4 placement, cost re-measurement
@@ -26,7 +24,6 @@ code-experiments/
                           harness, ceiling addendum, cost catalog, false-positive sweep,
                           snapshot split, P5 freeze/precheck/runner/aggregator/gate,
                           audit scripts (dbt-suite fidelity, map stability, extrapolation)
-code-paper/               figure generation (make_all_figures.py + figdata.json)
 scripts/                  launch scripts as executed on the measurement host
 data/
   evidence/rq1-w30/       M1 propagation evaluation (GO)
@@ -50,19 +47,6 @@ data/
   planner-scaling.json    planner scaling measurements
 ```
 
-## Quick verification, no dependencies
-
-```bash
-python3 verify_paper_numbers.py
-```
-
-The script reads only `data/` and asserts the paper's headline numbers,
-including the E1 26.2% with its five equal non-zero differences, the E2
-31.0% with the dose-response residual at 1.1e-16, the E7 10.26% with
-twelve non-zero differences at eleven distinct values, the F1 twelve-way
-tie, the 31/38 static ceiling and the 5/19 conditional escape, and the
-planner scaling numbers. It exits 0 when all checks pass.
-
 ## Requirements
 
 The measurement environment was Python 3.13, DuckDB 1.5.4, dbt-core
@@ -77,16 +61,6 @@ Damage is deterministic given a snapshot, so verification and figure
 regeneration do not depend on the exact machine. Timing-sensitive numbers
 (cost catalogs, planner scaling) were measured single-threaded on an
 otherwise idle host.
-
-## Regenerating the paper figures
-
-```bash
-python3 code-paper/make_all_figures.py
-```
-
-This reads `data/` and `code-paper/figdata.json` and writes all figure
-PDFs to `paper/figures/` (the directory is created if absent). No
-experiment execution is involved.
 
 ## Evidence map
 
@@ -162,13 +136,6 @@ four roster variants and admits or refuses each),
 `p5_fresh_materialize.py`, `p5_runner.py` (see
 `code-experiments/tpcdi-suite/run_p5.sh`), `p5_aggregate.py`,
 `p5_gate.py`.
-
-## Integrity
-
-`CHECKSUMS.sha256` lists the SHA-256 of every file in this repository.
-The evidence files additionally embed content hashes of their own inputs
-(protocol, plans, measurements, summaries), so the chain from raw
-measurement to gate verdict can be re-verified end to end.
 
 ```bash
 sha256sum -c CHECKSUMS.sha256
